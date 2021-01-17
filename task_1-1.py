@@ -7,4 +7,3 @@ num_list = [input('enter some numbers')]
 print(num_list)
 string = input('enter text')
 print(string)
-print('ok')
