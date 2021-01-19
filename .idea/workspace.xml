@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="project files upload">
+    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="file rename">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610985925388</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="file rename">
+      <created>1611024552807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611024552913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +106,7 @@
     <MESSAGE value="PEP8" />
     <MESSAGE value="clear file" />
     <MESSAGE value="project files upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="project files upload" />
+    <MESSAGE value="file rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="file rename" />
   </component>
 </project>
