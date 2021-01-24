@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="file rename">
+    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="add tasks 2 till 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_2-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-5.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-6.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/task_2-6.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1nFIVTDLwB0vdx0jAZ7wiTlvmoF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -35,8 +43,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_2-6.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -129,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611024618610</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add tasks 2 till 5">
+      <created>1611218677754</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611218677754</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +176,7 @@
     <MESSAGE value="clear file" />
     <MESSAGE value="project files upload" />
     <MESSAGE value="file rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="file rename" />
+    <MESSAGE value="add tasks 2 till 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tasks 2 till 5" />
   </component>
 </project>
