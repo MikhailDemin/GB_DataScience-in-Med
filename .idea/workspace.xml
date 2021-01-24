@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="project files upload">
+    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="add tasks 2 till 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-5.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2-6.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="lesson_2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/task_2-6.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1nFIVTDLwB0vdx0jAZ7wiTlvmoF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,8 +43,48 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_2-6.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Личка\Projects\JetBrains" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="task_2-4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="JetBrains" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task_2-4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.task_2-4" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,7 +123,28 @@
       <option name="project" value="LOCAL" />
       <updated>1610985925388</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="file rename">
+      <created>1611024552807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611024552913</updated>
+    </task>
+    <task id="LOCAL-00006" summary="file rename">
+      <created>1611024618610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611024618610</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add tasks 2 till 5">
+      <created>1611218677754</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611218677754</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +175,8 @@
     <MESSAGE value="PEP8" />
     <MESSAGE value="clear file" />
     <MESSAGE value="project files upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="project files upload" />
+    <MESSAGE value="file rename" />
+    <MESSAGE value="add tasks 2 till 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tasks 2 till 5" />
   </component>
 </project>
