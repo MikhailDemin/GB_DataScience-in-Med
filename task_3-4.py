@@ -8,6 +8,8 @@ num = lambda x, y: 1 / (x ** abs(y))
 
 print(num(float(input('enter positive x')), int(input('enter negative y'))))
 #  ------------------------------------------- вариант решения ---------------------------------------------------------
+
+
 def my_f(x, y):
     t = abs(y)
     i = 1
@@ -20,3 +22,51 @@ def my_f(x, y):
 
 
 print(num(float(input('enter positive x')), int(input('enter negative y'))))
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+
+
+def my_pow_fun(x, y):
+    try:
+        res = x ** y
+    except TypeError:
+        return "Enter a float number and a negative power"
+    return res
+
+
+print(my_pow_fun(4.5, -2))
+
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+
+
+def my_func2(x, y):
+    try:
+        x, y = float(x), int(y)
+        if x <= 0 or y >= 0:
+            return 'Не выполнено условие ввода данных:\nх должен быть больше 0\ny должен быть меньше 0'
+        else:
+            result = 1
+            for _ in range(abs(y)):
+                result /= x
+            return f'Результат возведения x в степень y: {round(result, 6)}'
+    except ValueError:
+        return "Программа работает только с числами."
+
+
+number1 = input('Введите действительное положительное число, x = ')
+number2 = input('Введите целое отрицательное число, y = ')
+
+print(my_func2(number1, number2))
+
+
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+#  рекурсия
+
+
+def i_involve_r(x, y):
+    return 1 if y == 0 else i_involve_r(x, y + 1) * 1 / x
+
+
+a = 2  # должно быть: действительное положительное число x
+b = -4  # должно быть: целое отрицательное число y
+
+print(f"Solved via recursion  {a} raised to power {b} = {i_involve_r(a, b)}")

@@ -14,3 +14,25 @@ def int_func():
 
 
 int_func()
+# nice авп ъghj jапро hjjпаро вапрghgh cool
+
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+
+
+def int_func(word):
+    latin_char = 'qwertyuiopasdfghjklzxcvbnm'
+    return word.title() if not set(word).difference(latin_char) else False
+
+
+words = input('Введите строку из слов разделнных пробелом: ').split()
+for w in words:
+    result = int_func(w)
+    if result:
+        print(int_func(w), ' ')
+
+
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+
+
+int_func = lambda word: word.title() if word.islower() and ascii(word)[1:-1].isalpha() else ''
+print(' _ '.join(map(int_func, input("Enter phrase: ").split())))
