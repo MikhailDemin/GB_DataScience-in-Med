@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="add tasks 2 till 5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2-5.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2-6.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2-6.py" afterDir="false" />
+    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="lesson 3 tasks added + tutor solutions">
+      <change afterPath="$PROJECT_DIR$/task_1-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_1-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_1-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_1-5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JetBrains.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetBrains.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_1-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_1-4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_2-6.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
