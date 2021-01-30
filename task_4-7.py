@@ -7,10 +7,41 @@ def fct_gen(num):
     f_num = 1
     if num == 0:
         yield f'{num}! = 1'
-    for i in range(1, num + 1):
+    for k in range(1, num + 1):
         f_num *= k
-        yield f'{i}! = {f_num}'
+        yield f'{k}! = {f_num}'
 
 
 for d in fct_gen(int(input('Fact. num: '))):
     print(d)
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+from functools import reduce
+
+
+def fact(n):
+    try:
+        yield reduce(lambda x, y: x * y, list(el if el > 0 else 1 for el in range(n + 1)))
+    except TypeError:
+        yield 0
+
+
+for i in fact(0):
+    print(i)
+#  ------------------------------------------- вариант решения ---------------------------------------------------------
+from itertools import count
+from math import factorial
+
+
+def fact_gen():
+    for el in count(1):
+        yield factorial(el)
+
+
+generator = fact_gen()
+x = 0
+for i in generator:
+    if x == 15:
+        break
+    else:
+        x += 1
+        print(f"Factorial {x} = {i}")
