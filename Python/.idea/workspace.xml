@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -14,9 +21,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="vcs://C:/Личка/Projects/JetBrains/task_1.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1nFYj5lPLnVPKIDLCpHSg3OVcZI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
