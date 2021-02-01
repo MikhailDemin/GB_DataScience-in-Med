@@ -12,3 +12,10 @@
 # Подсказка: использовать менеджер контекста.
 # my solution ####
 import json
+
+with open('text_5-7.json', 'w', encoding='utf-8') as out:
+    with open('text_7.txt', encoding='utf-8') as f_obj:
+        profit = {line.split()[0]: int(line.split()[2]) - int(line.split()[3]) for line in f_obj}
+        result = [profit, {'average': round(sum([int(i) for i in profit.values() if int(i) > 0]) /
+                                            len([int(i) for i in profit.values() if int(i) > 0]))}]
+    json.dump(result, out)
