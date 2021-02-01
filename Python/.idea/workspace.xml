@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d797ab29-b00e-493f-bebf-d506dfa76621" name="Default Changelist" comment="task 1">
+    <list default="true" id="d797ab29-b00e-493f-bebf-d506dfa76621" name="Default Changelist" comment="task 7">
+      <change afterPath="$PROJECT_DIR$/../5_lesson_python_basics.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5_lesson_python_basics/text_77.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_3.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../text_300.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_5-7.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task_5-7.py" afterDir="false" />
     </list>
@@ -117,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612198738327</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task 7">
+      <created>1612201070172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612201070172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +160,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
+    <MESSAGE value="task 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
