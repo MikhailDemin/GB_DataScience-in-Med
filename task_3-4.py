@@ -17,7 +17,7 @@ def my_f(x, y):
     while i <= t:
         res *= x
         i += 1
-        return res
+        # return res
     return round((1 / res), 5)
 
 

@@ -15,7 +15,7 @@ def my_f():
                 continue
             elif i.isdigit():
                 c_sum += int(i)
-        return c_sum
+        # return c_sum
         print(f'Total sum: {c_sum}')
 
 
