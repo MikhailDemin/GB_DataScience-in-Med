@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="lesson 3 tasks added + tutor solutions">
-      <change afterPath="$PROJECT_DIR$/task_1-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_1-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_1-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_1-5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JetBrains.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetBrains.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_1-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_1-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_6-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_6-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_6-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_6-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_6-5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/task_6-1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/task_6-2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/task_6-3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/task_6-4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/task_6-5.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test.py" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -60,7 +64,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="task_2-4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="JetBrains" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task_2-4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.task_2-4" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
