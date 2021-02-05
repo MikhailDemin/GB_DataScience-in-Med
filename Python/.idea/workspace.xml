@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d797ab29-b00e-493f-bebf-d506dfa76621" name="Default Changelist" comment="lesson_6 initial commit">
-      <change afterPath="$PROJECT_DIR$/task_6-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6-4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_6-5.py" afterDir="false" />
+    <list default="true" id="d797ab29-b00e-493f-bebf-d506dfa76621" name="Default Changelist" comment="lesson_6 my solution add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_3-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3-4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_3-5.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3-5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_3-6_join_3-7.py" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3-6_join_3-7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_6-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_6-1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_6-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_6-2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.google.cloudcode.ide_session_index" value="20210201_0001" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_3-6_join_3-7.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_6-4.py" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="ReaderModeSettings">
@@ -140,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612249399404</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lesson_6 my solution add">
+      <created>1612457265002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612457265002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +173,8 @@
     <MESSAGE value="task 1" />
     <MESSAGE value="task 7" />
     <MESSAGE value="lesson_6 initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson_6 initial commit" />
+    <MESSAGE value="lesson_6 my solution add" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson_6 my solution add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
