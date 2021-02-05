@@ -7,8 +7,8 @@
 def int_func():
     for wrd in input("enter some text: ").split():
         letter = 0
-        for letter in wrd:
-            if 'a' <= letter <= 'z':
+        for lttr in wrd:
+            if 'a' <= lttr <= 'z':
                 letter += 1
         print(wrd.title() if letter == len(wrd) else f'{wrd}')
 

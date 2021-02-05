@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d797ab29-b00e-493f-bebf-d506dfa76621" name="Default Changelist" comment="task 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +9,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="lesson_2" />
+        <entry key="$PROJECT_DIR$/.." value="lesson_7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -30,8 +29,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -65,7 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.task_1" />
+
       </list>
     </recent_temporary>
   </component>
@@ -85,7 +83,7 @@
       <option name="project" value="LOCAL" />
       <updated>1610992267640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +113,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
+
   </component>
 </project>
