@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d797ab29-b00e-493f-bebf-d506dfa76621" name="Default Changelist" comment="lesson_6 my solution add">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_6-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_6-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_6-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_6-2.py" afterDir="false" />
-    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -25,15 +13,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="vcs://C:/Личка/Projects/JetBrains/task_1.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1nFYj5lPLnVPKIDLCpHSg3OVcZI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -47,9 +29,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210201_0001" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_6-4.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -60,19 +40,19 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="task_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Михаил\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../task_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,10 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test" />
+
       </list>
     </recent_temporary>
   </component>
@@ -106,42 +83,7 @@
       <option name="project" value="LOCAL" />
       <updated>1610992267640</updated>
     </task>
-    <task id="LOCAL-00002" summary="task 1">
-      <created>1612051365262</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1612051365262</updated>
-    </task>
-    <task id="LOCAL-00003" summary="task 1">
-      <created>1612198738327</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1612198738327</updated>
-    </task>
-    <task id="LOCAL-00004" summary="task 7">
-      <created>1612201070172</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1612201070172</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson_6 initial commit">
-      <created>1612249399404</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1612249399404</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson_6 my solution add">
-      <created>1612457265002</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1612457265002</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +97,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson_5" />
+                        <option value="lesson_2" />
                       </list>
                     </value>
                   </entry>
@@ -171,60 +113,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="task 1" />
-    <MESSAGE value="task 7" />
-    <MESSAGE value="lesson_6 initial commit" />
-    <MESSAGE value="lesson_6 my solution add" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson_6 my solution add" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-6.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-6.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-6.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-5.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-5.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-7.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-7.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-7.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../task_4-7.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+
   </component>
 </project>
