@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="lesson 3 tasks added + tutor solutions">
-      <change afterPath="$PROJECT_DIR$/task_1-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_1-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_1-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_1-5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JetBrains.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetBrains.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="lesson 5 tasks recover">
+      <change afterPath="$PROJECT_DIR$/task_7-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_7-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_7-3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_01_2021_0_54__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_1-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_1-4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_2" />
+        <entry key="$PROJECT_DIR$" value="lesson_6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,8 +41,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_4-7.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -60,7 +57,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="task_2-4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="JetBrains" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,7 +69,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task_2-4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.task_2-4" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +143,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611218677754</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lesson 6 tasks moved to main folder">
+      <created>1612531255177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612531255177</updated>
+    </task>
+    <task id="LOCAL-00009" summary="lesson 6 tasks moved to main folder">
+      <created>1612531382588</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612531382588</updated>
+    </task>
+    <task id="LOCAL-00010" summary="lesson 6 tasks moved to main folder">
+      <created>1612531453722</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612531453722</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +178,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson_2" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -178,6 +197,7 @@
     <MESSAGE value="project files upload" />
     <MESSAGE value="file rename" />
     <MESSAGE value="add tasks 2 till 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tasks 2 till 5" />
+    <MESSAGE value="lesson 6 tasks moved to main folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 6 tasks moved to main folder" />
   </component>
 </project>
