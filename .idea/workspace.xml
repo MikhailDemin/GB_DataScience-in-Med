@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bf952dd-c63f-48ea-8401-750ad6d35c8e" name="Default Changelist" comment="lesson 6 tasks moved to main folder">
-      <change afterPath="$PROJECT_DIR$/task_5-1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_5-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_5-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_5-4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_5-5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_5-6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_5-7.py" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_2" />
+        <entry key="$PROJECT_DIR$" value="lesson_6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/task_6-5.py" />
+
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -84,6 +77,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +174,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson_2" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
