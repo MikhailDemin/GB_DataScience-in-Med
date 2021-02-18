@@ -4,23 +4,6 @@
 # валидацию числа, месяца и года (например, месяц — от 1 до 12). Проверить работу полученной структуры на
 # реальных данных.
 # my solution ####
-# class Date:
-#
-#     def __init__(self, day, month, year):
-#         self.day = day
-#         self.month = month
-#         self.year = year
-#
-#     @classmethod
-#     def numdata(cls, data):
-#         data = map(int, data)
-#         d, m, y = data
-#         return cls(d, m, y)
-#
-# x = input('введите дату в формате dd-mm-yyyy: ').split("-")
-#
-# set_day = Date.numdata(x)
-
 class Date:
 
     def __init__(self, day, month, year):
@@ -34,11 +17,13 @@ class Date:
         d, m, y = date
         return cls(d, m, y)
 
-
     @staticmethod
-    def valid(d, m, y):
-        if 1 <= d <= 31 and 1 <= m <= 12 and 1970 <= y <= 2099:
-            return f"число: {day} месяц: {month} год: {year}"
+    def valid(obj):
+        if obj.day <= 31 and obj.day != 0 and obj.month <= 12 and obj.month != 0 and obj.year <= 2099\
+                and obj.year > 1979:
+            return f"число: {obj.day} месяц: {obj.month} год: {obj.year}"
+        else:
+            return "WARNING! Date is incorrect"
 
 
 date_input = input("Enter date in format: dd-mm-yyyy").split("-")
@@ -47,3 +32,4 @@ test = Date.extract(date_input)
 # print(test.day, test.month, test.year)
 # print(test.__dict__)
 print(Date.valid(test))
+# Так и не понял как статик и класс взаимодействуют В классметоде переменные с другими именами.

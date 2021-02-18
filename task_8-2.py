@@ -13,7 +13,7 @@ y = int(input('enter divider'))
 try:
     if y == 0:
         raise OnZeroDelenie("Деление на ноль может выполнять только специально обученный персонал 'Black Mesa'!!!")
-except (OnZeroDelenie) as error:
+except OnZeroDelenie as error:
     print(error)
 else:
     result = x / y
