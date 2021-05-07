@@ -1,2 +1,1 @@
-# GB_DataScience-in-Med
-GeekBrains_DS Med_course_homeworks_and_projects
+04_Probability_theory_and_Maths_statistics_homeworks_and_projects
