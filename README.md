@@ -1,0 +1,2 @@
+# GB_DataScience-in-Med
+GeekBrains_DS Med_course_homeworks_and_projects
