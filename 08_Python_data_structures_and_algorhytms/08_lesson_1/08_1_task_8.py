@@ -5,6 +5,7 @@ print('Ведите 3 разных числа:')
 a = Decimal(input('a = '))
 b = Decimal(input('b = '))
 c = Decimal(input('c = '))
+print(f'a = {a}, b = {b}, c = {c}')
 
 mid = a + b + c - max(a, b, c) - min(a, b, c)
 
