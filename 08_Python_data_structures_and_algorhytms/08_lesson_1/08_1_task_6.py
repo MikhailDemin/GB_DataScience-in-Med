@@ -3,6 +3,7 @@
 # равнобедренным или равносторонним.
 from decimal import Decimal
 
+print('Введите длины трех отрезков:')
 a = Decimal(input('a = '))
 b = Decimal(input('b = '))
 c = Decimal(input('c = '))
