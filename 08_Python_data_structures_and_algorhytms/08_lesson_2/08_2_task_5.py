@@ -8,4 +8,4 @@ for i in range(32, 128):
     if k % 10 == 0:
         print()
 
-print(end)
+print()
