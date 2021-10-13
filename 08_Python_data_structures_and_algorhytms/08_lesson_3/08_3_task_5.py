@@ -27,3 +27,16 @@ while i < size:
 
 # Выведем значение и индекс макс отрицательного элемента:
 print(f'Максимальный отрицательный элемент = {array[index]}, его индекс: {index}')
+
+# Альтернативный вариант решения:
+# numbers = [-2, 3, 9, -13, 0, 32, 44, -1, -3, -43, 23, 99, 0, 9]
+# my_list = []
+# for i in range(len(numbers)):
+#     if numbers[i] < 0:
+#         my_list.append(abs(numbers[i]))
+# print(numbers)
+# max_element = my_list[0]
+# for i in range(len(my_list)):
+#     if my_list[i] < max_element:
+#         max_element = my_list[i]
+# print(max_element * -1)
