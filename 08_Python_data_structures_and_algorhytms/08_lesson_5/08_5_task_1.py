@@ -3,26 +3,35 @@
 # предприятий, чья прибыль выше среднего и ниже среднего.
 # ------------------------------------------------------
 # Решение:
-from collections import defaultdict
+import collections
 
+n = int(input('Введите количество компаний: '))
+companies = collections.defaultdict()
+prof_c = collections.deque()
+unprof_c = collections.deque()
+all_profit = 0
+QUARTER = 4
 
-companies = defaultdict()
-company_cnt = int(input("Введите количество предприятий: "))
+for i in range(n):
+    name = input(f'\nВведите название {i + 1}-й компании: ')
+    profit = 0
+    q = 1
+    while q <= QUARTER:
+        profit += float(input(f'Введите прибыль за {q}-й квартал: '))
+        q += 1
+    companies[name] = profit
+    all_profit += profit
 
-while company_cnt:
-    print("*" * 30)
-    name = input("Введите название предприятия: ")
-    companies[name] = float(input("Введите годовую прибыль предприятия: "))
-    company_cnt -= 1
-
-
-average = sum(companies.values()) / len(companies)
-
-print(f"Среднегодовая прибыль {len(companies)} предприятий составляет {average} руб")
-
-for name, profit in companies.items():
-    if profit > average:
-        print(f"Предприятие {name} имеет доход выше среднегодового")
-    elif profit < average:
-        print(f"Предприятие {name} имеет доход ниже среднегодового")
-
+mid_profit = all_profit / n
+for i, item in companies.items():
+    if item >= mid_profit:
+        prof_c.append(i)
+    else:
+        unprof_c.append(i)
+print(f'Средняя годовая прибыль по всем компаниям составляет: {mid_profit}')
+print(f'Прибыль выше среднего у {len(prof_c)} компаний, а именно:')
+for name in prof_c:
+    print(name)
+print(f'Прибыль ниже среднего у {len(unprof_c)} компаний, а именно:')
+for name in unprof_c:
+    print(name)
