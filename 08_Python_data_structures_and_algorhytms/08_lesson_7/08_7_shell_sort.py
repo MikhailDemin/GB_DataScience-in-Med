@@ -9,7 +9,7 @@ print(array)
 def shell_sort(array):
 
     # алгоритм работает на массивах менее 4000 элементов
-    assert len(array) < 4000, 'Array is very large. Use another sort method'
+    assert len(array) < 4000, 'Array is very large. Use another sort algorithm'
 
     def new_increment(array):
 
