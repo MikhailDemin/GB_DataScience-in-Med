@@ -14,10 +14,25 @@ while n < len(array):
     n += 1
     print(array)
 
+
+print(array)
+
 # классическая реализация сортировки пузырьком
 # for i in range(len(lst) - 1, 0, -1)
 #     for j in range(i):
 #         if lst[j] > lst[j + 1]:
 #             lst[j], lst[j + 1] = lst[j + 1], lst[j]
 
-print(array)
+
+# def bubble_sort(array):
+#     k = 0
+#     n = len(array)
+#     while True:
+#         c = 0
+#         for i in range(n - k - 1):
+#             j = n - i - 1
+#             if array[j] < array[j - 1]:
+#                 array[j], array[j - 1] = array[j - 1], array[j]
+#                 c += 1
+#         if c == 0:
+#             break
