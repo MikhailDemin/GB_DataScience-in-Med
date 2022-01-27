@@ -510,7 +510,26 @@ Ubuntu 20.4 LTS
   252  hostname -i
   253  sudo systemctl status ssh
   254  history
-
+  255  exit
+  256  hostname -i
+  257  hostname -I
+  258  who
+  259  whoami
+  260  ssh ubuntu@172.31.87.118
+  261  sudo ssh ubuntu@172.31.87.118
+  262  pwd
+  263  tree
+  264  ll
+  265  cd .ssh/
+  266  pwd
+  267  ll
+  268  nano authorized_keys
+  269  cd ~
+  270  ll
+  271  ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
+  272  ll
+  273  ls -a .ssh/
+  274  ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@172.31.87.118
 ------------------------------------------------------------------------------------------------------------------
 КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
 
