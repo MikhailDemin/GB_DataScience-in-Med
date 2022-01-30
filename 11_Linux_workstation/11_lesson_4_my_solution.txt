@@ -1,0 +1,442 @@
+Урок 4. Загрузка ОС и процессы
+
+Задание:
+1. Потоки ввода/вывода. Создать файл, используя команду echo. Используя команду cat, прочитать содержимое
+всех файлов каталога etc, ошибки перенаправить в отдельный файл.
+2. Конвейер (pipeline). Использовать команду cut на вывод длинного списка каталога, чтобы отобразить
+только права доступа к файлам. Затем отправить в конвейере этот вывод на sort и uniq, чтобы отфильтровать
+все повторяющиеся строки.
+3. Управление процессами.) Изменить конфигурационный файл службы SSH: /etc/ssh/sshd_config, отключив
+аутентификацию по паролю PasswordAuthentication no. Выполните рестарт службы
+systemctl restart sshd (service sshd restart), верните аутентификацию по паролю, выполните reload службы
+systemctl reload sshd (services sshd reload). В чём различие между действиями restart и reload? Создайте
+файл при помощи команды cat > file_name, напишите текст и завершите комбинацией ctrl+d. Какой сигнал
+передадим процессу?
+4. Сигналы процессам. Запустите mc. Используя ps, найдите PID процесса, завершите процесс, передав ему
+сигнал 9.
+
+В качестве решения необходимо прислать текстовый файл (*.txt) с набором используемых команд и
+их результатами (можно скопировать текст из консоли).
+------------------------------------------------------------------------------------------------------------------
+РЕШЕНИЕ:
+
+ubuntu@ip-172-31-87-118:~$ LESSON 4 HW
+LESSON: command not found
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ echo > file1
+ubuntu@ip-172-31-87-118:~$ дд
+дд: command not found
+ubuntu@ip-172-31-87-118:~$ ll
+total 68
+drwxr-xr-x 6 ubuntu ubuntu  4096 Jan 28 10:16 ./
+drwxr-xr-x 3 root   root    4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu ubuntu   186 Jan 28 08:15 .Xauthority
+-rw------- 1 ubuntu ubuntu  5907 Jan 28 08:15 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu ubuntu  4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu  4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu 11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  1334 Jan 25 12:57 .vimrc
+-rw-rw-r-- 1 ubuntu ubuntu     1 Jan 28 10:16 file1
+ubuntu@ip-172-31-87-118:~$ mv file1 file1.txt
+ubuntu@ip-172-31-87-118:~$ ll
+total 68
+drwxr-xr-x 6 ubuntu ubuntu  4096 Jan 28 10:17 ./
+drwxr-xr-x 3 root   root    4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu ubuntu   186 Jan 28 08:15 .Xauthority
+-rw------- 1 ubuntu ubuntu  5907 Jan 28 08:15 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu ubuntu  4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu  4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu 11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  1334 Jan 25 12:57 .vimrc
+-rw-rw-r-- 1 ubuntu ubuntu     1 Jan 28 10:16 file1.txt
+ubuntu@ip-172-31-87-118:~$ cat /etc/* 2>errors.txt
+# /etc/adduser.conf: `adduser' configuration.
+# See adduser(8) and adduser.conf(5) for full documentation.
+
+# The DSHELL variable specifies the default login shell on your
+# system.
+DSHELL=/bin/bash
+
+# The DHOME variable specifies the directory containing users' home
+# directories.
+DHOME=/home
+
+# If GROUPHOMES is "yes", then the home directories will be created as
+# /home/groupname/user.
+GROUPHOMES=no
+***
+***
+***
+cat: /etc/rc6.d: Is a directory
+cat: /etc/rcS.d: Is a directory
+cat: /etc/rsyslog.d: Is a directory
+cat: /etc/security: Is a directory
+cat: /etc/selinux: Is a directory
+cat: /etc/shadow: Permission denied
+cat: /etc/shadow-: Permission denied
+cat: /etc/skel: Is a directory
+cat: /etc/sos: Is a directory
+cat: /etc/ssh: Is a directory
+cat: /etc/ssl: Is a directory
+cat: /etc/sudoers: Permission denied
+cat: /etc/sudoers.d: Permission denied
+cat: /etc/sysctl.d: Is a directory
+cat: /etc/systemd: Is a directory
+cat: /etc/terminfo: Is a directory
+cat: /etc/tmpfiles.d: Is a directory
+cat: /etc/ubuntu-advantage: Is a directory
+cat: /etc/udev: Is a directory
+cat: /etc/udisks2: Is a directory
+cat: /etc/ufw: Is a directory
+cat: /etc/update-manager: Is a directory
+cat: /etc/update-motd.d: Is a directory
+cat: /etc/update-notifier: Is a directory
+cat: /etc/vim: Is a directory
+cat: /etc/vmware-tools: Is a directory
+cat: /etc/xdg: Is a directory
+ubuntu@ip-172-31-87-118:~$ tail file1.txt
+
+ubuntu@ip-172-31-87-118:~$ cat /etc/* 1>file1.txt 2>errors.txt
+ubuntu@ip-172-31-87-118:~$ tail file1.txt
+# installation of packages available from the repository
+
+if [[ -x /usr/lib/command-not-found ]] ; then
+   if (( ! ${+functions[command_not_found_handler]} )) ; then
+     function command_not_found_handler {
+        [[ -x /usr/lib/command-not-found ]] || return 1
+        /usr/lib/command-not-found --no-failure-msg -- ${1+"$1"} && :
+     }
+   fi
+fi
+ubuntu@ip-172-31-87-118:~$ tail errors.txt
+cat: /etc/ubuntu-advantage: Is a directory
+cat: /etc/udev: Is a directory
+cat: /etc/udisks2: Is a directory
+cat: /etc/ufw: Is a directory
+cat: /etc/update-manager: Is a directory
+cat: /etc/update-motd.d: Is a directory
+cat: /etc/update-notifier: Is a directory
+cat: /etc/vim: Is a directory
+cat: /etc/vmware-tools: Is a directory
+cat: /etc/xdg: Is a directory
+ubuntu@ip-172-31-87-118:~$ nano errors.txt
+ubuntu@ip-172-31-87-118:~$ ll
+total 324
+drwxr-xr-x 6 ubuntu ubuntu   4096 Jan 28 10:21 ./
+drwxr-xr-x 3 root   root     4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu ubuntu    186 Jan 28 08:15 .Xauthority
+-rw------- 1 ubuntu ubuntu   5907 Jan 28 08:15 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu    220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu   3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu   4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu ubuntu   4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu ubuntu   4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu    807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu   4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu      0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu  11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu   1334 Jan 25 12:57 .vimrc
+-rw-rw-r-- 1 ubuntu ubuntu   3471 Jan 28 10:20 errors.txt
+-rw-rw-r-- 1 ubuntu ubuntu 260769 Jan 28 10:20 file1.txt
+-rw-rw-r-- 1 ubuntu ubuntu      0 Jan 28 10:19 file1.txt2
+ubuntu@ip-172-31-87-118:~$ rm file1.txt2
+ubuntu@ip-172-31-87-118:~$ ll
+total 324
+drwxr-xr-x 6 ubuntu ubuntu   4096 Jan 28 10:21 ./
+drwxr-xr-x 3 root   root     4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu ubuntu    186 Jan 28 08:15 .Xauthority
+-rw------- 1 ubuntu ubuntu   5907 Jan 28 08:15 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu    220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu   3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu   4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu ubuntu   4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu ubuntu   4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu    807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu   4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu      0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu  11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu   1334 Jan 25 12:57 .vimrc
+-rw-rw-r-- 1 ubuntu ubuntu   3471 Jan 28 10:20 errors.txt
+-rw-rw-r-- 1 ubuntu ubuntu 260769 Jan 28 10:20 file1.txt
+ubuntu@ip-172-31-87-118:~$ ls -l | cut -b -10 | sort | uniq
+-rw-rw-r--
+total 260
+ubuntu@ip-172-31-87-118:~$
+
+**********************************************
+COMMENT: Так как в моем случае авторизация по паролю была отключена изначально - поменяем
+на обратное значение: PasswordAuthentication yes
+**********************************************
+
+ubuntu@ip-172-31-87-118:~$ sudo nano /etc/ssh/sshd_config
+ubuntu@ip-172-31-87-118:~$ htop
+
+  CPU[|                                           0.7%]   Tasks: 34, 46 thr; 1 running
+  Mem[|||||||||||||||||||||||||||||||||||||||222M/969M]   Load average: 0.00 0.00 0.00
+  Swp[                                           0K/0K]   Uptime: 2 days, 12:32:58
+
+    PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+    597 root       20   0 12184  6800  5876 S  0.0  0.7  0:00.71 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /u
+ 630609 root       20   0 12184  7048  6228 S  0.0  0.7  0:00.00 sshd: [accepted]
+ 629543 root       20   0 13804  8888  7444 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 629618 ubuntu     20   0 13936  6288  4740 S  0.0  0.6  0:00.19 sshd: ubuntu@pts/1
+F1Help  F2Setup F3SearchF4FilterF5Tree  F6SortByF7Nice -F8Nice +F9Kill  F10Quit
+
+**********************************************
+WINDOWS TERMINAL:
+C:\***\****>ssh ubuntu@ec2-18-212-35-93.compute-1.amazonaws.com
+ubuntu@ec2-18-212-35-93.compute-1.amazonaws.com: Permission denied (publickey)
+**********************************************
+
+ubuntu@ip-172-31-87-118:~$ systemctl restart sshd
+
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to restart 'ssh.service'.
+Authenticating as: Ubuntu (ubuntu)
+Password:
+==== AUTHENTICATION COMPLETE ===
+ubuntu@ip-172-31-87-118:~$ htop
+
+  CPU[||                                            1.3%]   Tasks: 40, 42 thr; 1 running
+  Mem[|||||||||||||||||||||||||||||||||||||||||178M/969M]   Load average: 0.07 0.03 0.01
+  Swp[                                             0K/0K]   Uptime: 2 days, 21:28:42
+
+    PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+ 638117 root       20   0 12184  7492  6572 S  0.0  0.8  0:00.18 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/s 647894 root       20   0 13804  8824  7380 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 647995 ubuntu     20   0 13936  6240  4692 S  0.0  0.6  0:00.40 sshd: ubuntu@pts/0
+ 649423 root       20   0 11172  4664  3952 S  0.0  0.5  0:00.00 sudo ssh ubuntu@172.31.87.118
+ 649424 root       20   0 12244  6100  5396 S  0.0  0.6  0:00.00 ssh ubuntu@172.31.87.118
+ 649425 root       20   0 13936  9160  7700 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 649545 ubuntu     20   0 14068  5328  3860 S  0.0  0.5  0:00.00 sshd: ubuntu@pts/1
+ 649672 root       20   0 13936  9068  7608 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 649786 ubuntu     20   0 14068  5364  3896 S  0.0  0.5  0:00.01 sshd: ubuntu@pts/2
+
+Password:
+ ubuntu@ip-172-31-87-118:~$ systemctl reload sshd
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to reload 'ssh.service'.
+Authenticating as: Ubuntu (ubuntu)
+Password:
+==== AUTHENTICATION COMPLETE ===
+ubuntu@ip-172-31-87-118:~$ htop
+
+
+  CPU[|                                             1.3%]   Tasks: 41, 42 thr; 1 running
+  Mem[|||||||||||||||||||||||||||||||||||||||||179M/969M]   Load average: 0.00 0.01 0.00
+  Swp[                                             0K/0K]   Uptime: 2 days, 21:31:01
+
+    PID USER      PRI  NI  VIRT   RES   SHR S CPU% MEM%   TIME+  Command
+ 638117 root       20   0 12184  6916  6072 S  0.0  0.7  0:00.18 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/s 647894 root       20   0 13804  8824  7380 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 647995 ubuntu     20   0 13936  6240  4692 S  0.0  0.6  0:00.50 sshd: ubuntu@pts/0
+ 649423 root       20   0 11172  4664  3952 S  0.0  0.5  0:00.00 sudo ssh ubuntu@172.31.87.118
+ 649424 root       20   0 12244  6100  5396 S  0.0  0.6  0:00.02 ssh ubuntu@172.31.87.118
+ 649425 root       20   0 13936  9160  7700 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 649545 ubuntu     20   0 14068  6048  4568 S  0.0  0.6  0:00.01 sshd: ubuntu@pts/1
+ 649672 root       20   0 13936  9068  7608 S  0.0  0.9  0:00.01 sshd: ubuntu [priv]
+ 649786 ubuntu     20   0 14068  5364  3896 S  0.0  0.5  0:00.02 sshd: ubuntu@pts/2
+
+**********************************************
+WINDOWS TERMINAL:
+C:\***\****>ssh ubuntu@ec2-18-212-35-93.compute-1.amazonaws.com
+ubuntu@ec2-18-212-35-93.compute-1.amazonaws.com's password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-1027-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Jan 30 00:03:05 UTC 2022
+
+  System load:  0.0               Processes:             115
+  Usage of /:   28.5% of 7.69GB   Users logged in:       1
+  Memory usage: 26%               IPv4 address for eth0: 172.31.87.118
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+0 updates can be applied immediately.
+
+
+Last login: Sun Jan 30 00:02:39 2022 from 172.31.87.118
+ubuntu@ip-172-31-87-118:~$ htop
+**********************************************
+
+Разница между reload и restart
+ - reload - Process ID сохраняется, при этом перечитываются настройки и внесенные изменения
+   вступают в силу без перезапуска процесса
+ - restart - перезапуск процесса с новым Process ID
+
+**********************************************
+
+ubuntu@ip-172-31-87-118:~$ cat cat_file
+cat: cat_file: No such file or directory
+ubuntu@ip-172-31-87-118:~$ cat > cat_file
+12
+23
+43
+52
+522
+123
+2144
+52
+12312
+342
+324
+34234
+234234
+231
+1231
+234235
+3241223
+123132
+442
+434243ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ more cat_file
+12
+23
+43
+52
+522
+123
+2144
+52
+12312
+342
+324
+34234
+234234
+231
+1231
+234235
+3241223
+123132
+442
+434243
+ubuntu@ip-172-31-87-118:~$
+
+**********************************************
+
+При нажатии комбинации CTRL+D посылаем сигнал об окончании ввода
+
+**********************************************
+
+ubuntu@ip-172-31-87-118:~$ mc
+
+ubuntu@ip-172-31-87-118:~$ ps
+    PID TTY          TIME CMD
+ 665929 pts/3    00:00:00 bash
+ 666003 pts/3    00:00:00 ps
+
+ubuntu@ip-172-31-87-118:~$ ps
+    PID TTY          TIME CMD
+ 665929 pts/3    00:00:00 bash
+ 666256 pts/3    00:00:00 ps
+
+ubuntu@ip-172-31-87-118:~$ ps -au
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         460  0.0  0.1   5608  1732 ttyS0    Ss+  Jan27   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400
+root         468  0.0  0.1   5836  1604 tty1     Ss+  Jan27   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+ubuntu    647996  0.0  0.5  10040  5124 pts/0    Ss   Jan29   0:00 -bash
+root      649423  0.0  0.4  11172  4664 pts/0    S+   00:02   0:00 sudo ssh ubuntu@172.31.87.118
+root      649424  0.0  0.6  12244  6100 pts/0    S+   00:02   0:00 ssh ubuntu@172.31.87.118
+ubuntu    649546  0.0  0.5  10172  5292 pts/1    Ss   00:02   0:00 -bash
+ubuntu    656949  0.0  0.5  10040  5064 pts/2    Ss+  00:22   0:00 -bash
+ubuntu    665927  0.0  0.8  19628  8476 pts/1    S+   00:47   0:00 mc
+ubuntu    665929  0.0  0.5  10004  5112 pts/3    Ss   00:47   0:00 bash -rcfile .bashrc
+ubuntu    666991  0.0  0.3  10624  3348 pts/3    R+   00:50   0:00 ps -au
+ubuntu@ip-172-31-87-118:~$ ps -au | grep mc
+ubuntu    665927  0.0  0.8  19628  8476 pts/1    S+   00:47   0:00 mc
+ubuntu    667174  0.0  0.0   8168   736 pts/3    S+   00:50   0:00 grep --color=auto mc
+ubuntu@ip-172-31-87-118:~$ kill -s 9 665927
+Killed
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ mc
+
+ubuntu@ip-172-31-87-118:~$ ps -au | grep mc
+ubuntu    667975  0.0  0.8  19628  8140 pts/1    S+   00:52   0:00 mc
+ubuntu    668080  0.0  0.0   8168   724 pts/3    S+   00:53   0:00 grep --color=auto mc
+ubuntu@ip-172-31-87-118:~$ kill 9 667975
+bash: kill: (9) - Operation not permitted
+Terminated
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ mc
+
+ubuntu@ip-172-31-87-118:~$ ps -au | grep mc
+ubuntu    672118  0.0  0.8  19628  8436 pts/1    S+   01:04   0:00 mc
+ubuntu    672169  0.0  0.0   8168   736 pts/3    S+   01:04   0:00 grep --color=auto mc
+ubuntu@ip-172-31-87-118:~$ kill 15 672118
+bash: kill: (15) - Operation not permitted
+Terminated
+ubuntu@ip-172-31-87-118:~$
+
+-----------------------------------------------------------------------------------------------------------------
+ИСТОРИЯ КОМАНД:
+
+ 450  LESSON 4 HW
+  451  echo > file1
+  452  дд
+  453  ll
+  454  mv file1 file1.txt
+  455  ll
+  456  cat /etc/* 2>errors.txt
+  457  (xterm-256color)*300
+  458  cat /etc/* 1>file1.txt2>errors.txt
+  459  tail file1.txt
+  460  cat /etc/* 1>file1.txt 2>errors.txt
+  461  tail file1.txt
+  462  tail errors.txt
+  463  nano errors.txt
+  464  ll
+  465  rm file1.txt2
+  466  ll
+  467  ls -l | cut -b -10 | sort | uniq
+  468  ls -l | cut -f 1 -d ' ' | sort -u
+  469  ls -l | awk '{print $1}' | sort | uniq
+  470  history
+  471  nano /etc/ssh/sshd_config
+  472  sudo nano /etc/ssh/sshd_config
+  473  sudo passwd ubuntu
+  474  sudo nano /etc/ssh/sshd_config
+  475  systemctl ssh status
+  476  systemctl status ssh
+  477  history
+  478  sudo nano /etc/ssh/sshd_config
+  479  htop
+  480  sudo ssh ubuntu@172.31.87.118
+  481  systemctl restart sshd
+  482  htop
+  483  systemctl restart sshd
+  484  htop
+  485  systemctl reload sshd
+  486  htop
+  487  exit
+  488  ll
+  489  htop
+  490  history
+
+------------------------------------------------------------------------------------------------------------------
+КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
+
+Кирилл Иванов・Преподаватель
+Не увидел создание файла командой echo в 1 задании. Надеюсь, это не вызывает вопросов.
+
+Ключиком '-u' в команде sort можно сделать то же, что и утилитой uniq. Подробности есть
+в справке по команде: "sort --help".
+
+Вторую задачу с конвейером можно также решить с помощью утилиты awk. Пример разбирали
+на следующем (пятом) занятии.

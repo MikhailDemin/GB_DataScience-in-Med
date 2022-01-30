@@ -1,0 +1,539 @@
+Урок 2. Настройка и знакомство с интерфейсом командной строки
+
+Задание:
+1. Создать каталоги students и mentors в домашней директории, а в них — текстовые файлы students_list.txt и
+ mentors_list.txt соответственно.
+2. Открыть созданные в п.1 файлы в любом текстовом редакторе и заполнить их (в соответствии с названием) списком
+ Ваших одногруппников и наставников на данном потоке.
+3. Переместите файл mentors_list.txt в папку students.
+4. Удалите папку mentors.
+5. Переименуйте папку students в students_and_mentors.
+6. Удалите папку students_and_mentors вместе с содержимым.
+7. Подключитесь к машине с Linux по протоколу SSH.
+8. (*) Используя дополнительный материал, настроить авторизацию по SSH с использованием ключей.
+
+В качестве решения необходимо прислать текстовый файл (*.txt) с набором используемых команд и их
+ результатами (можно скопировать текст из консоли).
+------------------------------------------------------------------------------------------------------------------
+РЕШЕНИЕ:
+
+ubuntu@ip-172-31-87-118:~$ mkdir students mentors
+ubuntu@ip-172-31-87-118:~$ ll
+total 68
+drwxr-xr-x 8 ubuntu ubuntu  4096 Jan 25 13:07 ./
+drwxr-xr-x 3 root   root    4096 Jan 22 17:35 ../
+-rw------- 1 ubuntu ubuntu   124 Jan 25 08:05 .Xauthority
+-rw------- 1 ubuntu ubuntu  1812 Jan 25 06:38 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .cache/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .config/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu  4096 Jan 22 17:35 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu 10788 Jan 25 13:02 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  1334 Jan 25 12:57 .vimrc
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan 25 13:07 mentors/
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan 25 13:07 students/
+ubuntu@ip-172-31-87-118:~$ cd ~
+ubuntu@ip-172-31-87-118:~$ cd students/
+ubuntu@ip-172-31-87-118:~/students$ echo students_list.txt
+students_list.txt
+ubuntu@ip-172-31-87-118:~/students$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 25 13:07 ./
+drwxr-xr-x 8 ubuntu ubuntu 4096 Jan 25 13:07 ../
+ubuntu@ip-172-31-87-118:~/students$ tree
+.
+
+0 directories, 0 files
+ubuntu@ip-172-31-87-118:~/students$ nano students_list.txt
+ubuntu@ip-172-31-87-118:~/students$ tree
+.
+└── students_list.txt
+
+0 directories, 1 file
+ubuntu@ip-172-31-87-118:~/students$ cd~
+
+Command 'cd~' not found, did you mean:
+
+  command 'cdi' from deb cdo (1.9.9~rc1-1)
+  command 'cde' from deb cde (0.1+git9-g551e54d-1.1build1)
+  command 'cdw' from deb cdw (0.8.1-1build4)
+  command 'cdp' from deb irpas (0.10-7)
+  command 'cdb' from deb tinycdb (0.78build1)
+  command 'cd5' from deb cd5 (0.1-4)
+  command 'cdo' from deb cdo (1.9.9~rc1-1)
+
+Try: sudo apt install <deb name>
+
+ubuntu@ip-172-31-87-118:~/students$ cd ~
+ubuntu@ip-172-31-87-118:~$ tree
+.
+├── mentors
+└── students
+    └── students_list.txt
+
+2 directories, 1 file
+ubuntu@ip-172-31-87-118:~$ touch mentors/mentors_list.txt
+ubuntu@ip-172-31-87-118:~$ tree
+.
+├── mentors
+│   └── mentors_list.txt
+└── students
+    └── students_list.txt
+
+2 directories, 2 files
+ubuntu@ip-172-31-87-118:~$ echo 'Арслан Еркинов' >> mentors/mentors_list.txt
+ubuntu@ip-172-31-87-118:~$ head mentors/mentors_list.txt
+Арслан Еркинов
+ubuntu@ip-172-31-87-118:~$ nano mentors/mentors_list.txt
+ubuntu@ip-172-31-87-118:~$ ll
+total 68
+drwxr-xr-x 8 ubuntu ubuntu  4096 Jan 25 13:07 ./
+drwxr-xr-x 3 root   root    4096 Jan 22 17:35 ../
+-rw------- 1 ubuntu ubuntu   124 Jan 25 08:05 .Xauthority
+-rw------- 1 ubuntu ubuntu  1812 Jan 25 06:38 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .cache/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .config/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu  4096 Jan 22 17:35 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu 10788 Jan 25 13:02 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  1334 Jan 25 12:57 .vimrc
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan 25 13:23 mentors/
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan 25 13:12 students/
+ubuntu@ip-172-31-87-118:~$ tree
+.
+├── mentors
+│   └── mentors_list.txt
+└── students
+    └── students_list.txt
+
+2 directories, 2 files
+ubuntu@ip-172-31-87-118:~$ mv mentors/mentors_list.txt students/
+ubuntu@ip-172-31-87-118:~$ tree
+.
+├── mentors
+└── students
+    ├── mentors_list.txt
+    └── students_list.txt
+
+2 directories, 2 files
+ubuntu@ip-172-31-87-118:~$ rm mentors/ -r
+ubuntu@ip-172-31-87-118:~$ tree
+.
+└── students
+    ├── mentors_list.txt
+    └── students_list.txt
+
+1 directory, 2 files
+ubuntu@ip-172-31-87-118:~$ less students/students_list.txt
+ubuntu@ip-172-31-87-118:~$ mv students/ students_and_mentors/
+ubuntu@ip-172-31-87-118:~$ tree
+.
+└── students_and_mentors
+    ├── mentors_list.txt
+    └── students_list.txt
+
+1 directory, 2 files
+ubuntu@ip-172-31-87-118:~$ rm students_and_mentors/ -r
+ubuntu@ip-172-31-87-118:~$ tree
+.
+
+0 directories, 0 files
+ubuntu@ip-172-31-87-118:~$ ll
+total 60
+drwxr-xr-x 6 ubuntu ubuntu  4096 Jan 25 13:31 ./
+drwxr-xr-x 3 root   root    4096 Jan 22 17:35 ../
+-rw------- 1 ubuntu ubuntu   124 Jan 25 08:05 .Xauthority
+-rw------- 1 ubuntu ubuntu  1812 Jan 25 06:38 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .cache/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .config/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu  4096 Jan 22 17:35 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu 10788 Jan 25 13:02 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  1334 Jan 25 12:57 .vimrc
+ubuntu@ip-172-31-87-118:~$
+----------------------------------------------------------------------------------------------------------------
+7. Подключитесь к машине с Linux по протоколу SSH.
+
+ubuntu@ip-172-31-87-118:~$ hostnamectl
+   Static hostname: ip-172-31-87-118
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: 26b681ffa93e4700b0005fb86399977b
+           Boot ID: 3c63c084180a4a6e8258da5464b6840e
+    Virtualization: xen
+  Operating System: Ubuntu 20.04.3 LTS
+            Kernel: Linux 5.11.0-1022-aws
+      Architecture: x86-64
+ubuntu@ip-172-31-87-118:~$ whoami
+ubuntu
+ubuntu@ip-172-31-87-118:~$ hostnamectl i
+Unknown operation i.
+ubuntu@ip-172-31-87-118:~$ hostnamectl -i
+hostnamectl: invalid option -- 'i'
+ubuntu@ip-172-31-87-118:~$ ssh ubuntu@172.31.87.118
+The authenticity of host '172.31.87.118 (172.31.87.118)' can't be established.
+ECDSA key fingerprint is SHA256:m6OHFnDjprHUGAsVYe7A6ayjs4nrsjPmLvqLGFHKj/8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '172.31.87.118' (ECDSA) to the list of known hosts.
+ubuntu@172.31.87.118: Permission denied (publickey).
+ubuntu@ip-172-31-87-118:~$ ll
+total 60
+drwxr-xr-x 6 ubuntu ubuntu  4096 Jan 25 13:31 ./
+drwxr-xr-x 3 root   root    4096 Jan 22 17:35 ../
+-rw------- 1 ubuntu ubuntu   124 Jan 25 08:05 .Xauthority
+-rw------- 1 ubuntu ubuntu  1812 Jan 25 06:38 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .cache/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .config/
+drwx------ 3 ubuntu ubuntu  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu ubuntu  4096 Jan 25 13:40 .ssh/
+-rw-r--r-- 1 ubuntu ubuntu     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu ubuntu 10788 Jan 25 13:02 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  1334 Jan 25 12:57 .vimrc
+ubuntu@ip-172-31-87-118:~$ cd .ssh/
+ubuntu@ip-172-31-87-118:~/.ssh$ ll
+total 16
+drwx------ 2 ubuntu ubuntu 4096 Jan 25 13:40 ./
+drwxr-xr-x 6 ubuntu ubuntu 4096 Jan 25 13:31 ../
+-rw------- 1 ubuntu ubuntu  409 Jan 22 17:35 authorized_keys
+-rw-r--r-- 1 ubuntu ubuntu  222 Jan 25 13:40 known_hosts
+ubuntu@ip-172-31-87-118:~/.ssh$ nano authorized_keys
+ubuntu@ip-172-31-87-118:~/.ssh$
+
+ubuntu@ip-172-31-87-118:~$ sudo apt install openssh-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Уже установлен пакет openssh-server самой новой версии (1:8.2p1-4ubuntu0.4).
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 3 пакетов не обновлено.
+ubuntu@ip-172-31-87-118:~$ sudo systemctl start ssh
+ubuntu@ip-172-31-87-118:~$ sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable ssh
+ubuntu@ip-172-31-87-118:~$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+    Drop-In: /usr/lib/systemd/system/ssh.service.d
+             └─ec2-instance-connect.conf
+     Active: active (running) since Sun 2022-01-23 01:24:44 UTC; 4 days ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 15953 (sshd)
+      Tasks: 1 (limit: 1147)
+     Memory: 7.8M
+     CGroup: /system.slice/ssh.service
+             └─15953 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys>
+
+Jan 27 02:00:00 ip-172-31-87-118 sshd[569677]: Disconnected from invalid user user 92.255.85.135 port 59004 [preauth]
+Jan 27 02:10:34 ip-172-31-87-118 sshd[572380]: Received disconnect from 221.181.185.159 port 63829:11:  [preauth]
+Jan 27 02:10:34 ip-172-31-87-118 sshd[572380]: Disconnected from authenticating user root 221.181.185.159 port 63829 [preauth]
+Jan 27 02:12:32 ip-172-31-87-118 sshd[572385]: Invalid user user from 92.255.85.237 port 42566
+Jan 27 02:12:32 ip-172-31-87-118 sshd[572385]: Received disconnect from 92.255.85.237 port 42566:11: Bye Bye [preauth]
+Jan 27 02:12:32 ip-172-31-87-118 sshd[572385]: Disconnected from invalid user user 92.255.85.237 port 42566 [preauth]
+Jan 27 02:18:09 ip-172-31-87-118 sshd[572399]: Accepted publickey for ubuntu from 95.167.68.14 port 65356 ssh2: RSA SHA256:Sw>
+Jan 27 02:18:09 ip-172-31-87-118 sshd[572399]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Jan 27 02:18:23 ip-172-31-87-118 sshd[572555]: Accepted publickey for ubuntu from 95.167.68.14 port 52604 ssh2: RSA SHA256:Sw>
+Jan 27 02:18:23 ip-172-31-87-118 sshd[572555]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+lines 1-23/23 (END)
+----------------------------------------------------------------------------------------------------------------
+Комментарий по поводу задания 7 и 8*:
+Не совсем понятно квкой результат я должен получить и получил ли его? При попытке узнать статус SSH
+сессия терминала MobaXterm зависает. Приходится переподключаться. Кроме того ответ (приведенный выше) не такой
+как в уроке -  система пишет про не валидного пользователя и отключение. При этом я подключаюсь с помощью
+приватного ключа.
+При попытке подключиться по SSH в терминале получаю 'permission denied'.
+
+ubuntu@ip-172-31-87-118:~$ ssh ubuntu@172.31.87.118
+ubuntu@172.31.87.118: Permission denied (publickey).
+ubuntu@ip-172-31-87-118:~$ sudo ssh ubuntu@172.31.87.118
+The authenticity of host '172.31.87.118 (172.31.87.118)' can't be established.
+ECDSA key fingerprint is SHA256:***************************************************
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '172.31.87.118' (ECDSA) to the list of known hosts.
+ubuntu@172.31.87.118: Permission denied (publickey).
+
+
+Если можно - объясните пожалуйста в чем моя ошибка и что мне нужно делать.
+Ubuntu 20.4 LTS
+крутится через AWS.
+-----------------------------------------------------------------------------------------------------------------
+ИСТОРИЯ КОМАНД:
+   19  lesson 2
+   20  sudo apt update
+   21  sudo apt install openssh-server -y
+   22  sudo systemctl enable ssh
+   23  sudo systemctl start ssh
+   24  sudo systemctl status ssh
+   25  ip addr
+   26  hostname
+   27  hostname -I
+   28  hostname -i
+   29  hostname
+   30  uname
+   31  hostnamectl
+   32  systemctl status ssh
+   33  echo 'Hello world'
+   34  clear
+   35  hostnamectl
+   36  uname
+   37  systemctl status ssh
+   38  pwd
+   39  cd..
+   40  cd/home
+   41  pwd
+   42  cd /home
+   43  cd ..
+   44  cd ~
+   45  pwd
+   46  cd -
+   47  cd ~
+   48  pwd
+   49  history
+   50  ls
+   51  ls -l
+   52  ls -a
+   53  ls -al
+   54  cd /
+   55  pwd
+   56  ls -al
+   57  ls /etc
+   58  cat /etc/os-release
+   59  cd ~
+   60  cd -l /etc
+   61  cd /
+   62  cd /etc
+   63  ls -al
+   64  cd ~
+   65  pwd
+   66  ls /var -al
+   67  ll
+   68  mkdir test
+   69  pwd
+   70  ls
+   71  cd /test
+   72  cd test
+   73  ls -al
+   74  cd ../../../
+   75  pwd
+   76  cd ~/test
+   77  mkdir f2 f3
+   78  ll
+   79  mkdir 2/3/4/ -p
+   80  tree
+   81  sudo apt install tree
+   82  tree
+   83  cd /
+   84  pwd
+   85  mkdir myfolder
+   86  sudo mkdir myfolder
+   87  history
+   88  pwd
+   89  ls
+   90  rmdir myfolder
+   91  sudo rmdir myfolder
+   92  ls
+   93  ls -l
+   94  cd ~/test
+   95  ls -l
+   96  ll
+   97  touch file1.txt
+   98  ll
+   99  echo > file2.txt
+  100  ll
+  101  cat >file3
+  102  history
+  103  cd ~/test
+  104  tree
+  105  mv file3 file33.txt
+  106  ll
+  107  rm file33.txt
+  108  ll
+  109  rm folder* -r
+  110  ll
+  111  tree
+  112  rm --help
+  113  sudo apt update
+  114  apt list
+  115  apt list --upgradable
+  116  sudo apt upgrade
+  117  apt list --upgradable
+  118  apt list
+  119  sudo apt install cruft
+  120  sudo cruft -r cruftreport
+  121  ll
+  122  less cruftreport
+  123  ll
+  124  rm cruftreport
+  125  ll
+  126  tree
+  127  rm 2/ -r
+  128  ll
+  129  cd ~
+  130  ll
+  131  rm test/ -r
+  132  ll
+  133  history
+  134  more --help
+  135  more -V
+  136  man more
+  137  more +20 LaTeX.txt
+  138  cd loc/
+  139  more +20 LaTeX.txt
+  140  more +20 LaTeX_rules.txt
+  141  tail LaTeX_rules.txt
+  142  sudoedit /etc/default/locale
+  143  tail LaTeX_rules.txt
+  144  cd loc/
+  145  ll
+  146  nano +200,15 LaTeX_rules.txt
+  147  nano ~/LaTeX_rules.txt
+  148  ll
+  149  nano
+  150  ll
+  151  rm /loc -r
+  152  cd ~
+  153  rm /loc -r
+  154  rm loc/ -r]
+  155  rm loc/ -r
+  156  ll
+  157  tree
+  158  rm LaTeX_rules.txt
+  159  ll
+  160  nano
+  161  ll
+  162  more file1.txt
+  163  nano -B file1.txt
+  164  ll
+  165  head file1.txt~
+  166  nano +2,5 file1.txt
+  167  vim
+  168  vim file1.txt
+  169  head file1.txt
+  170  vim file1.txt
+  171  vimtutor
+  172  vimtutor ru
+  173  ybstory
+  174  vimtutor ru
+  175  tree
+  176  vim TEST.TXT
+  177  vimtutor ru
+  178  tree
+  179  rm *txt
+  180  ll
+  181  rm file1.txt~ frag test
+  182  ll
+  183  tree
+  184  vimtutor ru
+  185  cd ..
+  186  ll
+  187  tree
+  188  cd ~
+  189  ll
+  190  vimtutor ru
+  191  ll
+  192  vimtutor ru
+  193  history
+  194  mkdir students mentors
+  195  ll
+  196  cd ~
+  197  cd students/
+  198  echo students_list.txt
+  199  ll
+  200  tree
+  201  nano students_list.txt
+  202  tree
+  203  cd~
+  204  cd ~
+  205  tree
+  206  touch mentors/mentors_list.txt
+  207  tree
+  208  echo 'Арслан Еркинов' >> mentors/mentors_list.txt
+  209  head mentors/mentors_list.txt
+  210  nano mentors/mentors_list.txt
+  211  ll
+  212  tree
+  213  mv mentors/mentors_list.txt students/
+  214  tree
+  215  rm mentors/ -r
+  216  tree
+  217  less students/students_list.txt
+  218  mv students/ students_and_mentors/
+  219  tree
+  220  rm students_and_mentors/ -r
+  221  tree
+  222  ll
+  223  hostnamectl
+  224  whoami
+  225  hostnamectl i
+  226  hostnamectl -i
+  227  ssh ubuntu@172.31.87.118
+  228  ll
+  229  cd .ssh/
+  230  ll
+  231  nano authorized_keys
+  232  history
+  233  sudo apt install openssh-server -y
+  234  sudo systemctl start ssh
+  235  sudo systemctl enable ssh
+  236  sudo systemctl status ssh
+  237  tree
+  238  nano file1.txt
+  239  tree
+  240  rm file1.txt
+  241  tree
+  242  sudo apt --upgradable
+  243  apt list --upgradable
+  244  sudo apt upgrade
+  245  reboot
+  246  sudo reboot
+  247  who
+  248  whoami
+  249  hostnamectl -I
+  250  hostnamectl --I
+  251  hostname -I
+  252  hostname -i
+  253  sudo systemctl status ssh
+  254  history
+  255  exit
+  256  hostname -i
+  257  hostname -I
+  258  who
+  259  whoami
+  260  ssh ubuntu@172.31.87.118
+  261  sudo ssh ubuntu@172.31.87.118
+  262  pwd
+  263  tree
+  264  ll
+  265  cd .ssh/
+  266  pwd
+  267  ll
+  268  nano authorized_keys
+  269  cd ~
+  270  ll
+  271  ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
+  272  ll
+  273  ls -a .ssh/
+  274  ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@172.31.87.118
+------------------------------------------------------------------------------------------------------------------
+КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
+
+Кирилл Иванов・Преподаватель
+Для безопасного удаления пустых папок удобно также использовать команду rmdir.
+Не увидел команды ssh для подключения к удаленной машине. Надеюсь, эта тема не вызывает затруднений.
+
