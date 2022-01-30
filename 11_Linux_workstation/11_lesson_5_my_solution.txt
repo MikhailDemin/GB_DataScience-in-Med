@@ -26,11 +26,1174 @@
 ------------------------------------------------------------------------------------------------------------------
 РЕШЕНИЕ:
 
+ubuntu@ip-172-31-87-118:~$ LESSON 5 HW
+LESSON: command not found
+ubuntu@ip-172-31-87-118:~$ touch file1
+ubuntu@ip-172-31-87-118:~$ cat > file1
+24121431435
+342
+53
+453
+4523
+452
+3452
+3452
+34
+21
+r
+eqr
+gw45
+twr
+g234
+t23t
+5twr
 
+34t254
+2
+523t
+2435
+234
+t2
+5
+tewgeh
+45t3r
+ew45234rt45
+23rwet4
+23 t2344 432
+23$#4343234t234t2fewr
+g
+#
+
+
+        2w32    qrq
+4rq
+3rq
+34r
+f
+
+4r      4
+r
+4
+        42
+
+4
+ubuntu@ip-172-31-87-118:~$ tail file1
+3rq
+34r
+f
+
+4r      4
+r
+4
+        42
+
+4
+ubuntu@ip-172-31-87-118:~$ cp file1 file2
+ubuntu@ip-172-31-87-118:~$ ll
+total 76
+drwxr-xr-x 6 ubuntu   1001  4096 Jan 30 10:49 ./
+drwxr-xr-x 3 root   root    4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu   1001   186 Jan 29 23:58 .Xauthority
+-rw------- 1 ubuntu   1001 10182 Jan 30 10:20 .bash_history
+-rw-r--r-- 1 ubuntu   1001   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu   1001  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu   1001  4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu   1001  4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu   1001  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu   1001   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu   1001  4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu   1001     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu   1001 11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu   1001  1334 Jan 25 12:57 .vimrc
+-rw-rw-r-- 1 ubuntu ubuntu   232 Jan 30 10:48 file1
+-rw-rw-r-- 1 ubuntu ubuntu   232 Jan 30 10:49 file2
+ubuntu@ip-172-31-87-118:~$ ln -s file1 file3
+ubuntu@ip-172-31-87-118:~$ ll
+total 76
+drwxr-xr-x 6 ubuntu   1001  4096 Jan 30 10:49 ./
+drwxr-xr-x 3 root   root    4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu   1001   186 Jan 29 23:58 .Xauthority
+-rw------- 1 ubuntu   1001 10182 Jan 30 10:20 .bash_history
+-rw-r--r-- 1 ubuntu   1001   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu   1001  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu   1001  4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu   1001  4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu   1001  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu   1001   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu   1001  4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu   1001     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu   1001 11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu   1001  1334 Jan 25 12:57 .vimrc
+-rw-rw-r-- 1 ubuntu ubuntu   232 Jan 30 10:48 file1
+-rw-rw-r-- 1 ubuntu ubuntu   232 Jan 30 10:49 file2
+lrwxrwxrwx 1 ubuntu ubuntu     5 Jan 30 10:49 file3 -> file1
+ubuntu@ip-172-31-87-118:~$ ln file1 file4
+ubuntu@ip-172-31-87-118:~$ mv file1 file2 file3 file4 LESSON_5_HW/
+mv: target 'LESSON_5_HW/' is not a directory
+ubuntu@ip-172-31-87-118:~$ mv file1 file2 file3 file4 /LESSON_5_HW
+mv: target '/LESSON_5_HW' is not a directory
+ubuntu@ip-172-31-87-118:~$ mkdir LESSON_5_HW
+ubuntu@ip-172-31-87-118:~$ mv file1 file2 file3 file4 /LESSON_5_HW
+mv: target '/LESSON_5_HW' is not a directory
+ubuntu@ip-172-31-87-118:~$ mv file1 file2 file3 file4 LESSON_5_HW/
+ubuntu@ip-172-31-87-118:~$ ll
+total 72
+drwxr-xr-x 7 ubuntu   1001  4096 Jan 30 10:52 ./
+drwxr-xr-x 3 root   root    4096 Jan 28 08:14 ../
+-rw------- 1 ubuntu   1001   186 Jan 29 23:58 .Xauthority
+-rw------- 1 ubuntu   1001 10182 Jan 30 10:20 .bash_history
+-rw-r--r-- 1 ubuntu   1001   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 ubuntu   1001  3771 Feb 25  2020 .bashrc
+drwx------ 3 ubuntu   1001  4096 Jan 23 00:45 .cache/
+drwx------ 5 ubuntu   1001  4096 Jan 28 08:49 .config/
+drwx------ 3 ubuntu   1001  4096 Jan 23 00:45 .local/
+-rw-r--r-- 1 ubuntu   1001   807 Feb 25  2020 .profile
+drwx------ 2 ubuntu   1001  4096 Jan 27 05:08 .ssh/
+-rw-r--r-- 1 ubuntu   1001     0 Jan 22 23:04 .sudo_as_admin_successful
+-rw------- 1 ubuntu   1001 11014 Jan 25 14:06 .viminfo
+-rw-rw-r-- 1 ubuntu   1001  1334 Jan 25 12:57 .vimrc
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan 30 10:52 LESSON_5_HW/
+ubuntu@ip-172-31-87-118:~$ tree
+.
+└── LESSON_5_HW
+    ├── file1
+    ├── file2
+    ├── file3 -> file1
+    └── file4
+
+1 directory, 4 files
+ubuntu@ip-172-31-87-118:~$ cd LESSON_5_HW/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 10:52 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 10:52 ../
+-rw-rw-r-- 2 ubuntu ubuntu  232 Jan 30 10:48 file1
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file2
+lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+-rw-rw-r-- 2 ubuntu ubuntu  232 Jan 30 10:48 file4
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ls -li
+total 12
+256704 -rw-rw-r-- 2 ubuntu ubuntu 232 Jan 30 10:48 file1
+283201 -rw-rw-r-- 1 ubuntu ubuntu 232 Jan 30 10:49 file2
+283203 lrwxrwxrwx 1 ubuntu ubuntu   5 Jan 30 10:49 file3 -> file1
+256704 -rw-rw-r-- 2 ubuntu ubuntu 232 Jan 30 10:48 file4
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ rm file1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ls -li
+total 8
+283201 -rw-rw-r-- 1 ubuntu ubuntu 232 Jan 30 10:49 file2
+283203 lrwxrwxrwx 1 ubuntu ubuntu   5 Jan 30 10:49 file3 -> file1
+256704 -rw-rw-r-- 1 ubuntu ubuntu 232 Jan 30 10:48 file4
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$
+
+**********************************************
+softlink (file3) is broken
+hardlink (file4) still works
+**********************************************
+
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cat file3
+cat: file3: No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cat file4
+24121431435
+342
+53
+453
+4523
+452
+3452
+3452
+34
+21
+r
+eqr
+gw45
+twr
+g234
+t23t
+5twr
+
+34t254
+2
+523t
+2435
+234
+t2
+5
+tewgeh
+45t3r
+ew45234rt45
+23rwet4
+23 t2344 432
+23$#4343234t234t2fewr
+g
+#
+
+
+        2w32    qrq
+4rq
+3rq
+34r
+f
+
+4r      4
+r
+4
+        42
+
+4
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mv file1 file_10
+mv: cannot stat 'file1': No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cp file2 file_10
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mv file2 file_20
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:05 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 10:52 ../
+lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:48 file4
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 11:04 file_10
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file_20
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ln -s file_10 file_10_soft
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ln -s $(pwd)/file_20 file_20_soft
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:14 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:48 file4
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 11:04 file_10
+lrwxrwxrwx 1 ubuntu ubuntu    7 Jan 30 11:10 file_10_soft -> file_10
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file_20
+lrwxrwxrwx 1 ubuntu ubuntu   32 Jan 30 11:14 file_20_soft -> /home/ubuntu/LESSON_5_HW/file_20
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mkdir links
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mv file_10_soft file_20_soft /links
+mv: target '/links' is not a directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mv file_10_soft file_20_soft links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 24
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jan 30 11:15 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:48 file4
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 11:04 file_10
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file_20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:15 links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ tree
+.
+├── file3 -> file1
+├── file4
+├── file_10
+├── file_20
+└── links
+    ├── file_10_soft -> file_10
+    └── file_20_soft -> /home/ubuntu/LESSON_5_HW/file_20
+
+1 directory, 6 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cd links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:15 ./
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jan 30 11:15 ../
+lrwxrwxrwx 1 ubuntu ubuntu    7 Jan 30 11:10 file_10_soft -> file_10
+lrwxrwxrwx 1 ubuntu ubuntu   32 Jan 30 11:14 file_20_soft -> /home/ubuntu/LESSON_5_HW/file_20
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cat file_10_soft
+cat: file_10_soft: No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cat file_20_soft
+24121431435
+342
+53
+453
+4523
+452
+3452
+3452
+34
+21
+r
+eqr
+gw45
+twr
+g234
+t23t
+5twr
+
+34t254
+2
+523t
+2435
+234
+t2
+5
+tewgeh
+45t3r
+ew45234rt45
+23rwet4
+23 t2344 432
+23$#4343234t234t2fewr
+g
+#
+
+
+        2w32    qrq
+4rq
+3rq
+34r
+f
+
+4r      4
+r
+4
+        42
+
+4
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cd .
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cd..
+cd..: command not found
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cd ..
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 24
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jan 30 11:15 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:48 file4
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 11:04 file_10
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file_20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:15 links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ls -li
+total 16
+283203 lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+256704 -rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:48 file4
+518317 -rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 11:04 file_10
+283201 -rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file_20
+518322 drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:15 links
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cat file4
+24121431435
+342
+53
+453
+4523
+452
+3452
+3452
+34
+21
+r
+eqr
+gw45
+twr
+g234
+t23t
+5twr
+
+34t254
+2
+523t
+2435
+234
+t2
+5
+tewgeh
+45t3r
+ew45234rt45
+23rwet4
+23 t2344 432
+23$#4343234t234t2fewr
+g
+#
+
+
+        2w32    qrq
+4rq
+3rq
+34r
+f
+
+4r      4
+r
+4
+        42
+
+4
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mv file4 links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cd links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cat file4
+24121431435
+342
+53
+453
+4523
+452
+3452
+3452
+34
+21
+r
+eqr
+gw45
+twr
+g234
+t23t
+5twr
+
+34t254
+2
+523t
+2435
+234
+t2
+5
+tewgeh
+45t3r
+ew45234rt45
+23rwet4
+23 t2344 432
+23$#4343234t234t2fewr
+g
+#
+
+
+        2w32    qrq
+4rq
+3rq
+34r
+f
+
+4r      4
+r
+4
+        42
+
+4
+
+**********************************************
+При перемещении в другую папку мягкие ссылки продолжают работать при условии если задать
+абсолютный путь к оригинальному файлу
+Жёсткая ссылка работает даже после удаления оригинального файла и перемещения в другую папку
+**********************************************
+
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/links$ cd ..
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 20
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jan 30 11:21 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+lrwxrwxrwx 1 ubuntu ubuntu    5 Jan 30 10:49 file3 -> file1
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 11:04 file_10
+-rw-rw-r-- 1 ubuntu ubuntu  232 Jan 30 10:49 file_20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:21 links/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ rm *
+rm: cannot remove 'links': Is a directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ rm -r links
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 11:28 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ touch file1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ touch file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod 664 file1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod 600 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod 777 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rwxrwxrwx 1 ubuntu ubuntu    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod u-x, g-rwx, o-rwx file2
+chmod: invalid mode: ‘u-x,’
+Try 'chmod --help' for more information.
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod --help
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+  or:  chmod [OPTION]... OCTAL-MODE FILE...
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+With --reference, change the mode of each FILE to that of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's mode instead of MODE values
+  -R, --recursive        change files and directories recursively
+      --help     display this help and exit
+      --version  output version information and exit
+
+Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report chmod translation bugs to <https://translationproject.org/team/>
+Full documentation at: <https://www.gnu.org/software/coreutils/chmod>
+or available locally via: info '(coreutils) chmod invocation'
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod u=rw, g-rwx, o-rwx file2
+chmod: invalid mode: ‘u=rw,’
+Try 'chmod --help' for more information.
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod g-rwx, o-rwx file2
+chmod: invalid mode: ‘g-rwx,’
+Try 'chmod --help' for more information.
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rwxrwxrwx 1 ubuntu ubuntu    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod 664 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod u=rw,g-rw,o-r file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod 777 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rwxrwxrwx 1 ubuntu ubuntu    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ chmod u-x,g-rwx,o-rwx file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:20 ./
+drwxr-xr-x 7 ubuntu   1001 4096 Jan 30 11:11 ../
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo useradd -ms /bin/bash dev1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo useradd -ms /bin/bash dev2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ tail etc/passwd
+tail: cannot open 'etc/passwd' for reading: No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ tail /etc/passwd
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+dev1:x:1001:1001::/home/dev1:/bin/bash
+dev2:x:1002:1002::/home/dev2:/bin/bash
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cd ..
+ubuntu@ip-172-31-87-118:~$ cd ..
+ubuntu@ip-172-31-87-118:/home$ ll
+total 20
+drwxr-xr-x  5 root   root 4096 Jan 30 15:31 ./
+drwxr-xr-x 19 root   root 4096 Jan 27 02:40 ../
+drwxr-xr-x  2 dev1   dev1 4096 Jan 30 15:31 dev1/
+drwxr-xr-x  2 dev2   dev2 4096 Jan 30 15:31 dev2/
+drwxr-xr-x  7 ubuntu dev1 4096 Jan 30 11:11 ubuntu/
+ubuntu@ip-172-31-87-118:/home$ cd .
+ubuntu@ip-172-31-87-118:/home$ cd .
+ubuntu@ip-172-31-87-118:/home$ cd ubuntu/LESSON_5_HW/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo groupadd dev_team
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo usermod -aG dev_team dev1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo usermod -aG dev_team dev2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ tail /etc/group
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+dev1:x:1001:
+dev2:x:1002:
+dev_team:x:1003:dev1,dev2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mkdir dev_team_dir
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 12
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jan 30 15:36 ./
+drwxr-xr-x 7 ubuntu dev1   4096 Jan 30 11:11 ../
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan 30 15:36 dev_team_dir/
+-rw-rw-r-- 1 ubuntu ubuntu    0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu    0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo chown -R :dev_team dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 12
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:36 ./
+drwxr-xr-x 7 ubuntu dev1     4096 Jan 30 11:11 ../
+drwxrwxr-x 2 ubuntu dev_team 4096 Jan 30 15:36 dev_team_dir/
+-rw-rw-r-- 1 ubuntu ubuntu      0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu      0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo chmod -R 2774 dev_team_dir/_
+chmod: cannot access 'dev_team_dir/_': No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo chown -R :ubuntu dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo chmod -R 2774 dev_team_dir/_
+chmod: cannot access 'dev_team_dir/_': No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo chown -R :dev_team dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ sudo chmod -R 2774 dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 12
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:36 ./
+drwxr-xr-x 7 ubuntu dev1     4096 Jan 30 11:11 ../
+drwxrwsr-- 2 ubuntu dev_team 4096 Jan 30 15:36 dev_team_dir/
+-rw-rw-r-- 1 ubuntu ubuntu      0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu      0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cat > dev_team_dir/dev_file
+esfgdv
+erge
+aerg
+ergeg
+qegq
+egqegubuntu@ip-172-31-87-118:~/LESSON_5_HW$
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cat dev_team_dir/dev_file
+esfgdv
+erge
+aerg
+ergeg
+qegq
+egqegubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cd dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 2 ubuntu dev_team 4096 Jan 30 15:45 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:36 ../
+-rw-rw-r-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ su dev1
+Password:
+
+su: Authentication failure
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ whoami
+ubuntu
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ mkdir dev_share
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 16
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:47 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:36 ../
+-rw-rw-r-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file
+drwxrwsr-x 2 ubuntu dev_team 4096 Jan 30 15:47 dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ chmod +t -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 16
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:47 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:36 ../
+-rw-rw-r-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file
+drwxrwxr-t 2 ubuntu dev_team 4096 Jan 30 15:47 dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cd ..
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 12
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:36 ./
+drwxr-xr-x 7 ubuntu dev1     4096 Jan 30 11:11 ../
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:47 dev_team_dir/
+-rw-rw-r-- 1 ubuntu ubuntu      0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu      0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ tree
+.
+├── dev_team_dir
+│   ├── dev_file
+│   └── dev_share
+├── file1
+└── file2
+
+2 directories, 3 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ mv file1 file2 dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ ll
+total 12
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ./
+drwxr-xr-x 7 ubuntu dev1     4096 Jan 30 11:11 ../
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:51 dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ tree
+.
+└── dev_team_dir
+    ├── dev_file
+    ├── dev_share
+    ├── file1
+    └── file2
+
+2 directories, 3 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW$ cd dev_team_dir/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 16
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:51 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rw-rw-r-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file
+drwxrwxr-t 2 ubuntu dev_team 4096 Jan 30 15:47 dev_share/
+-rw-rw-r-- 1 ubuntu ubuntu      0 Jan 30 15:20 file1
+-rw------- 1 ubuntu ubuntu      0 Jan 30 15:20 file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chmod -R 2774 dev_team_dir/
+chmod: cannot access 'dev_team_dir/': No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chmod -R 2774 .
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 16
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:51 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwsr-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file*
+drwxrwsr-- 2 ubuntu dev_team 4096 Jan 30 15:47 dev_share/
+-rwxrwsr-- 1 ubuntu ubuntu      0 Jan 30 15:20 file1*
+-rwxrwsr-- 1 ubuntu ubuntu      0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chown -R :dev_team dev_team_dir/
+chown: cannot access 'dev_team_dir/': No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chown -R :dev_team .
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 16
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:51 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file*
+drwxrwsr-- 2 ubuntu dev_team 4096 Jan 30 15:47 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file1*
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ mv file1 .file1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ls
+dev_file  dev_share  file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 16
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:55 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+-rwxrwxr-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file*
+drwxrwsr-- 2 ubuntu dev_team 4096 Jan 30 15:47 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tree
+.
+├── dev_file
+├── dev_share
+└── file2
+
+1 directory, 2 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cd dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ ll
+total 8
+drwxrwsr-- 2 ubuntu dev_team 4096 Jan 30 15:47 ./
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:55 ../
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ cd ..
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ mv dev_file dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tree
+.
+├── dev_share
+│   └── dev_file
+└── file2
+
+1 directory, 2 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ chmod +t -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+drwxrwxr-T 2 ubuntu dev_team 4096 Jan 30 15:57 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cd dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ ll
+total 12
+drwxrwxr-T 2 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ../
+-rwxrwxr-T 1 ubuntu dev_team   33 Jan 30 15:45 dev_file*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ chmod -t -R .
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ ll
+total 12
+drwxrwxr-- 2 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ../
+-rwxrwxr-- 1 ubuntu dev_team   33 Jan 30 15:45 dev_file*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ chmod +t -R .
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ ll
+total 12
+drwxrwxr-T 2 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ../
+-rwxrwxr-T 1 ubuntu dev_team   33 Jan 30 15:45 dev_file*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir/dev_share$ cd ..
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ls
+dev_share  file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chmod 000 -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+d--------- 2 ubuntu dev_team 4096 Jan 30 15:57 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tree
+.
+├── dev_share [error opening dir]
+└── file2
+
+1 directory, 1 file
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cat dev_share/dev_file
+cat: dev_share/dev_file: Permission denied
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chmod 774 -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+drwxrwxr-- 2 ubuntu dev_team 4096 Jan 30 15:57 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ chmod +t -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+drwxrwxr-T 2 ubuntu dev_team 4096 Jan 30 15:57 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chmod 775 -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+drwxrwxr-x 2 ubuntu dev_team 4096 Jan 30 15:57 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ chmod +t -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ll
+total 12
+drwxrwsr-- 3 ubuntu dev_team 4096 Jan 30 15:57 ./
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jan 30 15:51 ../
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 .file1*
+drwxrwxr-t 2 ubuntu dev_team 4096 Jan 30 15:57 dev_share/
+-rwxrwxr-- 1 ubuntu dev_team    0 Jan 30 15:20 file2*
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ls
+dev_share  file2
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tree
+.
+├── dev_share
+│   └── dev_file
+└── file2
+
+1 directory, 2 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ ^C
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cat file1
+cat: file1: No such file or directory
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cat .file1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ more .file1
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ cat > .file1
+werfda
+wearfd
+ we
+we
+rewubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tail .file1
+werfda
+wearfd
+ we
+we
+rewubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tree
+.
+├── dev_share
+│   └── dev_file
+└── file2
+
+1 directory, 2 files
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo chmod 000 -R dev_share/
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ екуу
+екуу: command not found
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ tree
+.
+├── dev_share [error opening dir]
+└── file2
+
+1 directory, 1 file
+ubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$ sudo cat dev_share/dev_file
+esfgdv
+erge
+aerg
+ergeg
+qegq
+egqegubuntu@ip-172-31-87-118:~/LESSON_5_HW/dev_team_dir$
+
+**********************************************
+Присвоение прав 000 -R к папке не является решением задания 6*, так как в данном случае файл
+не возможно открыть без прав root. Сокрытие файла через более верное решение.
+**********************************************
 
 -----------------------------------------------------------------------------------------------------------------
 ИСТОРИЯ КОМАНД:
 
+  503  LESSON 5
+  504  ll
+  505  chmod 640 file1.txt
+  506  ll
+  507  mv file1.txt file1
+  508  mv errors.txt errors_
+  509  ll
+  510  mkdir test
+  511  ll
+  512  mv cat_file file1 errors_ /test
+  513  mv cat_file, file1, errors_ /test
+  514  mv cat_file /test
+  515  chmod 764 /test
+  516  chmod 764 test/
+  517  ll
+  518  chmod 765 test/
+  519  ll
+  520  chmod 775 test/
+  521  ll
+  522  mv cat_file test/
+  523  ll
+  524  tree
+  525  mv errors_ file1 test/
+  526  tree
+  527  chmod 440 test/cat_file
+  528  ll /test
+  529  ll test/
+  530  chmod u+s test/f*
+  531  ll test/
+  532  cd test/
+  533  ll
+  534  chmod u-s /f*
+  535  chmod u-s f*
+  536  ll
+  537  chmod 664 f*
+  538  ll
+  539  chmod 674 f1
+  540  ll
+  541  chmod g+s *
+  542  ll
+  543  rm f3
+  544  ll
+  545  chmod g-s *
+  546  ll
+  547  chmod +t .
+  548  ll
+  549  chmod -t .
+  550  ll
+  551  sudo chown root f1
+  552  ll
+  553  history
+  554  LESSON 5 HW
+  555  sudo addgroup dev_t
+  556  tail /etc/group
+  557  sudo chown root:dev_t -R .
+  558  ll
+  559  sudo ll
+  560  cd ~
+  561  ll
+  562  cd test/
+  563  sudo cd test/
+  564  sudo chown ubuntu:dev_t -R .
+  565  ll
+  566  cd test/
+  567  ll
+  568  sudo delgroup dev_t
+  569  tail /etc/group
+  570  cd ~
+  571  rm -r test/
+  572  ll
+  573  LESSON 5 HW
+  574  touch file1
+  575  cat > file1
+  576  tail file1
+  577  cp file1 file2
+  578  ll
+  579  ln -s file1 file3
+  580  ll
+  581  ln file1 file4
+  582  mv file1 file2 file3 file4 LESSON_5_HW/
+  583  mv file1 file2 file3 file4 /LESSON_5_HW
+  584  mkdir LESSON_5_HW
+  585  mv file1 file2 file3 file4 /LESSON_5_HW
+  586  mv file1 file2 file3 file4 LESSON_5_HW/
+  587  ll
+  588  tree
+  589  cd LESSON_5_HW/
+  590  ll
+  591  ls -li
+  592  rm file1
+  593  ls -li
+  594  cat file3
+  595  cat file4
+  596  mv file1 file_10
+  597  cp file2 file_10
+  598  mv file2 file_20
+  599  ll
+  600  ln -s file_10 file_10_soft
+  601  ln -s $(pwd)/file_20 file_20_soft
+  602  ll
+  603  mkdir links
+  604  mv file_10_soft file_20_soft /links
+  605  mv file_10_soft file_20_soft links/
+  606  ll
+  607  tree
+  608  cd links/
+  609  ll
+  610  cat file_10_soft
+  611  cat file_20_soft
+  612  cd .
+  613  cd..
+  614  cd ..
+  615  ll
+  616  ls -li
+  617  cat file4
+  618  mv file4 links/
+  619  cd links/
+  620  cat file4
+  621  cd ..
+  622  ll
+  623  rm *
+  624  rm -r links
+  625  ll
+  626  touch file1
+  627  touch file2
+  628  ll
+  629  chmod 664 file1
+  630  ll
+  631  chmod 600 file2
+  632  ll
+  633  chmod 777 file2
+  634  ll
+  635  chmod u-x, g-rwx, o-rwx file2
+  636  chmod --help
+  637  chmod u=rw, g-rwx, o-rwx file2
+  638  chmod g-rwx, o-rwx file2
+  639  ll
+  640  chmod 664 file2
+  641  ll
+  642  chmod u=rw,g-rw,o-r file2
+  643  ll
+  644  chmod 777 file2
+  645  ll
+  646  chmod u-x,g-rwx,o-rwx file2
+  647  ll
+  648  sudo useradd -ms /bin/bash dev1
+  649  sudo useradd -ms /bin/bash dev2
+  650  tail etc/passwd
+  651  tail /etc/passwd
+  652  cd ..
+  653  ll
+  654  cd .
+  655  cd ubuntu/LESSON_5_HW/
+  656  sudo groupadd dev_team
+  657  sudo usermod -aG dev_team dev1
+  658  sudo usermod -aG dev_team dev2
+  659  tail /etc/group
+  660  mkdir dev_team_dir
+  661  ll
+  662  sudo chown -R :dev_team dev_team_dir/
+  663  ll
+  664  sudo chmod -R 2774 dev_team_dir/_
+  665  sudo chown -R :ubuntu dev_team_dir/
+  666  sudo chmod -R 2774 dev_team_dir/_
+  667  sudo chown -R :dev_team dev_team_dir/
+  668  sudo chmod -R 2774 dev_team_dir/
+  669  ll
+  670  cat > dev_team_dir/dev_file
+  671  cat dev_team_dir/dev_file
+  672  cd dev_team_dir/
+  673  ll
+  674  su dev1
+  675  whoami
+  676  mkdir dev_share
+  677  ll
+  678  chmod +t -R dev_share/
+  679  ll
+  680  cd ..
+  681  ll
+  682  tree
+  683  mv file1 file2 dev_team_dir/
+  684  ll
+  685  tree
+  686  cd dev_team_dir/
+  687  ll
+  688  sudo chmod -R 2774 dev_team_dir/
+  689  sudo chmod -R 2774 .
+  690  ll
+  691  sudo chown -R :dev_team dev_team_dir/
+  692  sudo chown -R :dev_team .
+  693  ll
+  694  mv file1 .file1
+  695  ls
+  696  ll
+  697  tree
+  698  cd dev_share/
+  699  ll
+  700  cd ..
+  701  mv dev_file dev_share/
+  702  tree
+  703  chmod +t -R dev_share/
+  704  ll
+  705  cd dev_share/
+  706  ll
+  707  chmod -t -R .
+  708  ll
+  709  chmod +t -R .
+  710  ll
+  711  cd ..
+  712  ls
+  713  sudo chmod 000 -R dev_share/
+  714  ll
+  715  tree
+  716  cat dev_share/dev_file
+  717  sudo chmod 774 -R dev_share/
+  718  ll
+  719  chmod +t -R dev_share/
+  720  ll
+  721  sudo chmod 775 -R dev_share/
+  722  ll
+  723  chmod +t -R dev_share/
+  724  ll
+  725  ls
+  726  tree
+  727  cat file1
+  728  cat .file1
+  729  more .file1
+  730  cat > .file1
+  731  tail .file1
+  732  tree
+  733  sudo chmod 000 -R dev_share/
+  734  екуу
+  735  tree
+  736  sudo cat dev_share/dev_file
+  737  sudo chmod 664 -R dev_share/
+  738  cd ..
+  739  sudo deluser dev1
+  740  sudo groupdel dev1
+  741  tail /etc/group
+  742  sudo groupdel dev_team
+  743  sudo userdel dev2 -r
+  744  tail /etc/group
+  745  cd ..
+  746  ll
+  747  cd ..
+  748  ll
+  749  rm dev1 -r
+  750  ll
+  751  sudo rmdir dev1
+  752  sudo rmdir -r dev1
+  753  rm -r div1
+  754  rm -r dev1
+  755  rm --help
+  756  rm -R dev1
+  757  rm -R dev1/
+  758  ll
+  759  rm -rf dev1/
+  760  sudo rm -rf dev1/
+  761  ll
+  762  cd ubuntu
+  763  tree
+  764  ll
+  765  cd LE
+  766  cd LESSON_5_HW/
+  767  ll
+  768  cd ..
+  769  sudo chown -R ubuntu:ubuntu .
+  770  ll
+  771  tail /etc/group
+  772  sudo chmod -R 777 LESSON_5_HW/
+  773  ll
+  774  rm -r LESSON_5_HW/
+  775  ll
+  776  history
 
 ------------------------------------------------------------------------------------------------------------------
 КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
