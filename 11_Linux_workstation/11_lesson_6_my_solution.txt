@@ -13,6 +13,278 @@
 ------------------------------------------------------------------------------------------------------------------
 РЕШЕНИЕ:
 
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat > user_3x.sh
+#! /bin/bash
+for n in {1..3};
+do
+
+ echo $USER;
+done
+
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat user_3x.sh
+#! /bin/bash
+for n in {1..3};
+do
+
+ echo $USER;
+done
+
+ubuntu@ip-172-31-87-118:~/LESSON_6$ nano user_3x.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Feb  2 14:01 ./
+drwxr-xr-x 7 ubuntu ubuntu 4096 Feb  2 06:01 ../
+-rwxrw-r-- 1 ubuntu ubuntu  117 Feb  1 14:21 until_sample.sh*
+-rw-rw-r-- 1 ubuntu ubuntu   52 Feb  2 14:01 user_3x.sh
+-rwxrw-r-- 1 ubuntu ubuntu   71 Feb  1 14:08 while_sample.sh*
+ubuntu@ip-172-31-87-118:~/LESSON_6$ chmod u+x *
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Feb  2 14:01 ./
+drwxr-xr-x 7 ubuntu ubuntu 4096 Feb  2 06:01 ../
+-rwxrw-r-- 1 ubuntu ubuntu  117 Feb  1 14:21 until_sample.sh*
+-rwxrw-r-- 1 ubuntu ubuntu   52 Feb  2 14:01 user_3x.sh*
+-rwxrw-r-- 1 ubuntu ubuntu   71 Feb  1 14:08 while_sample.sh*
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./user_3x.sh
+ubuntu
+ubuntu
+ubuntu
+ubuntu@ip-172-31-87-118:~/LESSON_6$ nano user_3x.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./user_3x.sh
+1 ubuntu
+2 ubuntu
+3 ubuntu
+ubuntu@ip-172-31-87-118:~/LESSON_6$ nano while_sample.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./while_sample.sh
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+100
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat user_3x.sh
+#! /bin/bash
+for n in {1..3};
+do
+ echo $n $USER;
+done
+
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./user_3x.sh
+1 ubuntu
+2 ubuntu
+3 ubuntu
+ubuntu@ip-172-31-87-118:~/LESSON_6$ mv while_sample.sh lesson_6_task_2_solution.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Feb  2 14:08 ./
+drwxr-xr-x 7 ubuntu ubuntu 4096 Feb  2 06:01 ../
+-rwxrw-r-- 1 ubuntu ubuntu   72 Feb  2 14:05 lesson_6_task_2_solution.sh*
+-rwxrw-r-- 1 ubuntu ubuntu  117 Feb  1 14:21 until_sample.sh*
+-rwxrw-r-- 1 ubuntu ubuntu   55 Feb  2 14:04 user_3x.sh*
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./lesson_6_task_2_solution.sh
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+100
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat lesson_6_task_2_solution.sh
+#! /bin/bash
+y=0
+while [ $y -lt 101 ]
+do
+ echo $y
+ y=$(( $y + 2 ))
+done
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat >> lesson_6_task_2_solution.sh
+echo ""
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat lesson_6_task_2_solution.sh
+#! /bin/bash
+y=0
+while [ $y -lt 101 ]
+do
+ echo $y
+ y=$(( $y + 2 ))
+done
+echo ""
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./lesson_6_task_2_solution.sh
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+100
+
+ubuntu@ip-172-31-87-118:~/LESSON_6$ mv lesson_2_task_2_solution.sh lesson_6_task_2_solution.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ll
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Feb  3 15:49 ./
+drwxr-xr-x 7 ubuntu ubuntu 4096 Feb  3 11:56 ../
+-rwxrw-r-- 1 ubuntu ubuntu   98 Feb  3 15:47 lesson_6_task_2_solution.sh*
+-rwxrw-r-- 1 ubuntu ubuntu  117 Feb  1 14:21 until_sample.sh*
+-rwxrw-r-- 1 ubuntu ubuntu   55 Feb  2 14:04 user_3x.sh*
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./lesson_6_task_2_solution.sh
+
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat lesson_6_task_2_solution.sh
+#! /bin/bash
+y=0
+while [ $y -lt 101 ]
+do
+ # echo $y
+ printf "${x} "
+ y=$(( $y + 2 ))
+done
+echo ""
+ubuntu@ip-172-31-87-118:~/LESSON_6$ nano lesson_6_task_2_solution.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat lesson_6_task_2_solution.sh
+#! /bin/bash
+y=0
+while [ $y -lt 101 ]
+do
+ # echo $y
+ printf "${y} "
+ y=$(( $y + 2 ))
+done
+echo ""
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ./lesson_6_task_2_solution.sh
+0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100
+ubuntu@ip-172-31-87-118:~/LESSON_6$
+
 
 -----------------------------------------------------------------------------------------------------------------
 ИСТОРИЯ КОМАНД:
@@ -21,3 +293,7 @@
 КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
 
 Кирилл Иванов・Преподаватель
+
+Арифметические операции над переменными в Bash также удобно производить с помощью команды let.
+
+Не увидел строки с расписанием cron. Надеюсь, эта тема понятна. Пример решения разбирали на следующем уроке.
