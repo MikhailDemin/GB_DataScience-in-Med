@@ -283,11 +283,140 @@ done
 echo ""
 ubuntu@ip-172-31-87-118:~/LESSON_6$ ./lesson_6_task_2_solution.sh
 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100
-ubuntu@ip-172-31-87-118:~/LESSON_6$
+ubuntu@ip-172-31-87-118:~/LESSON_6$ #lesson 6 task 3
+ubuntu@ip-172-31-87-118:~/LESSON_6$ nano test.txt
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat test.txt
+qwearstdyfgh
+Linux is good
 
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ls
+lesson_6_task_2_solution.sh  test.txt  until_sample.sh  user_3x.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ cat test.txt
+qwearstdyfgh
+Linux is good
+
+ubuntu@ip-172-31-87-118:~/LESSON_6$ crontab -l
+no crontab for ubuntu
+ubuntu@ip-172-31-87-118:~/LESSON_6$ crontab -e
+no crontab for ubuntu - using an empty one
+crontab: installing new crontab
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ls
+lesson_6_task_2_solution.sh  test.txt  until_sample.sh  user_3x.sh
+ubuntu@ip-172-31-87-118:~/LESSON_6$ realpath test.txt
+/home/ubuntu/LESSON_6/test.txt
+ubuntu@ip-172-31-87-118:~/LESSON_6$ crontab -e
+crontab: installing new crontab
+ubuntu@ip-172-31-87-118:~/LESSON_6$ crontab -l
+*/10 * * * * cat /home/ubuntu/LESSON_6/test.txt > /home/ubuntu/LESSON_6/test.txt.bak
+ubuntu@ip-172-31-87-118:~/LESSON_6$ ll
+total 24
+drwxrwxr-x 2 ubuntu ubuntu 4096 Feb  3 16:27 ./
+drwxr-xr-x 7 ubuntu ubuntu 4096 Feb  4 04:17 ../
+-rwxrw-r-- 1 ubuntu ubuntu   98 Feb  3 15:51 lesson_6_task_2_solution.sh*
+-rw-rw-r-- 1 ubuntu ubuntu   28 Feb  3 16:27 test.txt
+-rwxrw-r-- 1 ubuntu ubuntu  117 Feb  1 14:21 until_sample.sh*
+-rwxrw-r-- 1 ubuntu ubuntu   55 Feb  2 14:04 user_3x.sh*
 
 -----------------------------------------------------------------------------------------------------------------
 ИСТОРИЯ КОМАНД:
+
+  516  cd LEESSON_6
+  517  whoami
+  518  cd LESSON_6
+  519  nano while_sample.sh
+  520  ./whil
+  521  mkdir LESSON_6
+  522  cd LE
+  523  cd LESSON_6/
+  524  ll
+  525  ./while_sample.sh
+  526  u+x *
+  527  chmod u+x *
+  528  ll
+  529  ./while_sample.sh
+  530  nano while_sample.sh
+  531  ./while_sample.sh
+  532  nano while_sample.sh
+  533  ./while_sample.sh
+  534  touch until_sample.sh
+  535  ll
+  536  chmod u+x *
+  537  ll
+  538  cat until_sample.sh
+  539  chmod u-x *
+  540  ll
+  541  cat until_sample.sh
+  542  #! /bin/bash
+  543  cat until_sample.sh
+  544  nano una
+  545  rm una
+  546  ll
+  547  nano until_sample.sh
+  548  chmod u+x *
+  549  ./until_sample.sh
+  550  cd LEESSON_6
+  551  cd LESSON_6
+  552  history
+  553  ll
+  554  nano until_sample.sh
+  555  ./until_sample.sh
+  556  nano until_sample.sh
+  557  nano while_sample.sh
+  558  nano until_sample.sh
+  559  ./until_sample.sh
+  560  crontab -e
+  561  cd LESSON_6
+  562  history
+  563  # LESSON 6 HW
+  564  history
+  565  cat > user_3x.sh
+  566  cat user_3x.sh
+  567  nano user_3x.sh
+  568  ll
+  569  chmod u+x *
+  570  ll
+  571  ./user_3x.sh
+  572  nano user_3x.sh
+  573  ./user_3x.sh
+  574  nano while_sample.sh
+  575  ./while_sample.sh
+  576  cat user_3x.sh
+  577  ./user_3x.sh
+  578  mv while_sample.sh lesson_2_task_2_solution.sh
+  579  ll
+  580  ./lesson_2_task_2_solution.sh
+  581  cat lesson_2_task_2_solution.sh
+  582  cat >> lesson_2_task_2_solution.sh
+  583  cat lesson_2_task_2_solution.sh
+  584  ./lesson_2_task_2_solution.sh
+  585  cd LESSON_6/
+  586  ./lesson_2_task_2_solution.sh
+  587  nano lesson_2_task_2_solution.sh
+  588  ./lesson_2_task_2_solution.sh
+  589  ll
+  590  mv lesson_2_task_2_solution.sh lesson_6_task_2_solution.sh
+  591  ll
+  592  ./lesson_6_task_2_solution.sh
+  593  cat lesson_6_task_2_solution.sh
+  594  nano lesson_6_task_2_solution.sh
+  595  cat lesson_6_task_2_solution.sh
+  596  ./lesson_6_task_2_solution.sh
+  597  #lesson 6 task 3
+  598  nano test.txt
+  599  cat test.txt
+  600  ls
+  601  cd LESSON_6/
+  602  ll
+  603  cat lesson_6_task_2_solution.sh
+  604  cat test.txt
+  605  crontab -l
+  606  crontab -e
+  607  ls
+  608  realpath test.txt
+  609  crontab -e
+  610  crontab -l
+  611  ll
+  612  history
 
 ------------------------------------------------------------------------------------------------------------------
 КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
