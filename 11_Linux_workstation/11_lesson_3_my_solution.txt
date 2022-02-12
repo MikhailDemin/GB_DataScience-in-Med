@@ -1,0 +1,633 @@
+Урок 3. Пользователи. Управление Пользователями и группами
+
+Задание:
+1. Управление пользователями:
+a) создать нового пользователя;
+b) убедиться, что информация о нем появилась в соответствующих файлах в системе;
+c) удалить созданного пользователя;
+
+2. Управление группами:
+a) создать группу;
+b) попрактиковаться в смене групп у пользователей;
+c) добавить пользователя в группу, не меняя основной;
+d) удалить пользователя из группы.
+
+3. Создать пользователя с правами суперпользователя. Проверить результат.
+4. * Используя дополнительные материалы, выдать одному из созданных пользователей право на выполнение ряда
+команд, требующих прав суперпользователя (команды выбираем на своё усмотрение).
+
+В качестве решения необходимо прислать текстовый файл (*.txt) с набором используемых команд и
+их результатами (можно скопировать текст из консоли).
+------------------------------------------------------------------------------------------------------------------
+РЕШЕНИЕ:
+
+ubuntu@ip-172-31-87-118:~$ lesson 3 HW
+lesson: command not found
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ sudo useradd -s /bin/bash -md /home/user3 user3
+ubuntu@ip-172-31-87-118:~$ sudo useradd -s /bin/bash -md /home/user4 user4
+ubuntu@ip-172-31-87-118:~$ more /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+***
+***
+***
+user3:x:1001:1001::/home/user3:/bin/bash
+user4:x:1002:1002::/home/user4:/bin/bash
+ubuntu@ip-172-31-87-118:~$ more /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,ubuntu
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:ubuntu
+fax:x:21:
+voice:x:22:
+cdrom:x:24:ubuntu
+floppy:x:25:ubuntu
+tape:x:26:
+sudo:x:27:ubuntu
+audio:x:29:ubuntu
+dip:x:30:ubuntu
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:ubuntu
+sasl:x:45:
+plugdev:x:46:ubuntu
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user3:x:1001:
+user4:x:1002:
+ubuntu@ip-172-31-87-118:~$ more /etc/shadow
+more: cannot open /etc/shadow: Permission denied
+ubuntu@ip-172-31-87-118:~$ sudo more /etc/shadow
+root:*:18960:0:99999:7:::
+daemon:*:18960:0:99999:7:::
+bin:*:18960:0:99999:7:::
+sys:*:18960:0:99999:7:::
+sync:*:18960:0:99999:7:::
+games:*:18960:0:99999:7:::
+man:*:18960:0:99999:7:::
+lp:*:18960:0:99999:7:::
+mail:*:18960:0:99999:7:::
+news:*:18960:0:99999:7:::
+uucp:*:18960:0:99999:7:::
+proxy:*:18960:0:99999:7:::
+www-data:*:18960:0:99999:7:::
+backup:*:18960:0:99999:7:::
+list:*:18960:0:99999:7:::
+irc:*:18960:0:99999:7:::
+gnats:*:18960:0:99999:7:::
+nobody:*:18960:0:99999:7:::
+systemd-network:*:18960:0:99999:7:::
+systemd-resolve:*:18960:0:99999:7:::
+systemd-timesync:*:18960:0:99999:7:::
+messagebus:*:18960:0:99999:7:::
+syslog:*:18960:0:99999:7:::
+_apt:*:18960:0:99999:7:::
+tss:*:18960:0:99999:7:::
+uuidd:*:18960:0:99999:7:::
+tcpdump:*:18960:0:99999:7:::
+sshd:*:18960:0:99999:7:::
+landscape:*:18960:0:99999:7:::
+pollinate:*:18960:0:99999:7:::
+ec2-instance-connect:!:18960:0:99999:7:::
+systemd-coredump:!!:19014::::::
+ubuntu:!:19014:0:99999:7:::
+lxd:!:19014::::::
+user3:!:19020:0:99999:7:::
+user4:!:19020:0:99999:7:::
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ sudo passwd user3
+New password:
+Retype new password:
+passwd: password updated successfully
+ubuntu@ip-172-31-87-118:~$ sudo passwd user4
+New password:
+Retype new password:
+passwd: password updated successfully
+ubuntu@ip-172-31-87-118:~$ sudo more /etc/shadow\
+>
+***
+***
+***
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ sudo tail /etc/shadow
+tcpdump:*:18960:0:99999:7:::
+sshd:*:18960:0:99999:7:::
+landscape:*:18960:0:99999:7:::
+pollinate:*:18960:0:99999:7:::
+ec2-instance-connect:!:18960:0:99999:7:::
+systemd-coredump:!!:19014::::::
+ubuntu:!:19014:0:99999:7:::
+lxd:!:19014::::::
+user3:$6$xSklwzHElEzqxlxM$yfbpgHhRL.zdL0Iu0DjvsV5HWti8qtBvtwaRAiezyZbEIqFgjTTStLeTGCB.J5KXuriCeeRMTPm/JUz2WEMT.1:19020:0:99999:7:::
+user4:$6$8i2jKiTgSjZ1kpkd$YZ1BEZik7pW5mIwgGOZ4W/jnCwS1zaZ4Sm.WrSWtj2.RcdgFcgCl7TJVgV/dINCn9/qIQhEavmt3gVWgeJ4RA.:19020:0:99999:7:::
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user3:x:1001:
+user4:x:1002:
+ubuntu@ip-172-31-87-118:~$ tail /etc/passwd
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+user3:x:1001:1001::/home/user3:/bin/bash
+user4:x:1002:1002::/home/user4:/bin/bash
+ubuntu@ip-172-31-87-118:~$ groups user3
+user3 : user3
+ubuntu@ip-172-31-87-118:~$ groupadd geek_students
+groupadd: Permission denied.
+groupadd: cannot lock /etc/group; try again later.
+ubuntu@ip-172-31-87-118:~$ sudo groupadd geek_students
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user3:x:1001:
+user4:x:1002:
+geek_students:x:1003:
+ubuntu@ip-172-31-87-118:~$ sudo usermod -aG geek_students user3,
+usermod: user 'user3,' does not exist
+ubuntu@ip-172-31-87-118:~$ sudo usermod -aG geek_students user3
+ubuntu@ip-172-31-87-118:~$ sudo usermod -aG geek_students user4
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user3:x:1001:
+user4:x:1002:
+geek_students:x:1003:user3,user4
+ubuntu@ip-172-31-87-118:~$ sudo deluser user3 geek_students
+Removing user `user3' from group `geek_students' ...
+Done.
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user3:x:1001:
+user4:x:1002:
+geek_students:x:1003:user4
+ubuntu@ip-172-31-87-118:~$ sudo userdel user3 -r
+userdel: user3 mail spool (/var/mail/user3) not found
+ubuntu@ip-172-31-87-118:~$ tail /etc/passwd
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+user4:x:1002:1002::/home/user4:/bin/bash
+ubuntu@ip-172-31-87-118:~$ sudo more /etc/shadow
+***
+***
+***
+ubuntu@ip-172-31-87-118:~$ sudo tail /etc/shadow
+uuidd:*:18960:0:99999:7:::
+tcpdump:*:18960:0:99999:7:::
+sshd:*:18960:0:99999:7:::
+landscape:*:18960:0:99999:7:::
+pollinate:*:18960:0:99999:7:::
+ec2-instance-connect:!:18960:0:99999:7:::
+systemd-coredump:!!:19014::::::
+ubuntu:!:19014:0:99999:7:::
+lxd:!:19014::::::
+user4:$6$8i2jKiTgSjZ1kpkd$YZ1BEZik7pW5mIwgGOZ4W/jnCwS1zaZ4Sm.WrSWtj2.RcdgFcgCl7TJVgV/dINCn9/qIQhEavmt3gVWgeJ4RA.:19020:0:99999:7:::
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ sudo usermod -aG sudo user4
+ubuntu@ip-172-31-87-118:~$ groups user4
+user4 : user4 sudo geek_students
+ubuntu@ip-172-31-87-118:~$ su user4
+Password:
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+user4@ip-172-31-87-118:/home/ubuntu$ whoami
+user4
+user4@ip-172-31-87-118:/home/ubuntu$ sudo apt update
+[sudo] password for user4:
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Fetched 336 kB in 0s (876 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+All packages are up to date.
+user4@ip-172-31-87-118:/home/ubuntu$ exit
+exit
+ubuntu@ip-172-31-87-118:~$ gpasswd -d user4 sudo
+gpasswd: Permission denied.
+ubuntu@ip-172-31-87-118:~$ sudo gpasswd -d user4 sudo
+Removing user user4 from group sudo
+ubuntu@ip-172-31-87-118:~$ groups user4
+user4 : user4 geek_students
+ubuntu@ip-172-31-87-118:~$ sudo usermod -aG sudo user4
+ubuntu@ip-172-31-87-118:~$ groups user4
+user4 : user4 sudo geek_students
+ubuntu@ip-172-31-87-118:~$ sudo more /etc/sudoers
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# Please consider adding local content in /etc/sudoers.d/ instead of
+# directly modifying this file.
+#
+# See the man page for details on how to write a sudoers file.
+#
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+ubuntu@ip-172-31-87-118:~$ sudo visudo
+visudo: /etc/sudoers.tmp unchanged
+ubuntu@ip-172-31-87-118:~$ sudo gpasswd -d user4 sudo
+Removing user user4 from group sudo
+ubuntu@ip-172-31-87-118:~$ groups user4
+user4 : user4 geek_students
+ubuntu@ip-172-31-87-118:~$ sudo usermod -aG sudo user4
+ubuntu@ip-172-31-87-118:~$ su - user4
+Password:
+user4@ip-172-31-87-118:~$ whoami
+user4
+user4@ip-172-31-87-118:~$ sudo ls -la /root
+total 36
+drwx------  5 root root 4096 Jan 28 00:18 .
+drwxr-xr-x 19 root root 4096 Jan 27 02:40 ..
+-rw-------  1 root root   12 Jan 27 08:09 .bash_history
+-rw-r--r--  1 root root 3106 Dec  5  2019 .bashrc
+-rw-------  1 root root   20 Jan 27 03:33 .lesshst
+drwxr-xr-x  3 root root 4096 Jan 28 00:18 .local
+-rw-r--r--  1 root root  161 Dec  5  2019 .profile
+drwx------  2 root root 4096 Jan 27 04:46 .ssh
+drwxr-xr-x  4 root root 4096 Jan 22 17:35 snap
+user4@ip-172-31-87-118:~$ exit
+logout
+ubuntu@ip-172-31-87-118:~$ whoami
+ubuntu
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user4:x:1002:
+geek_students:x:1003:user4
+ubuntu@ip-172-31-87-118:~$ more /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,ubuntu
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:ubuntu
+fax:x:21:
+voice:x:22:
+cdrom:x:24:ubuntu
+floppy:x:25:ubuntu
+tape:x:26:
+sudo:x:27:ubuntu,user4
+audio:x:29:ubuntu
+dip:x:30:ubuntu
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:ubuntu
+sasl:x:45:
+plugdev:x:46:ubuntu
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user4:x:1002:
+geek_students:x:1003:user4
+ubuntu@ip-172-31-87-118:~$
+ubuntu@ip-172-31-87-118:~$ sudo gpasswd -d user4 sudo
+Removing user user4 from group sudo
+ubuntu@ip-172-31-87-118:~$ groups user4
+user4 : user4 geek_students
+ubuntu@ip-172-31-87-118:~$ sudo groupdel geek_students
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+user4:x:1002:
+ubuntu@ip-172-31-87-118:~$ sudo userdel user4 -r
+userdel: user4 mail spool (/var/mail/user4) not found
+ubuntu@ip-172-31-87-118:~$ tail /etc/passwd
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+ubuntu@ip-172-31-87-118:~$ sudo tail /etc/shadow
+tss:*:18960:0:99999:7:::
+uuidd:*:18960:0:99999:7:::
+tcpdump:*:18960:0:99999:7:::
+sshd:*:18960:0:99999:7:::
+landscape:*:18960:0:99999:7:::
+pollinate:*:18960:0:99999:7:::
+ec2-instance-connect:!:18960:0:99999:7:::
+systemd-coredump:!!:19014::::::
+ubuntu:!:19014:0:99999:7:::
+lxd:!:19014::::::
+ubuntu@ip-172-31-87-118:~$ tail /etc/group
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:ubuntu
+lxd:x:118:ubuntu
+systemd-coredump:x:999:
+ubuntu:x:1000:
+ubuntu@ip-172-31-87-118:~$
+
+-----------------------------------------------------------------------------------------------------------------
+ИСТОРИЯ КОМАНД:
+
+  275  lesson 3
+  276  history
+  277  groups
+  278  sudo su
+  279  useradd --help
+  280  sudo adduser user 44
+  281  sudo adduser user44
+  282  ll
+  283  sudo su user44
+  284  cd ~
+  285  ll
+  286  sudo useradd -s /bin/bash user1
+  287  sudo useradd -s /bin/bash -m -d /home/user2 user2
+  288  ls /home
+  289  sudo passwd user2
+  290  su user1
+  291  whoami
+  292  history
+  293  useradd -D
+  294  whoami
+  295  sudo su - user1
+  296  whoami
+  297  more etc/passwd
+  298  ll
+  299  more ../etc/passwd
+  300  cd ..
+  301  ll
+  302  cd ..
+  303  ll
+  304  cd etc
+  305  ll
+  306  more passwd
+  307  whoami
+  308  cd ~
+  309  ll
+  310  more ../../etc/groups
+  311  more ../etc/groups
+  312  cd ../../
+  313  cd etc/
+  314  ll
+  315  cd ~
+  316  more /etc/group
+  317  sudo more /etc/shadow
+  318  ls /home
+  319  deluser --help
+  320  userdel --help
+  321  sudo userdel user1
+  322  more /etc/passwd
+  323  sudo tail /etc/shadow
+  324  sudo tail(10) /etc/shadow
+  325  sudo tail10 /etc/shadow
+  326  tail --help
+  327  sudo usermod -L user44
+  328  su user44
+  329  sudo tail /etc/shadow
+  330  usermod --help
+  331  sudo usermod -U user44
+  332  sudo tail /etc/shadow
+  333  su user44
+  334  whoami
+  335  su user2
+  336  sudo usermod -a -G sudo user2
+  337  groups user2
+  338  su user2
+  339  sudo deluser user2 sudo
+  340  sudo more /etc/sudoes
+  341  cd ~
+  342  sudo more /etc/sudoes
+  343  sudo more /etc/sudoers
+  344  sudo visudo
+  345  sudo groupadd dev_team
+  346  tail /etc/group
+  347  sudo uasermod -aG dev_team ubuntu
+  348  sudo usermod -aG dev_team ubuntu
+  349  sudo usermod -aG dev_team user2
+  350  sudo usermod -aG dev_team user44
+  351  sudo usermod -aG dev_team tempuser
+  352  tail /etc/group
+  353  groups ubuntu
+  354  sudo groupdel dev_team
+  355  tail /etc/group
+  356  groups ubuntu
+  357  history
+  358  userdel --help
+  359  sudo userdel -r user2
+  360  ls /home
+  361  sudo userdel -r user44
+  362  sudo more /etc/shadow
+  363  lesson 3 HW
+  364  sudo useradd -s /bin/bash -md /home/user3 user3
+  365  sudo useradd -s /bin/bash -md /home/user4 user4
+  366  more /etc/passwd
+  367  more /etc/group
+  368  more /etc/shadow
+  369  sudo more /etc/shadow
+  370  sudo passwd user3
+  371  sudo passwd user4
+  372  sudo more /etc/shadow\
+  373  sudo tail /etc/shadow
+  374  tail /etc/group
+  375  tail /etc/passwd
+  376  groups user3
+  377  groupadd geek_students
+  378  sudo groupadd geek_students
+  379  tail /etc/group
+  380  sudo usermod -aG geek_students user3,
+  381  sudo usermod -aG geek_students user3
+  382  sudo usermod -aG geek_students user4
+  383  tail /etc/group
+  384  sudo deluser user3 geek_students
+  385  tail /etc/group
+  386  sudo userdel user3 -r
+  387  tail /etc/passwd
+  388  sudo more /etc/shadow
+  389  sudo tail /etc/shadow
+  390  sudo usermod -aG sudo user4
+  391  groups user4
+  392  su user4
+  393  gpasswd -d user4 sudo
+  394  sudo gpasswd -d user4 sudo
+  395  groups user4
+  396  sudo usermod -aG sudo user4
+  397  groups user4
+  398  sudo more /etc/sudoers
+  399  sudo visudo
+  400  sudo gpasswd -d user4 sudo
+  401  groups user4
+  402  sudo usermod -aG sudo user4
+  403  su - user4
+  404  whoami
+  405  tail /etc/group
+  406  more /etc/group
+  407  sudo gpasswd -d user4 sudo
+  408  groups user4
+  409  sudo groupdel geek_students
+  410*
+  411  sudo userdel user4 -r
+  412  tail /etc/passwd
+  413  sudo tail /etc/shadow
+  414  tail /etc/group
+  415  history
+
+------------------------------------------------------------------------------------------------------------------
+КОММЕНТАРИИ ПРЕПОДАВАТЕЛЯ:
+
+Кирилл Иванов・Преподаватель
+Наравне с командой 'useradd' в Ubuntu (в Debian дистрибутивах) есть скрипт-обертка 'adduser'. Возможно,
+его потребуется предварительно установить командой ```sudo apt-get install adduser```.
+
+Не увидел команду добавления нового пользователя. Надеюсь, это не вызывает трудности:
+https://losst.ru/kak-sozdat-polzovatelya-linux
+
+Удалить пользователя из группы в Linux можно разными способами. Дополнительно почитать можно тут:
+https://losst.ru/udalit-polzovatelya-iz-gruppy-linux
