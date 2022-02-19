@@ -4,7 +4,7 @@ USE example;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
-	id INT SERIAL PRIMARY KEY,
+	id SERIAL,
 	name VARCHAR(255) DEFAULT 'user' COMMENT '��� ������������'
 );
 INSERT INTO users (name) VALUES ('developer');
