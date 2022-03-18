@@ -7,21 +7,21 @@ CREATE TABLE users (
 	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	-- id SERIAL,
 	-- id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE,
-	firstname VARCHAR(100) COMMENT 'Имя',
-	lastname VARCHAR(100) COMMENT 'Фамилия',
+	firstname VARCHAR(100) COMMENT '���',
+	lastname VARCHAR(100) COMMENT '�������',
 	email VARCHAR(100) UNIQUE,
 	password_hash VARCHAR(256),
-	phone BIGINT UNSIGNED UNIQUE COMMENT 'Телефон', -- +7(999) 123-45-67 => 79 991 234 567
+	phone BIGINT UNSIGNED UNIQUE COMMENT '�������', -- +7(999) 123-45-67 => 79 991 234 567
 	
 	INDEX idx_firstname_lastname(firstname, lastname)
-) COMMENT 'Пользователи';
+) COMMENT '������������';
 
 -- 1 x 1
 DROP TABLE IF EXISTS profiles;
 CREATE TABLE profiles (
 	user_id BIGINT UNSIGNED NOT NULL PRIMARY KEY,
-	gender CHAR(1) COMMENT 'Пол',
-	hometown VARCHAR(200) COMMENT 'Родной город',
+	gender CHAR(1) COMMENT '���',
+	hometown VARCHAR(200) COMMENT '������ �����',
 	created_at DATETIME DEFAULT NOW()
 );
 
@@ -104,7 +104,7 @@ CREATE TABLE media (
 	-- media_type ENUM('text', 'video', 'music', 'image'),
 	media_type_id BIGINT UNSIGNED NOT NULL,
 	body VARCHAR(255),
-	-- file BLOB, -> приведет к увеличению размера базы и проблемам с производительностью
+	-- file BLOB, -> �������� � ���������� ������� ���� � ��������� � �������������������
 	filename VARCHAR(255),
 	metadata JSON,
 	created_at DATETIME DEFAULT NOW(),
@@ -122,17 +122,19 @@ CREATE TABLE likes (
 	created_at DATETIME DEFAULT NOW()
 );
 
--- 12_lesson_3_my_solution
--- в таблице медиа это контент который генерят сами пользователи,
--- а здесь будут ссылки на сторонние ресурсы и медиа
+ALTER TABLE likes
+ADD CONSTRAINT fk_likes_user_id FOREIGN KEY (user_id) REFERENCES users(id),
+ADD CONSTRAINT fk_likes_media_id FOREIGN KEY (media_id) REFERENCES media(id)
+;
+
 DROP TABLE IF EXISTS links;
 CREATE TABLE links (
-	id SERIAL,
+	id SERIAL
 );
 
 
--- таблица компаний, которые представлены в соц сети, а также пользователи сети могут быть
--- сотрудниками этих кампаний
+-- ������� ��������, ������� ������������ � ��� ����, � ����� ������������ ���� ����� ����
+-- ������������ ���� ��������
 DROP TABLE IF EXISTS companies;
 CREATE TABLE companies (
 	id SERIAL,
@@ -160,7 +162,7 @@ ADD CONSTRAINT fk_links_media_id FOREIGN KEY (media_id) REFERENCES media(id),
 ADD CONSTRAINT fk_links_user_id FOREIGN KEY (user_id) REFERENCES users(id)
 ;
 
--- таблица звонков пользователей
+-- ������� ������� �������������
 DROP TABLE IF EXISTS calls;
 CREATE TABLE calls (
 	id SERIAL,
@@ -175,9 +177,5 @@ CREATE TABLE calls (
 	CHECK (initiator_user_id != target_user_id)
 );
 
-/* Комментарии преподавателя:
-Кирилл Иванов・Преподаватель
-Для индексов, так же, как и для внешних ключей можно (но не обязательно) задавать имена при их определении.
-Правильно, что используете механизм установки значения полей по умолчанию (DEFAULT).
-Правильно, что используете механизм автообновления значения поля при операции UPDATE.
-*/
+ALTER TABLE profiles ADD COLUMN is_active BIT NOT NULL DEFAULT(TRUE);
+ALTER TABLE profiles ADD COLUMN age TINYINT UNSIGNED NOT NULL;

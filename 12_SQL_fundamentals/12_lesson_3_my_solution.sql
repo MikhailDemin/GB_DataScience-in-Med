@@ -3,7 +3,7 @@
 -- а здесь будут ссылки на сторонние ресурсы и медиа
 DROP TABLE IF EXISTS links;
 CREATE TABLE links (
-	id SERIAL,
+	id SERIAL
 );
 
 
