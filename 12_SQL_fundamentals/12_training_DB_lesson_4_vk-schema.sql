@@ -177,5 +177,5 @@ CREATE TABLE calls (
 	CHECK (initiator_user_id != target_user_id)
 );
 
-ALTER TABLE profiles ADD COLUMN is_active BOOLEAN NOT NULL DEFAULT(TRUE);
+ALTER TABLE profiles ADD COLUMN is_active BIT NOT NULL DEFAULT(TRUE);
 ALTER TABLE profiles ADD COLUMN age TINYINT UNSIGNED NOT NULL;
