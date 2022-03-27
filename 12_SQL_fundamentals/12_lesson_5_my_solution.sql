@@ -25,7 +25,7 @@ MODIFY COLUMN updated_at DATETIME
 всех записей. */
 -- **************************************************************************************************************
 
-DROP DATABASE IF EXISTS test;
+/* DROP DATABASE IF EXISTS test;
 CREATE DATABASE test;
 USE test;
 
@@ -60,6 +60,7 @@ VALUES (24,59,3,'2017-02-16 03:00:24','2022-03-09 19:39:07'),
 (16,14,0,'2015-07-07 19:03:39','2022-03-18 09:04:09'),
 (17,19,2,'1994-11-09 03:30:19','2022-03-21 14:50:55')
 ;
+*/
 
 SELECT * FROM storehouses_products
 ORDER BY CASE WHEN value = 0 THEN 9 ELSE value END
@@ -108,6 +109,52 @@ SELECT ROUND(AVG(YEAR(CURRENT_TIMESTAMP) - YEAR(birthday)), 1) FROM users
 что необходимы дни недели текущего года, а не года рождения. */
 -- **************************************************************************************************************
 
+/* DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) COMMENT 'Имя покупателя',
+  birthday_at DATE COMMENT 'Дата рождения',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) COMMENT = 'Покупатели';
+
+INSERT INTO users (name, birthday_at) VALUES
+  ('Геннадий', '1990-10-05'),
+  ('Наталья', '1984-11-12'),
+  ('Александр', '1985-05-20'),
+  ('Сергей', '1988-02-14'),
+  ('Иван', '1998-01-12'),
+  ('Мария', '1992-08-29')
+ ;
+
+SELECT name,
+birthday_at,
+CONCAT(YEAR(NOW()), '-', SUBSTRING(birthday_at, 6, 10)) AS current_year_birthday_date,
+DAYNAME(CONCAT(YEAR(NOW()), '-', SUBSTRING(birthday_at, 6, 10))) AS current_year_birthday_weekday
+FROM users
+;
+*/
+
+SELECT
+DISTINCT DAYNAME(CONCAT(YEAR(NOW()), '-', SUBSTRING(birthday_at, 6, 10))) AS birthday_weekday,
+COUNT(*) AS current_year_birthday_weekday
+FROM users
+GROUP BY birthday_weekday
+ORDER BY current_year_birthday_weekday
+;
+
 -- 3.	(по желанию) Подсчитайте произведение чисел в столбце таблицы
 -- **************************************************************************************************************
+
+/* DROP TABLE IF EXISTS math;
+CREATE TABLE math (
+	value BIGINT UNSIGNED NOT NULL
+);
+
+INSERT INTO math (value) VALUES 
+(1),(2),(3),(4),(5),(6),(7)
+;
+*/
+
+SELECT EXP(SUM(LOG(value))) FROM math;
 
