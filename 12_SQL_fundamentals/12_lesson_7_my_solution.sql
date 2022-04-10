@@ -1,12 +1,8 @@
 -- 12_lesson_7_my_solution
 
-/*
-Практическое задание по теме “Сложные запросы”. 
- */
+-- Практическое задание по теме “Сложные запросы”. 
 
-/*
-1.	Составьте список пользователей users, которые осуществили хотя бы один заказ orders в интернет магазине.
- */
+-- 1. Составьте список пользователей users, которые осуществили хотя бы один заказ orders в интернет магазине.
 -- **************************************************************************************************************
 
 SELECT
@@ -18,7 +14,22 @@ SELECT
 		' ',
 		(SELECT lastname
 		FROM users
-		WHERE id = messages.from_user_id) 
+		WHERE id = messages.from_user_id)
+	) AS most_frequent_contact, 
+	COUNT(id) AS message_count 
+FROM messages 
+WHERE to_user_id = 12
+GROUP BY from_user_id
+ORDER BY message_count DESC
+LIMIT 1
+;
+
+SELECT
+	from_user_id,
+	CONCAT(
+		(SELECT firstname, ' ', lastname
+		FROM users
+		WHERE id = messages.from_user_id)
 	) AS most_frequent_contact, 
 	COUNT(id) AS message_count 
 FROM messages 
@@ -90,9 +101,31 @@ ORDER BY user_id
 
  
 /*
-3.	(по желанию) Пусть имеется таблица рейсов flights (id, from, to) и таблица городов cities (label, name).
+3*.	Пусть имеется таблица рейсов flights (id, from, to) и таблица городов cities (label, name).
 Поля from, to и label содержат английские названия городов, поле name — русское. Выведите список рейсов flights
 с русскими названиями городов.
+ */
+
+/* flights
+|id |  from  |   to   |
+|---|--------|--------|
+|1  |moscow  |omsk    |
+|2  |novgorod|kazan   |
+|3  |irkutsk |moscow  |
+|4  |omsk    |irkutsk |
+|5  |moscow  |kazan   |
+
+ */
+
+/* cities
+| label  |  name  |
+|--------|--------|
+|moscow  |Москва  |
+|irkutsk |Иркутск |
+|novgorod|Новгород|
+|kazan   |Казань  |
+|omsk    |Омск    |
+
  */
 -- **************************************************************************************************************
 
@@ -162,4 +195,3 @@ LIMIT 1
 Комментарии преподавателя:
 --------------------------------------
 Кирилл Иванов・Преподаватель
-*/-- 12_lesson_5_my_solution
