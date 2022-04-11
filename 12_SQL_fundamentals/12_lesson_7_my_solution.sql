@@ -5,101 +5,64 @@
 -- 1. Составьте список пользователей users, которые осуществили хотя бы один заказ orders в интернет магазине.
 -- **************************************************************************************************************
 
-SELECT
-	from_user_id,
-	CONCAT(
-		(SELECT firstname
-		FROM users
-		WHERE id = messages.from_user_id),
-		' ',
-		(SELECT lastname
-		FROM users
-		WHERE id = messages.from_user_id)
-	) AS most_frequent_contact, 
-	COUNT(id) AS message_count 
-FROM messages 
-WHERE to_user_id = 12
-GROUP BY from_user_id
-ORDER BY message_count DESC
-LIMIT 1
+/*
+INSERT INTO orders (user_id)
+VALUES (2), (6), (5), (3), (2), (5);
+*/
+
+SELECT u.name, COUNT(o.user_id) AS orders 
+FROM
+	orders AS o
+LEFT JOIN
+	users AS u
+ON
+	u.id = o.user_id
+GROUP BY name
+HAVING 
+	orders >= 1
 ;
 
-SELECT
-	from_user_id,
-	CONCAT(
-		(SELECT firstname, ' ', lastname
-		FROM users
-		WHERE id = messages.from_user_id)
-	) AS most_frequent_contact, 
-	COUNT(id) AS message_count 
-FROM messages 
-WHERE to_user_id = 12
-GROUP BY from_user_id
-ORDER BY message_count DESC
-LIMIT 1
-;
+/*
+|name     |orders|
+|---------|------|
+|Наталья  |2     |
+|Александр|1     |
+|Иван     |2     |
+|Мария    |1     |
+
+*/
+
+/*
+Для лучшего оформления задачи по идее необходимо добавить поля "заказ оформлен", "заказ оплачен", "заказ получен" и т. п.
+в таблицу orders, тогда задача станет нагляднее. В данном решении добавление HAVING ничего не меняет, ну или я не так
+понял)))
+*/
 
 -- 2. Выведите список товаров products и разделов catalogs, который соответствует товару.
 -- **************************************************************************************************************
 
-SELECT COUNT(*) AS total_likes_to_kids
-FROM likes
-WHERE user_id IN (
-	SELECT user_id
-	FROM profiles
-	WHERE age < 10)
+SELECT prod.id, prod.name, prod.price, cat.name
+FROM
+	products AS prod
+JOIN
+	catalogs AS cat
+ON
+	cat.id = prod.catalog_id
 ;
 
 /*
-|total_likes_to_kids|
-|-------------------|
-|11                 |
+|id |name                   |price |name             |
+|---|-----------------------|------|-----------------|
+|1  |Intel Core i3-8100     |7 890 |Процессоры       |
+|2  |Intel Core i5-7400     |12 700|Процессоры       |
+|3  |AMD FX-8320E           |4 780 |Процессоры       |
+|4  |AMD FX-8320            |7 120 |Процессоры       |
+|5  |ASUS ROG MAXIMUS X HERO|19 310|Материнские платы|
+|6  |Gigabyte H310M S2H     |4 790 |Материнские платы|
+|7  |MSI B250M GAMING PRO   |5 060 |Материнские платы|
 
  */
 
--- Не знаю почему, но запрос с функцией TIMESTAMPDIFF возвращает на 2 лайка больше:
-SELECT COUNT(*) AS likes
-FROM likes
-WHERE user_id IN (
-	SELECT user_id
-	FROM profiles
-	WHERE TIMESTAMPDIFF(YEAR, birthday, now()) < 10)
-;
-
-/*
-|likes|
-|-----|
-|13   |
-
- */
-
-SELECT * 
-FROM likes 
-WHERE user_id IN (
-	SELECT user_id
-	FROM profiles
-	WHERE age < 10)
-ORDER BY user_id
-;
-
-/*
-|id |user_id|media_id|created_at         |
-|---|-------|--------|-------------------|
-|14 |13     |18      |2021-06-13 23:31:54|
-|47 |13     |24      |2021-05-05 08:21:55|
-|20 |21     |11      |2021-09-28 15:42:28|
-|25 |21     |11      |2021-10-23 23:07:06|
-|42 |21     |14      |2021-06-12 20:14:47|
-|23 |22     |39      |2021-10-05 13:58:28|
-|48 |22     |29      |2021-12-16 01:18:48|
-|15 |25     |33      |2021-11-06 18:40:34|
-|1  |29     |31      |2021-12-15 13:11:28|
-|27 |29     |27      |2021-07-25 05:42:44|
-|33 |29     |8       |2021-08-30 22:36:06|
-
- */
-
- 
 /*
 3*.	Пусть имеется таблица рейсов flights (id, from, to) и таблица городов cities (label, name).
 Поля from, to и label содержат английские названия городов, поле name — русское. Выведите список рейсов flights
@@ -129,67 +92,42 @@ ORDER BY user_id
  */
 -- **************************************************************************************************************
 
-SELECT total_likes 
-FROM (
-	SELECT COUNT(*) AS total_likes
-	FROM likes
-	WHERE user_id IN (
-		SELECT user_id
-		FROM profiles
-		WHERE gender = 'f')
-	UNION ALL
-	SELECT COUNT(*) AS total_likes
-	FROM likes
-	WHERE user_id IN (
-		SELECT user_id
-		FROM profiles
-		WHERE gender = 'm')
-) AS tbl
-GROUP BY total_likes
-ORDER BY MAX(total_likes) DESC
-LIMIT 1
+/*
+DROP TABLE IF EXISTS flights;
+CREATE TABLE flights (
+  id SERIAL PRIMARY KEY,
+  from_ VARCHAR(255) COMMENT 'Откуда',
+  to_ VARCHAR(255) COMMENT 'Куда'
+) COMMENT = 'Рейсы'
 ;
 
-/*
-|total_likes|
-|-----------|
-|37         |
- */
+INSERT INTO flights (from_, to_) VALUES
+  ('moscow', 'omsk'), ('novgorod', 'kazan'), ('irkutsk', 'moscow'), ('omsk', 'irkutsk'), ('moscow', 'kazan');
 
-SELECT gender 
-FROM (
-	SELECT gender, COUNT((
-		SELECT COUNT(*) 
-		FROM likes 
-		AS lik 
-		WHERE lik.user_id = prof.user_id)) 
-	AS total_likes 
-	FROM profiles AS prof
-	WHERE gender = 'm'
-	GROUP BY gender
-	UNION ALL
-	SELECT gender, COUNT((
-		SELECT COUNT(*) 
-		FROM likes 
-		AS lik 
-		WHERE lik.user_id = prof.user_id)) 
-	FROM profiles AS prof
-	WHERE gender = 'f'
-	GROUP BY gender
-) AS tab
-GROUP BY gender
-ORDER BY MAX(total_likes) DESC
-LIMIT 1
+DROP TABLE IF EXISTS cities;
+CREATE TABLE cities (
+  label VARCHAR(255) COMMENT 'Обозначение',
+  name VARCHAR(255) COMMENT 'Город (RU)'
+) COMMENT = 'Города'
 ;
 
-/*
-|gender|
-|------|
-|m     |
-
+INSERT INTO cities (label, name) VALUES
+  ('moscow', 'Москва'), ('irkutsk', 'Иркутск'), ('novgorod', 'Новгород'), ('kazan', 'Казань'), ('omsk', 'Омск');
  */
 
--- Как склеить эти два запроса, чтобы была колонка gender и количество не понял к сожалению.
+SELECT f.id, c1.name AS from_, c2.name AS to_
+FROM
+	flights AS f
+LEFT JOIN
+	cities AS c1
+ON
+	f.from_ = c1.label
+LEFT JOIN
+	cities AS c2
+ON
+	f.to_ = c2.label
+;
+
 
 /*
 Комментарии преподавателя:
