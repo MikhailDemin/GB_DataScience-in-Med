@@ -12,44 +12,36 @@
  */
 -- **************************************************************************************************************
 
--- ALTER TABLE messages ADD COLUMN is_read BIT DEFAULT FALSE;
-
 SELECT
-	from_user_id,
-	CONCAT(
-		(SELECT firstname
-		FROM users
-		WHERE id = messages.from_user_id),
-		' ',
-		(SELECT lastname
-		FROM users
-		WHERE id = messages.from_user_id) 
-	) AS most_frequent_contact, 
-	COUNT(id) AS message_count 
-FROM messages 
-WHERE to_user_id = 12
-GROUP BY from_user_id
+	u1.firstname, 
+	u1.lastname,
+	m.from_user_id,
+	CONCAT(u2.firstname, ' ', u2.lastname) AS most_frequent_contact,
+	COUNT(m.id) AS message_count
+FROM messages m
+JOIN users u1 ON u1.id = m.to_user_id
+JOIN users u2 ON u2.id = m.from_user_id
+WHERE m.to_user_id = 12
+GROUP BY m.from_user_id
 ORDER BY message_count DESC
 LIMIT 1
 ;
 
-s
+
 /*
-|from_user_id|most_frequent_contact|message_count|
-|------------|---------------------|-------------|
-|29          |Gisselle Pagac       |2            |
+|firstname|lastname|from_user_id|most_frequent_contact|message_count|
+|---------|--------|------------|---------------------|-------------|
+|Jordon   |Rath    |29          |Gisselle Pagac       |2            |
 
  */
 
 -- 2. Подсчитать общее количество лайков, которые получили пользователи младше 10 лет.
 -- **************************************************************************************************************
 
-SELECT COUNT(*) AS total_likes_to_kids
-FROM likes
-WHERE user_id IN (
-	SELECT user_id
-	FROM profiles
-	WHERE age < 10)
+SELECT COUNT(l.id) AS total_likes_to_kids
+FROM likes l
+JOIN profiles p ON l.user_id = p.user_id
+WHERE p.age < 10
 ;
 
 /*
@@ -58,114 +50,25 @@ WHERE user_id IN (
 |11                 |
 
  */
-
--- Не знаю почему, но запрос с функцией TIMESTAMPDIFF возвращает на 2 лайка больше:
-SELECT COUNT(*) AS likes
-FROM likes
-WHERE user_id IN (
-	SELECT user_id
-	FROM profiles
-	WHERE TIMESTAMPDIFF(YEAR, birthday, now()) < 10)
-;
-
-/*
-|likes|
-|-----|
-|13   |
-
- */
-
-SELECT * 
-FROM likes 
-WHERE user_id IN (
-	SELECT user_id
-	FROM profiles
-	WHERE age < 10)
-ORDER BY user_id
-;
-
-/*
-|id |user_id|media_id|created_at         |
-|---|-------|--------|-------------------|
-|14 |13     |18      |2021-06-13 23:31:54|
-|47 |13     |24      |2021-05-05 08:21:55|
-|20 |21     |11      |2021-09-28 15:42:28|
-|25 |21     |11      |2021-10-23 23:07:06|
-|42 |21     |14      |2021-06-12 20:14:47|
-|23 |22     |39      |2021-10-05 13:58:28|
-|48 |22     |29      |2021-12-16 01:18:48|
-|15 |25     |33      |2021-11-06 18:40:34|
-|1  |29     |31      |2021-12-15 13:11:28|
-|27 |29     |27      |2021-07-25 05:42:44|
-|33 |29     |8       |2021-08-30 22:36:06|
-
- */
-
  
 -- 3.	Определить кто больше поставил лайков (всего): мужчины или женщины.
 -- **************************************************************************************************************
 
-SELECT total_likes 
-FROM (
-	SELECT COUNT(*) AS total_likes
-	FROM likes
-	WHERE user_id IN (
-		SELECT user_id
-		FROM profiles
-		WHERE gender = 'f')
-	UNION ALL
-	SELECT COUNT(*) AS total_likes
-	FROM likes
-	WHERE user_id IN (
-		SELECT user_id
-		FROM profiles
-		WHERE gender = 'm')
-) AS tbl
-GROUP BY total_likes
-ORDER BY MAX(total_likes) DESC
-LIMIT 1
+SELECT p.gender, COUNT(l.id) AS total_likes
+FROM likes l
+JOIN profiles p ON l.user_id = p.user_id
+GROUP BY gender -- DESC
+-- ORDER BY MAX(total_likes) DESC
+-- LIMIT 1
 ;
 
 /*
-|total_likes|
-|-----------|
-|37         |
- */
-
-SELECT gender 
-FROM (
-	SELECT gender, COUNT((
-		SELECT COUNT(*) 
-		FROM likes 
-		AS lik 
-		WHERE lik.user_id = prof.user_id)) 
-	AS total_likes 
-	FROM profiles AS prof
-	WHERE gender = 'm'
-	GROUP BY gender
-	UNION ALL
-	SELECT gender, COUNT((
-		SELECT COUNT(*) 
-		FROM likes 
-		AS lik 
-		WHERE lik.user_id = prof.user_id)) 
-	FROM profiles AS prof
-	WHERE gender = 'f'
-	GROUP BY gender
-) AS tab
-GROUP BY gender
-ORDER BY MAX(total_likes) DESC
-LIMIT 1
-;
-
-/*
-|gender|
-|------|
-|m     |
+|gender|total_likes|
+|------|-----------|
+|m     |37         |
+|f     |13         |
 
  */
-
--- Как склеить эти два запроса, чтобы была колонка gender и количество не понял к сожалению.
 
 /*
 Комментарии преподавателя:

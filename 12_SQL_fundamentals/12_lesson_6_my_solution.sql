@@ -32,6 +32,7 @@ ORDER BY message_count DESC
 LIMIT 1
 ;
 
+
 /*
 |from_user_id|most_frequent_contact|message_count|
 |------------|---------------------|-------------|
