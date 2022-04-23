@@ -1,66 +1,602 @@
 -- 12_lesson_9_my_solution
 
--- Практическое задание по теме “Транзакции, переменные, представления”
+-- РџСЂР°РєС‚РёС‡РµСЃРєРѕРµ Р·Р°РґР°РЅРёРµ РїРѕ С‚РµРјРµ вЂњРўСЂР°РЅР·Р°РєС†РёРё, РїРµСЂРµРјРµРЅРЅС‹Рµ, РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏвЂќ
 
--- 1.	В базе данных shop и sample присутствуют одни и те же таблицы, учебной базы данных. Переместите запись id = 1
--- из таблицы shop.users в таблицу sample.users. Используйте транзакции.
+-- 1.	Р’ Р±Р°Р·Рµ РґР°РЅРЅС‹С… shop Рё sample РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РѕРґРЅРё Рё С‚Рµ Р¶Рµ С‚Р°Р±Р»РёС†С‹ СѓС‡РµР±РЅРѕР№ Р±Р°Р·С‹ РґР°РЅРЅС‹С…. РџРµСЂРµРјРµСЃС‚РёС‚Рµ Р·Р°РїРёСЃСЊ id = 1
+-- РёР· С‚Р°Р±Р»РёС†С‹ shop.users РІ С‚Р°Р±Р»РёС†Сѓ sample.users. РСЃРїРѕР»СЊР·СѓР№С‚Рµ С‚СЂР°РЅР·Р°РєС†РёРё.
 -- **************************************************************************************************************
 
+DROP DATABASE IF EXISTS sammple;
 
--- 2.	Создайте представление, которое выводит название name товарной позиции из таблицы products и соответствующее 
--- название каталога name из таблицы catalogs.
+CREATE DATABASE sample;
+
+USE sample;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) COMMENT 'РРјСЏ РїРѕРєСѓРїР°С‚РµР»СЏ',
+  birthday_at DATE COMMENT 'Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ',
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON
+UPDATE
+	CURRENT_TIMESTAMP
+) COMMENT = 'РџРѕРєСѓРїР°С‚РµР»Рё';
+
+START TRANSACTION;
+
+INSERT
+	INTO
+	sample.users
+SELECT
+	*
+FROM
+	test.users
+WHERE
+	id = 1;
+
+SELECT
+	*
+FROM
+	sample.users;
+
+/*
+|id |name    |birthday_at|created_at         |updated_at         |
+|---|--------|-----------|-------------------|-------------------|
+|1  |Р“РµРЅРЅР°РґРёР№|1990-10-05 |2022-04-10 16:51:09|2022-04-10 16:51:09|
+
+ */
+DELETE
+FROM
+	test.users
+WHERE
+	id = 1;
+
+SELECT
+	*
+FROM
+	test.users;
+
+/*
+|id |name     |birthday_at|created_at         |updated_at         |
+|---|---------|-----------|-------------------|-------------------|
+|2  |РќР°С‚Р°Р»СЊСЏ  |1984-11-12 |2022-04-10 16:51:09|2022-04-10 16:51:09|
+|3  |РђР»РµРєСЃР°РЅРґСЂ|1985-05-20 |2022-04-10 16:51:09|2022-04-10 16:51:09|
+|4  |РЎРµСЂРіРµР№   |1988-02-14 |2022-04-10 16:51:09|2022-04-10 16:51:09|
+|5  |РРІР°РЅ     |1998-01-12 |2022-04-10 16:51:09|2022-04-10 16:51:09|
+|6  |РњР°СЂРёСЏ    |1992-08-29 |2022-04-10 16:51:09|2022-04-10 16:51:09|
+
+ */
+
+-- 2.	РЎРѕР·РґР°Р№С‚Рµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ, РєРѕС‚РѕСЂРѕРµ РІС‹РІРѕРґРёС‚ РЅР°Р·РІР°РЅРёРµ name С‚РѕРІР°СЂРЅРѕР№ РїРѕР·РёС†РёРё РёР· С‚Р°Р±Р»РёС†С‹ products Рё СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРµ 
+-- РЅР°Р·РІР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° name РёР· С‚Р°Р±Р»РёС†С‹ catalogs.
 -- **************************************************************************************************************
 
+CREATE OR REPLACE
+VIEW cat_products AS
+SELECT
+	p.name AS product,
+	c.name AS product_category
+FROM
+	products p
+JOIN catalogs c ON
+	p.catalog_id = c.id
+;
 
--- 3*. Пусть имеется таблица с календарным полем created_at. В ней размещены разреженые календарные записи за 
--- август 2018 года '2018-08-01', '2016-08-04', '2018-08-16' и 2018-08-17. Составьте запрос, который выводит полный список 
--- дат за август, выставляя в соседнем поле значение 1, если дата присутствует в исходном таблице и 0, если она отсутствует.
+SELECT
+	*
+FROM
+	cat_products;
+
+/*
+|product                |product_category |
+|-----------------------|-----------------|
+|Intel Core i3-8100     |РџСЂРѕС†РµСЃСЃРѕСЂС‹       |
+|Intel Core i5-7400     |РџСЂРѕС†РµСЃСЃРѕСЂС‹       |
+|AMD FX-8320E           |РџСЂРѕС†РµСЃСЃРѕСЂС‹       |
+|AMD FX-8320            |РџСЂРѕС†РµСЃСЃРѕСЂС‹       |
+|ASUS ROG MAXIMUS X HERO|РњР°С‚РµСЂРёРЅСЃРєРёРµ РїР»Р°С‚С‹|
+|Gigabyte H310M S2H     |РњР°С‚РµСЂРёРЅСЃРєРёРµ РїР»Р°С‚С‹|
+|MSI B250M GAMING PRO   |РњР°С‚РµСЂРёРЅСЃРєРёРµ РїР»Р°С‚С‹|
+
+*/
+
+COMMIT;
+	
+
+-- 3*. РџСѓСЃС‚СЊ РёРјРµРµС‚СЃСЏ С‚Р°Р±Р»РёС†Р° СЃ РєР°Р»РµРЅРґР°СЂРЅС‹Рј РїРѕР»РµРј created_at. Р’ РЅРµР№ СЂР°Р·РјРµС‰РµРЅС‹ СЂР°Р·СЂРµР¶РµРЅС‹Рµ РєР°Р»РµРЅРґР°СЂРЅС‹Рµ Р·Р°РїРёСЃРё Р·Р° 
+-- Р°РІРіСѓСЃС‚ 2018 РіРѕРґР° '2018-08-01', '2016-08-04', '2018-08-16' Рё 2018-08-17. РЎРѕСЃС‚Р°РІСЊС‚Рµ Р·Р°РїСЂРѕСЃ, РєРѕС‚РѕСЂС‹Р№ РІС‹РІРѕРґРёС‚ РїРѕР»РЅС‹Р№ СЃРїРёСЃРѕРє 
+-- РґР°С‚ Р·Р° Р°РІРіСѓСЃС‚, РІС‹СЃС‚Р°РІР»СЏСЏ РІ СЃРѕСЃРµРґРЅРµРј РїРѕР»Рµ Р·РЅР°С‡РµРЅРёРµ 1, РµСЃР»Рё РґР°С‚Р° РїСЂРёСЃСѓС‚СЃС‚РІСѓРµС‚ РІ РёСЃС…РѕРґРЅРѕР№ С‚Р°Р±Р»РёС†Рµ Рё 0, РµСЃР»Рё РѕРЅР° РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚.
 -- **************************************************************************************************************
 
+DROP TABLE IF EXISTS august;
 
--- 4*.	Пусть имеется любая таблица с календарным полем created_at. Создайте запрос, который удаляет 
--- устаревшие записи из таблицы, оставляя только 5 самых свежих записей.
+CREATE TABLE august (
+	id SERIAL PRIMARY KEY,
+	created_at DATE
+);
+
+INSERT
+INTO
+	august (created_at)
+VALUES
+	('2018-08-01'),
+	('2018-08-04'),
+	('2018-08-16'),
+	('2018-08-17')
+;
+
+CREATE TEMPORARY TABLE aug_days (
+	day_ INT
+);
+
+INSERT INTO aug_days VALUES
+	(0), (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12), (13), (14), (15), (16), (17), (18), (19),
+	(20), (21), (22), (23), (24), (25), (26), (27), (28), (29), (30)
+;
+
+SELECT
+	DATE(DATE('2018-08-31') - INTERVAL ad.day_ DAY) AS aug_day
+FROM
+	aug_days AS ad
+ORDER BY
+	aug_day
+;
+
+SELECT
+	DATE(DATE('2018-08-31') - INTERVAL ad.day_ DAY) AS aug_day,
+	NOT ISNULL(a.id) AS date_exist
+FROM
+	aug_days AS ad
+LEFT JOIN august a
+ON
+	DATE(DATE('2018-08-31') - INTERVAL ad.day_ DAY) = a.created_at
+ORDER BY
+	aug_day
+;
+
+
+-- 4*.	РџСѓСЃС‚СЊ РёРјРµРµС‚СЃСЏ Р»СЋР±Р°СЏ С‚Р°Р±Р»РёС†Р° СЃ РєР°Р»РµРЅРґР°СЂРЅС‹Рј РїРѕР»РµРј created_at. РЎРѕР·РґР°Р№С‚Рµ Р·Р°РїСЂРѕСЃ, РєРѕС‚РѕСЂС‹Р№ СѓРґР°Р»СЏРµС‚ 
+-- СѓСЃС‚Р°СЂРµРІС€РёРµ Р·Р°РїРёСЃРё РёР· С‚Р°Р±Р»РёС†С‹, РѕСЃС‚Р°РІР»СЏСЏ С‚РѕР»СЊРєРѕ 5 СЃР°РјС‹С… СЃРІРµР¶РёС… Р·Р°РїРёСЃРµР№.
 -- **************************************************************************************************************
 
+DROP TABLE IF EXISTS tab_12_1_4;
 
+CREATE TABLE tab_12_1_4 (
+	id SERIAL PRIMARY KEY,
+	created_at DATE
+);
+
+INSERT
+INTO
+	tab_12_1_4 (created_at)
+VALUES
+	('2018-12-01'),
+	('2018-12-04'),
+	('2018-12-16'),
+	('2018-11-17'),
+	('2019-12-16'),
+	('2018-07-17'),
+	('2017-02-16'),
+	('2021-04-15'),
+	('2014-11-01'),
+	('2007-03-25')
+;
+
+
+SELECT
+	*
+FROM
+	tab_12_1_4
+ORDER BY
+	created_at DESC 
+;
+
+/*
+
+|id |created_at|
+|---|----------|
+|8  |2021-04-15|
+|5  |2019-12-16|
+|3  |2018-12-16|
+|2  |2018-12-04|
+|1  |2018-12-01|
+|4  |2018-11-17|
+|6  |2018-07-17|
+|7  |2017-02-16|
+|9  |2014-11-01|
+|10 |2007-03-25|
+
+*/
+
+START TRANSACTION;
+
+/*
+SELECT
+	COUNT(*)
+FROM
+	tab_12_1_4;
+*/
+
+DELETE
+FROM
+	tab_12_1_4
+ORDER BY
+	created_at
+LIMIT 5;
+
+/*
+|id |created_at|
+|---|----------|
+|8  |2021-04-15|
+|5  |2019-12-16|
+|3  |2018-12-16|
+|2  |2018-12-04|
+|1  |2018-12-01|
+
+*/
+
+COMMIT;
 
 
 -- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
--- Практическое задание по теме “Администрирование MySQL” (эта тема изучается по вашему желанию)
+-- РџСЂР°РєС‚РёС‡РµСЃРєРѕРµ Р·Р°РґР°РЅРёРµ РїРѕ С‚РµРјРµ вЂњРђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ MySQLвЂќ (СЌС‚Р° С‚РµРјР° РёР·СѓС‡Р°РµС‚СЃСЏ РїРѕ РІР°С€РµРјСѓ Р¶РµР»Р°РЅРёСЋ)
 
--- 1.	Создайте двух пользователей которые имеют доступ к базе данных shop. Первому пользователю shop_read должны быть
--- доступны только запросы на чтение данных, второму пользователю shop — любые операции в пределах базы данных shop.
+-- 1.	РЎРѕР·РґР°Р№С‚Рµ РґРІСѓС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РєРѕС‚РѕСЂС‹Рµ РёРјРµСЋС‚ РґРѕСЃС‚СѓРї Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С… shop. РџРµСЂРІРѕРјСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ shop_read РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ
+-- РґРѕСЃС‚СѓРїРЅС‹ С‚РѕР»СЊРєРѕ Р·Р°РїСЂРѕСЃС‹ РЅР° С‡С‚РµРЅРёРµ РґР°РЅРЅС‹С…, РІС‚РѕСЂРѕРјСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ shop вЂ” Р»СЋР±С‹Рµ РѕРїРµСЂР°С†РёРё РІ РїСЂРµРґРµР»Р°С… Р±Р°Р·С‹ РґР°РЅРЅС‹С… shop.
 -- **************************************************************************************************************
 
+SELECT Host, User FROM mysql.user;
 
--- 2*.	Пусть имеется таблица accounts содержащая три столбца id, name, password, содержащие первичный ключ,
--- имя пользователя и его пароль. Создайте представление username таблицы accounts, предоставляющий доступ к столбцу
--- id и name. Создайте пользователя user_read, который бы не имел доступа к таблице accounts, однако, мог бы извлекать
--- записи из представления username.
+SELECT USER();
+
+CREATE USER shop IDENTIFIED WITH sha256_password BY 'pass1';
+
+CREATE USER shop_read IDENTIFIED WITH sha256_password BY 'pass2';
+
+/*
+|Host     |User            |
+|---------|----------------|
+|%        |shop            |
+|%        |shop_read       |
+|localhost|debian-sys-maint|
+|localhost|mysql.infoschema|
+|localhost|mysql.session   |
+|localhost|mysql.sys       |
+|localhost|root            |
+*/
+
+USE test;
+
+SHOW GRANTS;
+
+/*
+|Grants for shop@%                                                                                                         |
+|------------------------------------------------------------------------------------------------------------------------- |
+|GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER,            |
+|SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT,              |
+|CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE,       |
+|DROP ROLE ON *.* TO `shop`@`%`                                                                                            |
+|GRANT APPLICATION_PASSWORD_ADMIN,AUDIT_ABORT_EXEMPT,AUDIT_ADMIN,AUTHENTICATION_POLICY_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,    |
+|BINLOG_ENCRYPTION_ADMIN,CLONE_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,FLUSH_OPTIMIZER_COSTS,FLUSH_STATUS,FLUSH_TABLES,|
+|FLUSH_USER_RESOURCES,GROUP_REPLICATION_ADMIN,GROUP_REPLICATION_STREAM,INNODB_REDO_LOG_ARCHIVE,INNODB_REDO_LOG_ENABLE,     |
+|PASSWORDLESS_USER_ADMIN,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_APPLIER,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,      |
+|RESOURCE_GROUP_USER,ROLE_ADMIN,SERVICE_CONNECTION_ADMIN,SESSION_VARIABLES_ADMIN,SET_USER_ID,SHOW_ROUTINE,SYSTEM_USER,     |
+|SYSTEM_VARIABLES_ADMIN,TABLE_ENCRYPTION_ADMIN,XA_RECOVER_ADMIN ON *.* TO `shop`@`%`                                       |
+
+ */
+
+-- GRANT ALL ON *.* TO 'shop'@'%' IDENTIFIED WITH sha256_password BY 'pass1';
+
+-- GRANT ALL ON *.* TO shop;
+
+-- GRANT USAGE ON test.* TO shop;
+
+/*Р”РµР»Р°Р» РІСЃРµ РєР°Рє РІ СѓСЂРѕРєРµ, РЅРѕ РІ РёС‚РѕРіРµ РІСЃРµРіРґР° РїРѕР»СѓС‡Р°Р» РѕС€РёР±РєСѓ:
+
+SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL 
+server version for the right syntax to use near 'IDENTIFIED WITH sha256_password BY 'pass1'' at line 1
+
+РџРѕ РёС‚РѕРіСѓ СЂР°Р·РѕР±СЂР°Р»СЃСЏ)
+*/
+
+REVOKE ALL ON *.* FROM 'shop'@'%';
+
+/*
+РџРѕРїС‹С‚РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р‘Р”:
+
+Access denied for user 'shop'@'%' to database 'mysql'
+*/
+
+GRANT ALL ON test.* TO 'shop'@'%';
+
+SELECT USER();
+
+/*
+|USER()        |
+|--------------|
+|shop@localhost|
+
+ */
+
+SHOW DATABASES;
+
+/*
+|Database          |
+|------------------|
+|information_schema|
+|test              |
+
+ */
+
+SHOW GRANTS;
+
+/*
+|Grants for shop@%                             |
+|----------------------------------------------|
+|GRANT USAGE ON *.* TO `shop`@`%`              |
+|GRANT ALL PRIVILEGES ON `test`.* TO `shop`@`%`|
+
+*/
+
+GRANT SELECT ON test.* TO shop_read;
+
+SELECT USER();
+
+/*
+|USER()             |
+|-------------------|
+|shop_read@localhost|
+
+ */
+
+SHOW DATABASES;
+
+/*
+|Database          |
+|------------------|
+|information_schema|
+|test              |
+
+ */
+
+SHOW GRANTS;
+
+/*
+|Grants for shop_read@%                     |
+|-------------------------------------------|
+|GRANT USAGE ON *.* TO `shop_read`@`%`      |
+|GRANT SELECT ON `test`.* TO `shop_read`@`%`|
+*/
+
+INSERT INTO catalogs (name) VALUES ('Р‘Р»РѕРєРё РїРёС‚Р°РЅРёСЏ');
+
+/*
+SQL Error [1142] [42000]: INSERT command denied to user 'shop_read'@'localhost' for table 'catalogs'
+
+*/
+
+-- 2*.	РџСѓСЃС‚СЊ РёРјРµРµС‚СЃСЏ С‚Р°Р±Р»РёС†Р° accounts СЃРѕРґРµСЂР¶Р°С‰Р°СЏ С‚СЂРё СЃС‚РѕР»Р±С†Р° id, name, password, СЃРѕРґРµСЂР¶Р°С‰РёРµ РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡,
+-- РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Рё РµРіРѕ РїР°СЂРѕР»СЊ. РЎРѕР·РґР°Р№С‚Рµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ username С‚Р°Р±Р»РёС†С‹ accounts, РїСЂРµРґРѕСЃС‚Р°РІР»СЏСЋС‰РёР№ РґРѕСЃС‚СѓРї Рє СЃС‚РѕР»Р±С†Сѓ
+-- id Рё name. РЎРѕР·РґР°Р№С‚Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ user_read, РєРѕС‚РѕСЂС‹Р№ Р±С‹ РЅРµ РёРјРµР» РґРѕСЃС‚СѓРїР° Рє С‚Р°Р±Р»РёС†Рµ accounts, РѕРґРЅР°РєРѕ, РјРѕРі Р±С‹ РёР·РІР»РµРєР°С‚СЊ
+-- Р·Р°РїРёСЃРё РёР· РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ username.
 -- **************************************************************************************************************
 
+DROP TABLE IF EXISTS accounts;
 
+CREATE TABLE accounts (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100),
+	password_hash VARCHAR(255)
+);
+
+/*
+ * SELECT firstname, password_hash FROM vk.users
+LIMIT 5;
+*/
+
+INSERT INTO test.accounts (name, password_hash) VALUES
+	 ('Patrick','d21ba81cbe9c8f8a98b7677b875658c942182537'),
+	 ('Tiffany','9d462770191578b83cb42cd24a1daa06bb958308'),
+	 ('Corrine','6f3f47d174709e124a2fd8ce8e3d6694e73d368c'),
+	 ('Helene','61322197937416e27c7323f67806be6e5c5161c5'),
+	 ('Elisa','a066d62375b0e4044e6c805bffbfb6861fbdb41b')
+;
+
+SELECT * FROM accounts a;
+
+/*
+|id |name   |password_hash                           |
+|---|-------|----------------------------------------|
+|1  |Patrick|d21ba81cbe9c8f8a98b7677b875658c942182537|
+|2  |Tiffany|9d462770191578b83cb42cd24a1daa06bb958308|
+|3  |Corrine|6f3f47d174709e124a2fd8ce8e3d6694e73d368c|
+|4  |Helene |61322197937416e27c7323f67806be6e5c5161c5|
+|5  |Elisa  |a066d62375b0e4044e6c805bffbfb6861fbdb41b|
+
+ */
+
+CREATE OR REPLACE
+VIEW username AS
+SELECT
+	id,
+	name
+FROM
+	test.accounts a;
+
+SELECT * FROM username u;
+
+/*
+|id |name   |
+|---|-------|
+|1  |Patrick|
+|2  |Tiffany|
+|3  |Corrine|
+|4  |Helene |
+|5  |Elisa  |
+
+ */
+
+CREATE USER user_read IDENTIFIED WITH sha256_password BY 'pass3';
+
+GRANT SELECT ON test.username TO 'user_read'@'%';
+
+SELECT USER();
+
+/*
+|USER()             |
+|-------------------|
+|user_read@localhost|
+
+ */
+
+SHOW DATABASES;
+
+/*
+|Database          |
+|------------------|
+|information_schema|
+|test              |
+
+ */
+
+SHOW GRANTS;
+
+/*
+|Grants for user_read@%                              |
+|----------------------------------------------------|
+|GRANT USAGE ON *.* TO `user_read`@`%`               |
+|GRANT SELECT ON `test`.`username` TO `user_read`@`%`|
+
+*/
+
+SELECT id, name FROM accounts;
+
+-- SQL Error [1142] [42000]: SELECT command denied to user 'user_read'@'localhost' for table 'accounts',
+
+SELECT * FROM username u;
+
+/*
+|id |name   |
+|---|-------|
+|1  |Patrick|
+|2  |Tiffany|
+|3  |Corrine|
+|4  |Helene |
+|5  |Elisa  |
+
+ */
 
 
 -- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
--- Практическое задание по теме “Хранимые процедуры и функции, триггеры"
+-- РџСЂР°РєС‚РёС‡РµСЃРєРѕРµ Р·Р°РґР°РЅРёРµ РїРѕ С‚РµРјРµ вЂњРҐСЂР°РЅРёРјС‹Рµ РїСЂРѕС†РµРґСѓСЂС‹ Рё С„СѓРЅРєС†РёРё, С‚СЂРёРіРіРµСЂС‹"
 
--- 1.	Создайте хранимую функцию hello(), которая будет возвращать приветствие, в зависимости от текущего времени суток. 
--- С 6:00 до 12:00 функция должна возвращать фразу "Доброе утро", с 12:00 до 18:00 функция должна возвращать фразу 
--- "Добрый день", с 18:00 до 00:00 — "Добрый вечер", с 00:00 до 6:00 — "Доброй ночи".
+-- 1.	РЎРѕР·РґР°Р№С‚Рµ С…СЂР°РЅРёРјСѓСЋ С„СѓРЅРєС†РёСЋ hello(), РєРѕС‚РѕСЂР°СЏ Р±СѓРґРµС‚ РІРѕР·РІСЂР°С‰Р°С‚СЊ РїСЂРёРІРµС‚СЃС‚РІРёРµ, РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РµРєСѓС‰РµРіРѕ РІСЂРµРјРµРЅРё СЃСѓС‚РѕРє. 
+-- РЎ 6:00 РґРѕ 12:00 С„СѓРЅРєС†РёСЏ РґРѕР»Р¶РЅР° РІРѕР·РІСЂР°С‰Р°С‚СЊ С„СЂР°Р·Сѓ "Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ", СЃ 12:00 РґРѕ 18:00 С„СѓРЅРєС†РёСЏ РґРѕР»Р¶РЅР° РІРѕР·РІСЂР°С‰Р°С‚СЊ С„СЂР°Р·Сѓ 
+-- "Р”РѕР±СЂС‹Р№ РґРµРЅСЊ", СЃ 18:00 РґРѕ 00:00 вЂ” "Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ", СЃ 00:00 РґРѕ 6:00 вЂ” "Р”РѕР±СЂРѕР№ РЅРѕС‡Рё".
 -- **************************************************************************************************************
 
+SELECT VERSION();
 
--- 2.	В таблице products есть два текстовых поля: name с названием товара и description с его описанием.
--- Допустимо присутствие обоих полей или одно из них. Ситуация, когда оба поля принимают неопределенное 
--- значение NULL неприемлема. Используя триггеры, добейтесь того, чтобы одно из этих полей или оба поля были заполнены.
--- При попытке присвоить полям NULL-значение необходимо отменить операцию.
+DROP FUNCTION IF EXISTS test.hello;
+
+DELIMITER $$
+$$
+CREATE FUNCTION test.hello()
+RETURNS TINYTEXT NO SQL
+BEGIN
+	DECLARE hour_day INT;
+	SET hour_day = HOUR(NOW());
+	CASE
+		WHEN hour_day BETWEEN 0 AND 5 THEN RETURN "Р”РѕР±СЂРѕР№ РЅРѕС‡Рё";
+		WHEN hour_day BETWEEN 6 AND 11 THEN RETURN "Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ";
+		WHEN hour_day BETWEEN 12 AND 17 THEN RETURN "Р”РѕР±СЂС‹Р№ РґРµРЅСЊ";
+		WHEN hour_day BETWEEN 18 AND 23 THEN RETURN "Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ";
+	END CASE;
+END$$
+DELIMITER ;
+
+SELECT hello('13:51:53');
+
+DROP FUNCTION IF EXISTS test.hello_true;
+
+/*
+|NOW()              |hello()    |
+|-------------------|-----------|
+|2022-04-22 04:51:53|Р”РѕР±СЂРѕР№ РЅРѕС‡Рё|
+
+*/
+
+DELIMITER $$
+$$
+CREATE FUNCTION test.hello_true()
+RETURNS TINYTEXT NO SQL
+BEGIN
+	DECLARE hour_day (IN value INT);
+	SET hour_day = HOUR(TIME());
+	CASE
+		WHEN hour_day BETWEEN 0 AND 5 THEN RETURN "Р”РѕР±СЂРѕР№ РЅРѕС‡Рё";
+		WHEN hour_day BETWEEN 6 AND 11 THEN RETURN "Р”РѕР±СЂРѕРµ СѓС‚СЂРѕ";
+		WHEN hour_day BETWEEN 12 AND 17 THEN RETURN "Р”РѕР±СЂС‹Р№ РґРµРЅСЊ";
+		WHEN hour_day BETWEEN 18 AND 23 THEN RETURN "Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ";
+	END CASE;
+END$$
+DELIMITER ;
+
+
+-- 2.	Р’ С‚Р°Р±Р»РёС†Рµ products РµСЃС‚СЊ РґРІР° С‚РµРєСЃС‚РѕРІС‹С… РїРѕР»СЏ: name СЃ РЅР°Р·РІР°РЅРёРµРј С‚РѕРІР°СЂР° Рё description СЃ РµРіРѕ РѕРїРёСЃР°РЅРёРµРј.
+-- Р”РѕРїСѓСЃС‚РёРјРѕ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ РѕР±РѕРёС… РїРѕР»РµР№ РёР»Рё РѕРґРЅРѕ РёР· РЅРёС…. РЎРёС‚СѓР°С†РёСЏ, РєРѕРіРґР° РѕР±Р° РїРѕР»СЏ РїСЂРёРЅРёРјР°СЋС‚ РЅРµРѕРїСЂРµРґРµР»РµРЅРЅРѕРµ 
+-- Р·РЅР°С‡РµРЅРёРµ NULL РЅРµРїСЂРёРµРјР»РµРјР°. РСЃРїРѕР»СЊР·СѓСЏ С‚СЂРёРіРіРµСЂС‹, РґРѕР±РµР№С‚РµСЃСЊ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РѕРґРЅРѕ РёР· СЌС‚РёС… РїРѕР»РµР№ РёР»Рё РѕР±Р° РїРѕР»СЏ Р±С‹Р»Рё Р·Р°РїРѕР»РЅРµРЅС‹.
+-- РџСЂРё РїРѕРїС‹С‚РєРµ РїСЂРёСЃРІРѕРёС‚СЊ РїРѕР»СЏРј NULL-Р·РЅР°С‡РµРЅРёРµ РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РјРµРЅРёС‚СЊ РѕРїРµСЂР°С†РёСЋ.
 -- **************************************************************************************************************
 
+DELIMITER //
+//
+CREATE TRIGGER check_name_description_before_insert
+BEFORE INSERT
+ON products FOR EACH ROW 
+BEGIN
+	IF NEW.name IS NULL 
+		AND NEW.description IS NULL THEN
+			SIGNAL SQLSTATE '45000'
+			SET MESSAGE_TEXT = 'Р’РЅРµСЃРµРЅРёРµ РѕС‚РјРµРЅРµРЅРЅРѕ. РћРґРЅРѕ РёР· РїРѕР»РµР№ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅРѕ.';
+	END IF;
+END//
 
--- 3.	(по желанию) Напишите хранимую функцию для вычисления произвольного числа Фибоначчи.
--- Числами Фибоначчи называется последовательность в которой число равно сумме двух предыдущих чисел. 
--- Вызов функции FIBONACCI(10) должен возвращать число 55.
+DELIMITER ;
+
+INSERT INTO test.products (name, description) VALUES
+	 ('Intel Core i7-12700K', NULL),
+	 (NULL, 'РњР°С‚РµСЂРёРЅСЃРєР°СЏ РїР»Р°С‚Р° ASUS ROG MAXIMUS X HERO, Z370, Socket 1151-V2, DDR4, ATX')
+;
+
+SELECT id, name, description FROM products p;
+
+/*
+|id |name                   |description                                                                      |
+|---|-----------------------|---------------------------------------------------------------------------------|
+|1  |Intel Core i3-8100     |РџСЂРѕС†РµСЃСЃРѕСЂ РґР»СЏ РЅР°СЃС‚РѕР»СЊРЅС‹С… РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… РєРѕРјРїСЊСЋС‚РµСЂРѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° РїР»Р°С‚С„РѕСЂРјРµ Intel.|
+|2  |Intel Core i5-7400     |РџСЂРѕС†РµСЃСЃРѕСЂ РґР»СЏ РЅР°СЃС‚РѕР»СЊРЅС‹С… РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… РєРѕРјРїСЊСЋС‚РµСЂРѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° РїР»Р°С‚С„РѕСЂРјРµ Intel.|
+|3  |AMD FX-8320E           |РџСЂРѕС†РµСЃСЃРѕСЂ РґР»СЏ РЅР°СЃС‚РѕР»СЊРЅС‹С… РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… РєРѕРјРїСЊСЋС‚РµСЂРѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° РїР»Р°С‚С„РѕСЂРјРµ AMD.  |
+|4  |AMD FX-8320            |РџСЂРѕС†РµСЃСЃРѕСЂ РґР»СЏ РЅР°СЃС‚РѕР»СЊРЅС‹С… РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹С… РєРѕРјРїСЊСЋС‚РµСЂРѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° РїР»Р°С‚С„РѕСЂРјРµ AMD.  |
+|5  |ASUS ROG MAXIMUS X HERO|РњР°С‚РµСЂРёРЅСЃРєР°СЏ РїР»Р°С‚Р° ASUS ROG MAXIMUS X HERO, Z370, Socket 1151-V2, DDR4, ATX       |
+|6  |Gigabyte H310M S2H     |РњР°С‚РµСЂРёРЅСЃРєР°СЏ РїР»Р°С‚Р° Gigabyte H310M S2H, H310, Socket 1151-V2, DDR4, mATX           |
+|7  |MSI B250M GAMING PRO   |РњР°С‚РµСЂРёРЅСЃРєР°СЏ РїР»Р°С‚Р° MSI B250M GAMING PRO, B250, Socket 1151, DDR4, mATX            |
+|8  |Intel Core i7-12700K   |                                                                                 |
+|9  |                       |РњР°С‚РµСЂРёРЅСЃРєР°СЏ РїР»Р°С‚Р° ASUS ROG MAXIMUS X HERO, Z370, Socket 1151-V2, DDR4, ATX       |
+
+*/
+
+INSERT INTO test.products (name, description) VALUES
+	 (NULL, NULL)
+;
+
+-- SQL Error [1644] [45000]: Р’РЅРµСЃРµРЅРёРµ РѕС‚РјРµРЅРµРЅРЅРѕ. РћРґРЅРѕ РёР· РїРѕР»РµР№ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅРѕ.
+
+-- 3.	(РїРѕ Р¶РµР»Р°РЅРёСЋ) РќР°РїРёС€РёС‚Рµ С…СЂР°РЅРёРјСѓСЋ С„СѓРЅРєС†РёСЋ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ РїСЂРѕРёР·РІРѕР»СЊРЅРѕРіРѕ С‡РёСЃР»Р° Р¤РёР±РѕРЅР°С‡С‡Рё.
+-- Р§РёСЃР»Р°РјРё Р¤РёР±РѕРЅР°С‡С‡Рё РЅР°Р·С‹РІР°РµС‚СЃСЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РІ РєРѕС‚РѕСЂРѕР№ С‡РёСЃР»Рѕ СЂР°РІРЅРѕ СЃСѓРјРјРµ РґРІСѓС… РїСЂРµРґС‹РґСѓС‰РёС… С‡РёСЃРµР». 
+-- Р’С‹Р·РѕРІ С„СѓРЅРєС†РёРё FIBONACCI(10) РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ С‡РёСЃР»Рѕ 55.
 /*
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 |  7 |  8 |  9 | 10 |    
 |---|---|---|---|---|---|---|----|----|----|----|
@@ -72,6 +608,6 @@
 
 
 /*
-Комментарии преподавателя:
+РљРѕРјРјРµРЅС‚Р°СЂРёРё РїСЂРµРїРѕРґР°РІР°С‚РµР»СЏ:
 --------------------------------------
-Кирилл Иванов?Преподаватель
+РљРёСЂРёР»Р» РРІР°РЅРѕРІ?РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ
