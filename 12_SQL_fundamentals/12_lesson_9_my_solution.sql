@@ -517,9 +517,7 @@ BEGIN
 END$$
 DELIMITER ;
 
-SELECT hello('13:51:53');
-
-DROP FUNCTION IF EXISTS test.hello_true;
+SELECT NOW(), hello();
 
 /*
 |NOW()              |hello()    |
@@ -530,11 +528,38 @@ DROP FUNCTION IF EXISTS test.hello_true;
 
 DELIMITER $$
 $$
+CREATE FUNCTION test.hello_if()
+RETURNS TINYTEXT NO SQL
+BEGIN
+	DECLARE hour_day INT;
+	SET hour_day = HOUR(NOW());
+	IF hour_day BETWEEN 0 AND 5 THEN RETURN "Доброй ночи";
+		ELSEIF hour_day BETWEEN 6 AND 11 THEN RETURN "Доброе утро";
+		ELSEIF hour_day BETWEEN 12 AND 17 THEN RETURN "Добрый день";
+		ELSEIF hour_day BETWEEN 18 AND 23 THEN RETURN "Добрый вечер";
+	END IF;
+END$$
+DELIMITER ;
+
+SELECT hello_if();
+
+/*
+|NOW()              |hello()    |
+|-------------------|-----------|
+|2022-04-22 04:51:53|Доброй ночи|
+
+*/
+
+DROP FUNCTION IF EXISTS test.hello_true;
+
+DELIMITER $$
+$$
 CREATE FUNCTION test.hello_true()
 RETURNS TINYTEXT NO SQL
 BEGIN
-	DECLARE hour_day (IN value INT);
-	SET hour_day = HOUR(TIME());
+	DECLARE user_in (IN value TIME);
+	DECLARE hour_day INT;
+	SET hour_day = HOUR(user_in);
 	CASE
 		WHEN hour_day BETWEEN 0 AND 5 THEN RETURN "Доброй ночи";
 		WHEN hour_day BETWEEN 6 AND 11 THEN RETURN "Доброе утро";
@@ -544,12 +569,36 @@ BEGIN
 END$$
 DELIMITER ;
 
+/*
+SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to 
+your MySQL server version for the right syntax to use near '(IN value INT);
+	SET hour_day = HOUR(TIME());
+	CASE
+		WHEN hour_day BETWEEN 0' at line 4
+*/
+
+/*
+Причина:
+ SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to 
+your MySQL server version for the right syntax to use near '(IN value TIME);
+
+	DECLARE hour_day INT;
+
+	SET hour_day = HOUR(user_in);
+
+	CASE
+' at line 4
+*/
+
+SELECT HOUR('18:51:53');
 
 -- 2.	В таблице products есть два текстовых поля: name с названием товара и description с его описанием.
 -- Допустимо присутствие обоих полей или одно из них. Ситуация, когда оба поля принимают неопределенное 
 -- значение NULL неприемлема. Используя триггеры, добейтесь того, чтобы одно из этих полей или оба поля были заполнены.
 -- При попытке присвоить полям NULL-значение необходимо отменить операцию.
 -- **************************************************************************************************************
+
+DROP TRIGGER IF EXISTS products.check_name_description_before_insert;
 
 DELIMITER //
 //
@@ -603,9 +652,37 @@ INSERT INTO test.products (name, description) VALUES
 | 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 |
  */
 -- **************************************************************************************************************
- 
 
+DROP FUNCTION IF EXISTS test.fibonacci;
 
+DELIMITER $$
+$$
+CREATE FUNCTION fibonacci(num INT)
+RETURNS INT DETERMINISTIC
+BEGIN
+	DECLARE five_sqrt DOUBLE;
+	SET five_sqrt = SQRT(5);
+	RETURN (POW((1 + five_sqrt) / 2.0, num) - POW((1 - five_sqrt)/ 2.0, num)) / five_sqrt;
+END
+$$
+
+DELIMITER ;
+
+SELECT fibonacci(10);
+
+/*
+|fibonacci(10)|
+|-------------|
+|55           |
+*/
+
+SELECT fibonacci(20);
+
+/*
+|fibonacci(20)|
+|-------------|
+|6 765        |
+*/
 
 /*
 Комментарии преподавателя:
