@@ -3,7 +3,7 @@ CREATE DATABASE kinorium;
 USE kinorium;
 
 
--- Таблица пользователей
+-- 1. Таблица пользователей
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
 	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -11,7 +11,7 @@ CREATE TABLE users (
 	password_hash VARCHAR(256)
 );
 
--- Профили пользователей
+-- 2. Профили пользователей
 DROP TABLE IF EXISTS profiles;
 CREATE TABLE profiles (
 	user_id BIGINT UNSIGNED NOT NULL PRIMARY KEY,
@@ -19,15 +19,14 @@ CREATE TABLE profiles (
 	firstname VARCHAR(100) COMMENT 'Имя',
 	lastname VARCHAR(100) COMMENT 'Фамилия',
 	birthday DATE,
-	
--- 	FOREIGN KEY (user_id) REFERENCES users(id),
--- 	FOREIGN KEY (social_net_id) REFERENCES social_net(id),
-	
+		
 	created_at DATETIME DEFAULT NOW(),
-	updated_at DATETIME DEFAULT NOW()
+	updated_at DATETIME DEFAULT NOW(),
+	
+ 	FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
--- Таблица сообщений пользователей
+-- 3. Таблица сообщений пользователей
 DROP TABLE IF EXISTS messages;
 CREATE TABLE messages (
 	id SERIAL,
@@ -36,144 +35,191 @@ CREATE TABLE messages (
 	body TEXT,
 	created_at DATETIME DEFAULT NOW(),
 		
--- 	FOREIGN KEY (from_user_id) REFERENCES users(id),
--- 	FOREIGN KEY (to_user_id) REFERENCES users(id),
-	
 	INDEX (from_user_id),
-	INDEX (to_user_id)
+	INDEX (to_user_id),
+	
+ 	FOREIGN KEY (from_user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+ 	FOREIGN KEY (to_user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
--- Таблица фильмов
-DROP TABLE IF EXISTS films;
-CREATE TABLE films (
-	id SERIAL,
-	country_id BIGINT UNSIGNED NOT NULL,
-	director_id BIGINT UNSIGNED NOT NULL,
-	actor_id BIGINT UNSIGNED NOT NULL,
-	release_date DATE,
-	status ENUM('Анонс', 'В производстве', 'Скоро', 'Премьера', 'Премьера онлайн'),
-	created_at DATETIME DEFAULT NOW(),
-	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP
-
-
--- 	FOREIGN KEY (user_id) REFERENCES users(id),
--- 	FOREIGN KEY (community_id) REFERENCES communities(id)б	
--- 	FOREIGN KEY (initiator_user_id) REFERENCES users(id),
--- 	FOREIGN KEY (country_id) REFERENCES countries(id)
--- 	FOREIGN KEY (target_user_id) REFERENCES users(id)
--- );
-
--- Таблица стран
+-- 4. Таблица стран
 DROP TABLE IF EXISTS countries;
 CREATE TABLE countries (
 	id SERIAL primary key,
 	country VARCHAR(100)
 );
 
-
-DROP TABLE IF EXISTS communities;
-CREATE TABLE communities (
+-- 5. Таблица жанров
+DROP TABLE IF EXISTS genres;
+CREATE TABLE genres (
 	id SERIAL,
-	name VARCHAR(255),
-	admin_user_id BIGINT UNSIGNED NOT NULL,
-		
-	INDEX (name),
-	FOREIGN KEY (admin_user_id) REFERENCES users(id)
+	name VARCHAR(255) -- 'Хоррор', 'Комедия', 'Драма', 'Биографический', 'Документальный', и т. д.
 );
 
--- M x M
-DROP TABLE IF EXISTS users_communities;
-CREATE TABLE users_communities (
-	user_id BIGINT UNSIGNED NOT NULL,
-	community_id BIGINT UNSIGNED NOT NULL,
-		
-	FOREIGN KEY (user_id) REFERENCES users(id),
-	FOREIGN KEY (community_id) REFERENCES communities(id)
-);
-
-DROP TABLE IF EXISTS media_types;
-CREATE TABLE media_types (
-	id SERIAL,
-	name VARCHAR(255) -- 'text', 'video', 'music', 'image'
-);
-
+-- 6. Таблица медиа (постеры и трейлеры к фильмам)
 DROP TABLE IF EXISTS media;
 CREATE TABLE media (
 	id SERIAL,
-	user_id BIGINT UNSIGNED NOT NULL,
-	media_type_id BIGINT UNSIGNED NOT NULL,
-	body VARCHAR(255),
+	media_type ENUM('Poster', 'Trailer'),
 	filename VARCHAR(255),
 	metadata JSON,
 	created_at DATETIME DEFAULT NOW(),
-	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
-		
-	FOREIGN KEY (user_id) REFERENCES users(id),
-	FOREIGN KEY (media_type_id) REFERENCES media_types(id)
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP
 );
 
-DROP TABLE IF EXISTS likes;
-CREATE TABLE likes (
+-- 7. Таблица актеров
+DROP TABLE IF EXISTS actors;
+CREATE TABLE actors (
+	id SERIAL,
+	gender CHAR(1) COMMENT 'Пол',
+	actor_firstname VARCHAR(100) COMMENT 'Имя',
+	actor_lastname VARCHAR(100) COMMENT 'Фамилия',
+	actor_birthday DATE,
+	country_id BIGINT UNSIGNED NOT NULL,
+	users_rating FLOAT,
+	
+	created_at DATETIME DEFAULT NOW(),
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
+	
+	FOREIGN KEY (country_id) REFERENCES countries(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- 8. Таблица режиссеров
+DROP TABLE IF EXISTS directors;
+CREATE TABLE directors (
+	id SERIAL,
+	gender CHAR(1) COMMENT 'Пол',
+	director_firstname VARCHAR(100) COMMENT 'Имя',
+	director_lastname VARCHAR(100) COMMENT 'Фамилия',
+	director_birthday DATE,
+	country_id BIGINT UNSIGNED NOT NULL,
+	users_rating FLOAT,
+	
+	created_at DATETIME DEFAULT NOW(),
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
+	
+	FOREIGN KEY (country_id) REFERENCES countries(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- 9. Таблица фильмов
+DROP TABLE IF EXISTS films;
+CREATE TABLE films (
+	id SERIAL,
+	film_title VARCHAR(255),
+	country_id BIGINT UNSIGNED NOT NULL,
+	director_id BIGINT UNSIGNED NOT NULL,
+	actor_id BIGINT UNSIGNED NOT NULL,
+	film_release_date DATE,
+	genre_id BIGINT UNSIGNED NOT NULL,
+	status ENUM('Анонс', 'В производстве', 'Постпродакшен', 'Премьера', 'Премьера онлайн'),
+	poster_id BIGINT UNSIGNED NOT NULL,
+	trailer_id BIGINT UNSIGNED NOT NULL,
+	users_rating FLOAT,
+	
+	created_at DATETIME DEFAULT NOW(),
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
+
+	FOREIGN KEY (country_id) REFERENCES countries(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (director_id) REFERENCES directors(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (actor_id) REFERENCES actors(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (genre_id) REFERENCES genres(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (poster_id) REFERENCES media(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (trailer_id) REFERENCES media(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+	
+	
+-- 10. Таблица сериалов
+DROP TABLE IF EXISTS serials;
+CREATE TABLE serials (
+	id SERIAL,
+	serial_title VARCHAR(255),
+	country_id BIGINT UNSIGNED NOT NULL,
+	director_id BIGINT UNSIGNED NOT NULL,
+	actor_id BIGINT UNSIGNED NOT NULL,
+	season_id BIGINT UNSIGNED NOT NULL,
+	genre_id BIGINT UNSIGNED NOT NULL,
+	poster_id BIGINT UNSIGNED NOT NULL,
+	trailer_id BIGINT UNSIGNED NOT NULL,
+	users_rating FLOAT,
+	
+	created_at DATETIME DEFAULT NOW(),
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
+
+	FOREIGN KEY (country_id) REFERENCES countries(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (director_id) REFERENCES directors(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (actor_id) REFERENCES actors(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (genre_id) REFERENCES genres(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (poster_id) REFERENCES media(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (trailer_id) REFERENCES media(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+	
+-- 11. Таблица сезонов сериалов
+DROP TABLE IF EXISTS serials_seasons;
+CREATE TABLE serials_seasons (
+	id SERIAL,
+	status ENUM('Анонс', 'В производстве', 'Постпродакшен', 'Премьера', 'Премьера онлайн'),
+	episode_id BIGINT UNSIGNED NOT NULL,
+	serials_id BIGINT UNSIGNED NOT NULL,
+	season_release_date DATE,
+	users_rating FLOAT,
+	
+	created_at DATETIME DEFAULT NOW(),
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP
+);
+
+/*
+ALTER TABLE serials
+ADD CONSTRAINT serials_ibfk_7 FOREIGN KEY (season_id) REFERENCES serials_seasons(id) ON DELETE CASCADE ON UPDATE CASCADE
+;
+*/
+
+-- 12. Таблица эпизодов сериалов
+DROP TABLE IF EXISTS serials_episodes;
+CREATE TABLE serials_episodes (
+	id SERIAL,
+	serial_episode_title VARCHAR(255),
+-- 	status ENUM('Анонс', 'В производстве', 'Постпродакшен', 'Премьера', 'Премьера онлайн'),
+	serials_id BIGINT UNSIGNED NOT NULL,
+	season_id BIGINT UNSIGNED NOT NULL,
+	episode_release_date DATE,
+	users_rating FLOAT,
+	
+	created_at DATETIME DEFAULT NOW(),
+	updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
+	
+	FOREIGN KEY (serials_id) REFERENCES serials(id)
+);
+
+/*
+ALTER TABLE serials_seasons
+ADD CONSTRAINT serials_seasons_ibfk_1 FOREIGN KEY (episode_id) REFERENCES serials_episodes(id) ON DELETE CASCADE ON UPDATE CASCADE
+;
+*/
+
+-- 13. Таблица пользовательских рейтингов
+DROP TABLE IF EXISTS users_ratings;
+CREATE TABLE users_ratings (
 	id SERIAL,
 	user_id BIGINT UNSIGNED NOT NULL,
-	media_id BIGINT UNSIGNED NOT NULL,
-	created_at DATETIME DEFAULT NOW()
-);
-
-ALTER TABLE likes
-ADD CONSTRAINT fk_likes_user_id FOREIGN KEY (user_id) REFERENCES users(id),
-ADD CONSTRAINT fk_likes_media_id FOREIGN KEY (media_id) REFERENCES media(id)
-;
-
-DROP TABLE IF EXISTS links;
-CREATE TABLE links (
-	id SERIAL
-);
-
-
--- таблица компаний, которые представлены в соц сети, а также пользователи сети могут быть
--- сотрудниками этих кампаний
-DROP TABLE IF EXISTS companies;
-CREATE TABLE companies (
-	id SERIAL,
-	created_at DATETIME DEFAULT NOW(),
-	company_site BIGINT UNSIGNED NOT NULL,
-	employee_id BIGINT UNSIGNED NOT NULL,
+	serials_id BIGINT UNSIGNED NOT NULL,
+	serials_rating FLOAT,
+	season_id BIGINT UNSIGNED NOT NULL,
+	season_rating FLOAT,
+	episode_id BIGINT UNSIGNED NOT NULL,
+	episode_rating FLOAT,
+	film_id BIGINT UNSIGNED NOT NULL,
+	film_rating FLOAT,
+	actor_id BIGINT UNSIGNED NOT NULL,
+	actor_rating FLOAT,
+	director_id BIGINT UNSIGNED NOT NULL,
+	director_rating FLOAT,
 	
-	FOREIGN KEY (employee_id) REFERENCES users(id),
-	FOREIGN KEY (company_site) REFERENCES links(id)
+	FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (serials_id) REFERENCES serials(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (season_id) REFERENCES serials_seasons(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (episode_id) REFERENCES serials_episodes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (film_id) REFERENCES films(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (actor_id) REFERENCES actors(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (director_id) REFERENCES directors(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
-ALTER TABLE profiles ADD COLUMN employee_of_company BIGINT UNSIGNED NOT NULL;
-ALTER TABLE profiles ADD CONSTRAINT fk_profiles_company_id
-FOREIGN KEY (employee_of_company) REFERENCES companies(id)
-;
-
-ALTER TABLE links
-ADD COLUMN media_id BIGINT UNSIGNED NOT NULL,
-ADD COLUMN user_id BIGINT UNSIGNED NOT NULL,
-ADD COLUMN body VARCHAR(255),
-ADD COLUMN name VARCHAR(255),
-ADD COLUMN created_at DATETIME DEFAULT NOW(),
-ADD COLUMN updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
-ADD CONSTRAINT fk_links_media_id FOREIGN KEY (media_id) REFERENCES media(id),
-ADD CONSTRAINT fk_links_user_id FOREIGN KEY (user_id) REFERENCES users(id)
-;
-
--- таблица звонков пользователей
-DROP TABLE IF EXISTS calls;
-CREATE TABLE calls (
-	id SERIAL,
-	initiator_user_id BIGINT UNSIGNED NOT NULL,
-	target_user_id BIGINT UNSIGNED NOT NULL,
-	started_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-	finished_at DATETIME ON UPDATE CURRENT_TIMESTAMP,
-	
-	PRIMARY KEY (initiator_user_id, target_user_id), 
-	FOREIGN KEY (initiator_user_id) REFERENCES users(id),
-	FOREIGN KEY (target_user_id) REFERENCES users(id),
-	CHECK (initiator_user_id != target_user_id)
-);
-
-ALTER TABLE profiles ADD COLUMN is_active BIT NOT NULL DEFAULT(TRUE);
-ALTER TABLE profiles ADD COLUMN age TINYINT UNSIGNED NOT NULL;
