@@ -223,13 +223,3 @@ CREATE TABLE users_ratings (
 	FOREIGN KEY (actor_id) REFERENCES actors(id) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (director_id) REFERENCES directors(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
-/*
-Комментарии преподавателя:
---------------------------------------
-Кирилл Иванов・Преподаватель
-- Правильно, что пересоздаете БД заново перед работой с ней.
-- Правильно, что выбираете БД по умолчанию для скрипта командой USE <db_name>;
-- Количество таблиц достаточное.
-- ER-диаграмму можно добавить в виде скриншота или файлом *.mwb из Workbench.
-*/
