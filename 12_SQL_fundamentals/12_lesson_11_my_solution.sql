@@ -432,7 +432,7 @@ The server generated these startup warnings when booting:
         2022-05-25T10:06:32.150+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
         2022-05-25T10:06:32.954+00:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
 ---
----
+/*---
         Enable MongoDB's free cloud-based monitoring service, which will then receive and display
         metrics about your deployment (disk utilization, CPU, operation statistics, etc).
 
@@ -442,7 +442,7 @@ The server generated these startup warnings when booting:
 
         To enable free monitoring, run the following command: db.enableFreeMonitoring()
         To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
----
+---*/
 > db.version()
 4.4.14
 > use products
@@ -527,3 +527,7 @@ switched to db catalogs
 Комментарии преподавателя:
 --------------------------------------
 Кирилл Иванов・Преподаватель
+Альтернативный способ добавления записей в таблицу с логами (вместо триггера) - отдельная хранимая процедура, которая вставляет сначала запись в нужную таблицу (users, catalogs, products), а потом уже - в логи.
+
+Ссылка на видео с разбором ДЗ - в комментариях к следующему уроку.
+*/
