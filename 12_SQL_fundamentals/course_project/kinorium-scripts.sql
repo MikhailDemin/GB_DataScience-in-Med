@@ -97,13 +97,34 @@ BEGIN
 	SELECT
 		ROUND(AVG(ur.actor_rating), 1) AS rating
 	FROM users_ratings ur
-	JOIN test_actors ta ON ta.id = ur.actor_id
-	WHERE ta.id = @search_id;
+-- 	JOIN test_actors ta ON ta.id = ur.actor_id
+	WHERE ur.actor_id = @search_id;
 END $$
 DELIMITER ; 
 
-CALL count_actor_rate(11);
+CALL count_actor_rate(8);
 
+INSERT INTO test_actors (`users_rating`) WHERE test_actors.id = 8
+VALUES (CALL count_actor_rate(8));
+
+
+DELIMITER %%
+
+CREATE PROCEDURE rating_count()
+BEGIN
+	DECLARE id INT;
+	DECLARE rate FLOAT;
+	DECLARE currate CURSOR FOR SELECT
+	ROUND(AVG(ur.actor_rating), 1) AS rating FROM users_ratings ur GROUP BY actor_id;
+	OPEN currate;
+		cycle : LOOP
+			FETCH currate INTO id, rate;
+			INSERT INTO test_actors.users_rating VALUES(rate) WHERE test_actors.id = id;
+		END LOOP cycle;
+	CLOSE currate;	
+END%%
+
+DELIMITER ;
 
 
 
@@ -220,20 +241,14 @@ CREATE PROCEDURE rating_count ()
 BEGIN
 	DECLARE id INT;
 	DECLARE rate FLOAT;
-	
-	DECLARE currate CURSOR FOR SELECT ur.actor_id, 
+	DECLARE currate CURSOR FOR SELECT
 	ROUND(AVG(ur.actor_rating), 1) AS rating FROM users_ratings ur GROUP BY actor_id;
-
 	OPEN currate;
-	
 		cycle : LOOP
 			FETCH currate INTO id, rate;
 			INSERT INTO test_actors.users_rating VALUES(rate) WHERE id = test_actors.id;
 		END LOOP cycle;
-	
-	CLOSE currate;
-	
-	
+	CLOSE currate;	
 END%%
 
 DELIMITER ;
@@ -250,7 +265,7 @@ RETURNS FLOAT DETERMINISTIC
 BEGIN
 	DECLARE search_id INT;
 	SET search_id = value;
-	RETURN ROUND(AVG(ur.actor_rating), 1) FROM users_ratings ur WHERE ur.actor_id = search_id;
+	RETURN (ROUND(AVG(ur.actor_rating), 1) FROM users_ratings ur WHERE ur.actor_id = search_id);
 END
 $$
 
