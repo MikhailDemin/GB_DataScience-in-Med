@@ -6,7 +6,7 @@
 -- из таблицы shop.users в таблицу sample.users. Используйте транзакции.
 -- **************************************************************************************************************
 
-DROP DATABASE IF EXISTS sammple;
+DROP DATABASE IF EXISTS sample;
 
 CREATE DATABASE sample;
 

@@ -7,21 +7,21 @@ CREATE TABLE users (
 	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	-- id SERIAL,
 	-- id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE,
-	firstname VARCHAR(100) COMMENT 'Имя',
-	lastname VARCHAR(100) COMMENT 'Фамилия',
+	firstname VARCHAR(100) COMMENT 'РРјСЏ',
+	lastname VARCHAR(100) COMMENT 'Р¤Р°РјРёР»РёСЏ',
 	email VARCHAR(100) UNIQUE,
 	password_hash VARCHAR(256),
-	phone BIGINT UNSIGNED UNIQUE COMMENT 'Телефон', -- +7(999) 123-45-67 => 79 991 234 567
+	phone BIGINT UNSIGNED UNIQUE COMMENT 'РўРµР»РµС„РѕРЅ', -- +7(999) 123-45-67 => 79 991 234 567
 	
 	INDEX idx_firstname_lastname(firstname, lastname)
-) COMMENT 'Пользователи';
+) COMMENT 'РџРѕР»СЊР·РѕРІР°С‚РµР»Рё';
 
 -- 1 x 1
 DROP TABLE IF EXISTS profiles;
 CREATE TABLE profiles (
 	user_id BIGINT UNSIGNED NOT NULL PRIMARY KEY,
-	gender CHAR(1) COMMENT 'Пол',
-	hometown VARCHAR(200) COMMENT 'Родной город',
+	gender CHAR(1) COMMENT 'РџРѕР»',
+	hometown VARCHAR(200) COMMENT 'Р РѕРґРЅРѕР№ РіРѕСЂРѕРґ',
 	created_at DATETIME DEFAULT NOW()
 );
 
@@ -104,7 +104,7 @@ CREATE TABLE media (
 	-- media_type ENUM('text', 'video', 'music', 'image'),
 	media_type_id BIGINT UNSIGNED NOT NULL,
 	body VARCHAR(255),
-	-- file BLOB, -> приведет к увеличению размера базы и проблемам с производительностью
+	-- file BLOB, -> РїСЂРёРІРµРґРµС‚ Рє СѓРІРµР»РёС‡РµРЅРёСЋ СЂР°Р·РјРµСЂР° Р±Р°Р·С‹ Рё РїСЂРѕР±Р»РµРјР°Рј СЃ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚СЊСЋ
 	filename VARCHAR(255),
 	metadata JSON,
 	created_at DATETIME DEFAULT NOW(),
@@ -133,8 +133,8 @@ CREATE TABLE links (
 );
 
 
--- таблица компаний, которые представлены в соц сети, а также пользователи сети могут быть
--- сотрудниками этих кампаний
+-- С‚Р°Р±Р»РёС†Р° РєРѕРјРїР°РЅРёР№, РєРѕС‚РѕСЂС‹Рµ РїСЂРµРґСЃС‚Р°РІР»РµРЅС‹ РІ СЃРѕС† СЃРµС‚Рё, Р° С‚Р°РєР¶Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»Рё СЃРµС‚Рё РјРѕРіСѓС‚ Р±С‹С‚СЊ
+-- СЃРѕС‚СЂСѓРґРЅРёРєР°РјРё СЌС‚РёС… РєР°РјРїР°РЅРёР№
 DROP TABLE IF EXISTS companies;
 CREATE TABLE companies (
 	id SERIAL,
@@ -162,7 +162,7 @@ ADD CONSTRAINT fk_links_media_id FOREIGN KEY (media_id) REFERENCES media(id),
 ADD CONSTRAINT fk_links_user_id FOREIGN KEY (user_id) REFERENCES users(id)
 ;
 
--- таблица звонков пользователей
+-- С‚Р°Р±Р»РёС†Р° Р·РІРѕРЅРєРѕРІ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
 DROP TABLE IF EXISTS calls;
 CREATE TABLE calls (
 	id SERIAL,
