@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/JetBrains.iml" filepath="$PROJECT_DIR$/.idea/JetBrains.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GB_DataScience-in-Med.iml" filepath="$PROJECT_DIR$/.idea/GB_DataScience-in-Med.iml" />
     </modules>
   </component>
 </project>
