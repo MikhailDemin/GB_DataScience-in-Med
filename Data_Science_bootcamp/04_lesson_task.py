@@ -8,6 +8,7 @@
 # 4. если у ведущего есть выбор, какую из двух дверей открыть (то есть, игрок указал
 # на верную дверь, и за обеими оставшимися дверями — козы), он выбирает любую из них с
 # одинаковой вероятностью.
+import random
 from random import randint as randint
 from random import choice as choice
 
@@ -43,33 +44,62 @@ def monty_hall_attempt(first_choice, change_door):
 trials = 10000
 print(f'Number of trials: {trials}\n')
 win = 0
-loss = 0
 
 for n in range(trials):
     first_choice = randint(1, 3)
-    change_door = True
-    attempt = monty_hall_attempt(first_choice, change_door)
+    attempt = monty_hall_attempt(first_choice, True)
     if attempt:
         win += 1
-    else:
-        loss += 1
 
 print('If player changes door:')
-print(f'win: {win}\nlosses: {loss}')
+print(f'win: {win}\nlosses: {trials - win}')
 print(f'win probability = {(win/trials):.2%} or 2/3\n')
 
 win = 0
-loss = 0
 
 for n in range(trials):
     first_choice = randint(1, 3)
-    change_door = False
-    attempt = monty_hall_attempt(first_choice, change_door)
+    attempt = monty_hall_attempt(first_choice, False)
     if attempt:
         win += 1
-    else:
-        loss += 1
 
 print('If player not changes door:')
-print(f'win: {win}\nlosses: {loss}')
+print(f'win: {win}\nlosses: {trials - win}')
 print(f'win probability = {(win/trials):.2%} or 1/3')
+
+##############################################################################################
+# Разбор преподавателя:
+
+
+# def monty_hall(choice, change):
+#     doors = random.randrange(1, 4)
+#     if doors == choice:
+#         if change:
+#             return False
+#         else:
+#             return True
+#     else:
+#         if change:
+#             return True
+#         else:
+#             return False
+#
+#
+# games = 10000
+# result = 0
+#
+# for i in range(games):
+#     choice = random.randrange(1, 4)
+#     if monty_hall(choice, True):
+#         result += 1
+#
+# print(f'win probability with change door = {(result/games):.2%} or 2/3\n')
+#
+# result = 0
+#
+# for i in range(games):
+#     choice = random.randrange(1, 4)
+#     if monty_hall(choice, False):
+#         result += 1
+#
+# print(f'win probability with no change door = {(result/games):.2%} or 1/3')
