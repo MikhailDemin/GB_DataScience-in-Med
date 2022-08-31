@@ -9,8 +9,8 @@
 # на верную дверь, и за обеими оставшимися дверями — козы), он выбирает любую из них с
 # одинаковой вероятностью.
 import random
-from random import randint as randint
-from random import choice as choice
+from random import randint
+from random import choice
 
 
 def monty_hall_attempt(first_choice, change_door):
