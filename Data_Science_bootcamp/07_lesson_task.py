@@ -28,8 +28,8 @@ class User:
     password = property(fset=set_password)
 
     def show_info(self):
-        # return f'name: {self.name}' + f"\n" + f'login: {self.login}'
-        return f'name: {self.name}, login: {self.login}'
+        return f'name: {self.name}\nlogin: {self.login}'
+        # return f'name: {self.name}, login: {self.login}'
 
 
 class SuperUser(User):
@@ -49,8 +49,8 @@ class SuperUser(User):
         self._role = value
 
     def show_info(self):
-        # return super().show_info() + '\n' + f'role: {self.role}'
-        return super().show_info() + f', role: {self.role}'
+        return super().show_info() + '\n' + f'role: {self.role}'
+        # return super().show_info() + f', role: {self.role}'
 
 
 if __name__ == '__main__':
@@ -63,4 +63,5 @@ if __name__ == '__main__':
 
 print(f'total users: {User.user_count}')
 print(f'total admins: {SuperUser.admin_count}')
-print()
+print(user1.show_info())
+print(admin.show_info())

@@ -12,7 +12,7 @@ print(people)
 
 
 def by_age(person):
-    return person.age
+    return person.__age
 
 
 result = sorted(people, key=by_age)
