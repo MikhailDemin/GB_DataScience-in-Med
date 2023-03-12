@@ -1,0 +1,459 @@
+gene_pli	score	diseaseid	gene_dsi	protein_class_name	geneid	disease_class	disease_type	uniprotid	disease_class_name	disease_name	el	year_initial	source	ei	gene_dpi	protein_class	year_final	gene_symbol	disease_semantic_type
+1.6432e-05	1.0	C0001080	0.391	Kinase	2261	C16;C05	disease	P22607	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Musculoskeletal Diseases	Achondroplasia	definitive	1994	CURATED	0.974	0.846	DTO_03300101	2020	FGFR3	Congenital Abnormality
+1.04e-05	0.8	C0000744	0.505	Transporter	4547	C16;C18	disease	P55157	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Nutritional and Metabolic Diseases	Abetalipoproteinemia		1985	CURATED	0.982	0.846	DTO_05007405	2019	MTTP	Disease or Syndrome
+0.99731	0.8	C0001193	0.38	Kinase	2263	C16;C05	disease	P21802	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Musculoskeletal Diseases	Apert syndrome		1994	CURATED	0.976	0.808	DTO_03300101	2019	FGFR2	Congenital Abnormality
+0.53235	0.7	C0001418	0.236	Transcription factor	7157	C04	group	P04637	   Neoplasms	Adenocarcinoma		1986	CURATED	0.975	0.962	DTO_05007542	2020	TP53	Neoplastic Process
+0.84602	0.69	C0001126	0.522	Transporter	6521	C16;C18;C13;C12	phenotype	P02730	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Nutritional and Metabolic Diseases;    Female Urogenital Diseases and Pregnancy Complications;    Male Urogenital Diseases	Renal tubular acidosis		1996	CURATED	1.0	0.731	DTO_05007405	2013	SLC4A1	Disease or Syndrome
+0.99597	0.6	C0001418	0.314	Enzyme	5743	C04	group	P35354	   Neoplasms	Adenocarcinoma		1996	CURATED	0.965	0.962	DTO_05007624	2019	PTGS2	Neoplastic Process
+0.99722	0.54	C0001126	0.644	Transporter	8671	C16;C18;C13;C12	phenotype	Q9Y6R1	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Nutritional and Metabolic Diseases;    Female Urogenital Diseases and Pregnancy Complications;    Male Urogenital Diseases	Renal tubular acidosis		2000	CURATED	1.0	0.692	DTO_05007405	2011	SLC4A4	Disease or Syndrome
+0.53235	0.5	C0001618	0.236	Transcription factor	7157	C04;C19	group	P04637	   Neoplasms;    Endocrine System Diseases	Tumors of Adrenal Cortex		2005	CURATED	1.0	0.962	DTO_05007542	2018	TP53	Neoplastic Process
+4.0468e-12	0.45	C0001403	0.516		326	C20;C19	disease	O43918	   Immune System Diseases;    Endocrine System Diseases	Addison Disease	strong	2001	CURATED	1.0	0.808		2017	AIRE	Disease or Syndrome
+0.98842	0.43	C0001125	0.581		5160	C18	phenotype	P08559	   Nutritional and Metabolic Diseases	Acidosis, Lactic		1989	CURATED	1.0	0.538		2017	PDHA1	Disease or Syndrome
+1.0	0.4	C0000768	0.369		4851	C16	group	P46531	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2005	CURATED	1.0	0.885		2019	NOTCH1	Congenital Abnormality
+0.99999	0.4	C0000772	0.303		1499	C16	group	P35222	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		1991	CURATED	1.0	0.885		2017	CTNNB1	Congenital Abnormality
+0.99731	0.4	C0000772	0.38	Kinase	2263	C16	group	P21802	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		1985	CURATED	1.0	0.808	DTO_03300101	2017	FGFR2	Congenital Abnormality
+0.25651	0.4	C0000772	0.305	Enzyme	5728	C16	group	P60484	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2001	CURATED	1.0	0.923	DTO_05007624	2015	PTEN	Congenital Abnormality
+0.65372	0.4	C0000786	0.385	Kinase	3717	C13	phenotype	O60674	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2007	CURATED	1.0	0.885	DTO_03300101	2007	JAK2	Pathologic Function
+3.6072e-05	0.4	C0000786	0.539		4256	C13	phenotype	P08493	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846		2008	MGP	Pathologic Function
+0.00056753	0.4	C0001125	0.475	Enzyme modulator	10059	C18	phenotype	O00429	   Nutritional and Metabolic Diseases	Acidosis, Lactic		2007	CURATED	1.0	0.808	DTO_05007584	2007	DNM1L	Disease or Syndrome
+	0.4	C0001125	0.534		4567	C18	phenotype		   Nutritional and Metabolic Diseases	Acidosis, Lactic		2006	CURATED	1.0	0.731		2006	TRNL1	Disease or Syndrome
+0.002357	0.4	C0001125	0.527	Enzyme	50484	C18	phenotype	Q7LG56	   Nutritional and Metabolic Diseases	Acidosis, Lactic		2009	CURATED	1.0	0.769	DTO_05007624	2009	RRM2B	Disease or Syndrome
+3.0324e-32	0.4	C0001126	0.493	Transporter	6559	C16;C18;C13;C12	phenotype	P55017	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Nutritional and Metabolic Diseases;    Female Urogenital Diseases and Pregnancy Complications;    Male Urogenital Diseases	Renal tubular acidosis	strong	2016	CURATED	1.0	0.808	DTO_05007405	2016	SLC12A3	Disease or Syndrome
+0.030057	0.4	C0001206	0.373	Signaling	2688	C05;C10;C19	disease	P01241	   Musculoskeletal Diseases;    Nervous System Diseases;    Endocrine System Diseases	Acromegaly		1978	CURATED	0.982	0.923	DTO_05007599	2020	GH1	Disease or Syndrome
+0.2716	0.4	C0001206	0.318		3479	C05;C10;C19	disease	P05019	   Musculoskeletal Diseases;    Nervous System Diseases;    Endocrine System Diseases	Acromegaly		1991	CURATED	0.977	0.885		2020	IGF1	Disease or Syndrome
+0.36163	0.4	C0001206	0.517	Chaperone	9049	C05;C10;C19	disease	O00170	   Musculoskeletal Diseases;    Nervous System Diseases;    Endocrine System Diseases	Acromegaly		2007	CURATED	1.0	0.769	DTO_05007613	2019	AIP	Disease or Syndrome
+0.00011658	0.4	C0001231	0.356		5443	C04	disease	P01189	   Neoplasms	ACTH Syndrome, Ectopic		1974	CURATED	0.909	0.846		2019	POMC	Disease or Syndrome
+0.39474	0.4	C0001418	0.3		1029	C04	group	P42771;Q8N726	   Neoplasms	Adenocarcinoma		1995	CURATED	0.941	0.885		2020	CDKN2A	Neoplastic Process
+4.9255e-06	0.4	C0001418	0.42	Enzyme modulator	11186	C04	group	Q9NS23	   Neoplasms	Adenocarcinoma		2001	CURATED	0.962	0.808	DTO_05007584	2018	RASSF1	Neoplastic Process
+0.99999	0.4	C0001418	0.303		1499	C04	group	P35222	   Neoplasms	Adenocarcinoma		1997	CURATED	0.969	0.885		2019	CTNNB1	Neoplastic Process
+8.5294e-17	0.4	C0001418	0.357		1950	C04	group	P01133	   Neoplasms	Adenocarcinoma		1986	CURATED	0.966	0.923		2018	EGF	Neoplastic Process
+0.36837	0.4	C0001418	0.295	Kinase	1956	C04	group	P00533	   Neoplasms	Adenocarcinoma		1988	CURATED	0.971	0.885	DTO_03300101	2020	EGFR	Neoplastic Process
+0.0059892	0.4	C0001418	0.328	Kinase	2064	C04	group	P04626	   Neoplasms	Adenocarcinoma		1986	CURATED	0.973	0.923	DTO_03300101	2020	ERBB2	Neoplastic Process
+0.9992	0.4	C0001418	0.324	Nuclear receptor	2099	C04	group	P03372	   Neoplasms	Adenocarcinoma		1991	CURATED	0.914	0.962	DTO_00102000	2020	ESR1	Neoplastic Process
+4.4516e-08	0.4	C0001418	0.4	Nuclear receptor	2100	C04	group	Q92731	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.923	DTO_00102000	2018	ESR2	Neoplastic Process
+0.0027394	0.4	C0001418	0.485		2520	C04	group	P01350	   Neoplasms	Adenocarcinoma		1986	CURATED	1.0	0.808		2018	GAST	Neoplastic Process
+1.0	0.4	C0001418	0.373		324	C04	group	P25054	   Neoplasms	Adenocarcinoma		1992	CURATED	0.982	0.962		2019	APC	Neoplastic Process
+0.00027377	0.4	C0001418	0.31	Signaling	3576	C04	group	P10145	   Neoplasms	Adenocarcinoma		2000	CURATED	1.0	0.962	DTO_05007599	2017	CXCL8	Neoplastic Process
+0.00078803	0.4	C0001418	0.32	Enzyme modulator	3845	C04	group	P01116	   Neoplasms	Adenocarcinoma		1983	CURATED	0.948	0.923	DTO_05007584	2020	KRAS	Neoplastic Process
+0.96998	0.4	C0001418	0.38	Kinase	4233	C04	group	P08581	   Neoplasms	Adenocarcinoma		1993	CURATED	0.947	0.846	DTO_03300101	2019	MET	Neoplastic Process
+9.433e-10	0.4	C0001418	0.486	Enzyme modulator	4583	C04	group	Q02817	   Neoplasms	Adenocarcinoma		1994	CURATED	1.0	0.808	DTO_05007584	2019	MUC2	Neoplastic Process
+0.99801	0.4	C0001418	0.344	Transcription factor	4609	C04	group	P01106	   Neoplasms	Adenocarcinoma		1988	CURATED	1.0	0.923	DTO_05007542	2018	MYC	Neoplastic Process
+0.97606	0.4	C0001418	0.382	Nucleic acid binding	5111	C04	group	P12004	   Neoplasms	Adenocarcinoma		1992	CURATED	0.933	0.846	DTO_05007557	2019	PCNA	Neoplastic Process
+0.051042	0.4	C0001418	0.426	Nuclear receptor	5241	C04	group	P06401	   Neoplasms	Adenocarcinoma		1992	CURATED	0.8	0.885	DTO_00102000	2018	PGR	Neoplastic Process
+1.0	0.4	C0001418	0.292	Kinase	5290	C04	group	P42336	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.923	DTO_03300101	2019	PIK3CA	Neoplastic Process
+9.0776e-11	0.4	C0001418	0.388		54474	C04	group	P35900	   Neoplasms	Adenocarcinoma		1993	CURATED	0.87	0.846		2020	KRT20	Neoplastic Process
+0.029194	0.4	C0001418	0.358	Nuclear receptor	5468	C04	group	P37231	   Neoplasms	Adenocarcinoma		1998	CURATED	0.929	0.885	DTO_00102000	2016	PPARG	Neoplastic Process
+0.25651	0.4	C0001418	0.305	Enzyme	5728	C04	group	P60484	   Neoplasms	Adenocarcinoma		1995	CURATED	0.98	0.923	DTO_05007624	2019	PTEN	Neoplastic Process
+0.89057	0.4	C0001418	0.344	Enzyme modulator	595	C04	group	P24385	   Neoplasms	Adenocarcinoma		1990	CURATED	1.0	0.923	DTO_05007584	2019	CCND1	Neoplastic Process
+0.55903	0.4	C0001418	0.291	Signaling	596	C04	group	P10415	   Neoplasms	Adenocarcinoma		1993	CURATED	0.911	0.885	DTO_05007599	2019	BCL2	Neoplastic Process
+1.0	0.4	C0001418	0.32	Nucleic acid binding	6774	C04	group	P40763	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.923	DTO_05007557	2018	STAT3	Neoplastic Process
+0.9934	0.4	C0001418	0.435	Kinase	6794	C04	group	Q15831	   Neoplasms	Adenocarcinoma		1998	CURATED	0.962	0.808	DTO_03300101	2019	STK11	Neoplastic Process
+0.03685	0.4	C0001418	0.287	Signaling	7040	C04	group	P01137	   Neoplasms	Adenocarcinoma		1993	CURATED	1.0	0.962	DTO_05007599	2017	TGFB1	Neoplastic Process
+0.8033	0.4	C0001418	0.231	Signaling	7124	C04	group	P01375	   Neoplasms	Adenocarcinoma		1991	CURATED	1.0	0.962	DTO_05007599	2017	TNF	Neoplastic Process
+2.4085e-05	0.4	C0001418	0.266	Signaling	7422	C04	group	P15692	   Neoplasms	Adenocarcinoma		1996	CURATED	0.943	0.923	DTO_05007599	2019	VEGFA	Neoplastic Process
+0.99728	0.4	C0001418	0.362	Transcription factor	8626	C04	group	Q9H3D4	   Neoplasms	Adenocarcinoma		2001	CURATED	0.919	0.769	DTO_05007542	2020	TP63	Neoplastic Process
+0.99999	0.4	C0001430	0.303		1499	C04	group	P35222	   Neoplasms	Adenoma		1996	CURATED	0.959	0.885		2019	CTNNB1	Neoplastic Process
+1.0	0.4	C0001430	0.373		324	C04	group	P25054	   Neoplasms	Adenoma		1990	CURATED	0.967	0.962		2018	APC	Neoplastic Process
+0.2716	0.4	C0001430	0.318		3479	C04	group	P05019	   Neoplasms	Adenoma		1992	CURATED	0.875	0.885		2019	IGF1	Neoplastic Process
+0.00033577	0.4	C0001430	0.56	Ion channel	3762	C04	group	P48544	   Neoplasms	Adenoma		2012	CURATED	1.0	0.577	DTO_01300327	2019	KCNJ5	Neoplastic Process
+0.00078803	0.4	C0001430	0.32	Enzyme modulator	3845	C04	group	P01116	   Neoplasms	Adenoma		1991	CURATED	0.944	0.923	DTO_05007584	2020	KRAS	Neoplastic Process
+2.9015e-07	0.4	C0001430	0.406	Signaling	5617	C04	group	P01236	   Neoplasms	Adenoma		1981	CURATED	0.981	0.885	DTO_05007599	2019	PRL	Neoplastic Process
+0.55903	0.4	C0001430	0.291	Signaling	596	C04	group	P10415	   Neoplasms	Adenoma		1994	CURATED	0.95	0.885	DTO_05007599	2011	BCL2	Neoplastic Process
+0.53235	0.4	C0001430	0.236	Transcription factor	7157	C04	group	P04637	   Neoplasms	Adenoma		1986	CURATED	0.911	0.962	DTO_05007542	2020	TP53	Neoplastic Process
+3.0447e-15	0.4	C0001430	0.486	G-protein coupled receptor	7253	C04	group	P16473	   Neoplasms	Adenoma		1993	CURATED	0.926	0.808	DTO_02300001	2013	TSHR	Neoplastic Process
+0.36163	0.4	C0001430	0.517	Chaperone	9049	C04	group	O00170	   Neoplasms	Adenoma		2007	CURATED	1.0	0.769	DTO_05007613	2019	AIP	Neoplastic Process
+1.2598e-28	0.39	C0001418	0.431		4288	C04	group	P46013	   Neoplasms	Adenocarcinoma		1998	CURATED	1.0	0.808		2019	MKI67	Neoplastic Process
+2.3058e-06	0.39	C0001418	0.425	Enzyme	5328	C04	group	P00749	   Neoplasms	Adenocarcinoma		1991	CURATED	1.0	0.923	DTO_05007624	2018	PLAU	Neoplastic Process
+1.0	0.39	C0001418	0.455		8289	C04	group	O14497	   Neoplasms	Adenocarcinoma		2007	CURATED	0.889	0.846		2019	ARID1A	Neoplastic Process
+0.84295	0.39	C0001418	0.459	Transcription factor	864	C04	group	Q13761	   Neoplasms	Adenocarcinoma		2003	CURATED	0.9	0.731	DTO_05007542	2017	RUNX3	Neoplastic Process
+5.8751e-25	0.38	C0001418	0.525	Extracellular structure	10232	C04	group	Q13421	   Neoplasms	Adenocarcinoma		2001	CURATED	1.0	0.692	DTO_05007621	2018	MSLN	Neoplastic Process
+0.99982	0.38	C0001418	0.378	Kinase	3791	C04	group	P35968	   Neoplasms	Adenocarcinoma		2008	CURATED	1.0	0.885	DTO_03300101	2019	KDR	Neoplastic Process
+9.433e-10	0.38	C0001430	0.486	Enzyme modulator	4583	C04	group	Q02817	   Neoplasms	Adenoma		1994	CURATED	1.0	0.808	DTO_05007584	2017	MUC2	Neoplastic Process
+1.0	0.37	C0001418	0.343	Kinase	2475	C04	group	P42345	   Neoplasms	Adenocarcinoma		2008	CURATED	1.0	0.885	DTO_03300101	2019	MTOR	Neoplastic Process
+1.0	0.37	C0001418	0.396	Transcription factor	4790	C04	group	P19838	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.923	DTO_05007542	2017	NFKB1	Neoplastic Process
+0.15499	0.37	C0001418	0.379	Enzyme	6648	C04	group	P04179	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.923	DTO_05007624	2018	SOD2	Neoplastic Process
+2.146e-06	0.37	C0001418	0.353		6696	C04	group	P10451	   Neoplasms	Adenocarcinoma		1997	CURATED	1.0	0.885		2016	SPP1	Neoplastic Process
+0.055854	0.36	C0001418	0.495	Enzyme modulator	332	C04	group	O15392	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.731	DTO_05007584	2019	BIRC5	Neoplastic Process
+0.027363	0.36	C0001430	0.51		23600	C04	group	Q9UHK6	   Neoplasms	Adenoma		1998	CURATED	1.0	0.769		2007	AMACR	Neoplastic Process
+0.94588	0.35	C0000768	0.531		2138	C16	group	Q99502	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		1999	CURATED	1.0	0.731		2018	EYA1	Congenital Abnormality
+0.99971	0.35	C0000768	0.539	Transcription factor	6299	C16	group	Q9NSC2	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2002	CURATED	1.0	0.808	DTO_05007542	2019	SALL1	Congenital Abnormality
+0.65297	0.35	C0000768	0.496	Transcription factor	6495	C16	group	Q15475	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2003	CURATED	1.0	0.692	DTO_05007542	2019	SIX1	Congenital Abnormality
+0.47968	0.35	C0001175	0.336		3558	C01;C20	group	P60568	   Infections;    Immune System Diseases	Acquired Immunodeficiency Syndrome		1985	CURATED	1.0	0.885		1999	IL2	Disease or Syndrome
+0.68076	0.35	C0001206	0.42	Enzyme modulator	2778	C05;C10;C19	disease	O95467;P63092;P84996;Q5JWF2	   Musculoskeletal Diseases;    Nervous System Diseases;    Endocrine System Diseases	Acromegaly		1991	CURATED	0.8	0.885	DTO_05007584	2017	GNAS	Disease or Syndrome
+0.70375	0.35	C0001206	0.631	G-protein coupled receptor	83550	C05;C10;C19	disease	Q96P66	   Musculoskeletal Diseases;    Nervous System Diseases;    Endocrine System Diseases	Acromegaly		2014	CURATED	1.0	0.538	DTO_02300001	2019	GPR101	Disease or Syndrome
+0.13005	0.35	C0001418	0.276		3553	C04	group	P01584	   Neoplasms	Adenocarcinoma		1995	CURATED	1.0	0.962		2018	IL1B	Neoplastic Process
+3.9314e-12	0.35	C0001418	0.453		4968	C04	group	O15527	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.808		2019	OGG1	Neoplastic Process
+6.6485e-07	0.35	C0001418	0.531	Kinase	5587	C04	group	Q15139	   Neoplasms	Adenocarcinoma		2014	CURATED	1.0	0.846	DTO_03300101	2018	PRKD1	Neoplastic Process
+7.2668e-09	0.35	C0001418	0.418	Nuclear receptor	8856	C04	group	O75469	   Neoplasms	Adenocarcinoma		2003	CURATED	1.0	0.846	DTO_00102000	2018	NR1I2	Neoplastic Process
+0.079515	0.35	C0001430	0.443	Enzyme	7428	C04	group	P40337	   Neoplasms	Adenoma		1996	CURATED	1.0	0.846	DTO_05007624	2005	VHL	Neoplastic Process
+1.0	0.35	C0001430	0.582	Ion channel	776	C04	group	Q01668	   Neoplasms	Adenoma		2013	CURATED	1.0	0.577	DTO_01300327	2017	CACNA1D	Neoplastic Process
+0.00031401	0.34	C0001197	0.628	Transporter	55630	C16;C17	disease	Q6P5W5	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Skin and Connective Tissue Diseases	Acrodermatitis		2002	CURATED	1.0	0.692	DTO_05007405	2017	SLC39A4	Disease or Syndrome
+0.27595	0.34	C0001403	0.612		23274	C20;C19	disease	Q2KHT3	   Immune System Diseases;    Endocrine System Diseases	Addison Disease		2008	CURATED	1.0	0.654		2011	CLEC16A	Disease or Syndrome
+5.401e-09	0.34	C0001418	0.556		1548	C04	group	P11509	   Neoplasms	Adenocarcinoma		2002	CURATED	0.75	0.731		2009	CYP2A6	Neoplastic Process
+1.7022e-05	0.34	C0001418	0.41	Enzyme	1588	C04	group	P11511	   Neoplasms	Adenocarcinoma		2001	CURATED	0.8	0.885	DTO_05007624	2014	CYP19A1	Neoplastic Process
+0.99767	0.34	C0001418	0.472	Kinase	1612	C04	group	P53355	   Neoplasms	Adenocarcinoma		2004	CURATED	0.8	0.808	DTO_03300101	2018	DAPK1	Neoplastic Process
+0.050966	0.34	C0001418	0.522	Enzyme	2878	C04	group	P22352	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.769	DTO_05007624	2018	GPX3	Neoplastic Process
+0.00019768	0.34	C0001418	0.457	Enzyme	29108	C04	group	Q9ULZ3	   Neoplasms	Adenocarcinoma		2006	CURATED	1.0	0.808	DTO_05007624	2014	PYCARD	Neoplastic Process
+0.99522	0.34	C0001418	0.447	Enzyme	4323	C04	group	P50281	   Neoplasms	Adenocarcinoma		2000	CURATED	1.0	0.769	DTO_05007624	2011	MMP14	Neoplastic Process
+1.0	0.34	C0001430	0.601	Transporter	476	C04	group	P05023	   Neoplasms	Adenoma		2013	CURATED	1.0	0.808	DTO_05007405	2017	ATP1A1	Neoplastic Process
+5.3576e-05	0.33	C0000768	0.552		10683	C16	group	Q9NYJ7	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2002	CURATED	1.0	0.654		2011	DLL3	Congenital Abnormality
+0.64718	0.33	C0000768	0.473	Nucleic acid binding	2332	C16	group	Q06787	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2010	CURATED	1.0	0.769	DTO_05007557	2018	FMR1	Congenital Abnormality
+8.0688e-09	0.33	C0001418	0.459		1571	C04	group	P05181	   Neoplasms	Adenocarcinoma		1997	CURATED	1.0	0.885		2005	CYP2E1	Neoplastic Process
+0.94704	0.33	C0001418	0.528	Signaling	2254	C04	group	P31371	   Neoplasms	Adenocarcinoma		2009	CURATED	1.0	0.846	DTO_05007599	2019	FGF9	Neoplastic Process
+0.88453	0.33	C0001418	0.538		3206	C04	group	P31260	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.692		2011	HOXA10	Neoplastic Process
+0.00097345	0.33	C0001418	0.674	G-protein coupled receptor	5731	C04	group	P34995	   Neoplasms	Adenocarcinoma		2001	CURATED	1.0	0.538	DTO_02300001	2011	PTGER1	Neoplastic Process
+0.99983	0.33	C0001418	0.478	Nuclear receptor	5915	C04	group	P10826	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.846	DTO_00102000	2017	RARB	Neoplastic Process
+0.99994	0.33	C0001418	0.445	Nucleic acid binding	6776	C04	group	P42229	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.808	DTO_05007557	2012	STAT5A	Neoplastic Process
+8.2884e-07	0.33	C0001430	0.545	Extracellular structure	6414	C04	group	P49908	   Neoplasms	Adenoma		2000	CURATED	1.0	0.769	DTO_05007621	2008	SELENOP	Neoplastic Process
+0.47156	0.32	C0001175	0.288		3458	C01;C20	group	P01579	   Infections;    Immune System Diseases	Acquired Immunodeficiency Syndrome		1996	CURATED	1.0	0.962		2018	IFNG	Disease or Syndrome
+0.00050202	0.32	C0001418	0.399	Signaling	1490	C04	group	P29279	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.846	DTO_05007599	2011	CCN2	Neoplastic Process
+1.0	0.32	C0001418	0.406	Epigenetic regulator	1786	C04	group	P26358	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.885	DTO_05007378	2007	DNMT1	Neoplastic Process
+0.99992	0.32	C0001418	0.54	Extracellular structure	2202	C04	group	Q12805	   Neoplasms	Adenocarcinoma		2007	CURATED	1.0	0.769	DTO_05007621	2009	EFEMP1	Neoplastic Process
+	0.32	C0001418	0.371		3439	C04	group	P01562	   Neoplasms	Adenocarcinoma		1995	CURATED	1.0	0.923		2007	IFNA1	Neoplastic Process
+5.6754e-11	0.32	C0001418	0.572	Enzyme	51196	C04	group	Q9P212	   Neoplasms	Adenocarcinoma		2010	CURATED	1.0	0.654	DTO_05007624	2017	PLCE1	Neoplastic Process
+4.1545e-06	0.32	C0001418	0.566		563	C04	group	P25311	   Neoplasms	Adenocarcinoma		2008	CURATED	1.0	0.769		2008	AZGP1	Neoplastic Process
+0.99998	0.32	C0001418	0.385		5781	C04	group	Q06124	   Neoplasms	Adenocarcinoma		2014	CURATED	1.0	0.923		2016	PTPN11	Neoplastic Process
+0.00078816	0.32	C0001418	0.525		634	C04	group	P13688	   Neoplasms	Adenocarcinoma		2007	CURATED	1.0	0.731		2011	CEACAM1	Neoplastic Process
+9.6905e-08	0.32	C0001418	0.641		7367	C04	group	O75795	   Neoplasms	Adenocarcinoma		2007	CURATED	1.0	0.577		2019	UGT2B17	Neoplastic Process
+3.7236e-06	0.32	C0001418	0.404	Enzyme	841	C04	group	Q14790	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.923	DTO_05007624	2013	CASP8	Neoplastic Process
+1.2059e-06	0.32	C0001430	0.447	Enzyme	240	C04	group	P09917	   Neoplasms	Adenoma		2007	CURATED	1.0	0.885	DTO_05007624	2019	ALOX5	Neoplastic Process
+2.247e-09	0.32	C0001430	0.617	Transporter	489	C04	group	Q93084	   Neoplasms	Adenoma		2005	CURATED	1.0	0.577	DTO_05007405	2014	ATP2A3	Neoplastic Process
+0.12642	0.31	C0000768	0.522		2348	C16	group	P15328	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2010	CURATED	1.0	0.885		2018	FOLR1	Congenital Abnormality
+0.00053161	0.31	C0000786	0.423	G-protein coupled receptor	185	C13	phenotype	P30556	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2004	CURATED	1.0	0.846	DTO_02300001	2008	AGTR1	Pathologic Function
+0.044127	0.31	C0000786	0.39		3481	C13	phenotype	P01344	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885		2008	IGF2	Pathologic Function
+9.1772e-05	0.31	C0000809	0.663		50511	C13	disease	Q8IZU3	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Habitual		2009	CURATED	1.0	0.385		2009	SYCP3	Disease or Syndrome
+6.7246e-07	0.31	C0000832	0.378		4846	C13	phenotype	P29474	   Female Urogenital Diseases and Pregnancy Complications	Abruptio Placentae		2001	CURATED	1.0	0.885		2005	NOS3	Pathologic Function
+3.739e-14	0.31	C0000832	0.595		635	C13	phenotype	Q93088	   Female Urogenital Diseases and Pregnancy Complications	Abruptio Placentae		2007	CURATED	1.0	0.731		2007	BHMT	Pathologic Function
+0.00081103	0.31	C0001144	0.361		114548	C17	disease	Q96P20	   Skin and Connective Tissue Diseases	Acne Vulgaris		2016	CURATED	1.0	0.962		2019	NLRP3	Disease or Syndrome
+0.34491	0.31	C0001193	0.397	Transcription factor	7291	C16;C05	disease	Q15672	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Musculoskeletal Diseases	Apert syndrome		2005	CURATED	1.0	0.846	DTO_05007542	2013	TWIST1	Congenital Abnormality
+1.3618e-07	0.31	C0001403	0.536		4261	C20;C19	disease	P33076	   Immune System Diseases;    Endocrine System Diseases	Addison Disease		2008	CURATED	1.0	0.808		2008	CIITA	Disease or Syndrome
+0.81963	0.31	C0001418	0.456		1028	C04	group	P49918	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.846		2019	CDKN1C	Neoplastic Process
+0.2189	0.31	C0001418	0.608	Kinase	1152	C04	group	P12277	   Neoplasms	Adenocarcinoma		1982	CURATED	1.0	0.615	DTO_03300101	2004	CKB	Neoplastic Process
+8.4269e-11	0.31	C0001418	0.619	Enzyme	1592	C04	group	O43174	   Neoplasms	Adenocarcinoma		2008	CURATED	1.0	0.577	DTO_05007624	2008	CYP26A1	Neoplastic Process
+1.914e-05	0.31	C0001418	0.481	Enzyme	2023	C04	group	P06733	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.885	DTO_05007624	2016	ENO1	Neoplastic Process
+1.2059e-06	0.31	C0001418	0.447	Enzyme	240	C04	group	P09917	   Neoplasms	Adenocarcinoma		2008	CURATED	1.0	0.885	DTO_05007624	2018	ALOX5	Neoplastic Process
+0.99257	0.31	C0001418	0.432		3329	C04	group	P10809	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.808		2017	HSPD1	Neoplastic Process
+0.00054909	0.31	C0001418	0.429		335	C04	group	P02647	   Neoplasms	Adenocarcinoma		2003	CURATED	1.0	0.885		2004	APOA1	Neoplastic Process
+0.72177	0.31	C0001418	0.615	Transcription factor	3399	C04	group	Q02535	   Neoplasms	Adenocarcinoma		2001	CURATED	1.0	0.692	DTO_05007542	2011	ID3	Neoplastic Process
+0.0018685	0.31	C0001418	0.338		348	C04	group	P02649	   Neoplasms	Adenocarcinoma		2009	CURATED	0.5	0.962		2011	APOE	Neoplastic Process
+4.5453e-08	0.31	C0001418	0.485	Ion channel	3784	C04	group	P51787	   Neoplasms	Adenocarcinoma		2014	CURATED	1.0	0.769	DTO_01300327	2014	KCNQ1	Neoplastic Process
+2.36e-08	0.31	C0001418	0.517		3856	C04	group	P05787	   Neoplasms	Adenocarcinoma		2002	CURATED	1.0	0.654		2004	KRT8	Neoplastic Process
+0.00054522	0.31	C0001418	0.505		4878	C04	group	P01160	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.769		2008	NPPA	Neoplastic Process
+0.7588	0.31	C0001418	0.511		5245	C04	group	P35232	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.846		2009	PHB	Neoplastic Process
+6.8497e-08	0.31	C0001418	0.41	Enzyme modulator	5265	C04	group	P01009	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.923	DTO_05007584	2017	SERPINA1	Neoplastic Process
+2.9015e-07	0.31	C0001418	0.406	Signaling	5617	C04	group	P01236	   Neoplasms	Adenocarcinoma		1981	CURATED	1.0	0.885	DTO_05007599	2018	PRL	Neoplastic Process
+1.1309e-06	0.31	C0001418	0.628		56287	C04	group	Q9NS71	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.615		2008	GKN1	Neoplastic Process
+0.99537	0.31	C0001418	0.485		6934	C04	group	Q9NQB0	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.846		2011	TCF7L2	Neoplastic Process
+0.0066522	0.31	C0001418	0.49	Cellular structure	7170	C04	group	P06753	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.808	DTO_05007530	2019	TPM3	Neoplastic Process
+1.6946e-06	0.31	C0001418	0.506		760	C04	group	P00918	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.808		2012	CA2	Neoplastic Process
+4.6331e-06	0.31	C0001418	0.497	Kinase	780	C04	group	Q08345	   Neoplasms	Adenocarcinoma		2010	CURATED	1.0	0.808	DTO_03300101	2011	DDR1	Neoplastic Process
+5.0697e-15	0.31	C0001418	0.521		8797	C04	group	O00220	   Neoplasms	Adenocarcinoma		2010	CURATED	1.0	0.731		2011	TNFRSF10A	Neoplastic Process
+3.2268e-16	0.31	C0001418	0.493	Immune response	8991	C04	group	Q13228	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.846	DTO_05007608	2010	SELENBP1	Neoplastic Process
+3.2954e-06	0.31	C0001418	0.563	Enzyme	9420	C04	group	O75881	   Neoplasms	Adenocarcinoma		2007	CURATED	1.0	0.692	DTO_05007624	2007	CYP7B1	Neoplastic Process
+2.2024e-05	0.31	C0001430	0.457	Enzyme	1545	C04	group	Q16678	   Neoplasms	Adenoma		2001	CURATED	1.0	0.769	DTO_05007624	2007	CYP1B1	Neoplastic Process
+0.99945	0.31	C0001430	0.631	Transporter	492	C04	group	Q16720	   Neoplasms	Adenoma		2013	CURATED	1.0	0.692	DTO_05007405	2013	ATP2B3	Neoplastic Process
+5.2086e-16	0.31	C0001430	0.531	Ion channel	54822	C04	group	Q96QT4	   Neoplasms	Adenoma		2007	CURATED	1.0	0.731	DTO_01300327	2007	TRPM7	Neoplastic Process
+0.93667	0.31	C0001430	0.493	Signaling	598	C04	group	Q07817	   Neoplasms	Adenoma		1999	CURATED	1.0	0.885	DTO_05007599	2015	BCL2L1	Neoplastic Process
+6.4655e-06	0.31	C0001430	0.523	Transporter	6573	C04	group	P41440	   Neoplasms	Adenoma		2007	CURATED	1.0	0.692	DTO_05007405	2011	SLC19A1	Neoplastic Process
+1.6062e-06	0.31	C0001430	0.529	Enzyme	7296	C04	group	Q16881	   Neoplasms	Adenoma		2008	CURATED	1.0	0.692	DTO_05007624	2008	TXNRD1	Neoplastic Process
+0.00011658	0.31	C0001614	0.356		5443	C19	group	P01189	   Endocrine System Diseases	Adrenal Cortex Diseases		2001	CURATED	1.0	0.846		2019	POMC	Disease or Syndrome
+	0.3	C0000737	0.442		3440	C23	phenotype	P01563	   Pathological Conditions, Signs and Symptoms	Abdominal Pain		1997	CURATED	1.0	0.885		1997	IFNA2	Sign or Symptom
+0.4051	0.3	C0000768	0.678	Extracellular structure	1295	C16	group	P27658	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2008	CURATED	1.0	0.538	DTO_05007621	2008	COL8A1	Congenital Abnormality
+0.065398	0.3	C0000768	0.612	Transporter	1317	C16	group	O15431	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2001	CURATED	1.0	0.577	DTO_05007405	2001	SLC31A1	Congenital Abnormality
+0.99998	0.3	C0000768	0.532	Kinase	156	C16	group	P25098	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2006	CURATED	1.0	0.654	DTO_03300101	2006	GRK2	Congenital Abnormality
+0.99714	0.3	C0000768	0.449	Nucleic acid binding	9314	C16	group	O43474	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Congenital Abnormality		2010	CURATED	1.0	0.769	DTO_05007557	2010	KLF4	Congenital Abnormality
+3.2154e-09	0.3	C0000771	0.5		2052	C16	group	P07099	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Abnormalities, Drug-Induced		1990	CURATED	1.0	0.846		1990	EPHX1	Congenital Abnormality
+0.60405	0.3	C0000771	0.502	Enzyme modulator	387	C16	group	P61586	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Abnormalities, Drug-Induced		2015	CURATED	1.0	0.808	DTO_05007584	2015	RHOA	Congenital Abnormality
+0.00028911	0.3	C0000771	0.551	Enzyme	51185	C16	group	Q96SW2	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Abnormalities, Drug-Induced		2016	CURATED	1.0	0.654	DTO_05007624	2016	CRBN	Congenital Abnormality
+0.0064383	0.3	C0000771	0.608	Signaling	7481	C16	group	O96014	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Abnormalities, Drug-Induced		2015	CURATED	1.0	0.654	DTO_05007599	2015	WNT11	Congenital Abnormality
+1.6263e-10	0.3	C0000771	0.359	Enzyme	847	C16	group	P04040	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Abnormalities, Drug-Induced		2011	CURATED	1.0	0.962	DTO_05007624	2015	CAT	Congenital Abnormality
+	0.3	C0000772	0.599		1055	C16	group		   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2001	CURATED	1.0	0.731		2001	CECR	Congenital Abnormality
+0.99403	0.3	C0000772	0.556	Kinase	1147	C16	group	O15111	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2010	CURATED	1.0	0.731	DTO_03300101	2010	CHUK	Congenital Abnormality
+1.0561e-08	0.3	C0000772	0.644		23498	C16	group	P46952	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies	strong	2017	CURATED	1.0	0.538		2017	HAAO	Congenital Abnormality
+1.0	0.3	C0000772	0.503		26040	C16	group	Q9Y6X0	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2010	CURATED	1.0	0.808		2010	SETBP1	Congenital Abnormality
+1.0	0.3	C0000772	0.644	Transcription factor	27125	C16	group	Q9UHB7	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2015	CURATED	1.0	0.769	DTO_05007542	2015	AFF4	Congenital Abnormality
+0.57434	0.3	C0000772	0.505	G-protein coupled receptor	2852	C16	group	Q99527	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2012	CURATED	1.0	0.731	DTO_02300001	2012	GPER1	Congenital Abnormality
+0.95571	0.3	C0000772	0.43	Kinase	2932	C16	group	P49841	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2012	CURATED	1.0	0.846	DTO_03300101	2012	GSK3B	Congenital Abnormality
+0.99444	0.3	C0000772	0.51	Transcription factor	406	C16	group	O00327	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2014	CURATED	1.0	0.885	DTO_05007542	2014	ARNTL	Congenital Abnormality
+2.4179e-06	0.3	C0000772	0.507		5424	C16	group	P28340	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2013	CURATED	1.0	0.769		2013	POLD1	Congenital Abnormality
+1.2527e-16	0.3	C0000772	0.78		55191	C16	group	Q6IA69	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies	strong	2020	CURATED	1.0	0.231		2020	NADSYN1	Congenital Abnormality
+0.00029307	0.3	C0000772	0.736	Signaling	7044	C16	group	O00292	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		1999	CURATED	1.0	0.231	DTO_05007599	1999	LEFTY2	Congenital Abnormality
+0.99728	0.3	C0000772	0.362	Transcription factor	8626	C16	group	Q9H3D4	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2011	CURATED	1.0	0.769	DTO_05007542	2011	TP63	Congenital Abnormality
+4.1806e-18	0.3	C0000772	0.617	Enzyme	8942	C16	group	Q16719	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies	strong	2017	CURATED	1.0	0.692	DTO_05007624	2017	KYNU	Congenital Abnormality
+0.99964	0.3	C0000772	0.581		9378	C16	group	P58400;Q9ULB1	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities	Multiple congenital anomalies		2008	CURATED	1.0	0.692		2008	NRXN1	Congenital Abnormality
+2.565e-06	0.3	C0000786	0.716	Immune response	10321	C13	phenotype	P54108	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.577	DTO_05007608	2008	CRISP3	Pathologic Function
+0.98014	0.3	C0000786	0.513	Enzyme modulator	10468	C13	phenotype	P19883	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731	DTO_05007584	2008	FST	Pathologic Function
+4.1625e-10	0.3	C0000786	0.42		1048	C13	phenotype	P06731	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846		2008	CEACAM5	Pathologic Function
+1.9433e-15	0.3	C0000786	0.678		10561	C13	phenotype	Q8TCB0	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.538		2008	IFI44	Pathologic Function
+1.3955e-15	0.3	C0000786	0.674		10615	C13	phenotype	Q96R06	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.385		2008	SPAG5	Pathologic Function
+0.03921	0.3	C0000786	0.548		10666	C13	phenotype	Q15762	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	CD226	Pathologic Function
+	0.3	C0000786	1.0		10824	C13	phenotype	Q14236	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.038		2008	DIAPH2-AS1	Pathologic Function
+5.8826e-07	0.3	C0000786	0.498		11009	C13	phenotype	Q13007	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	IL24	Pathologic Function
+1.0	0.3	C0000786	0.43		1277	C13	phenotype	P02452	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808		2008	COL1A1	Pathologic Function
+1.0	0.3	C0000786	0.486		1278	C13	phenotype	P08123	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846		2008	COL1A2	Pathologic Function
+0.89901	0.3	C0000786	0.686		1288	C13	phenotype	Q14031	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.423		2008	COL4A6	Pathologic Function
+1.0	0.3	C0000786	0.536		1289	C13	phenotype	P20908	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	COL5A1	Pathologic Function
+1.0	0.3	C0000786	0.568		1290	C13	phenotype	P05997	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731		2008	COL5A2	Pathologic Function
+0.99995	0.3	C0000786	0.587	Receptor	1291	C13	phenotype	P12109	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731	DTO_05007575	2008	COL6A1	Pathologic Function
+1.8131e-20	0.3	C0000786	0.563	Receptor	1293	C13	phenotype	P12111	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769	DTO_05007575	2008	COL6A3	Pathologic Function
+1.0453e-08	0.3	C0000786	0.572		1298	C13	phenotype	Q14055	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	COL9A2	Pathologic Function
+3.7355e-14	0.3	C0000786	0.608		1305	C13	phenotype	Q5TAT6	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.654		2008	COL13A1	Pathologic Function
+0.38046	0.3	C0000786	0.377		1440	C13	phenotype	P09919	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885		2008	CSF3	Pathologic Function
+1.0635e-17	0.3	C0000786	0.436	Enzyme	1543	C13	phenotype	P04798	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2009	CURATED	1.0	0.846	DTO_05007624	2016	CYP1A1	Pathologic Function
+3.1964e-23	0.3	C0000786	0.518	Enzyme	1591	C13	phenotype	Q07973	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692	DTO_05007624	2008	CYP24A1	Pathologic Function
+0.0343	0.3	C0000786	0.513	Enzyme	1719	C13	phenotype	P00374	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808	DTO_05007624	2008	DHFR	Pathologic Function
+3.333e-09	0.3	C0000786	0.931		1842	C13	phenotype	O94769	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.038		2008	ECM2	Pathologic Function
+4.6627e-14	0.3	C0000786	0.576		1893	C13	phenotype	Q16610	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731		2008	ECM1	Pathologic Function
+0.99999	0.3	C0000786	0.41	Transcription factor	196	C13	phenotype	P35869	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2016	CURATED	1.0	0.923	DTO_05007542	2016	AHR	Pathologic Function
+0.49706	0.3	C0000786	0.56	Cellular structure	2012	C13	phenotype	P54849	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769	DTO_05007530	2008	EMP1	Pathologic Function
+0.77089	0.3	C0000786	0.519	Signaling	2252	C13	phenotype	P21781	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007599	2008	FGF7	Pathologic Function
+0.71561	0.3	C0000786	0.78	Cellular structure	22924	C13	phenotype	Q9UPY8	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.231	DTO_05007530	2008	MAPRE3	Pathologic Function
+0.0014045	0.3	C0000786	0.365	Signaling	2335	C13	phenotype	P02751	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.962	DTO_05007599	2008	FN1	Pathologic Function
+0.18957	0.3	C0000786	0.805		23753	C13	phenotype	Q9HCN8	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.385		2008	SDF2L1	Pathologic Function
+0.22014	0.3	C0000786	0.659		23767	C13	phenotype	Q9NZU0	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615		2008	FLRT3	Pathologic Function
+1.4933e-11	0.3	C0000786	0.691	Enzyme	251	C13	phenotype	P10696	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.269	DTO_05007624	2008	ALPG	Pathologic Function
+0.013731	0.3	C0000786	0.711		2537	C13	phenotype	P09912	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.5		2008	IFI6	Pathologic Function
+8.8804e-08	0.3	C0000786	0.686	Enzyme modulator	26998	C13	phenotype	Q9UGM5	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.308	DTO_05007584	2008	FETUB	Pathologic Function
+1.0115e-13	0.3	C0000786	0.682		27159	C13	phenotype	Q9BZP6	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.538		2008	CHIA	Pathologic Function
+0.96154	0.3	C0000786	0.489	Enzyme	2744	C13	phenotype	O94925	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808	DTO_05007624	2008	GLS	Pathologic Function
+1.9637e-15	0.3	C0000786	0.593	Enzyme	3026	C13	phenotype	Q14520	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615	DTO_05007624	2008	HABP2	Pathologic Function
+0.00013421	0.3	C0000786	0.61	Enzyme	3292	C13	phenotype	P14061	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615	DTO_05007624	2008	HSD17B1	Pathologic Function
+4.2821e-07	0.3	C0000786	0.76	Transcription factor	3430	C13	phenotype	P80217	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.462	DTO_05007542	2008	IFI35	Pathologic Function
+	0.3	C0000786	0.89		3446	C13	phenotype	P01566	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.115		2008	IFNA10	Pathologic Function
+0.2716	0.3	C0000786	0.318		3479	C13	phenotype	P05019	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885		2008	IGF1	Pathologic Function
+0.0018685	0.3	C0000786	0.338		348	C13	phenotype	P02649	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2012	CURATED	1.0	0.962		2012	APOE	Pathologic Function
+0.00094677	0.3	C0000786	0.502	Enzyme modulator	3484	C13	phenotype	P08833	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808	DTO_05007584	2008	IGFBP1	Pathologic Function
+0.91029	0.3	C0000786	0.439	Enzyme modulator	3486	C13	phenotype	P17936	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808	DTO_05007584	2008	IGFBP3	Pathologic Function
+0.02915	0.3	C0000786	0.601	Enzyme modulator	3489	C13	phenotype	P24592	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692	DTO_05007584	2008	IGFBP6	Pathologic Function
+0.13005	0.3	C0000786	0.276		3553	C13	phenotype	P01584	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.962		2008	IL1B	Pathologic Function
+2.6791e-08	0.3	C0000786	0.647	Signaling	3568	C13	phenotype	Q01344	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.654	DTO_05007599	2008	IL5RA	Pathologic Function
+0.31536	0.3	C0000786	0.248		3569	C13	phenotype	P05231	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.962		2008	IL6	Pathologic Function
+8.1087e-07	0.3	C0000786	0.461		3578	C13	phenotype	P15248	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846		2008	IL9	Pathologic Function
+0.00031772	0.3	C0000786	0.481		3589	C13	phenotype	P20809	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808		2008	IL11	Pathologic Function
+0.00011439	0.3	C0000786	0.48	Signaling	3593	C13	phenotype	P29460	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007599	2008	IL12B	Pathologic Function
+1.2449e-10	0.3	C0000786	0.501	Signaling	3603	C13	phenotype	Q14005	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007599	2008	IL16	Pathologic Function
+0.0064728	0.3	C0000786	0.578	Signaling	3623	C13	phenotype	P05111	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615	DTO_05007599	2008	INHA	Pathologic Function
+0.36865	0.3	C0000786	0.378	Signaling	3627	C13	phenotype	P02778	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007599	2008	CXCL10	Pathologic Function
+9.5287e-19	0.3	C0000786	0.525	Receptor	3691	C13	phenotype	P16144	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731	DTO_05007575	2008	ITGB4	Pathologic Function
+1.6277e-22	0.3	C0000786	0.597	Receptor	3694	C13	phenotype	P18564	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692	DTO_05007575	2008	ITGB6	Pathologic Function
+1.2726e-08	0.3	C0000786	0.507		3732	C13	phenotype	P27701	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2010	CURATED	1.0	0.731		2010	CD82	Pathologic Function
+1.3909e-24	0.3	C0000786	0.682		3910	C13	phenotype	Q16363	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.577		2008	LAMA4	Pathologic Function
+2.3207e-05	0.3	C0000786	0.392	Signaling	3958	C13	phenotype	P17931	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007599	2008	LGALS3	Pathologic Function
+0.5242	0.3	C0000786	0.483	Signaling	3976	C13	phenotype	P15018	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769	DTO_05007599	2008	LIF	Pathologic Function
+0.99581	0.3	C0000786	0.575	Transcription factor	405	C13	phenotype	P27540	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692	DTO_05007542	2008	ARNT	Pathologic Function
+1.0	0.3	C0000786	0.537		4133	C13	phenotype	P11137	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692		2008	MAP2	Pathologic Function
+0.034151	0.3	C0000786	0.65	Enzyme	4247	C13	phenotype	Q10469	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.577	DTO_05007624	2008	MGAT2	Pathologic Function
+1.0404e-09	0.3	C0000786	0.446	Enzyme	4316	C13	phenotype	P09237	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007624	2008	MMP7	Pathologic Function
+2.4125e-05	0.3	C0000786	0.542	Enzyme	4320	C13	phenotype	P24347	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692	DTO_05007624	2008	MMP11	Pathologic Function
+	0.3	C0000786	0.484	Enzyme	4321	C13	phenotype	P39900	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007624	2008	MMP12	Pathologic Function
+0.073354	0.3	C0000786	0.644	Enzyme	4324	C13	phenotype	P51511	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.5	DTO_05007624	2008	MMP15	Pathologic Function
+1.9975e-20	0.3	C0000786	0.623	Enzyme	4327	C13	phenotype	Q99542	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615	DTO_05007624	2008	MMP19	Pathologic Function
+2.7904e-54	0.3	C0000786	0.506		4585	C13	phenotype	Q99102	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	MUC4	Pathologic Function
+1.1884e-06	0.3	C0000786	0.561		4680	C13	phenotype	P40199	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731		2008	CEACAM6	Pathologic Function
+0.99999	0.3	C0000786	0.415		4684	C13	phenotype	P13591	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885		2008	NCAM1	Pathologic Function
+3.1109e-08	0.3	C0000786	0.43	Enzyme	5047	C13	phenotype	P09466	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007624	2008	PAEP	Pathologic Function
+2.9962e-09	0.3	C0000786	0.751	G-protein coupled receptor	51554	C13	phenotype	Q9NPB9	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.346	DTO_02300001	2008	ACKR4	Pathologic Function
+0.1288	0.3	C0000786	0.46	Signaling	5228	C13	phenotype	P49763	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007599	2008	PGF	Pathologic Function
+0.027129	0.3	C0000786	0.716	Receptor	53832	C13	phenotype	Q9UHF4	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.346	DTO_05007575	2008	IL20RA	Pathologic Function
+8.3984e-16	0.3	C0000786	0.861		56145	C13	phenotype	Q9Y5H8	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.192		2008	PCDHA3	Pathologic Function
+0.98732	0.3	C0000786	0.572	Signaling	5618	C13	phenotype	P16471	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.692	DTO_05007599	2008	PRLR	Pathologic Function
+5.3574e-11	0.3	C0000786	0.65	Enzyme	56547	C13	phenotype	Q9NRE1	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615	DTO_05007624	2008	MMP26	Pathologic Function
+4.3662e-07	0.3	C0000786	0.608	Enzyme	5655	C13	phenotype	O43240	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.538	DTO_05007624	2008	KLK10	Pathologic Function
+0.0002747	0.3	C0000786	0.695	Signaling	56891	C13	phenotype	Q8TCE9	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.423	DTO_05007599	2008	LGALS14	Pathologic Function
+1.197e-09	0.3	C0000786	0.617		5740	C13	phenotype	Q16647	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.654		2008	PTGIS	Pathologic Function
+0.81146	0.3	C0000786	0.453		5744	C13	phenotype	P12272	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846		2008	PTHLH	Pathologic Function
+0.99769	0.3	C0000786	0.477	Enzyme	59272	C13	phenotype	Q9BYF1	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769	DTO_05007624	2008	ACE2	Pathologic Function
+0.51951	0.3	C0000786	0.493	Transporter	5950	C13	phenotype	P02753	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808	DTO_05007405	2008	RBP4	Pathologic Function
+8.2146e-16	0.3	C0000786	0.565	Enzyme modulator	6317	C13	phenotype	P29508	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.615	DTO_05007584	2008	SERPINB3	Pathologic Function
+8.7622e-17	0.3	C0000786	0.623	Enzyme modulator	6318	C13	phenotype	P48594	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.423	DTO_05007584	2008	SERPINB4	Pathologic Function
+0.00078816	0.3	C0000786	0.525		634	C13	phenotype	P13688	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731		2008	CEACAM1	Pathologic Function
+0.34128	0.3	C0000786	0.399	Signaling	6750	C13	phenotype	P61278	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007599	2008	SST	Pathologic Function
+6.9902e-05	0.3	C0000786	0.437	Enzyme	7037	C13	phenotype	P02786	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007624	2008	TFRC	Pathologic Function
+0.03685	0.3	C0000786	0.287	Signaling	7040	C13	phenotype	P01137	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.962	DTO_05007599	2008	TGFB1	Pathologic Function
+5.9686e-08	0.3	C0000786	0.484	Signaling	7045	C13	phenotype	Q15582	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769	DTO_05007599	2008	TGFBI	Pathologic Function
+0.85379	0.3	C0000786	0.451	Kinase	7046	C13	phenotype	P36897	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_03300101	2008	TGFBR1	Pathologic Function
+0.78893	0.3	C0000786	0.425	Enzyme modulator	7077	C13	phenotype	P16035	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007584	2008	TIMP2	Pathologic Function
+0.63037	0.3	C0000786	0.445	Enzyme modulator	7078	C13	phenotype	P35625	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.923	DTO_05007584	2008	TIMP3	Pathologic Function
+0.52437	0.3	C0000786	0.686	Signaling	7143	C13	phenotype	Q92752	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.346	DTO_05007599	2008	TNR	Pathologic Function
+0.0035639	0.3	C0000786	0.554	Signaling	7185	C13	phenotype	Q13077	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.731	DTO_05007599	2008	TRAF1	Pathologic Function
+0.50018	0.3	C0000786	0.805		80034	C13	phenotype	Q8WYN3	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.192		2008	CSRNP3	Pathologic Function
+0.81724	0.3	C0000786	0.499		8741	C13	phenotype	O75888	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	TNFSF13	Pathologic Function
+0.13495	0.3	C0000786	0.413	Signaling	8743	C13	phenotype	P50591	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.885	DTO_05007599	2008	TNFSF10	Pathologic Function
+0.48906	0.3	C0000786	0.674		8763	C13	phenotype	Q04900	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.462		2008	CD164	Pathologic Function
+6.9102e-09	0.3	C0000786	0.76		8832	C13	phenotype	Q9UIB8	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.308		2008	CD84	Pathologic Function
+0.05135	0.3	C0000786	0.722		924	C13	phenotype	P09564	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.385		2008	CD7	Pathologic Function
+1.6806e-05	0.3	C0000786	0.587		925	C13	phenotype	P01732	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.769		2008	CD8A	Pathologic Function
+0.0008338	0.3	C0000786	0.427	Enzyme	9332	C13	phenotype	Q86VB7	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.846	DTO_05007624	2008	CD163	Pathologic Function
+1.4063e-06	0.3	C0000786	0.408	Transporter	968	C13	phenotype	P34810	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.808	DTO_05007405	2008	CD68	Pathologic Function
+0.029691	0.3	C0000786	0.488		969	C13	phenotype	Q07108	   Female Urogenital Diseases and Pregnancy Complications	Spontaneous abortion		2008	CURATED	1.0	0.923		2008	CD69	Pathologic Function
+0.22337	0.3	C0000809	0.682	Transcription factor	9586	C13	disease	Q02930	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Habitual		2018	CURATED	1.0	0.538	DTO_05007542	2018	CREB5	Disease or Syndrome
+1.9044e-11	0.3	C0000821	0.67		10464	C13	phenotype	Q8WXW3	   Female Urogenital Diseases and Pregnancy Complications	Threatened abortion		2005	CURATED	1.0	0.462		2005	PIBF1	Pathologic Function
+2.565e-06	0.3	C0000822	0.716	Immune response	10321	C13	phenotype	P54108	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.577	DTO_05007608	2008	CRISP3	Pathologic Function
+0.98014	0.3	C0000822	0.513	Enzyme modulator	10468	C13	phenotype	P19883	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731	DTO_05007584	2008	FST	Pathologic Function
+4.1625e-10	0.3	C0000822	0.42		1048	C13	phenotype	P06731	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846		2008	CEACAM5	Pathologic Function
+1.9433e-15	0.3	C0000822	0.678		10561	C13	phenotype	Q8TCB0	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.538		2008	IFI44	Pathologic Function
+1.3955e-15	0.3	C0000822	0.674		10615	C13	phenotype	Q96R06	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.385		2008	SPAG5	Pathologic Function
+0.03921	0.3	C0000822	0.548		10666	C13	phenotype	Q15762	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	CD226	Pathologic Function
+	0.3	C0000822	1.0		10824	C13	phenotype	Q14236	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.038		2008	DIAPH2-AS1	Pathologic Function
+5.8826e-07	0.3	C0000822	0.498		11009	C13	phenotype	Q13007	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	IL24	Pathologic Function
+1.0	0.3	C0000822	0.43		1277	C13	phenotype	P02452	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808		2008	COL1A1	Pathologic Function
+1.0	0.3	C0000822	0.486		1278	C13	phenotype	P08123	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846		2008	COL1A2	Pathologic Function
+0.89901	0.3	C0000822	0.686		1288	C13	phenotype	Q14031	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.423		2008	COL4A6	Pathologic Function
+1.0	0.3	C0000822	0.536		1289	C13	phenotype	P20908	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	COL5A1	Pathologic Function
+1.0	0.3	C0000822	0.568		1290	C13	phenotype	P05997	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731		2008	COL5A2	Pathologic Function
+0.99995	0.3	C0000822	0.587	Receptor	1291	C13	phenotype	P12109	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731	DTO_05007575	2008	COL6A1	Pathologic Function
+1.8131e-20	0.3	C0000822	0.563	Receptor	1293	C13	phenotype	P12111	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769	DTO_05007575	2008	COL6A3	Pathologic Function
+1.0453e-08	0.3	C0000822	0.572		1298	C13	phenotype	Q14055	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	COL9A2	Pathologic Function
+3.7355e-14	0.3	C0000822	0.608		1305	C13	phenotype	Q5TAT6	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.654		2008	COL13A1	Pathologic Function
+0.38046	0.3	C0000822	0.377		1440	C13	phenotype	P09919	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885		2008	CSF3	Pathologic Function
+1.0635e-17	0.3	C0000822	0.436	Enzyme	1543	C13	phenotype	P04798	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2009	CURATED	1.0	0.846	DTO_05007624	2016	CYP1A1	Pathologic Function
+3.1964e-23	0.3	C0000822	0.518	Enzyme	1591	C13	phenotype	Q07973	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692	DTO_05007624	2008	CYP24A1	Pathologic Function
+0.0343	0.3	C0000822	0.513	Enzyme	1719	C13	phenotype	P00374	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808	DTO_05007624	2008	DHFR	Pathologic Function
+3.333e-09	0.3	C0000822	0.931		1842	C13	phenotype	O94769	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.038		2008	ECM2	Pathologic Function
+0.00053161	0.3	C0000822	0.423	G-protein coupled receptor	185	C13	phenotype	P30556	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_02300001	2008	AGTR1	Pathologic Function
+4.6627e-14	0.3	C0000822	0.576		1893	C13	phenotype	Q16610	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731		2008	ECM1	Pathologic Function
+0.99999	0.3	C0000822	0.41	Transcription factor	196	C13	phenotype	P35869	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2016	CURATED	1.0	0.923	DTO_05007542	2016	AHR	Pathologic Function
+0.49706	0.3	C0000822	0.56	Cellular structure	2012	C13	phenotype	P54849	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769	DTO_05007530	2008	EMP1	Pathologic Function
+0.77089	0.3	C0000822	0.519	Signaling	2252	C13	phenotype	P21781	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007599	2008	FGF7	Pathologic Function
+0.71561	0.3	C0000822	0.78	Cellular structure	22924	C13	phenotype	Q9UPY8	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.231	DTO_05007530	2008	MAPRE3	Pathologic Function
+0.0014045	0.3	C0000822	0.365	Signaling	2335	C13	phenotype	P02751	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.962	DTO_05007599	2008	FN1	Pathologic Function
+0.18957	0.3	C0000822	0.805		23753	C13	phenotype	Q9HCN8	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.385		2008	SDF2L1	Pathologic Function
+0.22014	0.3	C0000822	0.659		23767	C13	phenotype	Q9NZU0	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615		2008	FLRT3	Pathologic Function
+1.4933e-11	0.3	C0000822	0.691	Enzyme	251	C13	phenotype	P10696	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.269	DTO_05007624	2008	ALPG	Pathologic Function
+0.013731	0.3	C0000822	0.711		2537	C13	phenotype	P09912	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.5		2008	IFI6	Pathologic Function
+8.8804e-08	0.3	C0000822	0.686	Enzyme modulator	26998	C13	phenotype	Q9UGM5	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.308	DTO_05007584	2008	FETUB	Pathologic Function
+1.0115e-13	0.3	C0000822	0.682		27159	C13	phenotype	Q9BZP6	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.538		2008	CHIA	Pathologic Function
+0.96154	0.3	C0000822	0.489	Enzyme	2744	C13	phenotype	O94925	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808	DTO_05007624	2008	GLS	Pathologic Function
+1.9637e-15	0.3	C0000822	0.593	Enzyme	3026	C13	phenotype	Q14520	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615	DTO_05007624	2008	HABP2	Pathologic Function
+0.00013421	0.3	C0000822	0.61	Enzyme	3292	C13	phenotype	P14061	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615	DTO_05007624	2008	HSD17B1	Pathologic Function
+4.2821e-07	0.3	C0000822	0.76	Transcription factor	3430	C13	phenotype	P80217	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.462	DTO_05007542	2008	IFI35	Pathologic Function
+	0.3	C0000822	0.89		3446	C13	phenotype	P01566	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.115		2008	IFNA10	Pathologic Function
+0.2716	0.3	C0000822	0.318		3479	C13	phenotype	P05019	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885		2008	IGF1	Pathologic Function
+0.0018685	0.3	C0000822	0.338		348	C13	phenotype	P02649	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2012	CURATED	1.0	0.962		2012	APOE	Pathologic Function
+0.044127	0.3	C0000822	0.39		3481	C13	phenotype	P01344	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885		2008	IGF2	Pathologic Function
+0.00094677	0.3	C0000822	0.502	Enzyme modulator	3484	C13	phenotype	P08833	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808	DTO_05007584	2008	IGFBP1	Pathologic Function
+0.91029	0.3	C0000822	0.439	Enzyme modulator	3486	C13	phenotype	P17936	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808	DTO_05007584	2008	IGFBP3	Pathologic Function
+0.02915	0.3	C0000822	0.601	Enzyme modulator	3489	C13	phenotype	P24592	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692	DTO_05007584	2008	IGFBP6	Pathologic Function
+0.13005	0.3	C0000822	0.276		3553	C13	phenotype	P01584	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.962		2008	IL1B	Pathologic Function
+2.6791e-08	0.3	C0000822	0.647	Signaling	3568	C13	phenotype	Q01344	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.654	DTO_05007599	2008	IL5RA	Pathologic Function
+0.31536	0.3	C0000822	0.248		3569	C13	phenotype	P05231	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.962		2008	IL6	Pathologic Function
+8.1087e-07	0.3	C0000822	0.461		3578	C13	phenotype	P15248	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846		2008	IL9	Pathologic Function
+0.00031772	0.3	C0000822	0.481		3589	C13	phenotype	P20809	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808		2008	IL11	Pathologic Function
+0.00011439	0.3	C0000822	0.48	Signaling	3593	C13	phenotype	P29460	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007599	2008	IL12B	Pathologic Function
+1.2449e-10	0.3	C0000822	0.501	Signaling	3603	C13	phenotype	Q14005	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007599	2008	IL16	Pathologic Function
+0.0064728	0.3	C0000822	0.578	Signaling	3623	C13	phenotype	P05111	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615	DTO_05007599	2008	INHA	Pathologic Function
+0.36865	0.3	C0000822	0.378	Signaling	3627	C13	phenotype	P02778	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007599	2008	CXCL10	Pathologic Function
+9.5287e-19	0.3	C0000822	0.525	Receptor	3691	C13	phenotype	P16144	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731	DTO_05007575	2008	ITGB4	Pathologic Function
+1.6277e-22	0.3	C0000822	0.597	Receptor	3694	C13	phenotype	P18564	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692	DTO_05007575	2008	ITGB6	Pathologic Function
+0.65372	0.3	C0000822	0.385	Kinase	3717	C13	phenotype	O60674	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2007	CURATED	1.0	0.885	DTO_03300101	2007	JAK2	Pathologic Function
+1.2726e-08	0.3	C0000822	0.507		3732	C13	phenotype	P27701	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2010	CURATED	1.0	0.731		2010	CD82	Pathologic Function
+1.3909e-24	0.3	C0000822	0.682		3910	C13	phenotype	Q16363	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.577		2008	LAMA4	Pathologic Function
+2.3207e-05	0.3	C0000822	0.392	Signaling	3958	C13	phenotype	P17931	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007599	2008	LGALS3	Pathologic Function
+0.5242	0.3	C0000822	0.483	Signaling	3976	C13	phenotype	P15018	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769	DTO_05007599	2008	LIF	Pathologic Function
+0.99581	0.3	C0000822	0.575	Transcription factor	405	C13	phenotype	P27540	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692	DTO_05007542	2008	ARNT	Pathologic Function
+1.0	0.3	C0000822	0.537		4133	C13	phenotype	P11137	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692		2008	MAP2	Pathologic Function
+0.034151	0.3	C0000822	0.65	Enzyme	4247	C13	phenotype	Q10469	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.577	DTO_05007624	2008	MGAT2	Pathologic Function
+3.6072e-05	0.3	C0000822	0.539		4256	C13	phenotype	P08493	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846		2008	MGP	Pathologic Function
+1.0404e-09	0.3	C0000822	0.446	Enzyme	4316	C13	phenotype	P09237	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007624	2008	MMP7	Pathologic Function
+2.4125e-05	0.3	C0000822	0.542	Enzyme	4320	C13	phenotype	P24347	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692	DTO_05007624	2008	MMP11	Pathologic Function
+	0.3	C0000822	0.484	Enzyme	4321	C13	phenotype	P39900	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007624	2008	MMP12	Pathologic Function
+0.073354	0.3	C0000822	0.644	Enzyme	4324	C13	phenotype	P51511	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.5	DTO_05007624	2008	MMP15	Pathologic Function
+1.9975e-20	0.3	C0000822	0.623	Enzyme	4327	C13	phenotype	Q99542	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615	DTO_05007624	2008	MMP19	Pathologic Function
+2.7904e-54	0.3	C0000822	0.506		4585	C13	phenotype	Q99102	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	MUC4	Pathologic Function
+1.1884e-06	0.3	C0000822	0.561		4680	C13	phenotype	P40199	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731		2008	CEACAM6	Pathologic Function
+0.99999	0.3	C0000822	0.415		4684	C13	phenotype	P13591	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885		2008	NCAM1	Pathologic Function
+3.1109e-08	0.3	C0000822	0.43	Enzyme	5047	C13	phenotype	P09466	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007624	2008	PAEP	Pathologic Function
+2.9962e-09	0.3	C0000822	0.751	G-protein coupled receptor	51554	C13	phenotype	Q9NPB9	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.346	DTO_02300001	2008	ACKR4	Pathologic Function
+0.1288	0.3	C0000822	0.46	Signaling	5228	C13	phenotype	P49763	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007599	2008	PGF	Pathologic Function
+0.027129	0.3	C0000822	0.716	Receptor	53832	C13	phenotype	Q9UHF4	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.346	DTO_05007575	2008	IL20RA	Pathologic Function
+8.3984e-16	0.3	C0000822	0.861		56145	C13	phenotype	Q9Y5H8	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.192		2008	PCDHA3	Pathologic Function
+0.98732	0.3	C0000822	0.572	Signaling	5618	C13	phenotype	P16471	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.692	DTO_05007599	2008	PRLR	Pathologic Function
+5.3574e-11	0.3	C0000822	0.65	Enzyme	56547	C13	phenotype	Q9NRE1	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615	DTO_05007624	2008	MMP26	Pathologic Function
+4.3662e-07	0.3	C0000822	0.608	Enzyme	5655	C13	phenotype	O43240	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.538	DTO_05007624	2008	KLK10	Pathologic Function
+0.0002747	0.3	C0000822	0.695	Signaling	56891	C13	phenotype	Q8TCE9	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.423	DTO_05007599	2008	LGALS14	Pathologic Function
+1.197e-09	0.3	C0000822	0.617		5740	C13	phenotype	Q16647	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.654		2008	PTGIS	Pathologic Function
+0.81146	0.3	C0000822	0.453		5744	C13	phenotype	P12272	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846		2008	PTHLH	Pathologic Function
+0.99769	0.3	C0000822	0.477	Enzyme	59272	C13	phenotype	Q9BYF1	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769	DTO_05007624	2008	ACE2	Pathologic Function
+0.51951	0.3	C0000822	0.493	Transporter	5950	C13	phenotype	P02753	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808	DTO_05007405	2008	RBP4	Pathologic Function
+8.2146e-16	0.3	C0000822	0.565	Enzyme modulator	6317	C13	phenotype	P29508	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.615	DTO_05007584	2008	SERPINB3	Pathologic Function
+8.7622e-17	0.3	C0000822	0.623	Enzyme modulator	6318	C13	phenotype	P48594	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.423	DTO_05007584	2008	SERPINB4	Pathologic Function
+0.00078816	0.3	C0000822	0.525		634	C13	phenotype	P13688	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731		2008	CEACAM1	Pathologic Function
+0.34128	0.3	C0000822	0.399	Signaling	6750	C13	phenotype	P61278	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007599	2008	SST	Pathologic Function
+6.9902e-05	0.3	C0000822	0.437	Enzyme	7037	C13	phenotype	P02786	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007624	2008	TFRC	Pathologic Function
+0.03685	0.3	C0000822	0.287	Signaling	7040	C13	phenotype	P01137	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.962	DTO_05007599	2008	TGFB1	Pathologic Function
+5.9686e-08	0.3	C0000822	0.484	Signaling	7045	C13	phenotype	Q15582	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769	DTO_05007599	2008	TGFBI	Pathologic Function
+0.85379	0.3	C0000822	0.451	Kinase	7046	C13	phenotype	P36897	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_03300101	2008	TGFBR1	Pathologic Function
+0.78893	0.3	C0000822	0.425	Enzyme modulator	7077	C13	phenotype	P16035	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007584	2008	TIMP2	Pathologic Function
+0.63037	0.3	C0000822	0.445	Enzyme modulator	7078	C13	phenotype	P35625	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.923	DTO_05007584	2008	TIMP3	Pathologic Function
+0.52437	0.3	C0000822	0.686	Signaling	7143	C13	phenotype	Q92752	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.346	DTO_05007599	2008	TNR	Pathologic Function
+0.0035639	0.3	C0000822	0.554	Signaling	7185	C13	phenotype	Q13077	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.731	DTO_05007599	2008	TRAF1	Pathologic Function
+0.50018	0.3	C0000822	0.805		80034	C13	phenotype	Q8WYN3	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.192		2008	CSRNP3	Pathologic Function
+0.81724	0.3	C0000822	0.499		8741	C13	phenotype	O75888	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	TNFSF13	Pathologic Function
+0.13495	0.3	C0000822	0.413	Signaling	8743	C13	phenotype	P50591	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.885	DTO_05007599	2008	TNFSF10	Pathologic Function
+0.48906	0.3	C0000822	0.674		8763	C13	phenotype	Q04900	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.462		2008	CD164	Pathologic Function
+6.9102e-09	0.3	C0000822	0.76		8832	C13	phenotype	Q9UIB8	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.308		2008	CD84	Pathologic Function
+0.05135	0.3	C0000822	0.722		924	C13	phenotype	P09564	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.385		2008	CD7	Pathologic Function
+1.6806e-05	0.3	C0000822	0.587		925	C13	phenotype	P01732	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.769		2008	CD8A	Pathologic Function
+0.0008338	0.3	C0000822	0.427	Enzyme	9332	C13	phenotype	Q86VB7	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.846	DTO_05007624	2008	CD163	Pathologic Function
+1.4063e-06	0.3	C0000822	0.408	Transporter	968	C13	phenotype	P34810	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.808	DTO_05007405	2008	CD68	Pathologic Function
+0.029691	0.3	C0000822	0.488		969	C13	phenotype	Q07108	   Female Urogenital Diseases and Pregnancy Complications	Abortion, Tubal		2008	CURATED	1.0	0.923		2008	CD69	Pathologic Function
+0.0044614	0.3	C0000832	0.554	Enzyme	4522	C13	phenotype	P11586	   Female Urogenital Diseases and Pregnancy Complications	Abruptio Placentae		2005	CURATED	1.0	0.769	DTO_05007624	2005	MTHFD1	Pathologic Function
+8.286e-14	0.3	C0001122	0.89		389015	C18	phenotype	Q6AI14	   Nutritional and Metabolic Diseases	Acidosis		2010	CURATED	1.0	0.154		2010	SLC9A4	Pathologic Function
+0.0035719	0.3	C0001122	0.357	Enzyme	4780	C18	phenotype	Q16236	   Nutritional and Metabolic Diseases	Acidosis		2018	CURATED	1.0	0.885	DTO_05007624	2018	NFE2L2	Pathologic Function
+5.6593e-05	0.3	C0001125	0.445	Enzyme	5327	C18	phenotype	P00750	   Nutritional and Metabolic Diseases	Acidosis, Lactic		2015	CURATED	1.0	0.885	DTO_05007624	2015	PLAT	Disease or Syndrome
+4.0861e-09	0.3	C0001125	0.628	Enzyme	55210	C18	phenotype	Q9NVI7	   Nutritional and Metabolic Diseases	Acidosis, Lactic	strong	2016	CURATED	1.0	0.692	DTO_05007624	2016	ATAD3A	Disease or Syndrome
+0.77268	0.3	C0001126	0.686	Transcription factor	2299	C16;C18;C13;C12	phenotype	Q12951	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Nutritional and Metabolic Diseases;    Female Urogenital Diseases and Pregnancy Complications;    Male Urogenital Diseases	Renal tubular acidosis	moderate	2018	CURATED	1.0	0.462	DTO_05007542	2018	FOXI1	Disease or Syndrome
+1.0177e-14	0.3	C0001144	0.44		4210	C17	disease	O15553	   Skin and Connective Tissue Diseases	Acne Vulgaris		2016	CURATED	1.0	0.885		2016	MEFV	Disease or Syndrome
+1.9834e-30	0.3	C0001144	0.423	Enzyme	64127	C17	disease	Q9HC29	   Skin and Connective Tissue Diseases	Acne Vulgaris		2016	CURATED	1.0	0.923	DTO_05007624	2016	NOD2	Disease or Syndrome
+2.4606e-06	0.3	C0001144	0.65	Cellular structure	9051	C17	disease	O43586	   Skin and Connective Tissue Diseases	Acne Vulgaris		2016	CURATED	1.0	0.577	DTO_05007530	2016	PSTPIP1	Disease or Syndrome
+	0.3	C0001175	0.371		3439	C01;C20	group	P01562	   Infections;    Immune System Diseases	Acquired Immunodeficiency Syndrome		1998	CURATED	1.0	0.923		1998	IFNA1	Disease or Syndrome
+2.5541e-22	0.3	C0001197	0.555	Ion channel	3710	C16;C17	disease	Q14573	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Skin and Connective Tissue Diseases	Acrodermatitis		2016	CURATED	1.0	0.808	DTO_01300327	2016	ITPR3	Disease or Syndrome
+0.0027499	0.3	C0001197	0.514		5698	C16;C17	disease	P28065	   Congenital, Hereditary, and Neonatal Diseases and Abnormalities;    Skin and Connective Tissue Diseases	Acrodermatitis		2016	CURATED	1.0	0.808		2016	PSMB9	Disease or Syndrome
+	0.3	C0001338	0.593		148022	C01;C10	disease	Q8IUC6	   Infections;    Nervous System Diseases	Herpetic Acute Necrotizing Encephalitis			CURATED		0.846			TICAM1	Disease or Syndrome
+0.00011576	0.3	C0001338	0.517	Transcription factor	3661	C01;C10	disease	Q14653	   Infections;    Nervous System Diseases	Herpetic Acute Necrotizing Encephalitis			CURATED		0.808	DTO_05007542		IRF3	Disease or Syndrome
+1.6349e-07	0.3	C0001338	0.427	Receptor	7098	C01;C10	disease	O15455	   Infections;    Nervous System Diseases	Herpetic Acute Necrotizing Encephalitis			CURATED		0.885	DTO_05007575		TLR3	Disease or Syndrome
+0.99869	0.3	C0001338	0.541	Signaling	7187	C01;C10	disease	Q13114	   Infections;    Nervous System Diseases	Herpetic Acute Necrotizing Encephalitis			CURATED		0.769	DTO_05007599		TRAF3	Disease or Syndrome
+0.1428	0.3	C0001338	0.666		81622	C01;C10	disease	Q9H1C4	   Infections;    Nervous System Diseases	Herpetic Acute Necrotizing Encephalitis			CURATED		0.538			UNC93B1	Disease or Syndrome
+0.28738	0.3	C0001349	0.511		283	C23	phenotype	P03950	   Pathological Conditions, Signs and Symptoms	Acute-Phase Reaction		1998	CURATED	1.0	0.769		1998	ANG	Pathologic Function
+2.4684e-06	0.3	C0001364	0.575	Ion channel	24145	C06	phenotype	Q96RD7	   Digestive System Diseases	Massive Hepatic Necrosis		2018	CURATED	1.0	0.846	DTO_01300327	2018	PANX1	Pathologic Function
+1.0	0.3	C0001364	0.54	Kinase	5591	C06	phenotype	P78527	   Digestive System Diseases	Massive Hepatic Necrosis		2011	CURATED	1.0	0.808	DTO_03300101	2011	PRKDC	Pathologic Function
+0.051127	0.3	C0001418	0.626	Receptor	10266	C04	group	O60895	   Neoplasms	Adenocarcinoma		2007	CURATED	1.0	0.654	DTO_05007575	2007	RAMP2	Neoplastic Process
+0.00054173	0.3	C0001418	0.674	Transporter	143187	C04	group	Q96AJ9	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.154	DTO_05007405	2011	VTI1A	Neoplastic Process
+1.0344e-37	0.3	C0001418	0.328	Enzyme	1636	C04	group	P12821	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.923	DTO_05007624	2011	ACE	Neoplastic Process
+0.99995	0.3	C0001418	0.599	Enzyme	1938	C04	group	P13639	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.731	DTO_05007624	2011	EEF2	Neoplastic Process
+0.00075626	0.3	C0001418	0.603	Enzyme	242	C04	group	O75342	   Neoplasms	Adenocarcinoma		2018	CURATED	1.0	0.577	DTO_05007624	2018	ALOX12B	Neoplastic Process
+0.99998	0.3	C0001418	0.432	Kinase	25	C04	group	P00519	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.923	DTO_03300101	2011	ABL1	Neoplastic Process
+0.013113	0.3	C0001418	0.716		2543	C04	group	Q13065;Q13069	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.231		2004	GAGE1	Neoplastic Process
+1.3644e-06	0.3	C0001418	0.603	Receptor	2886	C04	group	Q14451	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.462	DTO_05007575	2011	GRB7	Neoplastic Process
+0.99863	0.3	C0001418	0.553		3312	C04	group	P11142	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.808		2004	HSPA8	Neoplastic Process
+1.0	0.3	C0001418	0.41		4297	C04	group	Q03164	   Neoplasms	Adenocarcinoma		2012	CURATED	1.0	0.885		2012	KMT2A	Neoplastic Process
+0.9877	0.3	C0001418	0.617	Enzyme	4354	C04	group	Q00013	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.5	DTO_05007624	2011	MPP1	Neoplastic Process
+6.7246e-07	0.3	C0001418	0.378		4846	C04	group	P29474	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.885		2011	NOS3	Neoplastic Process
+0.089515	0.3	C0001418	0.542		5074	C04	group	Q96IZ0	   Neoplasms	Adenocarcinoma		2005	CURATED	1.0	0.846		2005	PAWR	Neoplastic Process
+1.0324e-08	0.3	C0001418	0.769		51292	C04	group	Q9P2T1	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.115		2004	GMPR2	Neoplastic Process
+1.3921e-11	0.3	C0001418	0.517		51738	C04	group	Q9UBU3	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.769		2011	GHRL	Neoplastic Process
+2.5841e-07	0.3	C0001418	0.621		5223	C04	group	P18669	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.615		2004	PGAM1	Neoplastic Process
+1.0	0.3	C0001418	0.558		58508	C04	group	Q8NEZ4	   Neoplasms	Adenocarcinoma		2012	CURATED	1.0	0.692		2012	KMT2C	Neoplastic Process
+5.2213e-08	0.3	C0001418	0.659	G-protein coupled receptor	59340	C04	group	Q9H3N8	   Neoplasms	Adenocarcinoma		2012	CURATED	1.0	0.462	DTO_02300001	2012	HRH4	Neoplastic Process
+7.2696e-16	0.3	C0001418	0.535		6091	C04	group	Q9Y6N7	   Neoplasms	Adenocarcinoma		2007	CURATED	1.0	0.731		2007	ROBO1	Neoplastic Process
+1.0	0.3	C0001418	0.674	Enzyme	6599	C04	group	Q92922	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.423	DTO_05007624	2011	SMARCC1	Neoplastic Process
+0.99997	0.3	C0001418	0.67		6847	C04	group	Q15431	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.577		2004	SYCP1	Neoplastic Process
+6.557e-25	0.3	C0001418	0.507	Enzyme	7306	C04	group	P17643	   Neoplasms	Adenocarcinoma		2011	CURATED	1.0	0.846	DTO_05007624	2011	TYRP1	Neoplastic Process
+4.7481e-11	0.3	C0001418	0.623		759	C04	group	P00915	   Neoplasms	Adenocarcinoma		2004	CURATED	1.0	0.769		2004	CA1	Neoplastic Process
+1.0	0.3	C0001418	0.539		79633	C04	group	Q6V0I7	   Neoplasms	Adenocarcinoma		2012	CURATED	1.0	0.808		2012	FAT4	Neoplastic Process
+0.54065	0.3	C0001418	0.522	Kinase	8202	C04	group	Q9Y6Q9	   Neoplasms	Adenocarcinoma		2010	CURATED	1.0	0.654	DTO_03300101	2010	NCOA3	Neoplastic Process
+0.99998	0.3	C0001430	0.529	Nucleic acid binding	23512	C04	group	Q15022	   Neoplasms	Adenoma		2014	CURATED	1.0	0.577	DTO_05007557	2014	SUZ12	Neoplastic Process
+0.15523	0.3	C0001430	0.393	Cell-cell junction	2697	C04	group	P17302	   Neoplasms	Adenoma		2006	CURATED	1.0	0.885	DTO_05007527	2006	GJA1	Neoplastic Process
+0.84627	0.3	C0001430	0.514	Cell-cell junction	2705	C04	group	P08034	   Neoplasms	Adenoma		2006	CURATED	1.0	0.731	DTO_05007527	2006	GJB1	Neoplastic Process
+	0.3	C0001430	0.5		406936	C04	group		   Neoplasms	Adenoma		2016	CURATED	1.0	0.769		2016	MIR144	Neoplastic Process
+	0.3	C0001430	0.619		442910	C04	group		   Neoplasms	Adenoma		2016	CURATED	1.0	0.462		2016	MIR345	Neoplastic Process
+2.1794e-14	0.3	C0001430	0.502		4552	C04	group	Q9UBK8	   Neoplasms	Adenoma		2007	CURATED	1.0	0.808		2007	MTRR	Neoplastic Process
+0.90175	0.3	C0001430	0.44	Enzyme modulator	4763	C04	group	P21359	   Neoplasms	Adenoma		2014	CURATED	1.0	0.885	DTO_05007584	2014	NF1	Neoplastic Process
+	0.3	C0001430	0.581		494337	C04	group		   Neoplasms	Adenoma		2016	CURATED	1.0	0.654		2016	MIR425	Neoplastic Process
+	0.3	C0001430	0.539		574456	C04	group		   Neoplasms	Adenoma		2016	CURATED	1.0	0.808		2016	MIR497	Neoplastic Process
+0.034451	0.3	C0001430	0.604		5757	C04	group	P06454	   Neoplasms	Adenoma		2000	CURATED	1.0	0.731		2000	PTMA	Neoplastic Process
+1.0478e-06	0.3	C0001430	0.578		6948	C04	group	P20062	   Neoplasms	Adenoma		2007	CURATED	1.0	0.615		2007	TCN2	Neoplastic Process
+2.0957e-32	0.3	C0001430	0.419	Transporter	9429	C04	group	Q9UNQ0	   Neoplasms	Adenoma		2011	CURATED	1.0	0.885	DTO_05007405	2011	ABCG2	Neoplastic Process
+1.0	0.3	C0001546	0.552	Epigenetic regulator	10014	F03	group	Q9UQL6	   Mental Disorders	Adjustment Disorders		2007	CURATED	1.0	0.769	DTO_05007378	2007	HDAC5	Mental or Behavioral Dysfunction
+0.89194	0.3	C0001618	0.636	Enzyme modulator	2771	C04;C19	group	P04899	   Neoplasms;    Endocrine System Diseases	Tumors of Adrenal Cortex			CURATED		0.577	DTO_05007584		GNAI2	Neoplastic Process
+0.99985	0.3	C0001618	0.401		5573	C04;C19	group	P10644	   Neoplasms;    Endocrine System Diseases	Tumors of Adrenal Cortex			CURATED		0.846			PRKAR1A	Neoplastic Process
