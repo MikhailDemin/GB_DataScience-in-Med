@@ -1,0 +1,90 @@
+STAR version=2.7.10b
+STAR compilation time,server,dir=2023-03-28T08:30:31+00:00 358f2342f665:/content/STAR-2.7.10b/source
+STAR git: 
+##### Command Line:
+STAR --runMode alignReads --genomeDir ./star_genome/ --quantMode GeneCounts --outFileNamePrefix M4_Mikhail --sjdbGTFfile sequence.gtf --readFilesIn SRR21375816.fastq
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 M4_Mikhail
+###### All USER parameters from Command Line:
+runMode                       alignReads        ~RE-DEFINED
+genomeDir                     ./star_genome/     ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+outFileNamePrefix             M4_Mikhail     ~RE-DEFINED
+sjdbGTFfile                   sequence.gtf     ~RE-DEFINED
+readFilesIn                   SRR21375816.fastq        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           alignReads   
+genomeDir                         ./star_genome/
+readFilesIn                       SRR21375816.fastq   
+outFileNamePrefix                 M4_Mikhail
+sjdbGTFfile                       sequence.gtf
+quantMode                         GeneCounts   
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode alignReads      --genomeDir ./star_genome/   --readFilesIn SRR21375816.fastq      --outFileNamePrefix M4_Mikhail   --sjdbGTFfile sequence.gtf   --quantMode GeneCounts   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --genomeDir ./star_genome/   --genomeFastaFiles sequence.fasta   
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              sequence.fasta        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  0     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   -     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               5505024   45363272        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	NC_002695.2	5498578	0
+Started loading the genome: Tue Mar 28 12:14:35 2023
+
+Genome: size given as a parameter = 5505024
+SA: size given as a parameter = 45363272
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=5505024;  nSAbyte=45363272
+GstrandBit=32   SA number of indices=10997156
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 5505024 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 5505024 bytes
+SA file size: 45363272 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 45363272 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Tue Mar 28 12:14:35 2023
+
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Mar 28 12:14:35 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=sequence.gtf, found:
+		126 transcripts
+		126 exons (non-collapsed)
+		0 collapsed junctions
+Total junctions: 0
+Mar 28 12:14:35 ..... finished GTF processing
+
+Mar 28 12:14:35   Finished preparing junctions
+Mar 28 12:14:35 ..... finished inserting junctions into genome
+Thread #0 end of input stream, nextChar=-1
+Completed: thread #0
+Mar 28 13:08:50 ..... finished mapping
+RAM after mapping:
+VmPeak:	 3580448 kB; VmSize:	 3580448 kB; VmHWM:	 1759972 kB; VmRSS:	 1759900 kB; 
+RAM after freeing genome index memory:
+VmPeak:	 3580448 kB; VmSize:	  185916 kB; VmHWM:	 1759972 kB; VmRSS:	  181244 kB; 
+ALL DONE!
