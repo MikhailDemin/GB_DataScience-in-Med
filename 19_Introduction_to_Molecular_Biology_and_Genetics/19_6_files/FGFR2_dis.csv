@@ -1,0 +1,205 @@
+index;SNP_ID_RS;ClinVar_Accession;Disease_Names;Clinical_Significance;Mutation_type
+0;rs2134256765;RCV002224437.1;not provided;Likely-Pathogenic;Inframe Indel
+0;rs2134256250;RCV001390280.4;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs2134253609;RCV001816093.5;not provided;Likely-Pathogenic;Splice Donor Variant
+0;rs2133823028;RCV001730847.1;Bilateral sensorineural hearing impairment;Likely-Pathogenic;Missense Variant
+0;rs1850314485;RCV001089549.1;Ectrodactyly;Likely-Pathogenic;Missense Variant
+0;rs1850299732;RCV001263201.1;Crouzon syndrome;Likely-Pathogenic;Inframe Insertion
+0;rs1850289942;RCV001049467.4;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs1847510893;RCV001250712.1;Levy-Hollister syndrome;Pathogenic;Missense Variant
+0;rs1847174277;RCV001293828.1;Colorectal cancer;Pathogenic;Splice Donor Variant
+0;rs1845559552;RCV001035610.5;FGFR2 related craniosynostosis;Likely-Pathogenic;Missense Variant
+1;rs1845559552;RCV001593194.3;not provided;Pathogenic;Missense Variant
+0;rs1589828632;RCV000014216.26;Pfeiffer syndrome;Pathogenic;Splice Acceptor Variant
+0;rs1589722765;RCV002269634.1;not provided;Pathogenic;Missense Variant
+0;rs1564919048;RCV000695392.6;FGFR2 related craniosynostosis;Pathogenic-Likely-Pathogenic;Missense Variant
+1;rs1564919048;RCV000856806.1;Crouzon syndrome;Pathogenic;Missense Variant
+0;rs1564875577;RCV000681721.1;not provided;Likely-Pathogenic;Stop Gained
+0;rs1554930637;RCV000022731.26;Beare-Stevenson cutis gyrata syndrome;Pathogenic;Inframe Deletion
+0;rs1554928978;RCV000623520.1;Inborn genetic diseases;Likely-Pathogenic;Splice Acceptor Variant
+0;rs1554928884;RCV000523700.6;not provided;Pathogenic;Missense Variant
+1;rs1554928884;RCV001232531.2;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs1554927408;RCV000525216.4;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+1;rs1554927408;RCV000762798.1;Acrocephalosyndactyly type I,Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis,Beare-Stevenson cutis gyrata syndrome,Crouzon syndrome,FGFR2-related bent bone dysplasia,Familial scaphocephaly syndrome, McGillivray type,Jackson-Weiss syndrome,Levy-Hollister syndrome,Neoplasm of stomach,Pfeiffer syndrome,Saethre-Chotzen syndrome;Pathogenic;Missense Variant
+0;rs1554917471;RCV000659648.1;Levy-Hollister syndrome;Likely-Pathogenic;Missense Variant
+0;rs1554914180;RCV000657844.2;not provided;Likely-Pathogenic;Stop Gained
+0;rs1554907364;RCV000624844.2;Inborn genetic diseases;Likely-Pathogenic;Missense Variant
+0;rs1554907337;RCV000659649.1;Levy-Hollister syndrome;Likely-Pathogenic;Missense Variant
+0;rs1434545235;RCV000522502.6;not provided;Pathogenic;Missense Variant
+1;rs1434545235;RCV000531359.8;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+2;rs1434545235;RCV000762805.2;Acrocephalosyndactyly type I,Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis,Beare-Stevenson cutis gyrata syndrome,Crouzon syndrome,FGFR2-related bent bone dysplasia,Familial scaphocephaly syndrome, McGillivray type,Jackson-Weiss syndrome,Levy-Hollister syndrome,Neoplasm of stomach,Pfeiffer syndrome,Saethre-Chotzen syndrome;Pathogenic;Missense Variant
+0;rs1358919643;RCV000534665.7;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+1;rs1358919643;RCV001755916.1;not provided;Uncertain-Significance;Missense Variant
+0;rs1274989878;RCV001224644.5;FGFR2 related craniosynostosis;Likely-Pathogenic;Missense Variant
+0;rs1064796452;RCV000482209.1;not provided;Likely-Pathogenic;Missense Variant
+0;rs1064796413;RCV000478596.1;not provided;Likely-Pathogenic;Missense Variant
+0;rs1057520044;RCV000424161.1;Craniosynostosis syndrome;Likely-Pathogenic;Missense Variant
+1;rs1057520044;RCV001865318.1;FGFR2 related craniosynostosis;Uncertain-Significance;Missense Variant
+0;rs1057520029;RCV000433692.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+0;rs1057520028;RCV000423432.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+0;rs1057520027;RCV000439319.1;Endometrial neoplasm;Likely-Pathogenic;Stop Gained
+0;rs1057519901;RCV000420899.1;Lung adenocarcinoma;Likely-Pathogenic;Missense Variant
+1;rs1057519901;RCV000423679.1;Malignant neoplasm of body of uterus;Likely-Pathogenic;Missense Variant
+2;rs1057519901;RCV000431121.1;Nasopharyngeal neoplasm;Likely-Pathogenic;Missense Variant
+3;rs1057519901;RCV000438545.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+4;rs1057519901;RCV000441378.1;Breast neoplasm;Likely-Pathogenic;Missense Variant
+0;rs1057519900;RCV000421261.1;Carcinoma of esophagus;Likely-Pathogenic;Missense Variant
+1;rs1057519900;RCV000434751.1;Malignant neoplasm of body of uterus;Likely-Pathogenic;Missense Variant
+2;rs1057519900;RCV000438442.1;Gastric adenocarcinoma;Likely-Pathogenic;Missense Variant
+0;rs1057519854;RCV000420097.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+1;rs1057519854;RCV000426084.1;Breast neoplasm;Likely-Pathogenic;Missense Variant
+2;rs1057519854;RCV000432646.1;Lung adenocarcinoma;Likely-Pathogenic;Missense Variant
+3;rs1057519854;RCV000436783.1;Nasopharyngeal neoplasm;Likely-Pathogenic;Missense Variant
+4;rs1057519854;RCV000444404.1;Malignant neoplasm of body of uterus;Likely-Pathogenic;Missense Variant
+0;rs1057519800;RCV000424365.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+0;rs1057519799;RCV000425939.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+0;rs1057519798;RCV000442792.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+0;rs1057519797;RCV000423825.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+1;rs1057519797;RCV001775788.1;not provided;Uncertain-Significance;Missense Variant
+0;rs1057519796;RCV000428728.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+0;rs1057519795;RCV000417597.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+0;rs1057519791;RCV000437269.1;Squamous cell lung carcinoma;Likely-Pathogenic;Missense Variant
+0;rs1057519047;RCV000415480.1;Pfeiffer syndrome;Likely-Pathogenic;Missense Variant
+1;rs1057519047;RCV000731782.3;not provided;Pathogenic;Missense Variant
+0;rs1057519046;RCV000415476.1;Craniosynostosis, nonspecific;Likely-Pathogenic;Missense Variant
+0;rs1057519045;RCV000415507.1;Crouzon syndrome;Likely-Pathogenic;Missense Variant
+1;rs1057519045;RCV000418082.1;Breast neoplasm;Likely-Pathogenic;Missense Variant
+2;rs1057519045;RCV000425472.1;Nasopharyngeal neoplasm;Likely-Pathogenic;Missense Variant
+3;rs1057519045;RCV000428300.1;Lung adenocarcinoma;Likely-Pathogenic;Missense Variant
+4;rs1057519045;RCV000432507.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+5;rs1057519045;RCV000435736.1;Malignant neoplasm of body of uterus;Likely-Pathogenic;Missense Variant
+6;rs1057519045;RCV000786040.1;Pemigatinib resistance;Drug-Response;Missense Variant
+0;rs1057519044;RCV000415513.1;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs1057519044;RCV000762802.1;Acrocephalosyndactyly type I,Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis,Beare-Stevenson cutis gyrata syndrome,Crouzon syndrome,FGFR2-related bent bone dysplasia,Familial scaphocephaly syndrome, McGillivray type,Jackson-Weiss syndrome,Levy-Hollister syndrome,Neoplasm of stomach,Pfeiffer syndrome,Saethre-Chotzen syndrome;Likely-Pathogenic;Missense Variant
+2;rs1057519044;RCV001377881.2;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs1057519043;RCV000655417.5;FGFR2 related craniosynostosis;Likely-Pathogenic;Missense Variant
+0;rs1057519042;RCV000415483.2;Crouzon syndrome;Pathogenic-Likely-Pathogenic;Missense Variant
+0;rs1057519041;RCV000415479.2;Pfeiffer syndrome;Pathogenic;Splice Acceptor Variant
+1;rs1057519041;RCV000558628.7;FGFR2 related craniosynostosis;Pathogenic;Splice Acceptor Variant
+2;rs1057519041;RCV001559997.2;not provided;Pathogenic;Splice Acceptor Variant
+0;rs1057519040;RCV000415502.1;Crouzon syndrome;Pathogenic;Missense Variant
+0;rs1057519039;RCV001864147.3;FGFR2 related craniosynostosis;Uncertain-Significance;Stop Gained
+0;rs1057519038;RCV000415488.1;Crouzon syndrome;Likely-Pathogenic;Missense Variant
+1;rs1057519038;RCV001547058.2;not provided;Likely-Pathogenic;Missense Variant
+0;rs1057519037;RCV000701381.7;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs1057519036;RCV000415486.1;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs1057519036;RCV000655413.4;FGFR2 related craniosynostosis;Likely-Pathogenic;Missense Variant
+2;rs1057519036;RCV001723974.3;not provided;Likely-Pathogenic;Missense Variant
+3;rs1057519036;RCV001764350.1;Acrocephalosyndactyly type I;Pathogenic;Missense Variant
+0;rs886037837;RCV000240846.1;Pfeiffer syndrome;Pathogenic;Inframe Indel
+0;rs879253721;RCV000014225.28;Pfeiffer syndrome;Pathogenic;Intron Variant
+1;rs879253721;RCV000014226.26;Crouzon syndrome;Pathogenic;Intron Variant
+2;rs879253721;RCV001254178.2;Acrocephalosyndactyly type I,Crouzon syndrome,Pfeiffer syndrome;Likely-Pathogenic;Intron Variant
+3;rs879253721;RCV001382547.3;FGFR2 related craniosynostosis;Pathogenic;Intron Variant
+4;rs879253721;RCV002273930.1;not provided;Pathogenic;Intron Variant
+0;rs879253720;RCV000014223.17;Levy-Hollister syndrome;Pathogenic;Inframe Indel
+0;rs879253719;RCV001783274.1;not provided;Pathogenic;Splice Acceptor Variant
+1;rs879253719;RCV002034562.3;FGFR2 related craniosynostosis;Pathogenic;Splice Acceptor Variant
+0;rs879253718;RCV000014207.26;Saethre-Chotzen syndrome;Pathogenic;Inframe Deletion
+0;rs777169135;RCV000442059.1;Craniosynostosis syndrome;Likely-Pathogenic;Missense Variant
+0;rs776587763;RCV000255197.4;not provided;Pathogenic;Missense Variant
+1;rs776587763;RCV000415498.1;Pfeiffer syndrome;Pathogenic;Missense Variant
+2;rs776587763;RCV000557313.8;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+3;rs776587763;RCV000844883.2;Crouzon syndrome;Pathogenic;Missense Variant
+0;rs387907372;RCV000049281.2;Acrocephalosyndactyly type I;Pathogenic;Missense Variant
+0;rs387906678;RCV000022735.26;FGFR2-related bent bone dysplasia;Pathogenic;Missense Variant
+1;rs387906678;RCV000190765.4;Inborn genetic diseases;Pathogenic;Missense Variant
+2;rs387906678;RCV000725446.4;not provided;Pathogenic;Missense Variant
+0;rs387906677;RCV000022734.26;FGFR2-related bent bone dysplasia;Pathogenic;Missense Variant
+1;rs387906677;RCV000493423.1;not provided;Pathogenic;Missense Variant
+0;rs387906676;RCV000022732.25;Crouzon syndrome;Pathogenic;Missense Variant
+0;rs281865420;RCV000014202.24;Pfeiffer syndrome variant;Pathogenic;Missense Variant
+0;rs121918510;RCV001370090.4;FGFR2 related craniosynostosis;Uncertain-Significance;Missense Variant
+0;rs121918509;RCV000014224.24;Levy-Hollister syndrome;Pathogenic;Missense Variant
+1;rs121918509;RCV000414415.1;not provided;Pathogenic;Missense Variant
+0;rs121918508;RCV000014222.26;Levy-Hollister syndrome;Pathogenic;Missense Variant
+1;rs121918508;RCV001291623.1;not provided;Pathogenic;Missense Variant
+0;rs121918507;RCV000014220.27;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs121918507;RCV000014221.26;Familial scaphocephaly syndrome, McGillivray type;Pathogenic;Missense Variant
+0;rs121918506;RCV000415495.1;Pfeiffer syndrome;Likely-Pathogenic;Missense Variant
+1;rs121918506;RCV000438913.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+2;rs121918506;RCV001549391.2;not provided;Pathogenic;Missense Variant
+3;rs121918506;RCV001865307.3;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918505;RCV000014213.25;Pfeiffer syndrome;Pathogenic;Missense Variant
+1;rs121918505;RCV000014214.5;Neoplasm of stomach;Pathogenic;Missense Variant
+2;rs121918505;RCV000408850.3;Crouzon syndrome;Pathogenic;Missense Variant
+3;rs121918505;RCV000435703.1;not provided;Pathogenic;Missense Variant
+4;rs121918505;RCV000690962.7;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918504;RCV000014212.18;Craniosynostosis, nonsyndromic unicoronal;Pathogenic;Missense Variant
+1;rs121918504;RCV000856813.1;Crouzon syndrome;Pathogenic;Missense Variant
+2;rs121918504;RCV001280733.4;not provided;Pathogenic;Missense Variant
+3;rs121918504;RCV001851847.1;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918503;RCV000014211.18;Pfeiffer syndrome;Pathogenic;Inframe Deletion
+0;rs121918502;RCV000014208.26;Pfeiffer syndrome type 3;Pathogenic;Missense Variant
+1;rs121918502;RCV000014209.20;Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis;Pathogenic;Missense Variant
+2;rs121918502;RCV000256107.5;not provided;Pathogenic;Missense Variant
+3;rs121918502;RCV000415503.3;Pfeiffer syndrome;Pathogenic;Missense Variant
+4;rs121918502;RCV000528973.7;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918501;RCV000014206.26;Crouzon syndrome;Pathogenic;Missense Variant
+0;rs121918500;RCV000014204.24;Crouzon syndrome;Pathogenic;Stop Gained
+0;rs121918499;RCV000014217.27;Pfeiffer syndrome;Pathogenic;Stop Gained
+1;rs121918499;RCV000014218.25;Craniofacial-skeletal-dermatologic dysplasia;Pathogenic;Stop Gained
+2;rs121918499;RCV000655418.5;FGFR2 related craniosynostosis;Pathogenic;Stop Gained
+3;rs121918499;RCV001268882.2;not provided;Pathogenic;Stop Gained
+0;rs121918498;RCV000014201.28;Acrocephalosyndactyly type I;Likely-Pathogenic;Missense Variant
+0;rs121918497;RCV000014196.18;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs121918497;RCV000014197.25;Jackson-Weiss syndrome;Pathogenic;Missense Variant
+2;rs121918497;RCV000415509.2;Pfeiffer syndrome;Pathogenic;Missense Variant
+3;rs121918497;RCV001217538.6;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+4;rs121918497;RCV001572560.7;not provided;Pathogenic;Missense Variant
+0;rs121918496;RCV000014195.17;Crouzon syndrome;Pathogenic;Stop Gained
+1;rs121918496;RCV000535651.4;FGFR2 related craniosynostosis;Pathogenic;Stop Gained
+2;rs121918496;RCV001588812.4;not provided;Pathogenic;Stop Gained
+0;rs121918495;RCV000014194.24;Pfeiffer syndrome;Pathogenic;Missense Variant
+1;rs121918495;RCV001037961.5;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+2;rs121918495;RCV001781263.1;not provided;Pathogenic;Missense Variant
+0;rs121918494;RCV000014190.18;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs121918494;RCV000626619.1;Abnormal pinna morphology,Abnormal posterior cranial fossa morphology,Abnormal zygomatic bone morphology,Brachyturricephaly,Choanal stenosis,Cranial asymmetry,Deviated nasal septum,Dilation of lateral ventricles,Downslanted palpebral fissures,Facial asymmetry,Flat occiput,High forehead,High palate,Hydrocephalus,Hypertelorism,Hypointensity of cerebral white matter on MRI,Low-set ears,Mild fetal ventriculomegaly,Narrow forehead,Shallow orbits,Short neck,Wide anterior fontanel;Likely-Pathogenic;Missense Variant
+2;rs121918494;RCV000655421.7;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+3;rs121918494;RCV000726654.5;not provided;Pathogenic;Missense Variant
+4;rs121918494;RCV001823713.1;Pfeiffer syndrome;Pathogenic;Missense Variant
+0;rs121918493;RCV000014189.24;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs121918493;RCV000798719.6;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918492;RCV000014187.25;Jackson-Weiss syndrome;Pathogenic;Missense Variant
+1;rs121918492;RCV000014188.25;Crouzon syndrome;Pathogenic;Missense Variant
+2;rs121918492;RCV001851846.3;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918491;RCV000014184.24;Crouzon syndrome;Pathogenic;Synonymous Variant
+1;rs121918491;RCV000014185.18;Craniosynostosis, nonclassifiable autosomal dominant;Pathogenic;Synonymous Variant
+2;rs121918491;RCV000014186.25;Scaphocephaly and axenfeld-rieger anomaly;Pathogenic;Synonymous Variant
+3;rs121918491;RCV000192353.5;Craniosynostosis syndrome;Pathogenic;Synonymous Variant
+4;rs121918491;RCV000686210.8;FGFR2 related craniosynostosis;Pathogenic;Synonymous Variant
+5;rs121918491;RCV000762800.2;Acrocephalosyndactyly type I,Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis,Beare-Stevenson cutis gyrata syndrome,Crouzon syndrome,FGFR2-related bent bone dysplasia,Familial scaphocephaly syndrome, McGillivray type,Jackson-Weiss syndrome,Levy-Hollister syndrome,Neoplasm of stomach,Pfeiffer syndrome,Saethre-Chotzen syndrome;Pathogenic;Synonymous Variant
+6;rs121918491;RCV001579726.4;not provided;Pathogenic;Synonymous Variant
+7;rs121918491;RCV002247335.2;Acrocephalosyndactyly type I;Pathogenic;Synonymous Variant
+8;rs121918491;RCV002250460.2;Pfeiffer syndrome;Pathogenic;Synonymous Variant
+0;rs121918490;RCV001377880.2;FGFR2 related craniosynostosis;Likely-Pathogenic;Missense Variant
+1;rs121918490;RCV002246353.1;Acrocephalosyndactyly type I;Pathogenic;Missense Variant
+0;rs121918489;RCV000014175.18;Crouzon syndrome;Pathogenic;Missense Variant
+1;rs121918489;RCV001214882.5;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+2;rs121918489;RCV001723564.3;not provided;Pathogenic;Missense Variant
+0;rs121918488;RCV000415501.1;Pfeiffer syndrome;Pathogenic;Missense Variant
+1;rs121918488;RCV001270790.2;FGFR2-related syndromic and non-syndromic craniosynostoses;Pathogenic;Missense Variant
+2;rs121918488;RCV001591054.3;not provided;Pathogenic;Missense Variant
+3;rs121918488;RCV001861462.3;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121918487;RCV000415490.1;Jackson-Weiss syndrome;Pathogenic;Missense Variant
+1;rs121918487;RCV000815502.4;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121913478;RCV000014198.22;Beare-Stevenson cutis gyrata syndrome;Pathogenic-Likely-Pathogenic;Missense Variant
+1;rs121913478;RCV000014199.6;Endometrial carcinoma;Pathogenic;Missense Variant
+2;rs121913478;RCV000224124.5;not provided;Pathogenic;Missense Variant
+3;rs121913478;RCV000441051.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+4;rs121913478;RCV000549100.6;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+5;rs121913478;RCV000762799.1;Acrocephalosyndactyly type I,Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis,Beare-Stevenson cutis gyrata syndrome,Crouzon syndrome,FGFR2-related bent bone dysplasia,Familial scaphocephaly syndrome, McGillivray type,Jackson-Weiss syndrome,Levy-Hollister syndrome,Neoplasm of stomach,Pfeiffer syndrome,Saethre-Chotzen syndrome;Pathogenic;Missense Variant
+0;rs121913477;RCV000014200.25;Beare-Stevenson cutis gyrata syndrome;Pathogenic;Missense Variant
+1;rs121913477;RCV000424237.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+2;rs121913477;RCV001382546.4;FGFR2 related craniosynostosis;Pathogenic;Missense Variant
+0;rs121913476;RCV000434110.1;Endometrial Endometrioid Adenocarcinoma, Variant with Squamous Differentiation;Likely-Pathogenic;Missense Variant
+0;rs121913475;RCV000438031.1;Endometrial neoplasm;Likely-Pathogenic;Missense Variant
+0;rs121913474;RCV000419879.1;Carcinoma of esophagus;Likely-Pathogenic;Missense Variant
+1;rs121913474;RCV000429923.1;Malignant neoplasm of body of uterus;Likely-Pathogenic;Missense Variant
+2;rs121913474;RCV000440577.1;Gastric adenocarcinoma;Likely-Pathogenic;Missense Variant
+3;rs121913474;RCV000585739.1;Adenoid cystic carcinoma;Uncertain-Significance;Missense Variant
+0;rs79184941;RCV000664049.3;Crouzon syndrome;Benign-Likely-Benign;Missense Variant
+1;rs79184941;RCV001313539.1;FGFR2 related craniosynostosis;Uncertain-Significance;Missense Variant
+0;rs77543610;RCV001029732.1;Acrocephalosyndactyly type I;Uncertain-Significance;Missense Variant
+1;rs77543610;RCV001228029.5;FGFR2 related craniosynostosis;Likely-Pathogenic;Missense Variant
+2;rs77543610;RCV001266231.1;Inborn genetic diseases;Likely-Pathogenic;Missense Variant

@@ -1,0 +1,372 @@
+index;RS_Num;Study;Population;Group;Samplesize;Ref Allele;Alt Allele
+0;rs1850314485;TopMed;Global;Study-wide;264690;C=0.999996;T=0.000004
+1;rs1850314485;Allele Frequency Aggregator;Total;Global;10680;C=1.00000;T=0.00000
+2;rs1850314485;Allele Frequency Aggregator;European;Sub;6962;C=1.0000;T=0.0000
+3;rs1850314485;Allele Frequency Aggregator;African;Sub;2294;C=1.0000;T=0.0000
+4;rs1850314485;Allele Frequency Aggregator;Latin American 2;Sub;610;C=1.000;T=0.000
+5;rs1850314485;Allele Frequency Aggregator;Other;Sub;466;C=1.000;T=0.000
+6;rs1850314485;Allele Frequency Aggregator;Latin American 1;Sub;146;C=1.000;T=0.000
+7;rs1850314485;Allele Frequency Aggregator;Asian;Sub;108;C=1.000;T=0.000
+8;rs1850314485;Allele Frequency Aggregator;South Asian;Sub;94;C=1.00;T=0.00
+0;rs1564875577;TopMed;Global;Study-wide;264690;G=0.999996;A=0.000004
+1;rs1564875577;Allele Frequency Aggregator;Total;Global;10680;G=1.00000;A=0.00000
+2;rs1564875577;Allele Frequency Aggregator;European;Sub;6962;G=1.0000;A=0.0000
+3;rs1564875577;Allele Frequency Aggregator;African;Sub;2294;G=1.0000;A=0.0000
+4;rs1564875577;Allele Frequency Aggregator;Latin American 2;Sub;610;G=1.000;A=0.000
+5;rs1564875577;Allele Frequency Aggregator;Other;Sub;466;G=1.000;A=0.000
+6;rs1564875577;Allele Frequency Aggregator;Latin American 1;Sub;146;G=1.000;A=0.000
+7;rs1564875577;Allele Frequency Aggregator;Asian;Sub;108;G=1.000;A=0.000
+8;rs1564875577;Allele Frequency Aggregator;South Asian;Sub;94;G=1.00;A=0.00
+0;rs1554927408;TopMed;Global;Study-wide;264690;C=0.999996;T=0.000004
+1;rs1554927408;Allele Frequency Aggregator;Total;Global;10680;C=1.00000;T=0.00000
+2;rs1554927408;Allele Frequency Aggregator;European;Sub;6962;C=1.0000;T=0.0000
+3;rs1554927408;Allele Frequency Aggregator;African;Sub;2294;C=1.0000;T=0.0000
+4;rs1554927408;Allele Frequency Aggregator;Latin American 2;Sub;610;C=1.000;T=0.000
+5;rs1554927408;Allele Frequency Aggregator;Other;Sub;466;C=1.000;T=0.000
+6;rs1554927408;Allele Frequency Aggregator;Latin American 1;Sub;146;C=1.000;T=0.000
+7;rs1554927408;Allele Frequency Aggregator;Asian;Sub;108;C=1.000;T=0.000
+8;rs1554927408;Allele Frequency Aggregator;South Asian;Sub;94;C=1.00;T=0.00
+0;rs1434545235;gnomAD - Exomes;Global;Study-wide;251352;T=0.999996;C=0.000004
+1;rs1434545235;gnomAD - Exomes;European;Sub;135280;T=1.000000;C=0.000000
+2;rs1434545235;gnomAD - Exomes;Asian;Sub;49008;T=1.00000;C=0.00000
+3;rs1434545235;gnomAD - Exomes;American;Sub;34592;T=0.99997;C=0.00003
+4;rs1434545235;gnomAD - Exomes;African;Sub;16256;T=1.00000;C=0.00000
+5;rs1434545235;gnomAD - Exomes;Ashkenazi Jewish;Sub;10078;T=1.00000;C=0.00000
+6;rs1434545235;gnomAD - Exomes;Other;Sub;6138;T=1.0000;C=0.0000
+0;rs1358919643;gnomAD - Exomes;Global;Study-wide;251396;C=0.999996;T=0.000004
+1;rs1358919643;gnomAD - Exomes;European;Sub;135358;C=0.999993;T=0.000007
+2;rs1358919643;gnomAD - Exomes;Asian;Sub;48984;C=1.00000;T=0.00000
+3;rs1358919643;gnomAD - Exomes;American;Sub;34586;C=1.00000;T=0.00000
+4;rs1358919643;gnomAD - Exomes;African;Sub;16256;C=1.00000;T=0.00000
+5;rs1358919643;gnomAD - Exomes;Ashkenazi Jewish;Sub;10076;C=1.00000;T=0.00000
+6;rs1358919643;gnomAD - Exomes;Other;Sub;6136;C=1.0000;T=0.0000
+0;rs1274989878;gnomAD - Exomes;Global;Study-wide;251418;C=0.999992;T=0.000008
+1;rs1274989878;gnomAD - Exomes;European;Sub;135372;C=1.000000;T=0.000000
+2;rs1274989878;gnomAD - Exomes;Asian;Sub;48986;C=0.99996;T=0.00004
+3;rs1274989878;gnomAD - Exomes;American;Sub;34592;C=1.00000;T=0.00000
+4;rs1274989878;gnomAD - Exomes;African;Sub;16256;C=1.00000;T=0.00000
+5;rs1274989878;gnomAD - Exomes;Ashkenazi Jewish;Sub;10076;C=1.00000;T=0.00000
+6;rs1274989878;gnomAD - Exomes;Other;Sub;6136;C=1.0000;T=0.0000
+0;rs1057519901;TopMed;Global;Study-wide;264690;T=0.999996;G=0.000004
+1;rs1057519901;Allele Frequency Aggregator;Total;Global;14050;T=1.00000;G=0.00000
+2;rs1057519901;Allele Frequency Aggregator;European;Sub;9690;T=1.0000;G=0.0000
+3;rs1057519901;Allele Frequency Aggregator;African;Sub;2898;T=1.0000;G=0.0000
+4;rs1057519901;Allele Frequency Aggregator;Latin American 2;Sub;610;T=1.000;G=0.000
+5;rs1057519901;Allele Frequency Aggregator;Other;Sub;496;T=1.000;G=0.000
+6;rs1057519901;Allele Frequency Aggregator;Latin American 1;Sub;146;T=1.000;G=0.000
+7;rs1057519901;Allele Frequency Aggregator;Asian;Sub;112;T=1.000;G=0.000
+8;rs1057519901;Allele Frequency Aggregator;South Asian;Sub;98;T=1.00;G=0.00
+0;rs777169135;gnomAD - Exomes;Global;Study-wide;251352;T=0.999996;C=0.000004
+1;rs777169135;gnomAD - Exomes;European;Sub;135288;T=1.000000;C=0.000000
+2;rs777169135;gnomAD - Exomes;Asian;Sub;49008;T=0.99998;C=0.00002
+3;rs777169135;gnomAD - Exomes;American;Sub;34590;T=1.00000;C=0.00000
+4;rs777169135;gnomAD - Exomes;African;Sub;16254;T=1.00000;C=0.00000
+5;rs777169135;gnomAD - Exomes;Ashkenazi Jewish;Sub;10080;T=1.00000;C=0.00000
+6;rs777169135;gnomAD - Exomes;Other;Sub;6132;T=1.0000;C=0.0000
+7;rs777169135;ExAC;Global;Study-wide;121404;T=0.999992;C=0.000008
+8;rs777169135;ExAC;Europe;Sub;73350;T=1.00000;C=0.00000
+9;rs777169135;ExAC;Asian;Sub;25166;T=0.99996;C=0.00004
+10;rs777169135;ExAC;American;Sub;11576;T=1.00000;C=0.00000
+11;rs777169135;ExAC;African;Sub;10404;T=1.00000;C=0.00000
+12;rs777169135;ExAC;Other;Sub;908;T=1.000;C=0.000
+0;rs776587763;ExAC;Global;Study-wide;121312;C=0.999992;A=0.000008
+1;rs776587763;ExAC;Europe;Sub;73308;C=0.99999;A=0.00001
+2;rs776587763;ExAC;Asian;Sub;25124;C=1.00000;A=0.00000
+3;rs776587763;ExAC;American;Sub;11566;C=1.00000;A=0.00000
+4;rs776587763;ExAC;African;Sub;10406;C=1.00000;A=0.00000
+5;rs776587763;ExAC;Other;Sub;908;C=1.000;A=0.000
+6;rs776587763;Allele Frequency Aggregator;Total;Global;478;C=1.000;A=0.000
+7;rs776587763;Allele Frequency Aggregator;African;Sub;426;C=1.000;A=0.000
+8;rs776587763;Allele Frequency Aggregator;Other;Sub;52;C=1.00;A=0.00
+9;rs776587763;Allele Frequency Aggregator;European;Sub;0;C=0;A=0
+10;rs776587763;Allele Frequency Aggregator;Latin American 1;Sub;0;C=0;A=0
+11;rs776587763;Allele Frequency Aggregator;Latin American 2;Sub;0;C=0;A=0
+12;rs776587763;Allele Frequency Aggregator;South Asian;Sub;0;C=0;A=0
+13;rs776587763;Allele Frequency Aggregator;Asian;Sub;0;C=0;A=0
+0;rs387906678;Allele Frequency Aggregator;Total;Global;478;A=1.000;C=0.000
+1;rs387906678;Allele Frequency Aggregator;African;Sub;426;A=1.000;C=0.000
+2;rs387906678;Allele Frequency Aggregator;Other;Sub;52;A=1.00;C=0.00
+3;rs387906678;Allele Frequency Aggregator;European;Sub;0;A=0;C=0
+4;rs387906678;Allele Frequency Aggregator;Latin American 1;Sub;0;A=0;C=0
+5;rs387906678;Allele Frequency Aggregator;Latin American 2;Sub;0;A=0;C=0
+6;rs387906678;Allele Frequency Aggregator;South Asian;Sub;0;A=0;C=0
+7;rs387906678;Allele Frequency Aggregator;Asian;Sub;0;A=0;C=0
+0;rs387906677;Allele Frequency Aggregator;Total;Global;478;A=1.000;C=0.000
+1;rs387906677;Allele Frequency Aggregator;African;Sub;426;A=1.000;C=0.000
+2;rs387906677;Allele Frequency Aggregator;Other;Sub;52;A=1.00;C=0.00
+3;rs387906677;Allele Frequency Aggregator;European;Sub;0;A=0;C=0
+4;rs387906677;Allele Frequency Aggregator;Latin American 1;Sub;0;A=0;C=0
+5;rs387906677;Allele Frequency Aggregator;Latin American 2;Sub;0;A=0;C=0
+6;rs387906677;Allele Frequency Aggregator;South Asian;Sub;0;A=0;C=0
+7;rs387906677;Allele Frequency Aggregator;Asian;Sub;0;A=0;C=0
+0;rs387906676;The PAGE Study;Global;Study-wide;78702;C=1.00000;G=0.00000
+1;rs387906676;The PAGE Study;AfricanAmerican;Sub;32516;C=1.00000;G=0.00000
+2;rs387906676;The PAGE Study;Mexican;Sub;10810;C=1.00000;G=0.00000
+3;rs387906676;The PAGE Study;Asian;Sub;8318;C=1.0000;G=0.0000
+4;rs387906676;The PAGE Study;PuertoRican;Sub;7918;C=1.0000;G=0.0000
+5;rs387906676;The PAGE Study;NativeHawaiian;Sub;4534;C=1.0000;G=0.0000
+6;rs387906676;The PAGE Study;Cuban;Sub;4230;C=1.0000;G=0.0000
+7;rs387906676;The PAGE Study;Dominican;Sub;3828;C=1.0000;G=0.0000
+8;rs387906676;The PAGE Study;CentralAmerican;Sub;2450;C=1.0000;G=0.0000
+9;rs387906676;The PAGE Study;SouthAmerican;Sub;1982;C=1.0000;G=0.0000
+10;rs387906676;The PAGE Study;NativeAmerican;Sub;1260;C=1.0000;G=0.0000
+11;rs387906676;The PAGE Study;SouthAsian;Sub;856;C=1.000;G=0.000
+0;rs121918510;Allele Frequency Aggregator;Total;Global;478;T=1.000;G=0.000
+1;rs121918510;Allele Frequency Aggregator;African;Sub;426;T=1.000;G=0.000
+2;rs121918510;Allele Frequency Aggregator;Other;Sub;52;T=1.00;G=0.00
+3;rs121918510;Allele Frequency Aggregator;European;Sub;0;T=0;G=0
+4;rs121918510;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;G=0
+5;rs121918510;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;G=0
+6;rs121918510;Allele Frequency Aggregator;South Asian;Sub;0;T=0;G=0
+7;rs121918510;Allele Frequency Aggregator;Asian;Sub;0;T=0;G=0
+0;rs121918508;TopMed;Global;Study-wide;264690;C=0.999996;T=0.000004
+1;rs121918508;Allele Frequency Aggregator;Total;Global;11862;C=1.00000;T=0.00000
+2;rs121918508;Allele Frequency Aggregator;European;Sub;7618;C=1.0000;T=0.0000
+3;rs121918508;Allele Frequency Aggregator;African;Sub;2816;C=1.0000;T=0.0000
+4;rs121918508;Allele Frequency Aggregator;Latin American 2;Sub;610;C=1.000;T=0.000
+5;rs121918508;Allele Frequency Aggregator;Other;Sub;470;C=1.000;T=0.000
+6;rs121918508;Allele Frequency Aggregator;Latin American 1;Sub;146;C=1.000;T=0.000
+7;rs121918508;Allele Frequency Aggregator;Asian;Sub;108;C=1.000;T=0.000
+8;rs121918508;Allele Frequency Aggregator;South Asian;Sub;94;C=1.00;T=0.00
+0;rs121918507;Allele Frequency Aggregator;Total;Global;478;T=1.000;C=0.000
+1;rs121918507;Allele Frequency Aggregator;African;Sub;426;T=1.000;C=0.000
+2;rs121918507;Allele Frequency Aggregator;Other;Sub;52;T=1.00;C=0.00
+3;rs121918507;Allele Frequency Aggregator;European;Sub;0;T=0;C=0
+4;rs121918507;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;C=0
+5;rs121918507;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;C=0
+6;rs121918507;Allele Frequency Aggregator;South Asian;Sub;0;T=0;C=0
+7;rs121918507;Allele Frequency Aggregator;Asian;Sub;0;T=0;C=0
+0;rs121918506;Allele Frequency Aggregator;Total;Global;478;T=1.000;G=0.000
+1;rs121918506;Allele Frequency Aggregator;African;Sub;426;T=1.000;G=0.000
+2;rs121918506;Allele Frequency Aggregator;Other;Sub;52;T=1.00;G=0.00
+3;rs121918506;Allele Frequency Aggregator;European;Sub;0;T=0;G=0
+4;rs121918506;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;G=0
+5;rs121918506;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;G=0
+6;rs121918506;Allele Frequency Aggregator;South Asian;Sub;0;T=0;G=0
+7;rs121918506;Allele Frequency Aggregator;Asian;Sub;0;T=0;G=0
+0;rs121918505;Allele Frequency Aggregator;Total;Global;478;A=0.996;G=0.004
+1;rs121918505;Allele Frequency Aggregator;African;Sub;426;A=0.995;G=0.005
+2;rs121918505;Allele Frequency Aggregator;Other;Sub;52;A=1.00;G=0.00
+3;rs121918505;Allele Frequency Aggregator;European;Sub;0;A=0;G=0
+4;rs121918505;Allele Frequency Aggregator;Latin American 1;Sub;0;A=0;G=0
+5;rs121918505;Allele Frequency Aggregator;Latin American 2;Sub;0;A=0;G=0
+6;rs121918505;Allele Frequency Aggregator;South Asian;Sub;0;A=0;G=0
+7;rs121918505;Allele Frequency Aggregator;Asian;Sub;0;A=0;G=0
+0;rs121918504;gnomAD - Exomes;Global;Study-wide;251394;C=0.999976;T=0.000024
+1;rs121918504;gnomAD - Exomes;European;Sub;135352;C=0.999985;T=0.000015
+2;rs121918504;gnomAD - Exomes;Asian;Sub;48986;C=0.99996;T=0.00004
+3;rs121918504;gnomAD - Exomes;American;Sub;34588;C=0.99997;T=0.00003
+4;rs121918504;gnomAD - Exomes;African;Sub;16256;C=0.99994;T=0.00006
+5;rs121918504;gnomAD - Exomes;Ashkenazi Jewish;Sub;10076;C=1.00000;T=0.00000
+6;rs121918504;gnomAD - Exomes;Other;Sub;6136;C=1.0000;T=0.0000
+7;rs121918504;ExAC;Global;Study-wide;121146;C=0.999992;T=0.000008
+8;rs121918504;ExAC;Europe;Sub;73246;C=1.00000;T=0.00000
+9;rs121918504;ExAC;Asian;Sub;25060;C=0.99996;T=0.00004
+10;rs121918504;ExAC;American;Sub;11548;C=1.00000;T=0.00000
+11;rs121918504;ExAC;African;Sub;10388;C=1.00000;T=0.00000
+12;rs121918504;ExAC;Other;Sub;904;C=1.000;T=0.000
+13;rs121918504;14KJPN;JAPANESE;Study-wide;28258;C=0.99993;T=0.00007
+14;rs121918504;8.3KJPN;JAPANESE;Study-wide;16760;C=0.99994;T=0.00006
+15;rs121918504;Allele Frequency Aggregator;Total;Global;14050;C=1.00000;A=0.00000, T=0.00000
+16;rs121918504;Allele Frequency Aggregator;European;Sub;9690;C=1.0000;A=0.0000, T=0.0000
+17;rs121918504;Allele Frequency Aggregator;African;Sub;2898;C=1.0000;A=0.0000, T=0.0000
+18;rs121918504;Allele Frequency Aggregator;Latin American 2;Sub;610;C=1.000;A=0.000, T=0.000
+19;rs121918504;Allele Frequency Aggregator;Other;Sub;496;C=1.000;A=0.000, T=0.000
+20;rs121918504;Allele Frequency Aggregator;Latin American 1;Sub;146;C=1.000;A=0.000, T=0.000
+21;rs121918504;Allele Frequency Aggregator;Asian;Sub;112;C=1.000;A=0.000, T=0.000
+22;rs121918504;Allele Frequency Aggregator;South Asian;Sub;98;C=1.00;A=0.00, T=0.00
+0;rs121918500;Allele Frequency Aggregator;Total;Global;478;T=1.000;C=0.000
+1;rs121918500;Allele Frequency Aggregator;African;Sub;426;T=1.000;C=0.000
+2;rs121918500;Allele Frequency Aggregator;Other;Sub;52;T=1.00;C=0.00
+3;rs121918500;Allele Frequency Aggregator;European;Sub;0;T=0;C=0
+4;rs121918500;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;C=0
+5;rs121918500;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;C=0
+6;rs121918500;Allele Frequency Aggregator;South Asian;Sub;0;T=0;C=0
+7;rs121918500;Allele Frequency Aggregator;Asian;Sub;0;T=0;C=0
+0;rs121918499;The PAGE Study;Global;Study-wide;78702;C=1.00000;G=0.00000
+1;rs121918499;The PAGE Study;AfricanAmerican;Sub;32516;C=1.00000;G=0.00000
+2;rs121918499;The PAGE Study;Mexican;Sub;10810;C=1.00000;G=0.00000
+3;rs121918499;The PAGE Study;Asian;Sub;8318;C=1.0000;G=0.0000
+4;rs121918499;The PAGE Study;PuertoRican;Sub;7918;C=1.0000;G=0.0000
+5;rs121918499;The PAGE Study;NativeHawaiian;Sub;4534;C=1.0000;G=0.0000
+6;rs121918499;The PAGE Study;Cuban;Sub;4230;C=1.0000;G=0.0000
+7;rs121918499;The PAGE Study;Dominican;Sub;3828;C=1.0000;G=0.0000
+8;rs121918499;The PAGE Study;CentralAmerican;Sub;2450;C=1.0000;G=0.0000
+9;rs121918499;The PAGE Study;SouthAmerican;Sub;1982;C=1.0000;G=0.0000
+10;rs121918499;The PAGE Study;NativeAmerican;Sub;1260;C=1.0000;G=0.0000
+11;rs121918499;The PAGE Study;SouthAsian;Sub;856;C=1.000;G=0.000
+0;rs121918497;Allele Frequency Aggregator;Total;Global;476;T=1.000;G=0.000
+1;rs121918497;Allele Frequency Aggregator;African;Sub;424;T=1.000;G=0.000
+2;rs121918497;Allele Frequency Aggregator;Other;Sub;52;T=1.00;G=0.00
+3;rs121918497;Allele Frequency Aggregator;European;Sub;0;T=0;G=0
+4;rs121918497;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;G=0
+5;rs121918497;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;G=0
+6;rs121918497;Allele Frequency Aggregator;South Asian;Sub;0;T=0;G=0
+7;rs121918497;Allele Frequency Aggregator;Asian;Sub;0;T=0;G=0
+0;rs121918496;The PAGE Study;Global;Study-wide;78698;G=1.00000;C=0.00000
+1;rs121918496;The PAGE Study;AfricanAmerican;Sub;32514;G=1.00000;C=0.00000
+2;rs121918496;The PAGE Study;Mexican;Sub;10810;G=1.00000;C=0.00000
+3;rs121918496;The PAGE Study;Asian;Sub;8318;G=1.0000;C=0.0000
+4;rs121918496;The PAGE Study;PuertoRican;Sub;7918;G=1.0000;C=0.0000
+5;rs121918496;The PAGE Study;NativeHawaiian;Sub;4534;G=1.0000;C=0.0000
+6;rs121918496;The PAGE Study;Cuban;Sub;4230;G=1.0000;C=0.0000
+7;rs121918496;The PAGE Study;Dominican;Sub;3826;G=1.0000;C=0.0000
+8;rs121918496;The PAGE Study;CentralAmerican;Sub;2450;G=1.0000;C=0.0000
+9;rs121918496;The PAGE Study;SouthAmerican;Sub;1982;G=1.0000;C=0.0000
+10;rs121918496;The PAGE Study;NativeAmerican;Sub;1260;G=1.0000;C=0.0000
+11;rs121918496;The PAGE Study;SouthAsian;Sub;856;G=1.000;C=0.000
+0;rs121918495;Allele Frequency Aggregator;Total;Global;478;T=1.000;G=0.000
+1;rs121918495;Allele Frequency Aggregator;African;Sub;426;T=1.000;G=0.000
+2;rs121918495;Allele Frequency Aggregator;Other;Sub;52;T=1.00;G=0.00
+3;rs121918495;Allele Frequency Aggregator;European;Sub;0;T=0;G=0
+4;rs121918495;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;G=0
+5;rs121918495;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;G=0
+6;rs121918495;Allele Frequency Aggregator;South Asian;Sub;0;T=0;G=0
+7;rs121918495;Allele Frequency Aggregator;Asian;Sub;0;T=0;G=0
+0;rs121918494;The PAGE Study;Global;Study-wide;78700;G=1.00000;C=0.00000
+1;rs121918494;The PAGE Study;AfricanAmerican;Sub;32516;G=1.00000;C=0.00000
+2;rs121918494;The PAGE Study;Mexican;Sub;10810;G=1.00000;C=0.00000
+3;rs121918494;The PAGE Study;Asian;Sub;8318;G=1.0000;C=0.0000
+4;rs121918494;The PAGE Study;PuertoRican;Sub;7918;G=1.0000;C=0.0000
+5;rs121918494;The PAGE Study;NativeHawaiian;Sub;4534;G=1.0000;C=0.0000
+6;rs121918494;The PAGE Study;Cuban;Sub;4230;G=1.0000;C=0.0000
+7;rs121918494;The PAGE Study;Dominican;Sub;3826;G=1.0000;C=0.0000
+8;rs121918494;The PAGE Study;CentralAmerican;Sub;2450;G=1.0000;C=0.0000
+9;rs121918494;The PAGE Study;SouthAmerican;Sub;1982;G=1.0000;C=0.0000
+10;rs121918494;The PAGE Study;NativeAmerican;Sub;1260;G=1.0000;C=0.0000
+11;rs121918494;The PAGE Study;SouthAsian;Sub;856;G=1.000;C=0.000
+0;rs121918493;TopMed;Global;Study-wide;264690;T=0.999996;C=0.000004
+1;rs121918493;Allele Frequency Aggregator;Total;Global;11158;T=1.00000;C=0.00000
+2;rs121918493;Allele Frequency Aggregator;European;Sub;6962;T=1.0000;C=0.0000
+3;rs121918493;Allele Frequency Aggregator;African;Sub;2720;T=1.0000;C=0.0000
+4;rs121918493;Allele Frequency Aggregator;Latin American 2;Sub;610;T=1.000;C=0.000
+5;rs121918493;Allele Frequency Aggregator;Other;Sub;518;T=1.000;C=0.000
+6;rs121918493;Allele Frequency Aggregator;Latin American 1;Sub;146;T=1.000;C=0.000
+7;rs121918493;Allele Frequency Aggregator;Asian;Sub;108;T=1.000;C=0.000
+8;rs121918493;Allele Frequency Aggregator;South Asian;Sub;94;T=1.00;C=0.00
+0;rs121918492;gnomAD - Genomes;Global;Study-wide;140172;G=0.999993;C=0.000007
+1;rs121918492;gnomAD - Genomes;European;Sub;75920;G=0.99999;C=0.00001
+2;rs121918492;gnomAD - Genomes;African;Sub;41994;G=1.00000;C=0.00000
+3;rs121918492;gnomAD - Genomes;American;Sub;13650;G=1.00000;C=0.00000
+4;rs121918492;gnomAD - Genomes;Ashkenazi Jewish;Sub;3324;G=1.0000;C=0.0000
+5;rs121918492;gnomAD - Genomes;East Asian;Sub;3132;G=1.0000;C=0.0000
+6;rs121918492;gnomAD - Genomes;Other;Sub;2152;G=1.0000;C=0.0000
+7;rs121918492;The PAGE Study;Global;Study-wide;78694;G=1.00000;C=0.00000
+8;rs121918492;The PAGE Study;AfricanAmerican;Sub;32514;G=1.00000;C=0.00000
+9;rs121918492;The PAGE Study;Mexican;Sub;10808;G=1.00000;C=0.00000
+10;rs121918492;The PAGE Study;Asian;Sub;8318;G=1.0000;C=0.0000
+11;rs121918492;The PAGE Study;PuertoRican;Sub;7916;G=1.0000;C=0.0000
+12;rs121918492;The PAGE Study;NativeHawaiian;Sub;4534;G=1.0000;C=0.0000
+13;rs121918492;The PAGE Study;Cuban;Sub;4230;G=1.0000;C=0.0000
+14;rs121918492;The PAGE Study;Dominican;Sub;3826;G=1.0000;C=0.0000
+15;rs121918492;The PAGE Study;CentralAmerican;Sub;2450;G=1.0000;C=0.0000
+16;rs121918492;The PAGE Study;SouthAmerican;Sub;1982;G=1.0000;C=0.0000
+17;rs121918492;The PAGE Study;NativeAmerican;Sub;1260;G=1.0000;C=0.0000
+18;rs121918492;The PAGE Study;SouthAsian;Sub;856;G=1.000;C=0.000
+0;rs121918491;gnomAD - Exomes;Global;Study-wide;251454;C=0.999996;T=0.000004
+1;rs121918491;gnomAD - Exomes;European;Sub;135394;C=0.999993;T=0.000007
+2;rs121918491;gnomAD - Exomes;Asian;Sub;48994;C=1.00000;T=0.00000
+3;rs121918491;gnomAD - Exomes;American;Sub;34592;C=1.00000;T=0.00000
+4;rs121918491;gnomAD - Exomes;African;Sub;16256;C=1.00000;T=0.00000
+5;rs121918491;gnomAD - Exomes;Ashkenazi Jewish;Sub;10078;C=1.00000;T=0.00000
+6;rs121918491;gnomAD - Exomes;Other;Sub;6140;C=1.0000;T=0.0000
+7;rs121918491;Allele Frequency Aggregator;Total;Global;9466;C=0.9999;T=0.0001
+8;rs121918491;Allele Frequency Aggregator;European;Sub;6062;C=0.9998;T=0.0002
+9;rs121918491;Allele Frequency Aggregator;Other;Sub;2328;C=1.0000;T=0.0000
+10;rs121918491;Allele Frequency Aggregator;African;Sub;1020;C=1.0000;T=0.0000
+11;rs121918491;Allele Frequency Aggregator;Asian;Sub;56;C=1.00;T=0.00
+12;rs121918491;Allele Frequency Aggregator;Latin American 1;Sub;0;C=0;T=0
+13;rs121918491;Allele Frequency Aggregator;Latin American 2;Sub;0;C=0;T=0
+14;rs121918491;Allele Frequency Aggregator;South Asian;Sub;0;C=0;T=0
+0;rs121918490;The PAGE Study;Global;Study-wide;78702;G=1.00000;C=0.00000
+1;rs121918490;The PAGE Study;AfricanAmerican;Sub;32516;G=1.00000;C=0.00000
+2;rs121918490;The PAGE Study;Mexican;Sub;10810;G=1.00000;C=0.00000
+3;rs121918490;The PAGE Study;Asian;Sub;8318;G=1.0000;C=0.0000
+4;rs121918490;The PAGE Study;PuertoRican;Sub;7918;G=1.0000;C=0.0000
+5;rs121918490;The PAGE Study;NativeHawaiian;Sub;4534;G=1.0000;C=0.0000
+6;rs121918490;The PAGE Study;Cuban;Sub;4230;G=1.0000;C=0.0000
+7;rs121918490;The PAGE Study;Dominican;Sub;3828;G=1.0000;C=0.0000
+8;rs121918490;The PAGE Study;CentralAmerican;Sub;2450;G=1.0000;C=0.0000
+9;rs121918490;The PAGE Study;SouthAmerican;Sub;1982;G=1.0000;C=0.0000
+10;rs121918490;The PAGE Study;NativeAmerican;Sub;1260;G=1.0000;C=0.0000
+11;rs121918490;The PAGE Study;SouthAsian;Sub;856;G=1.000;C=0.000
+0;rs121918489;Allele Frequency Aggregator;Total;Global;478;A=1.000;G=0.000
+1;rs121918489;Allele Frequency Aggregator;African;Sub;426;A=1.000;G=0.000
+2;rs121918489;Allele Frequency Aggregator;Other;Sub;52;A=1.00;G=0.00
+3;rs121918489;Allele Frequency Aggregator;European;Sub;0;A=0;G=0
+4;rs121918489;Allele Frequency Aggregator;Latin American 1;Sub;0;A=0;G=0
+5;rs121918489;Allele Frequency Aggregator;Latin American 2;Sub;0;A=0;G=0
+6;rs121918489;Allele Frequency Aggregator;South Asian;Sub;0;A=0;G=0
+7;rs121918489;Allele Frequency Aggregator;Asian;Sub;0;A=0;G=0
+0;rs121918487;Allele Frequency Aggregator;Total;Global;478;C=1.000;T=0.000
+1;rs121918487;Allele Frequency Aggregator;African;Sub;426;C=1.000;T=0.000
+2;rs121918487;Allele Frequency Aggregator;Other;Sub;52;C=1.00;T=0.00
+3;rs121918487;Allele Frequency Aggregator;European;Sub;0;C=0;T=0
+4;rs121918487;Allele Frequency Aggregator;Latin American 1;Sub;0;C=0;T=0
+5;rs121918487;Allele Frequency Aggregator;Latin American 2;Sub;0;C=0;T=0
+6;rs121918487;Allele Frequency Aggregator;South Asian;Sub;0;C=0;T=0
+7;rs121918487;Allele Frequency Aggregator;Asian;Sub;0;C=0;T=0
+0;rs121913478;Allele Frequency Aggregator;Total;Global;478;T=1.000;C=0.000
+1;rs121913478;Allele Frequency Aggregator;African;Sub;426;T=1.000;C=0.000
+2;rs121913478;Allele Frequency Aggregator;Other;Sub;52;T=1.00;C=0.00
+3;rs121913478;Allele Frequency Aggregator;European;Sub;0;T=0;C=0
+4;rs121913478;Allele Frequency Aggregator;Latin American 1;Sub;0;T=0;C=0
+5;rs121913478;Allele Frequency Aggregator;Latin American 2;Sub;0;T=0;C=0
+6;rs121913478;Allele Frequency Aggregator;South Asian;Sub;0;T=0;C=0
+7;rs121913478;Allele Frequency Aggregator;Asian;Sub;0;T=0;C=0
+0;rs121913477;TopMed;Global;Study-wide;264690;G=0.999996;T=0.000004
+1;rs121913477;gnomAD - Genomes;Global;Study-wide;140190;G=0.999993;T=0.000007
+2;rs121913477;gnomAD - Genomes;European;Sub;75938;G=0.99999;T=0.00001
+3;rs121913477;gnomAD - Genomes;African;Sub;42006;G=1.00000;T=0.00000
+4;rs121913477;gnomAD - Genomes;American;Sub;13646;G=1.00000;T=0.00000
+5;rs121913477;gnomAD - Genomes;Ashkenazi Jewish;Sub;3318;G=1.0000;T=0.0000
+6;rs121913477;gnomAD - Genomes;East Asian;Sub;3132;G=1.0000;T=0.0000
+7;rs121913477;gnomAD - Genomes;Other;Sub;2150;G=1.0000;T=0.0000
+8;rs121913477;Allele Frequency Aggregator;Total;Global;14050;G=1.00000;T=0.00000
+9;rs121913477;Allele Frequency Aggregator;European;Sub;9690;G=1.0000;T=0.0000
+10;rs121913477;Allele Frequency Aggregator;African;Sub;2898;G=1.0000;T=0.0000
+11;rs121913477;Allele Frequency Aggregator;Latin American 2;Sub;610;G=1.000;T=0.000
+12;rs121913477;Allele Frequency Aggregator;Other;Sub;496;G=1.000;T=0.000
+13;rs121913477;Allele Frequency Aggregator;Latin American 1;Sub;146;G=1.000;T=0.000
+14;rs121913477;Allele Frequency Aggregator;Asian;Sub;112;G=1.000;T=0.000
+15;rs121913477;Allele Frequency Aggregator;South Asian;Sub;98;G=1.00;T=0.00
+0;rs79184941;TopMed;Global;Study-wide;264690;G=0.999958;A=0.000042
+1;rs79184941;gnomAD - Genomes;Global;Study-wide;140276;G=0.999986;A=0.000014
+2;rs79184941;gnomAD - Genomes;European;Sub;75962;G=0.99999;A=0.00001
+3;rs79184941;gnomAD - Genomes;African;Sub;42044;G=0.99998;A=0.00002
+4;rs79184941;gnomAD - Genomes;American;Sub;13662;G=1.00000;A=0.00000
+5;rs79184941;gnomAD - Genomes;Ashkenazi Jewish;Sub;3322;G=1.0000;A=0.0000
+6;rs79184941;gnomAD - Genomes;East Asian;Sub;3134;G=1.0000;A=0.0000
+7;rs79184941;gnomAD - Genomes;Other;Sub;2152;G=1.0000;A=0.0000
+8;rs79184941;14KJPN;JAPANESE;Study-wide;28258;G=0.99989;A=0.00011
+9;rs79184941;Allele Frequency Aggregator;Total;Global;20442;G=1.00000;A=0.00000
+10;rs79184941;Allele Frequency Aggregator;European;Sub;15832;G=1.00000;A=0.00000
+11;rs79184941;Allele Frequency Aggregator;African;Sub;2898;G=1.0000;A=0.0000
+12;rs79184941;Allele Frequency Aggregator;Other;Sub;746;G=1.000;A=0.000
+13;rs79184941;Allele Frequency Aggregator;Latin American 2;Sub;610;G=1.000;A=0.000
+14;rs79184941;Allele Frequency Aggregator;Latin American 1;Sub;146;G=1.000;A=0.000
+15;rs79184941;Allele Frequency Aggregator;Asian;Sub;112;G=1.000;A=0.000
+16;rs79184941;Allele Frequency Aggregator;South Asian;Sub;98;G=1.00;A=0.00
+17;rs79184941;8.3KJPN;JAPANESE;Study-wide;16760;G=0.99976;A=0.00024
+18;rs79184941;KOREAN population from KRGDB;KOREAN;Study-wide;2922;G=0.9997;A=0.0003
+0;rs77543610;TopMed;Global;Study-wide;264690;G=0.999996;C=0.000004
+1;rs77543610;The PAGE Study;Global;Study-wide;78662;G=0.99999;C=0.00001
+2;rs77543610;The PAGE Study;AfricanAmerican;Sub;32498;G=1.00000;C=0.00000
+3;rs77543610;The PAGE Study;Mexican;Sub;10808;G=1.00000;C=0.00000
+4;rs77543610;The PAGE Study;Asian;Sub;8316;G=1.0000;C=0.0000
+5;rs77543610;The PAGE Study;PuertoRican;Sub;7916;G=1.0000;C=0.0000
+6;rs77543610;The PAGE Study;NativeHawaiian;Sub;4526;G=1.0000;C=0.0000
+7;rs77543610;The PAGE Study;Cuban;Sub;4230;G=1.0000;C=0.0000
+8;rs77543610;The PAGE Study;Dominican;Sub;3826;G=1.0000;C=0.0000
+9;rs77543610;The PAGE Study;CentralAmerican;Sub;2450;G=1.0000;C=0.0000
+10;rs77543610;The PAGE Study;SouthAmerican;Sub;1980;G=0.9995;C=0.0005
+11;rs77543610;The PAGE Study;NativeAmerican;Sub;1260;G=1.0000;C=0.0000
+12;rs77543610;The PAGE Study;SouthAsian;Sub;852;G=1.000;C=0.000
+13;rs77543610;Allele Frequency Aggregator;Total;Global;10680;G=1.00000;C=0.00000
+14;rs77543610;Allele Frequency Aggregator;European;Sub;6962;G=1.0000;C=0.0000
+15;rs77543610;Allele Frequency Aggregator;African;Sub;2294;G=1.0000;C=0.0000
+16;rs77543610;Allele Frequency Aggregator;Latin American 2;Sub;610;G=1.000;C=0.000
+17;rs77543610;Allele Frequency Aggregator;Other;Sub;466;G=1.000;C=0.000
+18;rs77543610;Allele Frequency Aggregator;Latin American 1;Sub;146;G=1.000;C=0.000
+19;rs77543610;Allele Frequency Aggregator;Asian;Sub;108;G=1.000;C=0.000
+20;rs77543610;Allele Frequency Aggregator;South Asian;Sub;94;G=1.00;C=0.00
