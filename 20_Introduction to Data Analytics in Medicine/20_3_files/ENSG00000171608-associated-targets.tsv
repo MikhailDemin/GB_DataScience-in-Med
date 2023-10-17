@@ -1,0 +1,399 @@
+name	overallAssociationScore	geneticAssociations	somaticMutations	drugs	pathwaysSystemsBiology	textMining	rnaExpression	animalModels
+activated PI3K-delta syndrome	0.7162762026176588	0.8115735581763673	No data	0.5530481561605719	No data	0.1319225547581372	No data	No data
+chronic lymphocytic leukemia	0.5868963599135201	No data	No data	0.9275686873673528	No data	0.7566251965873855	No data	No data
+Combined immunodeficiency with facio-oculo-skeletal anomalies	0.5857202471320098	0.7078520799014908	No data	No data	No data	No data	No data	No data
+follicular lymphoma	0.5775364198311086	No data	No data	0.9474975783233379	No data	0.05011956334199855	No data	No data
+combined immunodeficiency with faciooculoskeletal anomalies	0.5446558188337096	0.7167339716605904	No data	No data	No data	No data	No data	No data
+neoplasm	0.5351750178700049	No data	No data	0.8495810465335822	No data	0.6148244072697148	No data	No data
+neoplasm of mature B-cells	0.5336900769756402	No data	No data	0.877879651882006	No data	No data	No data	No data
+non-Hodgkins lymphoma	0.4927218361551979	No data	No data	0.8044921109167423	No data	0.11995791322470374	No data	No data
+lymphoma	0.47951713303330334	No data	No data	0.7887692726165269	No data	No data	No data	No data
+marginal zone B-cell lymphoma	0.462898767992589	No data	No data	0.7599134970145264	No data	0.030396539880581056	No data	No data
+combined immunodeficiency	0.4625291881379043	0.7599134970145264	No data	No data	No data	0.01823792392834863	No data	No data
+eosinophil count	0.4488715581690099	0.7383596289783187	No data	No data	No data	No data	No data	No data
+monocyte count	0.442765200456198	0.7283151342154247	No data	No data	No data	No data	No data	No data
+cancer	0.4070857954245206	No data	No data	0.15814967786331852	0.607930797611621	0.8824447629065935	No data	No data
+lymphoid neoplasm	0.38292579388164927	No data	No data	0.6298838541920406	No data	No data	No data	No data
+breast cancer	0.38105687954192985	No data	No data	0.5918466061384208	No data	0.6992605175448814	No data	No data
+lymphocyte count	0.37840672678248893	0.6224503319607038	No data	No data	No data	No data	No data	No data
+bronchiectasis	0.36994943453938645	0.607930797611621	No data	No data	No data	0.012158615952232422	No data	No data
+eosinophil percentage of leukocytes	0.3507423133077251	0.5769444724394407	No data	No data	No data	No data	No data	No data
+Mantle cell lymphoma	0.31706120643448704	No data	No data	0.48682840780950665	No data	0.694264026687459	No data	No data
+endometrial cancer	0.3075597891534697	No data	No data	0.18551402126877084	0.9190679877429972	No data	No data	No data
+breast adenocarcinoma	0.3057407564288155	No data	No data	0.07599134970145263	0.9678449821121378	No data	No data	No data
+head and neck squamous cell carcinoma	0.30531838783324605	No data	No data	0.17721182750378753	0.8936535041985735	0.4993134857209955	No data	No data
+brain measurement	0.3051220764040213	0.5019026468189389	No data	No data	No data	No data	No data	No data
+gut microbiome measurement	0.29811087753588794	0.4903697570629367	No data	No data	No data	No data	No data	No data
+pancreatic adenocarcinoma	0.29651932437107953	No data	No data	No data	0.9755035459167904	No data	No data	No data
+cortical surface area measurement	0.29518712151981075	0.48556040042635273	No data	No data	No data	No data	No data	No data
+infection	0.28024168818193645	No data	No data	0.4559480982087158	No data	0.1005639845988853	No data	No data
+leukocyte count	0.27657641492630775	0.4549472012487179	No data	No data	No data	No data	No data	No data
+monocyte percentage of leukocytes	0.2759707364809354	0.4539509061971234	No data	No data	No data	No data	No data	No data
+Testicular Germ Cell Tumor	0.27418262567749385	0.44948977270823265	No data	No data	No data	0.030396539880581056	No data	No data
+lung adenocarcinoma	0.2641777333500398	No data	No data	No data	0.865457038266544	0.03647584785669726	No data	No data
+head and neck malignant neoplasia	0.25870589827929125	No data	No data	0.42555155832813474	No data	No data	No data	No data
+genetic disorder	0.1860420300018715	0.3045811769603557	No data	No data	No data	0.028876712886552	No data	No data
+inflammatory bowel disease	0.15403113063086285	No data	No data	No data	0.5025763903855271	0.04162637266979572	No data	No data
+diffuse large B-cell lymphoma	0.13997178816592912	No data	No data	0.1903129017714975	No data	0.7986012253884378	No data	No data
+glioblastoma multiforme	0.13597681758652977	No data	No data	0.18411717662097815	No data	0.7910872633467368	No data	No data
+gastric adenocarcinoma	0.13080523853122047	No data	No data	No data	0.43032936987273973	No data	No data	No data
+Hodgkins lymphoma	0.12802198427716213	No data	No data	0.17635335883605285	No data	0.06444573063681193	No data	0.6560191369206962
+non-small cell lung carcinoma	0.12428474409591969	No data	No data	0.17250764969829446	No data	0.6386263402674611	No data	No data
+melanoma	0.11712827246824707	No data	No data	0.1649687767185535	No data	0.5539667515736177	No data	No data
+acute lymphoblastic leukemia	0.11630992871833441	No data	No data	0.08464592008411806	No data	0.8507976047348889	No data	No data
+Waldenstrom macroglobulinemia	0.11510040797372091	No data	No data	0.1587374860430344	No data	0.030396539880581056	No data	0.5983693295746519
+multiple myeloma	0.11439542798684654	No data	No data	0.16929184016823612	No data	0.1591100612430839	No data	0.3068834666343463
+medulloblastoma	0.114212818085949	No data	No data	No data	0.35184354695458986	0.23899279481106853	No data	No data
+prostate cancer	0.10773293690159155	No data	No data	0.1772125007070577	No data	No data	No data	No data
+neuroblastoma	0.10156724252203901	No data	No data	0.06079307976116211	No data	0.7593606584635098	No data	No data
+unspecified peripheral T-cell lymphoma	0.10131621071898116	No data	No data	0.16665747337858577	No data	No data	No data	No data
+common variable immunodeficiency	0.10124996428943023	No data	No data	0.12158615952232422	No data	0.08736546266550863	No data	0.6710525421289506
+metastatic colorectal cancer	0.09881128059278485	No data	No data	0.16253705352810702	No data	No data	No data	No data
+breast neoplasm	0.09650140650100547	No data	No data	0.1587374860430344	No data	No data	No data	No data
+thyroid cancer	0.09239496367117545	No data	No data	0.15198269940290526	No data	No data	No data	No data
+squamous cell lung carcinoma	0.09239496367117545	No data	No data	0.15198269940290526	No data	No data	No data	No data
+endometrial neoplasm	0.09239496367117545	No data	No data	0.15198269940290526	No data	No data	No data	No data
+metastatic malignant neoplasm	0.09207671435186361	No data	No data	0.15145920343829525	No data	No data	No data	No data
+pancreatic ductal adenocarcinoma	0.08909312698331523	No data	No data	0.13678442946261474	No data	0.19533998614923406	No data	No data
+classic Hodgkin lymphoma	0.08900234379845479	No data	No data	0.06079307976116211	No data	No data	No data	0.6560191369206962
+esophageal cancer	0.08726191013388793	No data	No data	0.14353921610274387	No data	No data	No data	No data
+isolated agammaglobulinemia	0.08671347164492069	No data	No data	No data	No data	No data	No data	0.7131853821651418
+acute myeloid leukemia	0.08666543087247511	No data	No data	0.08274613634158175	No data	0.609357594624224	No data	No data
+combined immunodeficiency with skin granulomas	0.085672178814733	No data	No data	No data	No data	No data	No data	0.7046211439798203
+Central Nervous System Lymphoma	0.08555773635950846	No data	No data	0.13678442946261474	No data	0.07903100368951074	No data	No data
+BENTA disease	0.08444948956859394	No data	No data	No data	No data	No data	No data	0.6945649891432613
+pancreatic neuroendocrine tumor	0.08352504715874261	No data	No data	0.13678442946261474	No data	0.012158615952232422	No data	No data
+leukemia	0.0831554673040579	No data	No data	0.13678442946261474	No data	No data	No data	No data
+immunodeficiency 62	0.08303192086507964	No data	No data	No data	No data	No data	No data	0.682906024758799
+severe combined immunodeficiency due to CTPS1 deficiency	0.08299553162194312	No data	No data	No data	No data	No data	No data	0.6826067370497417
+immunodeficiency 73c with defective neutrophil chemotaxis and hypogammaglobulinemia	0.08258266575338914	No data	No data	No data	No data	No data	No data	0.6792110720318154
+myeloproliferative disorder	0.08220010337969795	No data	No data	0.12158615952232422	No data	0.2725353765692897	No data	No data
+severe combined immunodeficiency due to CARD11 deficiency	0.08000839409738528	No data	No data	No data	No data	No data	No data	0.6580386650233416
+rheumatoid arthritis	0.07792957467505404	No data	No data	0.12158615952232422	No data	0.11825275177223613	0.031024610784186585	No data
+hyper-IgM syndrome type 3	0.07750044997833493	No data	No data	No data	No data	No data	No data	0.6374117768240324
+short-limb skeletal dysplasia with severe combined immunodeficiency	0.07621234099147386	No data	No data	No data	No data	No data	No data	0.626817569457654
+immunodeficiency, common variable, 14	0.0757399460744373	No data	No data	No data	No data	No data	No data	0.6229323006170847
+inborn error of immunity	0.07518147230951257	No data	No data	No data	No data	0.08781210460611208	No data	0.596386039782277
+renal cell carcinoma	0.07506577492929277	No data	No data	0.12158615952232422	No data	0.03782680518472309	No data	No data
+glioblastoma	0.07488393754290433	No data	No data	No data	No data	0.6158919554421408	No data	No data
+bladder transitional cell carcinoma	0.07483992057365212	No data	No data	0.12158615952232422	No data	0.030396539880581056	No data	No data
+immunodeficiency due to selective anti-polysaccharide antibody deficiency	0.07459994005467685	No data	No data	No data	No data	No data	No data	0.6135561839255206
+Endometrial Serous Adenocarcinoma	0.07428555079162506	No data	No data	0.12158615952232422	No data	0.012158615952232422	No data	No data
+endometrium adenocarcinoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+cervical cancer	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+Transitional Cell Carcinoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+Endometrial Undifferentiated Carcinoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+lymphoplasmacytic lymphoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+ovarian cancer	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+gallbladder neoplasm	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+endometrial carcinoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+Thymoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+cholangiocarcinoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+uterine corpus cancer	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+Endometrial Endometrioid Adenocarcinoma	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+hematopoietic and lymphoid cell neoplasm	0.07391597093694036	No data	No data	0.12158615952232422	No data	No data	No data	No data
+hyper-IgE recurrent infection syndrome 5, autosomal recessive	0.07365569843072149	No data	No data	No data	No data	No data	No data	0.6057901550644643
+severe combined immunodeficiency due to CORO1A deficiency	0.0729975136675135	No data	No data	No data	No data	No data	No data	0.6003768352771317
+Miyoshi myopathy	0.07275507954894742	No data	No data	No data	No data	0.5983829066957985	No data	No data
+thrombocytopenia 7	0.07269635741648085	No data	No data	No data	No data	No data	No data	0.5978999394510294
+autosomal agammaglobulinemia	0.07261278719845098	No data	No data	No data	No data	No data	No data	0.597212606136463
+hyper-IgM syndrome type 2	0.07247996430512012	No data	No data	No data	No data	0.030396539880581056	No data	0.5885210532969427
+autosomal dominant macrothrombocytopenia	0.07038278752615461	No data	No data	No data	No data	No data	No data	0.5788717054857856
+hepatocellular carcinoma	0.07016491201302849	No data	No data	0.06079307976116211	No data	0.49990152961614126	0.010681945132922704	No data
+severe combined immunodeficiency due to IKK2 deficiency	0.06968275605728924	No data	No data	No data	No data	No data	No data	0.5731142124321716
+immunodeficiency 72 with autoinflammation	0.0695270989999416	No data	No data	No data	No data	No data	No data	0.5718339922331032
+T-B+ severe combined immunodeficiency due to JAK3 deficiency	0.06914885403292478	No data	No data	No data	No data	No data	No data	0.5687230709859578
+immunodeficiency, common variable, 7	0.06902207868328356	No data	No data	No data	No data	No data	No data	0.5676803918673863
+primary immunodeficiency with post-measles-mumps-rubella vaccine viral infection	0.06848553291635938	No data	No data	No data	No data	No data	No data	0.5632675066423566
+Lung fibrosis - immunodeficiency - 46,XX gonadal dysgenesis	0.06798149991054037	No data	No data	No data	No data	No data	No data	0.5591220265334429
+lung fibrosis-immunodeficiency-46,XX gonadal dysgenesis syndrome	0.06798149991054037	No data	No data	No data	No data	No data	No data	0.5591220265334429
+Chronic mucocutaneous candidosis	0.06786652567096937	No data	No data	No data	No data	No data	No data	0.5581764070647245
+gamma chain deficiency	0.06778923933163522	No data	No data	No data	No data	No data	No data	0.5575407562666584
+primary immunodeficiency syndrome due to p14 deficiency	0.06775046938371272	No data	No data	No data	No data	No data	No data	0.5572218881646078
+immunodeficiency 70	0.0676419894834771	No data	No data	No data	No data	No data	No data	0.5563296821712466
+autoimmune lymphoproliferative syndrome type 2B	0.0674687550862579	No data	No data	No data	No data	No data	No data	0.554904895025244
+pancytopenia due to IKZF1 mutations	0.06731509404878709	No data	No data	No data	No data	No data	No data	0.5536410913318426
+Autosomal recessive hyper-IgE syndrome	0.06722725107699276	No data	No data	No data	No data	No data	No data	0.5529186162397809
+reticular dysgenesis	0.06602192592435964	No data	No data	No data	No data	No data	No data	0.5430052744797608
+Transcobalamin deficiency	0.06578775602198858	No data	No data	No data	No data	No data	No data	0.5410793159389939
+immunodeficiency, common variable, 4	0.06557291103957473	No data	No data	No data	No data	No data	No data	0.5393122975278695
+Cernunnos-XLF deficiency	0.06526420714662083	No data	No data	No data	No data	No data	No data	0.5367733252125442
+immunodeficiency 25	0.06501856589620464	No data	No data	No data	No data	No data	No data	0.5347530191893815
+essential thrombocythemia	0.06482245861242326	No data	No data	No data	No data	No data	No data	0.5331401112354514
+autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency	0.06471882020828401	No data	No data	No data	No data	No data	No data	0.5322877247093334
+bleeding disorder, platelet-type, 24	0.06457668800905794	No data	No data	No data	No data	No data	No data	0.5311187413333928
+immunodeficiency 96	0.06353888724488915	No data	No data	No data	No data	No data	No data	0.5225832240652596
+X-Linked Combined Immunodeficiency Diseases	0.0630199355322694	No data	No data	No data	No data	No data	No data	0.518315043257028
+Autosomal recessive early-onset inflammatory bowel disease	0.06251162771946453	No data	No data	No data	No data	No data	No data	0.5141344044836524
+hyper-IgM syndrome type 5	0.062471325036311164	No data	No data	No data	No data	No data	No data	0.5138029302162548
+severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-positive	0.062160671522326995	No data	No data	No data	No data	No data	No data	0.5112479230081594
+primary immunodeficiency due to a defect in adaptive immunity	0.06173457991532571	No data	No data	No data	No data	No data	No data	0.5077434813128605
+immunodeficiency 36	0.06158228016365298	No data	No data	No data	No data	No data	No data	0.506490873678315
+neutropenia, severe congenital, 1, autosomal dominant	0.06113408040776977	No data	No data	No data	No data	No data	No data	0.5028046008521639
+triple-negative breast cancer	0.06112728970850392	No data	No data	0.08776156542187763	No data	0.25576369127803406	No data	No data
+X-linked lymphoproliferative disease	0.060518248342426535	No data	No data	No data	No data	No data	No data	0.4977396159249103
+X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia	0.06051268731909562	No data	No data	No data	No data	No data	No data	0.49769387861934233
+ICF syndrome	0.06049087647760575	No data	No data	No data	No data	No data	No data	0.4975144927289124
+severe combined immunodeficiency due to DCLRE1C deficiency	0.06042066294093861	No data	No data	No data	No data	No data	No data	0.4969370130474832
+neutrophil immunodeficiency syndrome	0.06013023171291801	No data	No data	No data	No data	No data	No data	0.4945483264637337
+breast carcinoma	0.059972031002898794	No data	No data	0.08897742701710087	No data	0.19344020240669774	No data	No data
+Glanzmann thrombasthenia 1	0.05993959010454314	No data	No data	No data	No data	No data	No data	0.4929803716148937
+autoimmune lymphoproliferative syndrome type 4	0.059601529251798804	No data	No data	No data	No data	No data	No data	0.4901999494511172
+X-linked agammaglobulinemia	0.05958818780664261	No data	No data	No data	No data	0.030396539880581056	No data	0.48249108615984876
+combined immunodeficiency due to CD3gamma deficiency	0.05886806517863437	No data	No data	No data	No data	No data	No data	0.4841674859203502
+T-B+ severe combined immunodeficiency due to IL-7Ralpha deficiency	0.05877091290094485	No data	No data	No data	No data	No data	No data	0.48336844532172285
+combined immunodeficiency due to ZAP70 deficiency	0.05873517247577542	No data	No data	No data	No data	No data	No data	0.483074493894111
+Autosomal recessive hyper-IgE syndrome due to TYK2 deficiency	0.05871515151375858	No data	No data	No data	No data	No data	No data	0.4829098290827912
+T-B+ severe combined immunodeficiency due to CD3delta/CD3epsilon/CD3zeta	0.05869653495518954	No data	No data	No data	No data	No data	No data	0.48275671495662603
+selective IgA deficiency disease	0.05862353882744648	No data	No data	No data	No data	No data	No data	0.4821563495200514
+autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation	0.05800273501331844	No data	No data	No data	No data	No data	No data	0.4770504738466442
+PLCG2-associated antibody deficiency and immune dysregulation	0.05800273501331844	No data	No data	No data	No data	No data	No data	0.4770504738466442
+Recurrent infections-myelofibrosis-nephromegaly syndrome	0.057944136074136766	No data	No data	No data	No data	No data	No data	0.476568519819871
+immunodeficiency 73b with defective neutrophil chemotaxis and lymphopenia	0.05784688524181931	No data	No data	No data	No data	No data	No data	0.4757686686468467
+Severe combined immunodeficiency due to adenosine deaminase deficiency	0.05778531939769308	No data	No data	No data	No data	No data	No data	0.47526231295333593
+Rare hemorrhagic disorder due to a constitutional platelet anomaly	0.0577482895494751	No data	No data	No data	No data	No data	No data	0.47495775651069927
+immunodeficiency 67	0.057520843947237894	No data	No data	No data	No data	No data	No data	0.47308710278554844
+combined immunodeficiency due to DOCK8 deficiency	0.057403417511809086	No data	No data	No data	No data	No data	No data	0.47212131493691384
+Hepatic veno-occlusive disease - immunodeficiency	0.05680627156431209	No data	No data	No data	No data	No data	No data	0.4672100162344711
+Familial hemophagocytic lymphohistiocytosis	0.05659684297999076	No data	No data	No data	No data	No data	No data	0.46548754564123807
+Immunodeficiency by defective expression of HLA class 2	0.05608898276945436	No data	No data	No data	No data	No data	No data	0.4613105882265815
+osteoarthritis	0.055100078048376536	No data	No data	No data	No data	No data	0.0104372467955101	0.45056791064985297
+colorectal carcinoma	0.054964737277274814	No data	No data	0.08897742701710087	No data	0.02870784322054877	No data	No data
+hyper-IgM syndrome type 1	0.054343181984108924	No data	No data	No data	No data	0.01823792392834863	No data	0.4423925586053715
+X-linked hyper-IgM syndrome	0.05378881220208187	No data	No data	No data	No data	No data	No data	0.4423925586053715
+immunoproliferative small intestinal disease	0.05286121193769438	No data	No data	No data	No data	No data	No data	0.43476339860861085
+Bruton-type agammaglobulinemia	0.05268776605866944	No data	No data	No data	No data	No data	No data	0.43333687210504857
+myelofibrosis	0.05261379875719713	No data	No data	0.08654570382665439	No data	No data	No data	No data
+gastrointestinal stromal tumor	0.05256760127536154	No data	No data	0.08274613634158175	No data	0.07447152270742358	No data	No data
+immunodeficiency 33	0.05236125252316259	No data	No data	No data	No data	No data	No data	0.43065142224143227
+Wiskott-Aldrich syndrome	0.05217748920652769	No data	No data	No data	No data	No data	No data	0.42914003873070333
+Merkel cell skin cancer	0.051371599801173555	No data	No data	No data	No data	0.4225119043400767	No data	No data
+autoimmune lymphoproliferative syndrome	0.05120795805440483	No data	No data	No data	No data	0.012158615952232422	No data	0.4181263591139729
+WHIM syndrome	0.050906955794978274	No data	No data	No data	No data	No data	No data	0.41869038379842355
+severe combined immunodeficiency due to LCK deficiency	0.05079551720268378	No data	No data	No data	No data	No data	No data	0.4177738436861911
+MHC class II deficiency	0.05078232525509294	No data	No data	No data	No data	No data	No data	0.417665344925784
+hyper-IgM syndrome type 4	0.050428965849586074	No data	No data	No data	No data	No data	No data	0.41475909797386845
+gastric cancer	0.050303924665417735	No data	No data	0.08274613634158175	No data	No data	No data	No data
+mycosis fungoides	0.050303924665417735	No data	No data	0.08274613634158175	No data	No data	No data	No data
+ataxia-pancytopenia syndrome	0.050172415833792436	No data	No data	No data	No data	No data	No data	0.4126490714971581
+severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency	0.05012945217568534	No data	No data	No data	No data	No data	No data	0.41229571172104634
+recurrent infections associated with rare immunoglobulin isotypes deficiency	0.050085872551153765	No data	No data	No data	No data	No data	No data	0.41193728585495454
+chondrocalcinosis 2	0.0498341476056852	No data	No data	No data	No data	No data	No data	0.40986694374975496
+Immunodeficiency syndrome with autoimmunity	0.04981253745029321	No data	No data	No data	No data	No data	No data	0.4096892084262865
+autoimmune lymphoproliferative syndrome type 2A	0.04950686411214774	No data	No data	No data	No data	No data	No data	0.4071751612736635
+immunodeficiency 76	0.04934260639895454	No data	No data	No data	No data	No data	No data	0.4058242039456377
+lymphoproliferative syndrome 1	0.04922018307209024	No data	No data	No data	No data	No data	No data	0.40481731856209346
+dyskeratosis congenita, autosomal recessive 5	0.04880856350893515	No data	No data	No data	No data	No data	No data	0.40143190393289374
+nail-patella syndrome	0.048784540818380635	No data	No data	No data	No data	0.4012343264236699	No data	No data
+lymphoproliferative syndrome	0.048699794104480026	No data	No data	No data	No data	0.030227670214577826	No data	0.39298039932359713
+immunodeficiency, common variable, 2	0.048497089820292535	No data	No data	No data	No data	No data	No data	0.39887015109962476
+platelet-type von Willebrand disease	0.04712882306939317	No data	No data	No data	No data	No data	No data	0.3876166765571696
+pancreatic carcinoma	0.04656706169027242	No data	No data	0.07599134970145263	No data	0.012158615952232422	No data	No data
+mesothelioma	0.04656706169027242	No data	No data	0.07599134970145263	No data	0.012158615952232422	No data	No data
+Burkitts lymphoma	0.04636173954878092	No data	No data	No data	No data	0.381307705835289	No data	No data
+nodal marginal zone B-cell lymphoma	0.04619748183558772	No data	No data	0.07599134970145263	No data	No data	No data	No data
+Cowden disease	0.04619748183558772	No data	No data	0.07599134970145263	No data	No data	No data	No data
+polycythemia vera	0.04619748183558772	No data	No data	0.07599134970145263	No data	No data	No data	No data
+lung cancer	0.04619748183558772	No data	No data	0.07599134970145263	No data	No data	No data	No data
+rectum cancer	0.04619748183558772	No data	No data	0.07599134970145263	No data	No data	No data	No data
+combined immunodeficiency due to MALT1 deficiency	0.04573756023864677	No data	No data	No data	No data	No data	No data	0.37617406798879094
+proteasome-associated autoinflammatory syndrome 2	0.04467604476713571	No data	No data	No data	No data	No data	No data	0.367443506256424
+bone marrow failure syndrome	0.04466187753937279	No data	No data	No data	No data	No data	No data	0.36732698618688175
+immunodeficiency due to CD25 deficiency	0.04296550600637	No data	No data	No data	No data	No data	No data	0.353374974381695
+ectodermal dysplasia and immunodeficiency 1	0.04235569924614025	No data	No data	No data	No data	No data	No data	0.3483595453013992
+erythrocyte count	0.04215677006598487	0.06934468566423391	No data	No data	No data	No data	No data	No data
+small cell lung carcinoma	0.04191138213195264	No data	No data	0.06079307976116211	No data	0.16295922769311508	No data	No data
+Juvenile Myelomonocytic Leukemia	0.041890849917803494	No data	No data	No data	No data	0.3445363360630861	No data	No data
+selective IgM deficiency	0.04139848742250687	No data	No data	No data	No data	No data	No data	0.34048684147232866
+infantile-onset periodic fever-panniculitis-dermatosis syndrome	0.04135783363849155	No data	No data	No data	No data	No data	No data	0.34015247953364225
+talo-patello-scaphoid osteolysis	0.04113423782640731	No data	No data	No data	No data	No data	No data	0.3383134888708671
+combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia	0.04026572516789825	No data	No data	No data	No data	No data	No data	0.33117030199893055
+monocytopenia with susceptibility to infections	0.03916622510021128	No data	No data	No data	No data	No data	No data	0.32212733138445776
+immunodeficiency, common variable, 6	0.038885344410650904	No data	No data	No data	No data	No data	No data	0.3198171943535336
+multiple intestinal atresia	0.038436304887208984	No data	No data	No data	No data	No data	No data	0.31612401475804297
+combined immunodeficiency due to LRBA deficiency	0.0384215216930216	No data	No data	No data	No data	No data	No data	0.31600242859852057
+Facial dysmorphism - immunodeficiency - livedo - short stature	0.03820346957875762	No data	No data	No data	No data	No data	No data	0.31420903274556633
+psoriasis	0.038061591978986994	No data	No data	0.06079307976116211	No data	0.03630697819069404	No data	No data
+myocardial infarction	0.03771254433845145	No data	No data	0.06079307976116211	No data	0.024823840902474525	No data	No data
+colorectal neoplasm	0.037650947696004	No data	No data	0.06079307976116211	No data	0.02279740491043579	No data	No data
+metastatic prostate cancer	0.03760475021416841	No data	No data	0.06079307976116211	No data	0.021277577916406734	No data	No data
+mature T-cell and NK-cell non-Hodgkin lymphoma	0.03751235525049724	No data	No data	0.06079307976116211	No data	0.01823792392834863	No data	No data
+Rare hemorrhagic disorder due to a platelet receptor defect	0.03745322247374769	No data	No data	No data	No data	No data	No data	0.30803853514980845
+platelet-type bleeding disorder 18	0.03745322247374769	No data	No data	No data	No data	No data	No data	0.30803853514980845
+myelodysplastic syndrome	0.037327565323154885	No data	No data	0.06079307976116211	No data	0.012158615952232422	No data	No data
+high grade B-cell lymphoma	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+NUT midline carcinoma	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+neoplasm of mature T-cells or NK-cells	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+Richter syndrome	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+metastasis	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+idiopathic pulmonary fibrosis	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+mixed glioma	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+Cutaneous T-cell lymphoma	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+malignant colon neoplasm	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+Central Nervous System Neoplasm	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+Sezary's disease	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+urothelial carcinoma	0.03695798546847018	No data	No data	0.06079307976116211	No data	No data	No data	No data
+autosomal dominant nonsyndromic hearing loss 1	0.036093168608507975	No data	No data	No data	No data	No data	No data	0.29685260847375455
+granulomatous disease, chronic, autosomal recessive, 5	0.035923161875353014	No data	No data	No data	No data	No data	No data	0.2954543676392478
+platelet-type bleeding disorder 11	0.034681373563612415	No data	No data	No data	No data	No data	No data	0.2852411302393726
+Bleeding diathesis due to glycoprotein VI deficiency	0.034681373563612415	No data	No data	No data	No data	No data	No data	0.2852411302393726
+Angel-shaped phalango-epiphyseal dysplasia	0.03452615002464484	No data	No data	No data	No data	No data	No data	0.2839644755643882
+fragile X syndrome	0.034440325369501396	No data	No data	No data	No data	0.2832586003604947	No data	No data
+brachydactylous dwarfism, Mseleni type	0.0343339685002088	No data	No data	No data	No data	No data	No data	0.282383855490598
+systemic lupus erythematosus	0.03428456370378175	No data	No data	No data	No data	0.12287888457759887	No data	0.251257798652883
+Acute Leukemia	0.034122884768012174	No data	No data	No data	No data	0.28064777193449336	No data	No data
+DOCK2 deficiency	0.03411961218449167	No data	No data	No data	No data	No data	No data	0.28062085617752425
+epilepsy-telangiectasia syndrome	0.03389786427168085	No data	No data	No data	No data	No data	No data	0.27879706378468944
+transcobalamin II deficiency	0.03357263399955831	No data	No data	No data	No data	No data	No data	0.2761221682751983
+chronic myelogenous leukemia	0.03345056998644162	No data	No data	No data	No data	0.0475368109799087	No data	0.2632340353658319
+body height	0.03333526348056185	0.05483397717557026	No data	No data	No data	No data	No data	No data
+idiopathic CD4 lymphocytopenia	0.03325479532452947	No data	No data	No data	No data	No data	No data	0.27350806584546833
+chronic myeloproliferative disorder	0.03313652977103036	No data	No data	No data	No data	0.2725353765692897	No data	No data
+microcephalic primordial dwarfism, Toriello type	0.03292956505240693	No data	No data	No data	No data	No data	No data	0.27083317033597715
+Glanzmann thrombasthenia	0.03246389443550421	No data	No data	No data	No data	No data	No data	0.267003206311024
+inflammatory bowel disease, immunodeficiency, and encephalopathy	0.032375195270379874	No data	No data	No data	No data	No data	No data	0.26627368935389
+Camptodactyly-arthropathy-coxa-vara-pericarditis syndrome	0.03233084568781771	No data	No data	No data	No data	No data	No data	0.2659089308753231
+hereditary folate malabsorption	0.03229388770234924	No data	No data	No data	No data	No data	No data	0.26560496547651724
+periodic fever-infantile enterocolitis-autoinflammatory syndrome	0.03219040534303753	No data	No data	No data	No data	No data	No data	0.264753862359861
+Non-acquired isolated growth hormone deficiency	0.03213866416338167	No data	No data	No data	No data	No data	No data	0.2643283108015328
+isolated growth hormone deficiency type III	0.03213866416338167	No data	No data	No data	No data	No data	No data	0.2643283108015328
+Von Willebrand disease	0.03193909104185193	No data	No data	No data	No data	No data	No data	0.2626868976479815
+Mast Cell Sarcoma	0.031931699444758245	No data	No data	No data	No data	No data	No data	0.26262610456822033
+Pyogenic arthritis - pyoderma gangrenosum - acne	0.03189474145928976	No data	No data	No data	No data	No data	No data	0.2623221391694145
+pyogenic arthritis-pyoderma gangrenosum-acne syndrome	0.03189474145928976	No data	No data	No data	No data	No data	No data	0.2623221391694145
+inflammatory bowel disease 30	0.0317247347261348	No data	No data	No data	No data	No data	No data	0.26092389833490776
+adolescent idiopathic scoliosis	0.03168310666488854	0.052116304667179265	No data	No data	No data	No data	No data	No data
+immunodeficiency, common variable, 10	0.031606469172635696	No data	No data	No data	No data	No data	No data	0.25995120905872915
+granulocytopenia with immunoglobulin abnormality	0.03156951118716723	No data	No data	No data	No data	No data	No data	0.25964724365992337
+congenital disorder of glycosylation type II	0.03142167924529335	No data	No data	No data	No data	No data	No data	0.2584313820647001
+immunodeficiency 23	0.03137732966273119	No data	No data	No data	No data	No data	No data	0.2580666235861332
+periodic fever, immunodeficiency, and thrombocytopenia syndrome	0.031347763274356406	No data	No data	No data	No data	No data	No data	0.2578234512670885
+hyperimmunoglobulinemia D with periodic fever	0.03124428091504469	No data	No data	No data	No data	No data	No data	0.25697234815043224
+combined immunodeficiency due to partial RAG1 deficiency	0.031111232167358203	No data	No data	No data	No data	No data	No data	0.25587807271473134
+Sneddon syndrome	0.031066882584796035	No data	No data	No data	No data	No data	No data	0.25551331423616436
+Cryptosporidiosis - chronic cholangitis - liver disease	0.03089687585164107	No data	No data	No data	No data	No data	No data	0.2541150734016576
+cryptosporidiosis-chronic cholangitis-liver disease syndrome	0.03089687585164107	No data	No data	No data	No data	No data	No data	0.2541150734016576
+Neuronal intestinal pseudoobstruction	0.030867309463266292	No data	No data	No data	No data	No data	No data	0.2538719010826129
+RIDDLE syndrome	0.030549470788237457	No data	No data	No data	No data	No data	No data	0.251257798652883
+osteosarcoma	0.02729024171911499	No data	No data	No data	No data	0.19276472374268486	0.12674861293411482	No data
+carcinoma	0.026948531070759507	No data	No data	No data	No data	0.22164143662923683	No data	No data
+colitis	0.025885353462037297	No data	No data	No data	No data	0.21289720444936444	No data	No data
+Ehlers-Danlos syndrome, musculocontractural type	0.02587058982792912	No data	No data	No data	No data	0.21277577916406737	No data	No data
+appendicular lean mass	0.025290789679777863	0.0416014286151283	No data	No data	No data	No data	No data	No data
+myocarditis	0.025131430118559724	No data	No data	No data	No data	0.20669647118795118	No data	No data
+rhabdomyosarcoma	0.023653110699820915	No data	No data	No data	No data	0.19453785523571876	No data	No data
+drug use measurement	0.022222930326358983	0.036555032930830705	No data	No data	No data	No data	No data	No data
+sarcoidosis	0.020696471862343302	No data	No data	No data	No data	0.17022062333125393	No data	No data
+squamous cell carcinoma	0.01939780931740956	No data	No data	0.030396539880581056	No data	0.030227670214577826	No data	No data
+pik3ca related overgrowth spectrum	0.01847899273423509	No data	No data	0.030396539880581056	No data	No data	No data	No data
+sarcoma	0.01847899273423509	No data	No data	No data	No data	0.15198269940290526	No data	No data
+kidney cancer	0.01847899273423509	No data	No data	0.030396539880581056	No data	No data	No data	No data
+atherosclerosis	0.018309601967504602	No data	No data	No data	No data	0.15058952465837863	No data	No data
+visceral Leishmaniasis	0.016815883388153933	No data	No data	No data	No data	0.1383042564566438	No data	No data
+polycystic ovary syndrome	0.01626151360612688	No data	No data	No data	No data	0.13374477547455663	No data	No data
+Bloom syndrome	0.014912957780810702	No data	No data	No data	No data	0.12265341581146463	No data	No data
+nonpapillary renal cell carcinoma	0.014783194187388075	No data	No data	No data	No data	0.12158615952232422	No data	No data
+Niemann-Pick disease type C	0.014783194187388075	No data	No data	No data	No data	0.12158615952232422	No data	No data
+skin squamous cell carcinoma	0.014783194187388075	No data	No data	No data	No data	0.12158615952232422	No data	No data
+Mobius syndrome	0.013674454623333965	No data	No data	No data	No data	0.11246719755814989	No data	No data
+immature platelet fraction	0.013304874768649264	No data	No data	No data	No data	0.1094275435700918	No data	No data
+ulcerative colitis	0.013295283100530506	No data	No data	No data	No data	0.012158615952232422	0.10630900175338244	No data
+Down syndrome	0.012372387203088852	No data	No data	No data	No data	0.10175818737672342	No data	No data
+infect	0.012227188673640622	No data	No data	No data	No data	0.1005639845988853	No data	No data
+Treacher-Collins syndrome	0.012011345277252809	No data	No data	No data	No data	0.09878875461188842	No data	No data
+lung carcinoma	0.011215287239191645	No data	No data	No data	No data	No data	0.0922414794846154	No data
+Thyroid Gland Undifferentiated (Anaplastic) Carcinoma	0.011087395640541052	No data	No data	No data	No data	0.09118961964174316	No data	No data
+calf circumference measurement	0.011087395640541052	No data	No data	No data	No data	0.09118961964174316	No data	No data
+pulmonary fibrosis	0.010348235931171651	No data	No data	No data	No data	0.08511031166562696	No data	No data
+cutaneous lupus erythematosus	0.010015405146923947	No data	No data	No data	No data	No data	0.08237290482955863	No data
+T-cell acute lymphoblastic leukemia	0.009578277900578523	No data	No data	No data	No data	0.0787776991905059	No data	No data
+juvenile dermatomyositis	0.009199322384921084	No data	No data	No data	No data	No data	0.07566093395056214	No data
+metastatic melanoma	0.00813075680306344	No data	No data	No data	No data	0.06687238773727831	No data	No data
+acute promyelocytic leukemia	0.00813075680306344	No data	No data	No data	No data	0.06687238773727831	No data	No data
+rheumatic disease	0.00813075680306344	No data	No data	No data	No data	0.06687238773727831	No data	No data
+oculocerebrorenal syndrome	0.007740644734229588	No data	No data	No data	No data	0.06366386408321698	No data	No data
+polycythemia	0.0073915970936940375	No data	No data	No data	No data	0.06079307976116211	No data	No data
+pilocytic astrocytoma	0.0073915970936940375	No data	No data	No data	No data	0.06079307976116211	No data	No data
+laryngeal squamous cell carcinoma	0.0073915970936940375	No data	No data	No data	No data	0.06079307976116211	No data	No data
+Malignant Bone Neoplasm	0.0073915970936940375	No data	No data	No data	No data	0.06079307976116211	No data	No data
+urinary bladder carcinoma	0.0073915970936940375	No data	No data	No data	No data	0.06079307976116211	No data	No data
+primary biliary cirrhosis	0.006652437384324632	No data	No data	No data	No data	0.0547137717850459	No data	No data
+aneurysmal bone cyst	0.006344454172087381	No data	No data	No data	No data	0.052180726794997474	No data	No data
+esophageal squamous cell carcinoma	0.006098067602297579	No data	No data	No data	No data	0.05015429080295874	No data	No data
+hematopoietic and lymphoid system neoplasm	0.006067269281073855	No data	No data	No data	No data	0.0499009863039539	No data	No data
+invasive breast ductal carcinoma	0.006021818443661166	No data	No data	No data	No data	No data	0.04952717042234984	No data
+B-cell non-Hodgkins lymphoma	0.005913277674955229	No data	No data	No data	No data	0.04863446380892969	No data	No data
+chronic myelomonocytic leukemia	0.005913277674955229	No data	No data	No data	No data	0.04863446380892969	No data	No data
+arthritis	0.0055128994990468	No data	No data	No data	No data	0.04534150532186673	No data	No data
+hypertension	0.005305113491857403	No data	No data	No data	No data	0.04363254430191407	No data	No data
+vasculitis	0.0051741179655858255	No data	No data	No data	No data	0.04255515583281348	No data	No data
+lupus erythematosus	0.004989328038243475	No data	No data	No data	No data	0.04103532883878443	No data	No data
+T-cell non-Hodgkin lymphoma	0.004773739789677399	No data	No data	No data	No data	0.03926219734575053	No data	No data
+heart failure	0.004434958256216422	No data	No data	No data	No data	0.03647584785669727	No data	No data
+primitive neuroectodermal tumor	0.0044349582562164215	No data	No data	No data	No data	0.03647584785669726	No data	No data
+peripheral arterial disease	0.0044349582562164215	No data	No data	No data	No data	0.03647584785669726	No data	No data
+adenocarcinoma	0.0042501683288740716	No data	No data	No data	No data	0.03495602086266821	No data	No data
+agammaglobulinemia	0.00406537840153172	No data	No data	No data	No data	0.03343619386863916	No data	No data
+hyperinsulinemic hypoglycemia, familial, 4	0.00406537840153172	No data	No data	No data	No data	0.03343619386863916	No data	No data
+immunodeficiency disease	0.00406537840153172	No data	No data	No data	No data	0.03343619386863916	No data	No data
+Pallister-Hall syndrome	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+soft tissue sarcoma	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+CLOVE syndrome	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+digestive system neoplasm	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+renal carcinoma	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+geroderma osteodysplastica	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+Renal Cell Carcinoma Associated with Xp11.2 Translocations/TFE3 Gene Fusions	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+metastatic neoplasm	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+congenital T-cell immunodeficiency	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+tarsal-carpal coalition syndrome	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+severe combined immunodeficiency	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+CLOVES syndrome	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+Lhermitte-Duclos disease	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+brain glioma	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+cutaneous melanoma	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+colonic neoplasm	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+X-linked hydrocephalus with stenosis of the aqueduct of Sylvius	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+mevalonic aciduria	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+Hodgkins lymphoma, mixed cellularity	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+transitional cell carcinoma of kidney	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+Fallopian Tube Carcinoma	0.0036957985468470188	No data	No data	No data	No data	0.030396539880581056	No data	No data
+myeloid sarcoma	0.0029566388374776143	No data	No data	No data	No data	0.024317231904464845	No data	No data
+PIK3CA-related overgrowth syndrome	0.0029566388374776143	No data	No data	No data	No data	0.024317231904464845	No data	No data
+atrial heart septal defect	0.0029566388374776143	No data	No data	No data	No data	0.024317231904464845	No data	No data
+precursor B-cell acute lymphoblastic leukemia	0.0029361066233284643	No data	No data	No data	No data	0.024148362238461615	No data	No data
+overgrowth syndrome	0.0025870589827929123	No data	No data	No data	No data	0.021277577916406734	No data	No data
+cyst	0.0025870589827929123	No data	No data	No data	No data	0.021277577916406734	No data	No data
+Crohn's disease	0.0024909977176448754	No data	No data	No data	No data	0.01823792392834863	0.00899834621345842	No data
+cystic fibrosis	0.002490206812509964	No data	No data	No data	No data	No data	0.020481005587257996	No data
+macroglobulinemia	0.0022260044833781315	No data	No data	No data	No data	No data	0.018308041738660383	No data
+Abdominal Aortic Aneurysm	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+Huntington disease	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+aneurysm	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+hamartoma	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+diabetic retinopathy	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+prostate carcinoma	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+ovarian clear cell adenocarcinoma	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+pulmonary sarcoidosis	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+chronic leukemia	0.0022174791281082107	No data	No data	No data	No data	0.01823792392834863	No data	No data
+hepatitis C virus induced hepatocellular carcinoma	0.002098533850021201	No data	No data	No data	No data	No data	0.0172596441755025	No data
+oral squamous cell carcinoma	0.0018478992734235094	No data	No data	No data	No data	0.015198269940290528	No data	No data
+vascular malformation	0.0018478992734235094	No data	No data	No data	No data	0.015198269940290528	No data	No data
+colorectal adenocarcinoma	0.0018440892493166794	No data	No data	No data	No data	0.012158615952232422	0.012033271945256697	No data
+tuberous sclerosis	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+Bannayan-Riley-Ruvalcaba syndrome	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+megalencephaly	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+ovarian neoplasm	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+cerebrovascular disorder	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+Ewing sarcoma	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+childhood cancer	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+acute megakaryoblastic leukaemia	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+chondrosarcoma	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+heart disease	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+stroke	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+myeloid neoplasm	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+Dent disease	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+RAS-associated autoimmune leukoproliferative disease	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+mucinous carcinoma	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+brain cancer	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+common wart	0.0014783194187388072	No data	No data	No data	No data	0.012158615952232422	No data	No data
+gastric carcinoma	0.0011334396019034116	No data	No data	No data	No data	No data	0.009322110397732423	No data
