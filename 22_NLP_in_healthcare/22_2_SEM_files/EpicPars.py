@@ -15,7 +15,8 @@ class EpicPars:
     def __init__(self):
         pass
 
-    def epi_dates_preparation(self, strng):
+    @staticmethod
+    def epi_dates_preparation(strng):
         """Метод преобразует даты внутри строки из формата «ДД.ММ.ГГГГ» или «ДД.ММ.ГГ» в «ДД-ММ-ГГГГ»,
         стандартизируя представление даты.
         Принимает параметры:
@@ -27,7 +28,8 @@ class EpicPars:
         return re.sub(r'(0?[1-9]|[12]\d|30|31)[.](0?[1-9]|1[0-2])[.](\d{2})',
                       '\\1-\\2-20\\3', data_1)
 
-    def get_gender(self, file_):
+    @staticmethod
+    def get_gender(file_):
         """Метод кодирует пол пациента извлекая из текстового файла строковый признак пола.
          Принимает параметры:
              :param file_: предварительно обработанный текстовый файл эпикриза
@@ -39,7 +41,8 @@ class EpicPars:
         else:
             return 26
 
-    def remover(self, file_):
+    @staticmethod
+    def remover(file_):
         """Метод убирает из текста эпикриза, либо заменяет некоторые элементы. В результате работы метода текст
         приводится к единому формату для облегчения дальнейшей обработки и анализа.
          Принимает параметры:
@@ -55,8 +58,8 @@ class EpicPars:
                 file_ = re.sub(elem, '', file_)
         return file_
 
+    @staticmethod
     def prepare_person_table(
-            self,
             gender_list,
             list_of_epi,
             patient_ids,
@@ -89,9 +92,8 @@ class EpicPars:
         df['date_of_birth'] = pd.to_datetime(df.date_of_birth, dayfirst=True)
         return df
 
-
+    @staticmethod
     def measurements_template(
-            self,
             list_of_epicrisis,
             patient_ids,
             measurements_map,
@@ -151,8 +153,8 @@ class EpicPars:
 
         return df
 
+    @staticmethod
     def treatment_detection(
-            self,
             list_of_epicrisis,
             patient_ids,
             treatment_map,
@@ -187,8 +189,8 @@ class EpicPars:
         df['drug_date'] = pd.to_datetime(df.drug_date)
         return df
 
+    @staticmethod
     def condition_detection(
-            self,
             list_of_epicrisis,
             patient_ids,
             condition_map,
@@ -224,8 +226,8 @@ class EpicPars:
         df['condition_date'] = pd.to_datetime(df.condition_date)
         return df
 
+    @staticmethod
     def procedures_detection(
-            self,
             list_of_epicrisis,
             patient_ids,
             procedure_map,
@@ -259,8 +261,6 @@ class EpicPars:
         df['procedure_id'] = df.index + 1
         df['procedure_date'] = pd.to_datetime(df.procedure_date)
         return df
-
-
 
 
 # Пример использования класса
