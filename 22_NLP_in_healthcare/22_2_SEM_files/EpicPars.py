@@ -16,19 +16,23 @@ class EpicPars:
         pass
 
     def epi_dates_preparation(self, strng):
-        """`epi_dates_preparation(strng)`
-        Метод преобразует даты внутри строки из формата «ДД.ММ.ГГГГ» или «ДД.ММ.ГГ» в «ДД-ММ-ГГГГ»,
+        """Метод преобразует даты внутри строки из формата «ДД.ММ.ГГГГ» или «ДД.ММ.ГГ» в «ДД-ММ-ГГГГ»,
         стандартизируя представление даты.
         Принимает параметры:
-            - `strng`: строка, содержащая даты, которые необходимо преобразовать.
+            :param strng: строка, содержащая даты, которые необходимо преобразовать.
         Возвращает:
-            - Измененная строка со всеми датами в формате `ДД-ММ-ГГГГ`."""
+            :return: Измененная строка со всеми датами в формате `ДД-ММ-ГГГГ`."""
         data_1 = re.sub(r'(0?[1-9]|[12]\d|30|31)[.](0?[1-9]|1[0-2])[.](\d{4})',
                         '\\1-\\2-\\3', strng)
         return re.sub(r'(0?[1-9]|[12]\d|30|31)[.](0?[1-9]|1[0-2])[.](\d{2})',
                       '\\1-\\2-20\\3', data_1)
 
     def get_gender(self, file_):
+        """Метод кодирует пол пациента извлекая из текстового файла строковый признак пола.
+         Принимает параметры:
+             :param file_: предварительно обработанный текстовый файл эпикриза
+         Возвращает:
+             :return: Целочисленный код, обозначающий пол (25 для женщин, 26 для мужчин)."""
         file_ = re.sub('диагноз.*', '', file_)
         if 'вна' in file_:
             return 25
@@ -36,6 +40,12 @@ class EpicPars:
             return 26
 
     def remover(self, file_):
+        """Метод убирает из текста эпикриза, либо заменяет некоторые элементы. В результате работы метода текст
+        приводится к единому формату для облегчения дальнейшей обработки и анализа.
+         Принимает параметры:
+             :param file_: текстовый файл эпикриза подлежащий очистке
+         Возвращает:
+             :return: Очищенный текст."""
         file_ = ''.join(file_.split()).lower()
         stop_element = [',', ':', '/t', 'менее']
         for elem in stop_element:
@@ -53,6 +63,17 @@ class EpicPars:
             hospital_days=[],
             date_of_birth=[]
             ):
+        """
+        Метод извлекает из эпикризов информацию о пациентах (ИД пациента, дата рождения, пол,
+        время проведенное в стационаре) и помещает её в pandas DataFrame.
+        Принимает параметры:
+            :param gender_list: список признака пола пациентов
+            :param list_of_epi: список эпикризов, в которых содержится информация о пациентах
+            :param patient_ids: список идентификаторов пациентов
+            :param hospital_days: список времени нахождения в стационаре (создается внутри метода)
+            :param date_of_birth: список с датами рождения пациента (создается внутри метода)
+        Возвращает:
+            :return: pandas DataFrame с информацией о пациентах"""
         for file_ in list_of_epi:
             admission = re.findall('\d{2}-\d{2}-\d{4}', file_)[1]
             discharge = re.findall('\d{2}-\d{2}-\d{4}', file_)[-1]
@@ -79,7 +100,21 @@ class EpicPars:
             measurement_concept_id=[],
             patient_id=[],
             value=[]
-    ):
+            ):
+        """
+        Метод извлекает из эпикризов информацию о различных измерениях (ИД пациента, ИД концепта (типа) измерения,
+        дату измерения, значение измерения) и помещает её в pandas DataFrame.
+        Принимает параметры:
+            :param list_of_epicrisis: список эпикризов
+            :param patient_ids: список идентификаторов пациентов
+            :param measurements_map: словарь, сопоставляющий типы измерений с их идентификаторами
+            :param measurement_id: список хранения идентификаторов измерений
+            :param measurement_date: список хранения дат измерений
+            :param measurement_concept_id: список хранения идентификаторов типов (концептов) измерений
+            :param patient_id: список хранения идентификаторов пациентов (создается внутри метода)
+            :param value: список хранения значений измерений
+        Возвращает:
+            :return: pandas DataFrame с информацией об измерениях"""
         for measurement_name, sub_dict in measurements_map.items():
             for measurement_type, concept_id in sub_dict.items():
                 for file_, patient_id_ in zip(list_of_epicrisis, patient_ids):
@@ -124,7 +159,19 @@ class EpicPars:
             drug_date=[],
             drug_concept_id=[],
             patient_id=[]
-    ):
+            ):
+        """
+        Метод извлекает из эпикризов информацию о назначенных лекарствах (ИД пациента, ИД концепта (типа) препарата,
+        дату назначения препарата) и помещает её в pandas DataFrame.
+        Принимает параметры:
+            :param list_of_epicrisis: список эпикризов
+            :param patient_ids: список идентификаторов пациентов
+            :param treatment_map: словарь, сопоставляющий название лекарств с их идентификаторами
+            :param drug_date: список хранения дат назначений лекарств
+            :param drug_concept_id: список хранения идентификаторов типов (концептов) лекарств
+            :param patient_id: список хранения идентификаторов пациентов (создается внутри метода)
+        Возвращает:
+            :return: pandas DataFrame с информацией о назначенных лекарствах"""
         for drug_name, sub_dct in treatment_map.items():
             for variations, drug_id in sub_dct.items():
                 for file_, patient_id_ in zip(list_of_epicrisis, patient_ids):
@@ -148,7 +195,19 @@ class EpicPars:
             condition_date=[],
             condition_concept_id=[],
             patient_id=[]
-    ):
+            ):
+        """
+        Метод извлекает из эпикризов информацию о состояниях пациентов (ИД пациента, ИД концепта (типа) состояния,
+        дату состояния) и помещает её в pandas DataFrame.
+        Принимает параметры:
+            :param list_of_epicrisis: список эпикризов
+            :param patient_ids: список идентификаторов пациентов
+            :param condition_map: словарь, сопоставляющий название состояний с их идентификаторами
+            :param condition_date: список хранения дат состояний
+            :param condition_concept_id: список хранения идентификаторов типов (концептов) состояний
+            :param patient_id: список хранения идентификаторов пациентов (создается внутри метода)
+       Возвращает:
+            :return: pandas DataFrame с информацией о состояниях пациентов"""
         for concept_id, sub_dct in condition_map.items():
             if concept_id < 6:
                 for condition, variations in sub_dct.items():
@@ -163,7 +222,7 @@ class EpicPars:
         df = pd.DataFrame(data_dct)
         df['condition_id'] = df.index + 1
         df['condition_date'] = pd.to_datetime(df.condition_date)
-        return (df)
+        return df
 
     def procedures_detection(
             self,
@@ -173,7 +232,18 @@ class EpicPars:
             procedure_date=[],
             procedure_concept_id=[],
             patient_id=[]
-    ):
+            ):
+        """
+        Метод извлекает из эпикризов информацию о проведенных медицинских процедурах (ИД пациента, ИД концепта (типа)
+        процедуры, дату процедуры) и помещает её в pandas DataFrame.
+            :param list_of_epicrisis: список эпикризов
+            :param patient_ids: список идентификаторов пациентов
+            :param procedure_map: словарь, сопоставляющий название процедур с их идентификаторами
+            :param procedure_date: список хранения дат процедур
+            :param procedure_concept_id: список хранения идентификаторов типов (концептов) процедур
+            :param patient_id: список хранения идентификаторов пациентов (создается внутри метода)
+       Возвращает:
+            :return: pandas DataFrame с информацией о проведенных медицинских процедурах"""
         for concept_id, sub_dct in procedure_map.items():
             if concept_id > 6:
                 for procedure, variations in sub_dct.items():
