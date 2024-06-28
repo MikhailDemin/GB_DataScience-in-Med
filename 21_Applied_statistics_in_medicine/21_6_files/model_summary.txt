@@ -1,0 +1,23 @@
+
+Call:
+glm(formula = IHD ~ Wt + Tgi + HDLi + carotid.IMT.mean, family = binomial, 
+    data = boot_df)
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)      -4.205901   0.470097  -8.947  < 2e-16 ***
+Wt                0.005623   0.003624   1.551  0.12079    
+Tgi              -0.206789   0.071482  -2.893  0.00382 ** 
+HDLi             -1.206211   0.119900 -10.060  < 2e-16 ***
+carotid.IMT.mean  7.486416   0.388194  19.285  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 4158.9  on 2999  degrees of freedom
+Residual deviance: 3456.3  on 2995  degrees of freedom
+AIC: 3466.3
+
+Number of Fisher Scoring iterations: 4
+
